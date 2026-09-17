@@ -1,7 +1,7 @@
 # ProQuest TDM Studio setup guide (economy/election arm)
 
 **Audience:** an AI assistant (or person) helping a teammate stand up the ProQuest
-full-text extraction pipeline for `JeremysShit/election_arm/`. Read this end-to-end
+full-text extraction pipeline for `JeremysStuff/election_arm/`. Read this end-to-end
 before running anything — most of it is failure modes we already hit, and the fixes.
 
 ---
@@ -121,7 +121,7 @@ exactly these columns. All are present post-export:
 quote directly. `main_pooling.patch` in this folder does it (verified to apply
 cleanly to `main`):
 ```
-git checkout main && git apply JeremysShit/election_arm/main_pooling.patch
+git checkout main && git apply JeremysStuff/election_arm/main_pooling.patch
 ```
 It teaches `score_predictions.resolve_horizon` to prefer `horizon_hint`, and both
 `claim_features()` to prefer the precomputed numbers, each falling back to the
@@ -236,7 +236,7 @@ This is the part that trips people up. Do it once per fresh workbench, in order.
 
 **A. Transfer all scripts + config in ONE shot.** The VM can't `git pull`, so bundle
 the needed files into a tarball, base64 it, and paste one command. On the **Mac**, from
-`JeremysShit/election_arm`, generate the paste:
+`JeremysStuff/election_arm`, generate the paste:
 ```
 tar czf - tdm_parse.py extract_gpt.py verify_gpt.py strip_for_export.py \
   run_corpus_economy.sh corpus_progress.py \
@@ -259,7 +259,7 @@ business failing in the VM — prompt hygiene (no window id reaches the model), 
 hallucination guard, horizon inference, the schema-mixing refusal, and the export
 tripwire — all without an API key or the `openai` SDK. Run it before every transfer:
 ```
-python test_offline.py     # from JeremysShit/election_arm
+python test_offline.py     # from JeremysStuff/election_arm
 ```
 If it fails, do not paste anything into the VM.
 
@@ -551,7 +551,7 @@ python validate_kappa.py kappa  --arm economy                     # only the num
 ```
 Do NOT export `validation_sample.csv` / `validation_disagreements.csv` — they contain text.
 
-**Gold bake-off harmonization.** `main` added `JeremysShit/gold_extraction/` (16 gold
+**Gold bake-off harmonization.** `main` added `JeremysStuff/gold_extraction/` (16 gold
 pages, `eval_extraction.py`) and validated gpt-4.1/gemini for the loc/nyt sources. Our
 ProQuest arm is forced onto **gpt-4o-mini** (only proxy model; can't reach the OpenAI API
 from the VM). To get a comparable quality number, run gpt-4o-mini over `gold_pages.jsonl`

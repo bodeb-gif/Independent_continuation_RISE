@@ -41,7 +41,7 @@ take the time, and those are the point.
 Each of you makes your own copy of the blank file:
 
 ```
-cd JeremysShit/handgrade_newspapers
+cd JeremysStuff/handgrade_newspapers
 cp handgrade_BLANK.csv handgrade_vincent.csv
 cp handgrade_BLANK.csv handgrade_jeremy.csv
 ```
@@ -128,7 +128,7 @@ are worth more than notes on the easy ones.
 
 ## When you're both done
 
-From `JeremysShit/`:
+From `JeremysStuff/`:
 
 ```
 python handgrade_newspapers/kappa.py \

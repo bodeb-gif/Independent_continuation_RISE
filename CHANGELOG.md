@@ -5,7 +5,7 @@ goals, methods, what's done, what's next, and what needs a human. Update this
 alongside code changes, don't let it drift.
 
 Two arms are tracked here: **bill_arm** (primary) and the **economy arm**
-(`JeremysShit/`). The election arm has its own README and is not tracked here.
+(`JeremysStuff/`). The election arm has its own README and is not tracked here.
 
 ---
 
@@ -117,7 +117,7 @@ Two arms are tracked here: **bill_arm** (primary) and the **economy arm**
 
 ---
 
-# Economy arm (`JeremysShit/`) — Did newspapers see economic crises coming?
+# Economy arm (`JeremysStuff/`) — Did newspapers see economic crises coming?
 
 ## Goals
 
@@ -184,7 +184,7 @@ Two arms are tracked here: **bill_arm** (primary) and the **economy arm**
       one `git add .` from being committed). `claims_graded.csv` and
       `grade_run.log` are ignored while a run is in flight — a half-finished
       grading file is a partial corpus, not a result. Commit the finished one
-      deliberately: `git add -f JeremysShit/claims_graded.csv`.
+      deliberately: `git add -f JeremysStuff/claims_graded.csv`.
 
 ## Not done / next up
 
@@ -291,7 +291,7 @@ Two arms are tracked here: **bill_arm** (primary) and the **economy arm**
   range per sub-genre") — that inference is still unimplemented. Confirm the
   final distribution once the run lands, then decide: implement the mapping,
   or default vague→12 and disclose it.
-- `JeremysShit/` has no venv of its own (`test_offline.py` needs pandas; run
+- `JeremysStuff/` has no venv of its own (`test_offline.py` needs pandas; run
   it with `bill_arm/.venv` for now).
 - `famous_calls.csv` contains a row from publisher `"test paper a"` — test
   fixture data leaked into a real output file.

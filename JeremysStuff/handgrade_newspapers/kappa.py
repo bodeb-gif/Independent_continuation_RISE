@@ -9,7 +9,7 @@ Two numbers matter, and they answer different questions:
   human vs LLM     Can we trust the LLM's labels on the ~1,240 claims nobody
                    checked by hand? This is the number that goes in the paper.
 
-Usage (from JeremysShit/):
+Usage (from JeremysStuff/):
     python handgrade_newspapers/kappa.py \
         --graders handgrade_newspapers/handgrade_vincent.csv \
                   handgrade_newspapers/handgrade_jeremy.csv

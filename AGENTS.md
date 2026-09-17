@@ -14,12 +14,12 @@ evaluation (the target event is always rare).
   introduced U.S. Congressional bill becomes law, and whether national press
   coverage adds signal beyond structural features. Has its own venv, tests,
   and detailed README. Work here unless told otherwise.
-- **`JeremysShit/`** — the "economy arm": newspaper predictions of economic
+- **`JeremysStuff/`** — the "economy arm": newspaper predictions of economic
   crises (1900s LOC archives) scored against NBER/FRED and the Livingston
-  Survey of economists. See `JeremysShit/README.md`.
-- **`JeremysShit/election_arm/`** — a second arm sharing the economy arm's
+  Survey of economists. See `JeremysStuff/README.md`.
+- **`JeremysStuff/election_arm/`** — a second arm sharing the economy arm's
   design: presidential election forecasts from newspapers (1896-2008). See
-  `JeremysShit/election_arm/VINCENT_README.md`.
+  `JeremysStuff/election_arm/VINCENT_README.md`.
 
 Unless a task explicitly references the economy or election arm, assume work
 is scoped to `bill_arm/`.
