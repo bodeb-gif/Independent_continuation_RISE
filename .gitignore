@@ -34,6 +34,8 @@ Thumbs.db
 #                python src/build_page_corpus.py                (from cache/)
 # ---------------------------------------------------------------------------
 cache/
+validation/loc_review/generated/
+data/scored/proquest/*.jsonl
 **/data/raw/
 data/corpus/
 

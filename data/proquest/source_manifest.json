@@ -1,0 +1,1115 @@
+{
+  "source_commit": "774b68fb202955a83ebc035fc63b01ead725cc82",
+  "files": [
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1900.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1900.export.jsonl",
+      "git_blob": "ccf372ba70702feb9a23df2b5f2ce0b80b0c158a"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1901.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1901.export.jsonl",
+      "git_blob": "6be65861f69e6498f8740d3580d4e45f4ec45717"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1902.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1902.export.jsonl",
+      "git_blob": "e453852ed27f89b7eff7e99cc67ba955664e569b"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1903.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1903.export.jsonl",
+      "git_blob": "42124f7d1bdc8126f7a9f338d8730115abe5e804"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1904.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1904.export.jsonl",
+      "git_blob": "0ce12a58e9d473c94c14c4f942f7cf342eeb0b01"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1905.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1905.export.jsonl",
+      "git_blob": "286ed51693b0d4ac455335d52bb3a50ab8d3cbdd"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1906.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1906.export.jsonl",
+      "git_blob": "945e7ece4d213d2b597b735982046b166cfa8339"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1907.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1907.export.jsonl",
+      "git_blob": "01da6828da845fcb866633133e9469f39711abc1"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1908.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1908.export.jsonl",
+      "git_blob": "60d5c179c6ff6d4b75c4feccd76c81e0fe355242"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1909.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1909.export.jsonl",
+      "git_blob": "4912c5d1164d6c2b7b199e24d61bd58f679ed4f2"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1910.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1910.export.jsonl",
+      "git_blob": "01a84649aa91f676e651ab37bd83fa3aa999f35f"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1911.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1911.export.jsonl",
+      "git_blob": "a16eaf769a3e6b13d9ae5275df067f7239cf6317"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1912.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1912.export.jsonl",
+      "git_blob": "2d6299a2d72872244da4a370db394ef6a67b3409"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1913.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1913.export.jsonl",
+      "git_blob": "d0a6ad95b629a92f9f9a676ef9968c16fecee9ab"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1914.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1914.export.jsonl",
+      "git_blob": "f2f46391bd974892802c84a1710ab964fd33bffa"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1915.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1915.export.jsonl",
+      "git_blob": "e171ad463f90ad75edb79b676876191d656ef9e5"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1916.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1916.export.jsonl",
+      "git_blob": "f85d4862dfe3289cf03aeea26c071223b48d0378"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1917.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1917.export.jsonl",
+      "git_blob": "a81ddc4e4cb6fa76bf7c806cb20ed1b05bae2473"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1918.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1918.export.jsonl",
+      "git_blob": "7e3b763fa62f8163fed68eb3c9f52480527effe6"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1919.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1919.export.jsonl",
+      "git_blob": "8f4ccb0da9ca6b5df23deeaf5143ad6687f705b5"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1920.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1920.export.jsonl",
+      "git_blob": "c8641eed53e69573a16936666c267de47ba4ea64"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1921.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1921.export.jsonl",
+      "git_blob": "a2a116a2e00f67556ae6aab7117933c427433a6f"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1922.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1922.export.jsonl",
+      "git_blob": "955301257cb594f5b80681c55c47861245d14bbf"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1923.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1923.export.jsonl",
+      "git_blob": "dd5c8434749833bb2eb297acd92d45ca986d752a"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1924.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1924.export.jsonl",
+      "git_blob": "4d2c30e11042fa91ae6cf1ca3cfe5cc9b87b21bb"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1925.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1925.export.jsonl",
+      "git_blob": "1f787bcd83fde9950da5555d4f1256952014c23d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1926.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1926.export.jsonl",
+      "git_blob": "a1060a84c6a7bb58d45ee01d5e2706515c6db7c0"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1927.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1927.export.jsonl",
+      "git_blob": "6319aa4113585972da03dbaa5930423e5c87882e"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1928.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1928.export.jsonl",
+      "git_blob": "bfe1204e79fc9385281342249f96634dd1b6113d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1929.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1929.export.jsonl",
+      "git_blob": "400de8783cc7ab5ef8d07127aa1a36446b02e2a4"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1930.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1930.export.jsonl",
+      "git_blob": "b0b3fa38a79b5b5cf9a641dcf78658ec1b50abb4"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1931.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1931.export.jsonl",
+      "git_blob": "9a522bf30fa6bda6cda0e094f32df5337cabdba6"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1932.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1932.export.jsonl",
+      "git_blob": "ba6cd360bfcd7a0a27fd280b35a3be8d063b3689"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1933.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1933.export.jsonl",
+      "git_blob": "69b54962a1523f591fd7c505d2c6a7d63d940f0a"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1934.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1934.export.jsonl",
+      "git_blob": "caaf2a8bd95795b4c5546ab1f4bea670932c464e"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1935.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1935.export.jsonl",
+      "git_blob": "65cc741065663c4135d9f3367a0f064a514ee63d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1936.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1936.export.jsonl",
+      "git_blob": "21fdcec81098c5f18315c9e0c4eec4d051f0fdec"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1937.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1937.export.jsonl",
+      "git_blob": "d0d7218ca981517797b51469ad52aaf4377eac2d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1938.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1938.export.jsonl",
+      "git_blob": "7f0790e40fcbec3a81e8062187544793597e3f53"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1939.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1939.export.jsonl",
+      "git_blob": "5cc23e0eb781fa03e1a103d3d0215067d4e1f50b"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1940.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1940.export.jsonl",
+      "git_blob": "e973b594a91c066d977a15496c50e38340fae228"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1941.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1941.export.jsonl",
+      "git_blob": "77bd7a91e42907bfb3af164bd936b37786e80b27"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1942.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1942.export.jsonl",
+      "git_blob": "38ad240b22f6614a91c08aa0da811139e22e5cdf"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1943.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1943.export.jsonl",
+      "git_blob": "39064f4601062218f682be3f4f22ae9c2bc61e36"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1944.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1944.export.jsonl",
+      "git_blob": "ffad3e63711c3314f364cbfcb389fcf7149e3a3c"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1945.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1945.export.jsonl",
+      "git_blob": "848f934c0cf08d74f7276cf22a2d52f15a699d58"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1946.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1946.export.jsonl",
+      "git_blob": "80ccf2c8715df22fc05ae78e476ca6b7503bae0d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1947.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1947.export.jsonl",
+      "git_blob": "a646070f87bb27333a6dd776cecea871ef63a8a2"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1948.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1948.export.jsonl",
+      "git_blob": "656b922075f9855a2a3b2bef423b12310a6b7ee3"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1949.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1949.export.jsonl",
+      "git_blob": "5596c04b2b2e38b44f3a6c1ea85315e46a1a0786"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1950.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1950.export.jsonl",
+      "git_blob": "739c4f0595bf02da3ec02905cf53e7bb516a3d93"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1951.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1951.export.jsonl",
+      "git_blob": "1dc3af0d6f2696ed4dac452649811df87224f84d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1952.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1952.export.jsonl",
+      "git_blob": "9c6758a8fa0ec1b3549528416844b887767441f2"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1953.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1953.export.jsonl",
+      "git_blob": "658200794dd2d2351d36808610d91f9651ae3664"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1954.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1954.export.jsonl",
+      "git_blob": "1c60276c8bb14841a56cab8d35e32d4c7f53c549"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1955.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1955.export.jsonl",
+      "git_blob": "55fddbbcf13bf8816cd5f2dc03bb4dbcd63ca716"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1956.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1956.export.jsonl",
+      "git_blob": "6ce961ddfd973cd3ad10a2a4a39b778d0a9ca0a7"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1957.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1957.export.jsonl",
+      "git_blob": "8811afe2705c0e7e3af1574444b55c6d163c3775"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1958.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1958.export.jsonl",
+      "git_blob": "c8223d029a1999330e383153a3d57d7be534d209"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1959.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1959.export.jsonl",
+      "git_blob": "f85be20b6cd37576dd86950cc46c53df3c5bbf14"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1960.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1960.export.jsonl",
+      "git_blob": "c0e971989cd34b83c4197bfe1cb673997ee0328d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1961.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1961.export.jsonl",
+      "git_blob": "b5df3878a0d248c50a6fda1e4354e6643a940c8c"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1962.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1962.export.jsonl",
+      "git_blob": "77c01047c13e177e138bf6a50fecbc21315f2eeb"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1963.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1963.export.jsonl",
+      "git_blob": "186f039acefaaf59c17c5f9c87ac798317cfa9de"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1964.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1964.export.jsonl",
+      "git_blob": "3cdd72b9baa942a26c8c944ae50dd0c46bb99744"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1965.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1965.export.jsonl",
+      "git_blob": "f62f5659b00e9feb5e7ccecc3f4552a5360d8d4d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1966.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1966.export.jsonl",
+      "git_blob": "20d7d967288b13aa11d1c7ae6885a48ebdf52690"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1967.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1967.export.jsonl",
+      "git_blob": "93c713206774cd810c5d69bdd302262efb40d363"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1968.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1968.export.jsonl",
+      "git_blob": "301351ed57e0ead332c88fddcade2ef4d84ff3ba"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1969.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1969.export.jsonl",
+      "git_blob": "67213b9af7546a65a4a995c1e63b0b9b2aec4cc6"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1970.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1970.export.jsonl",
+      "git_blob": "614d6f6b55f60343242142c07b6dcb1100d2abc8"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1971.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1971.export.jsonl",
+      "git_blob": "4496de362737ddb9f189d02d6994e5d58875ae6b"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1972.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1972.export.jsonl",
+      "git_blob": "55679c631da374966017e6870769c85f8baf4546"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1973.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1973.export.jsonl",
+      "git_blob": "96c6f65e44bc72e3365b1927a44dafeba95376c1"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1974.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1974.export.jsonl",
+      "git_blob": "33791c53aaae18945e78e82696aaf4ba4dd83611"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1975.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1975.export.jsonl",
+      "git_blob": "47b5ce15db4af392b43ea5708322ff622d7911f9"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1976.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1976.export.jsonl",
+      "git_blob": "fc5d0499f6c4cef2cfa5da4dd2a6f17b27c8005b"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1977.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1977.export.jsonl",
+      "git_blob": "367a3b9713f41e2bcdd1af2d079cec53734bdb32"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1978.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1978.export.jsonl",
+      "git_blob": "3f76975a7b969efebde014d1486043123a24f2c4"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1979.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1979.export.jsonl",
+      "git_blob": "808b1ab255a5fb9c95a279347e12b798a6bd66b7"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1980.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1980.export.jsonl",
+      "git_blob": "bbee1797522010b035148fd7f8ae3068b4f1a1b0"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1981.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1981.export.jsonl",
+      "git_blob": "50ddbf37daf7f35c69676609943d712e287e0a6d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1982.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1982.export.jsonl",
+      "git_blob": "7bdc6853c72aa1a53202dbed21a8fe9f8d7147fc"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1983.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1983.export.jsonl",
+      "git_blob": "e21f80f99deb36812380dec80b83c36c0f9f9aeb"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1984.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1984.export.jsonl",
+      "git_blob": "21f208869d69fb9a74ffe2e93923e7a255749fd1"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1985.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1985.export.jsonl",
+      "git_blob": "10862459722190d093a936d2fb096969383463cb"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1986.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1986.export.jsonl",
+      "git_blob": "7c1734e71c9a9090e44a990bb81117a3da99c34c"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1987.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1987.export.jsonl",
+      "git_blob": "90742ba651d992d94718ab7cac18308106f8a83a"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1988.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1988.export.jsonl",
+      "git_blob": "62bd1e45fe15bf57ba084604028bda889f4f0167"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1989.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1989.export.jsonl",
+      "git_blob": "8f6b17298e3553c1885c72cf96f50aa552780a6f"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1990.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1990.export.jsonl",
+      "git_blob": "d7f348297db6ac35cc1d38a1b54f911b613a5190"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1991.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1991.export.jsonl",
+      "git_blob": "5232d3a955b47a7db682c06adcb31eac45651011"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1992.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1992.export.jsonl",
+      "git_blob": "7a4fda590a381898e03eb2461fdcebce5d707512"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1993.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1993.export.jsonl",
+      "git_blob": "71fadfec254011899ba605a5b921c4f552fd82a0"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1994.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1994.export.jsonl",
+      "git_blob": "d222316d4f5c0276c4c111dbaf505422c349c5f7"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1995.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1995.export.jsonl",
+      "git_blob": "56f2c4370c174bf82c6e7e75b06f757847602792"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1996.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1996.export.jsonl",
+      "git_blob": "c37221d9169f180bbb127525be2113f509c11b76"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1997.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1997.export.jsonl",
+      "git_blob": "70b2344d7ef3cbbf6f11f26d2b492a07c9576715"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1998.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1998.export.jsonl",
+      "git_blob": "4333ef21343be688b57bf8c4bfc44141c8364ec5"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_1999.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_1999.export.jsonl",
+      "git_blob": "ff3735ba185eaa19920754a8ac50c9a60bf2d26b"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2000.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2000.export.jsonl",
+      "git_blob": "85eef7af0678e00dae668ab844820ce490b81d60"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2001.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2001.export.jsonl",
+      "git_blob": "2051b56f0e5154dcf45816bac6ea0ea69bc51eab"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2002.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2002.export.jsonl",
+      "git_blob": "e15c1285909be5b7a8c5ec2183e80f21f9012e0d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2003.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2003.export.jsonl",
+      "git_blob": "464ac89aeb44ff3011254308eaefaf798b946c52"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2004.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2004.export.jsonl",
+      "git_blob": "424091b7231ad58913e54bea7916338c28fe747d"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2005.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2005.export.jsonl",
+      "git_blob": "c022032e0cf3f3af9d6141d07b989ad11e0368a8"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2006.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2006.export.jsonl",
+      "git_blob": "37aa341341764a7e41adefa3eca5b5ae4ed4870e"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2007.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2007.export.jsonl",
+      "git_blob": "62b09625a12382ff0be522496fbe175a81b7ffc6"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2008.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2008.export.jsonl",
+      "git_blob": "1b7007b201d9acc61b2ff346e24783c3a3b5c376"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2009.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2009.export.jsonl",
+      "git_blob": "812c9333dbdba0bdba047bdcd3c8b4b3f4c716ab"
+    },
+    {
+      "path": "data/proquest/raw/pred_proquest_economy_2010.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/predictions/pred_proquest_economy_2010.export.jsonl",
+      "git_blob": "c6d5271bd9d2ca1a66795d1eedb1403f7cd795c3"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1900.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1900.export.jsonl",
+      "git_blob": "33185789df4fd4f8aaf961f0a7fcf9af5d3fb19f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1901.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1901.export.jsonl",
+      "git_blob": "f1f37aedc4b928e76958d15fed50f0b8ec69675c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1902.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1902.export.jsonl",
+      "git_blob": "485f8eec711937c120b970a96a42fc433cdf37c1"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1903.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1903.export.jsonl",
+      "git_blob": "809ad040e9311da501559183f29a4aa58864d447"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1904.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1904.export.jsonl",
+      "git_blob": "8498d3cc9c24de85076a3f4273ec5a91ee324a76"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1905.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1905.export.jsonl",
+      "git_blob": "e2c3f01bce688ac318fa454210568ae6e90d421f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1906.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1906.export.jsonl",
+      "git_blob": "56c543a1454936742dab2d210aa69db2b7351a9a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1907.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1907.export.jsonl",
+      "git_blob": "35cedbdbd11b251a4af5ed350b0c66ae8b4d3a34"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1908.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1908.export.jsonl",
+      "git_blob": "a82f26179882de14069f2ad6f07a8202b7853161"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1909.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1909.export.jsonl",
+      "git_blob": "617d8989b2c124e75c1937a4197951dcecaf424f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1910.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1910.export.jsonl",
+      "git_blob": "a1cff1fed7bc7133ef5e02af8b3c869441c77a9c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1911.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1911.export.jsonl",
+      "git_blob": "3d5cadecea4543b9e27ccaa36c55e2d5d1a58fe4"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1912.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1912.export.jsonl",
+      "git_blob": "71443a6126814ce44ac04fba5da50547cad5d498"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1913.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1913.export.jsonl",
+      "git_blob": "53be58757d55849f94cec5a955feaf4573ddd1a5"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1914.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1914.export.jsonl",
+      "git_blob": "9d2be9c39dcb6eb9aed91b5021951e07fdfdb279"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1915.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1915.export.jsonl",
+      "git_blob": "086d9766b321b461a73d8e4f40d13e1d5b55bc8a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1916.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1916.export.jsonl",
+      "git_blob": "dbeb5189b397c8e4e1fee6bb94deceb58ce38b19"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1917.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1917.export.jsonl",
+      "git_blob": "5a8ab66fbfac4b4cc15b3b03581023908551825e"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1918.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1918.export.jsonl",
+      "git_blob": "4b1782c8d46371f082fffd59a32af722fcac5203"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1919.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1919.export.jsonl",
+      "git_blob": "345a8efe0e2e527d21a2bb31446be044bfae1115"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1920.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1920.export.jsonl",
+      "git_blob": "fd5f568c34109abdae21e01662eeaa55b7c1cc92"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1921.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1921.export.jsonl",
+      "git_blob": "5c707fde90344904b8e2bcc9b8970ee6a45fb89c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1922.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1922.export.jsonl",
+      "git_blob": "42e204aa7a1076ae05b386647faa63ea9b04dcde"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1923.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1923.export.jsonl",
+      "git_blob": "05eb8f72da3e341d8242c3e1ff470e4f4ecc9e4a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1924.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1924.export.jsonl",
+      "git_blob": "af53f6a9b1dca8cb93b49da2324788c052fc8dcb"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1925.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1925.export.jsonl",
+      "git_blob": "8495465cde846dd7063e4118ff68155f565cd486"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1926.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1926.export.jsonl",
+      "git_blob": "9fa656069910b866809a4ac5bc905b67212c6480"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1927.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1927.export.jsonl",
+      "git_blob": "5caf7a5e01f5ca6e9a35095cabba60188aa73c1e"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1928.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1928.export.jsonl",
+      "git_blob": "7a240dd9fe6341fb56f7b26d9d4b8e48cb877916"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1929.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1929.export.jsonl",
+      "git_blob": "a7c50f0fcfa86a1bbb3cec19168263d88fe22cdd"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1930.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1930.export.jsonl",
+      "git_blob": "c12457acaaaada831f47dd036a234607ef38ab01"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1931.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1931.export.jsonl",
+      "git_blob": "92297cfd7f11cbf630e54e10c07e0f82e2907f35"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1932.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1932.export.jsonl",
+      "git_blob": "1841c6bd2057af1cad7814da3747920f4fa237f3"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1933.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1933.export.jsonl",
+      "git_blob": "598caac09aeefaf2ce44c4c8ba5143a9dca2f534"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1934.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1934.export.jsonl",
+      "git_blob": "824f654eb9028e57a4304c2f5bed09d4db29d370"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1935.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1935.export.jsonl",
+      "git_blob": "35b041ef3e5f8af1e2ecb0ab41cd285f342aeb51"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1936.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1936.export.jsonl",
+      "git_blob": "fac41002e3bc2eb8838218bdb0e0cd2b21b0c70f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1937.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1937.export.jsonl",
+      "git_blob": "8d15204cda8e2e2fff607342ec8a1fd45fe7c88a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1938.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1938.export.jsonl",
+      "git_blob": "c3b9d7cd0540dcf8dcc0fb1db6dc6632d1e72e94"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1939.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1939.export.jsonl",
+      "git_blob": "44411096b5ae1fafb0bda762604b0ccbd4a4c6aa"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1940.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1940.export.jsonl",
+      "git_blob": "4593da479f5cfe12446c1e590601cc7de4d9b53c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1941.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1941.export.jsonl",
+      "git_blob": "37719d6e6cf1c5e87c8add2e0caf6cd055a0d99b"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1942.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1942.export.jsonl",
+      "git_blob": "1eb64d237a5bbd614962022817350f45c0babc01"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1943.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1943.export.jsonl",
+      "git_blob": "31c94f84b2504f88f696a1a0a3c46c6430ba3859"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1944.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1944.export.jsonl",
+      "git_blob": "429f570600004687b1ea45337a8a696868394707"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1945.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1945.export.jsonl",
+      "git_blob": "45dce52380951c04e75544d6960687e5307529d8"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1946.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1946.export.jsonl",
+      "git_blob": "95b3412f7d18ecc710d1aebc39dfeb79e792e984"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1947.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1947.export.jsonl",
+      "git_blob": "6ad97fc55a0b0ca6754ce03215200ebaeeda21bb"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1948.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1948.export.jsonl",
+      "git_blob": "e079dd28e8935d759ef22c0976174bcdfaab4c9f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1949.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1949.export.jsonl",
+      "git_blob": "a0f1018c54d59183e8b3c9555fd7e347d34f93d4"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1950.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1950.export.jsonl",
+      "git_blob": "37375976ccc661478e1c0f58b7f2a0c9f9614179"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1951.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1951.export.jsonl",
+      "git_blob": "0d415ef51c0ac5496e0ead6dadd3f9995a90f17d"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1952.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1952.export.jsonl",
+      "git_blob": "3c0bbca3aa112f31f77f3800085ab88dd54c34f2"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1953.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1953.export.jsonl",
+      "git_blob": "654feaa0b50e65f3323be89f8b778a28a9053d7b"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1954.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1954.export.jsonl",
+      "git_blob": "772b32f32cd541d48e9b0e7edae522c066c8a0b6"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1955.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1955.export.jsonl",
+      "git_blob": "a53798af1f3abacaf5e38f2cb114c6ceaa2904a5"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1956.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1956.export.jsonl",
+      "git_blob": "3c235e9efff6c38eae09307ac667325593af0943"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1957.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1957.export.jsonl",
+      "git_blob": "dce64781400c2d7adad772f00682e2c3a2497f2e"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1958.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1958.export.jsonl",
+      "git_blob": "ab6872b1f3c368a81aa3c754be49afaa63b4d135"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1959.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1959.export.jsonl",
+      "git_blob": "6ef3385da39de88b99ef134e8fd2fdd851ed0f2f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1960.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1960.export.jsonl",
+      "git_blob": "d8ab3761b7c859a6f8c011133431fd945e0cab93"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1961.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1961.export.jsonl",
+      "git_blob": "a3e27a09789f6f706e2bcdafdaa5ee67d4d64f06"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1962.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1962.export.jsonl",
+      "git_blob": "bf20899f431d8004d117d21fa186e24c11aff9db"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1963.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1963.export.jsonl",
+      "git_blob": "98d84ea61c3bb45210b004783824c7a04522fcd1"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1964.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1964.export.jsonl",
+      "git_blob": "95eaf8b1b392b2c5038b64cc1bd23c4204036e9c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1965.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1965.export.jsonl",
+      "git_blob": "e7a481acbe15a55f381ab4d46b5af2f534101a17"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1966.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1966.export.jsonl",
+      "git_blob": "85176c619908f1795c758606f73d443963e4db17"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1967.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1967.export.jsonl",
+      "git_blob": "0de0b253c67f8807c68cf300b51271fbd2beb3f3"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1968.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1968.export.jsonl",
+      "git_blob": "6f8a6c18dfe8e93aa0baf413f76ae49f1c8a495a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1969.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1969.export.jsonl",
+      "git_blob": "9423942cca1196ebc813bcf4dd5c85995b26c7c5"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1970.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1970.export.jsonl",
+      "git_blob": "c926f652779bdf3f1eb4f2f2f84c36ae761d11fc"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1971.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1971.export.jsonl",
+      "git_blob": "e2f60cc0f1721cb3a8d0ffdf754a9cc8bcff91f3"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1972.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1972.export.jsonl",
+      "git_blob": "e9b7c9c8da7818da42b820e4fd0098c6a9be4f93"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1973.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1973.export.jsonl",
+      "git_blob": "0e1c8af20161965d20817689b2b95828953a0ab6"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1974.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1974.export.jsonl",
+      "git_blob": "1dc6f814ebefa96833ad9bf7e8ad8d5469e16ccb"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1975.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1975.export.jsonl",
+      "git_blob": "c83706819195e3beb674ff1e804484779767974b"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1976.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1976.export.jsonl",
+      "git_blob": "54d1ea2b38a1f19a92d567ca83c5d8fdf238fe43"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1977.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1977.export.jsonl",
+      "git_blob": "720e4e78195b7b845712a134c60ea5ea3f76b076"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1978.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1978.export.jsonl",
+      "git_blob": "b8480874923bcb5c115489317e8ce38bf72f0dc3"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1979.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1979.export.jsonl",
+      "git_blob": "3a131efbe81f7e54b390db3d1092656601d5f24e"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1980.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1980.export.jsonl",
+      "git_blob": "81764c218a494fd0c0c57d916713433b2632b127"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1981.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1981.export.jsonl",
+      "git_blob": "136aa5ab415390ab2c988f70fe84d199f987d99b"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1982.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1982.export.jsonl",
+      "git_blob": "faf3db6899a8c8e73bd1e5d4a78bf1dd5af7c503"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1983.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1983.export.jsonl",
+      "git_blob": "2ae95cfdaae0d3e9b214ec4adfa4def8964b411c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1984.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1984.export.jsonl",
+      "git_blob": "e0e48a11d423c65dcb341e288a57c72d36f8a589"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1985.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1985.export.jsonl",
+      "git_blob": "7f2db0f686f391b040285e50b5ec2004dce4dff4"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1986.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1986.export.jsonl",
+      "git_blob": "e9d1a758022d5bf0da8f04f4a94f3f76a9826d78"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1987.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1987.export.jsonl",
+      "git_blob": "b77653d7ff6b2da489fa52ba302f2dd75d13b559"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1988.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1988.export.jsonl",
+      "git_blob": "2f59f6d2157f4ceacd38add0ef2c3f3c61246e19"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1989.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1989.export.jsonl",
+      "git_blob": "c1661fc4f66994009859d9a168f174f48c565640"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1990.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1990.export.jsonl",
+      "git_blob": "e9499bcf54928c64c8b68e8b1215c4561c92869f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1991.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1991.export.jsonl",
+      "git_blob": "19547089966e75b9a3934284789250c0bfe1e9cc"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1992.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1992.export.jsonl",
+      "git_blob": "7711aee4c9ccb4c3d7d6bab2fd58371fbc170d1b"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1993.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1993.export.jsonl",
+      "git_blob": "b7b2cb66fd4adca0ce6eaafeef03bb289c549634"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1994.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1994.export.jsonl",
+      "git_blob": "2814c129675cbf701f44fa62fffd06a5dd4f604c"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1995.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1995.export.jsonl",
+      "git_blob": "d582fd0a3841fb6072b59d208d227bd58a3d03f8"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1996.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1996.export.jsonl",
+      "git_blob": "55c5111eadd77955ddd3531b24a8d62754c33473"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1997.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1997.export.jsonl",
+      "git_blob": "86a8f7cc1dd37a5636189880e4a74b8879522b74"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1998.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1998.export.jsonl",
+      "git_blob": "5533cceda4ba33baf89ac39f2788a2618cfb4845"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_1999.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_1999.export.jsonl",
+      "git_blob": "7f646dbf74755f6a655c796f94867b64ee77fb63"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2000.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2000.export.jsonl",
+      "git_blob": "4c599f1b4b3fa1f6c9517dfafb8c8ed5aab7719f"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2001.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2001.export.jsonl",
+      "git_blob": "fc3c511fa5d0f0f212fee76790646648c397fe9a"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2002.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2002.export.jsonl",
+      "git_blob": "8c9d8831a19a5e1bba8d35ad2fbab3c274a456c7"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2003.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2003.export.jsonl",
+      "git_blob": "9b128f7d09845281e9278a4e390835f655a6bcef"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2004.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2004.export.jsonl",
+      "git_blob": "279bb4427e680c5ad888fd205c144558abbac5e4"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2005.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2005.export.jsonl",
+      "git_blob": "7284bf86a8f3bb0e6a567a688b1f86fe9f949560"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2006.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2006.export.jsonl",
+      "git_blob": "bce39f4436a64dd59547be63ed12010db7b84443"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2007.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2007.export.jsonl",
+      "git_blob": "9097c319d01eade62ceec25e578c9678cdaa4237"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2008.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2008.export.jsonl",
+      "git_blob": "0053b9d9d8061edafddb583e0f008b1e9f9bccd9"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2009.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2009.export.jsonl",
+      "git_blob": "af3f684698c587e0f8e8cc323bb1dfdd108c0861"
+    },
+    {
+      "path": "data/proquest/verified/pred_proquest_economy_2010.export.jsonl",
+      "source_path": "JeremysStuff/election_arm/data/verified/pred_proquest_economy_2010.export.jsonl",
+      "git_blob": "485d795707e800da143de1c625e42d2c49e9e835"
+    }
+  ]
+}

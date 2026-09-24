@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOC economic forecast review</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f6fa;--panel:#fff;--ink:#17212e;--muted:#536272;--line:#d3dce8;--accent:#175fa7;--accent2:#e8f1fb;--mark:#ffe68a;--good:#1f805a}
+@media(prefers-color-scheme:dark){:root{--bg:#111923;--panel:#1c2632;--ink:#eaf0f7;--muted:#aab8c6;--line:#3a4b5d;--accent:#79b6f1;--accent2:#233d57;--mark:#695923;--good:#7ed6a7}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:7px;padding:7px 10px}button:hover,button:focus-visible{border-color:var(--accent)}button.selected{background:var(--accent);color:#fff;border-color:var(--accent)}button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}header{position:sticky;top:0;z-index:3;display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding:9px 15px;background:var(--panel);border-bottom:1px solid var(--line)}header strong{margin-right:8px}.count{color:var(--muted);font-size:13px}.progress{height:6px;background:var(--line);width:115px;border-radius:5px;overflow:hidden}.progress span{display:block;height:100%;background:var(--good)}main{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,410px);gap:15px;max-width:1500px;margin:auto;padding:15px}@media(max-width:950px){main{grid-template-columns:1fr}}.card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:14px;margin-bottom:13px}.card h2{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}.meta{color:var(--muted);font-size:13px}.quote{white-space:pre-wrap;overflow-wrap:anywhere;border-left:4px solid var(--accent);padding:8px 12px;background:var(--accent2);margin:9px 0}.ocr{font:13px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:calc(100vh - 245px);overflow:auto;padding:9px;border:1px solid var(--line);border-radius:7px}.ocr mark{background:var(--mark);color:var(--ink);font-weight:700}.sticky{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 77px);overflow:auto}.field{margin:0 0 14px}.field legend{font-weight:650;margin-bottom:6px}.options{display:flex;flex-wrap:wrap;gap:6px}.options button{font-size:13px;text-align:left}.hint{font-size:12px;color:var(--muted);margin:5px 0}.nav{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.status{color:var(--good);font-weight:650}.warn{color:#ad5d17}textarea{width:100%;min-height:62px;resize:vertical;border:1px solid var(--line);border-radius:7px;padding:7px;background:var(--panel);color:var(--ink)}a{color:var(--accent)}kbd{border:1px solid var(--line);border-radius:4px;padding:0 4px;color:var(--muted)}#msg{color:var(--muted);font-size:12px}#intro{max-width:790px;margin:10px auto 0;padding:0 15px}#intro details{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px}#intro summary{cursor:pointer;font-weight:650}
+</style>
+</head>
+<body>
+<header>
+  <strong>LOC economic forecast review</strong><span id="reviewer" class="count"></span>
+  <span class="progress"><span id="progressbar"></span></span><span id="count" class="count"></span>
+  <button id="export">Export JSONL</button><button id="import">Import JSONL</button>
+  <input id="importfile" type="file" accept=".jsonl,.ndjson,.txt" hidden>
+  <span id="msg" role="status"></span>
+</header>
+<div id="intro"><details><summary>Instructions and keyboard shortcuts</summary>
+<p>Read the quote in its full newspaper page. Decide whether the quoted words are really present, whether they make a falsifiable forecast about future economic conditions, and how you would interpret the fields. OCR errors are common. Treat the highlighted span as a locator, then read around it. If no span was found, locate the quote manually.</p>
+<p>Choose your own labels before comparing them with machine labels in the separate manifest. Rejected claims need only the first two judgments and a note if helpful. Use <kbd>1</kbd>–<kbd>9</kbd> for the first unanswered question, <kbd>Enter</kbd> to save and advance, and <kbd>←</kbd>/<kbd>→</kbd> to navigate. Autosave stays in this browser. Export a backup regularly; import restores an export from this exact build.</p>
+<p>This is LOC extraction validation. These judgments are not ProQuest outcome observations. The source OCR is embedded only in this local file; exported answers contain IDs and judgments, not the page text.</p>
+</details></div>
+<main id="app"></main>
+<script>
+const DATA = __REVIEW_DATA__;
+const KEY = 'loc-review::' + DATA.build_id + '::' + DATA.reviewer;
+const FIELDS = [
+  {id:'anchored',prompt:'Can you locate these quoted words on the page?',options:[['yes','Yes'],['no','No'],['unclear','Unclear / OCR damage']]},
+  {id:'forecast',prompt:'Does the quoted passage make a real future economic forecast?',options:[['yes','Yes'],['no','No'],['unclear','Unclear']]},
+  {id:'topic',prompt:'Main economic topic',options:[['general_business','Business conditions'],['prices','Prices'],['employment','Employment'],['markets','Markets'],['other','Other economic topic'],['unclear','Unclear']]},
+  {id:'scope',prompt:'Geographic scope of the forecast',options:[['national','United States'],['regional','Region or state'],['local','City or community'],['foreign','Outside United States'],['unclear','Unclear']]},
+  {id:'horizon',prompt:'Forecast horizon',options:[['explicit','Explicit time stated'],['vague','Future, time vague'],['unclear','Unclear']]}
+];
+let state;
+try { state = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (_) { state = null; }
+if (!state || state.build_id !== DATA.build_id) state = {build_id:DATA.build_id,cur:0,answers:{}};
+const app=document.getElementById('app');
+const esc=s=>String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));document.getElementById('msg').textContent='Saved in this browser';}catch(e){document.getElementById('msg').textContent='Autosave failed: '+e.message;}}
+function answer(item){return state.answers[item.unit_id] ||= {unit_id:item.unit_id,build_id:DATA.build_id,annotator_id:DATA.reviewer,committed:false};}
+function valid(a){if(!a.anchored || !a.forecast)return false;if(a.forecast!=='yes')return true;return !!(a.topic && a.scope && a.horizon && a.direction);}
+function directionField(topic){
+  if(topic==='prices')return {id:'direction',prompt:'Predicted price direction',options:[['up','Prices rise'],['down','Prices fall'],['flat','No material change'],['unclear','Unclear']]};
+  if(topic==='employment')return {id:'direction',prompt:'Predicted unemployment direction',options:[['up','Unemployment rises'],['down','Unemployment falls'],['flat','No material change'],['unclear','Unclear']]};
+  return {id:'direction',prompt:'Predicted economic direction',options:[['improve','Improves'],['worsen','Worsens'],['no_change','No material change'],['unclear','Unclear']]};
+}
+function visibleFields(a){return a.forecast==='yes'?[...FIELDS,directionField(a.topic)]:FIELDS.slice(0,2);}
+function fieldHTML(field,a){return '<fieldset class="field"><legend>'+esc(field.prompt)+'</legend><div class="options">'+field.options.map(([val,label],i)=>'<button type="button" data-field="'+field.id+'" data-value="'+esc(val)+'" class="'+(a[field.id]===val?'selected':'')+'">'+(i+1)+'. '+esc(label)+'</button>').join('')+'</div></fieldset>';}
+function render(){
+  const item=DATA.items[state.cur], a=answer(item), page=DATA.pages[item.page_id];
+  let body=esc(page.ocr_text);
+  if(item.span){const [s,e]=item.span;body=esc(page.ocr_text.slice(0,s))+'<mark id="focus">'+esc(page.ocr_text.slice(s,e))+'</mark>'+esc(page.ocr_text.slice(e));}
+  const url=page.source_page_id && /^https?:\/\//.test(page.source_page_id)?'<a href="'+esc(page.source_page_id)+'" target="_blank" rel="noopener">LOC source page ↗</a>':'';
+  const locator=item.span_kind==='exact'?'Full quote located in OCR. Read nearby text for context.':item.span_kind==='partial'?'Partial text match only. Read around the highlight and confirm whether the full quote is really on this page.':'No reliable match found. Locate the quote manually and mark whether it is anchored.';
+  const left='<section><div class="card"><h2>Newspaper page</h2><div class="meta">'+esc(item.publisher)+' · '+esc(item.date)+' · '+url+'</div><p class="hint">'+locator+'</p><button id="jump" type="button">Jump to quote</button><div class="ocr" id="ocr">'+body+'</div></div></section>';
+  const right='<aside class="sticky"><div class="card"><h2>Claim '+(state.cur+1)+' of '+DATA.items.length+'</h2><div class="quote">'+esc(item.quote)+'</div><div class="hint">Machine labels are withheld until after your independent review.</div></div><div class="card">'+visibleFields(a).map(f=>fieldHTML(f,a)).join('')+(a.horizon==='explicit'&&a.forecast==='yes'?'<label>Time words or months, if clear <input id="horizon_detail" type="text" value="'+esc(a.horizon_detail||'')+'"></label>':'')+'<label>Review note (optional)<textarea id="note">'+esc(a.note||'')+'</textarea></label><div class="nav"><button id="previous" type="button" '+(state.cur===0?'disabled':'')+'>← Previous</button><button id="commit" class="primary" type="button">'+(a.committed?'Update review':'Save review')+'</button><button id="next" type="button" '+(state.cur===DATA.items.length-1?'disabled':'')+'>Next →</button></div><p class="hint">'+(a.committed?'<span class="status">Reviewed · editable</span>':'Complete the required questions, then save.')+'</p></div></aside>';
+  app.innerHTML=left+right;
+  app.querySelectorAll('[data-field]').forEach(btn=>btn.onclick=()=>{const field=btn.dataset.field,val=btn.dataset.value;if(field==='topic'&&a.topic!==val)delete a.direction;if(field==='forecast'&&val!=='yes'){['topic','scope','horizon','horizon_detail','direction'].forEach(k=>delete a[k]);}a[field]=val;a.committed=false;save();render();});
+  document.getElementById('note').oninput=e=>{a.note=e.target.value;save();};
+  const hd=document.getElementById('horizon_detail');if(hd)hd.oninput=e=>{a.horizon_detail=e.target.value;save();};
+  document.getElementById('commit').onclick=commit;
+  document.getElementById('previous').onclick=()=>go(state.cur-1);
+  document.getElementById('next').onclick=()=>go(state.cur+1);
+  document.getElementById('jump').onclick=()=>{const target=document.getElementById('focus');if(target)target.scrollIntoView({behavior:'smooth',block:'center'});else document.getElementById('ocr').scrollIntoView({behavior:'smooth'});};
+  const done=DATA.items.filter(i=>state.answers[i.unit_id]?.committed).length;
+  document.getElementById('reviewer').textContent='Reviewer: '+DATA.reviewer;
+  document.getElementById('count').textContent=done+' / '+DATA.items.length+' reviewed';
+  document.getElementById('progressbar').style.width=(100*done/DATA.items.length)+'%';
+  if(item.span)setTimeout(()=>{const target=document.getElementById('focus');if(target)target.scrollIntoView({block:'center'});},0);
+}
+function commit(){const item=DATA.items[state.cur],a=answer(item);if(!valid(a)){alert('Please answer the required questions first.');return;}a.committed=true;a.timestamp=new Date().toISOString();save();if(state.cur<DATA.items.length-1)go(state.cur+1);else render();}
+function go(index){if(index<0||index>=DATA.items.length)return;state.cur=index;save();window.scrollTo(0,0);render();}
+function exportJSONL(){const done=DATA.items.map(i=>state.answers[i.unit_id]).filter(a=>a?.committed);if(!done.length){alert('No saved reviews yet.');return;}const partial=done.length<DATA.items.length;if(partial&&!confirm('Export '+done.length+' of '+DATA.items.length+' reviews as a marked partial file?'))return;const lines=done.map(a=>JSON.stringify({...a,partial,n_committed:done.length,n_total:DATA.items.length}));const blob=new Blob([lines.join('\n')+'\n'],{type:'application/x-ndjson'});const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='loc_review_'+DATA.reviewer+'_'+DATA.build_id+(partial?'_partial':'')+'.jsonl';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);}
+document.getElementById('export').onclick=exportJSONL;
+document.getElementById('import').onclick=()=>document.getElementById('importfile').click();
+document.getElementById('importfile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const rows=file? (await file.text()).split(/\r?\n/).filter(Boolean).map(JSON.parse):[];const ids=new Set(DATA.items.map(i=>i.unit_id));if(!rows.length||rows.some(r=>r.build_id!==DATA.build_id||r.annotator_id!==DATA.reviewer||!ids.has(r.unit_id)))throw Error('File does not belong to this review build or reviewer');if(!confirm('Import '+rows.length+' saved reviews? Matching items will replace browser drafts.'))return;rows.forEach(r=>state.answers[r.unit_id]=r);save();render();}catch(error){alert('Import failed: '+error.message);}e.target.value='';};
+document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();go(state.cur+1);}else if(e.key==='ArrowLeft'){e.preventDefault();go(state.cur-1);}else if(e.key==='Enter'){e.preventDefault();commit();}else if(/^[1-9]$/.test(e.key)){const a=answer(DATA.items[state.cur]);const field=visibleFields(a).find(f=>!a[f.id]);const option=field?.options[Number(e.key)-1];if(option){if(field.id==='topic'&&a.topic!==option[0])delete a.direction;if(field.id==='forecast'&&option[0]!=='yes'){['topic','scope','horizon','horizon_detail','direction'].forEach(k=>delete a[k]);}a[field.id]=option[0];a.committed=false;save();render();}}});
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "purpose": "LOC extraction recall model-reference packet",
+  "population_label": "partial 103-page shard pilot",
+  "input_paths": [
+    "/Users/bodebosell/Documents/GitHub/datascience-rise-practicum/data/monthly/pages_monthly.shard1of153.jsonl"
+  ],
+  "available_pages": 103,
+  "sampled_pages": 24,
+  "selection_probability_within_supplied_pages": 0.23300970873786409,
+  "seed": 20260924,
+  "sorted_page_ids_sha256": "37b8eb9492292dd3f95f9c33b0c123850d3848bc3e8d55503c5ab0943fd65276",
+  "sampled_page_ids": [
+    "/service/ndnp/ak/batch_ak_herring_ver01/data/sn83045499/00393342390/1939112701/0597.xml",
+    "/service/ndnp/au/batch_au_ikenberry_ver01/data/sn84020645/00517018144/1926072701/0430.xml",
+    "/service/ndnp/deu/batch_deu_greenville_ver01/data/sn85042354/00383342958/1917022701/1174.xml",
+    "/service/ndnp/dlc/batch_dlc_bravo_ver03/data/sn84026749/100492234/1905092601/0590.xml",
+    "/service/ndnp/dlc/batch_dlc_continental_ver02/data/sn83045433/00294558123/1914012101/0336.xml",
+    "/service/ndnp/dlc/batch_dlc_erwitt_ver01/data/sn82016181/00529045566/1923043003/1053.xml",
+    "/service/ndnp/dlc/batch_dlc_frontier_ver01/data/sn83045433/0023728883A/1915102401/0077.xml",
+    "/service/ndnp/dlc/batch_dlc_mark_ver01/data/sn82016181/00516996432/1935080501/1003.xml",
+    "/service/ndnp/dlc/batch_dlc_nichols_ver02/data/sn84026749/00222254085/1924032601/0881.xml",
+    "/service/ndnp/dlc/batch_dlc_parsifal_ver01/data/sn83045462/00280608634/1957103001/1252.xml",
+    "/service/ndnp/gu/batch_gu_cthulhu_ver03/data/sn82015425/00529040374/1936031301/0495.xml",
+    "/service/ndnp/iahi/batch_iahi_feebas_ver01/data/sn87058308/00340584156/1914062501/0118.xml",
+    "/service/ndnp/mimtptc/batch_mimtptc_gwinn_ver01/data/sn88063294/00340588642/1944011001/0634.xml",
+    "/service/ndnp/mthi/batch_mthi_fox_ver01/data/sn85053327/00295860091/1902031501/0176.xml",
+    "/service/ndnp/mthi/batch_mthi_ivy_ver01/data/sn83004278/00340582081/1962041801/0246.xml",
+    "/service/ndnp/mthi/batch_mthi_kelseya_ver02/data/sn84036008/00212476559/1903011301/0031.xml",
+    "/service/ndnp/nn/batch_nn_ehrlich_ver02/data/sn83030272/00206539963/1913080301/0708.xml",
+    "/service/ndnp/ohi/batch_ohi_kaffirlily_ver01/data/sn82007637/00340580369/1949040801/0149.xml",
+    "/service/ndnp/okhi/batch_okhi_foss_ver01/data/sn85042303/00200296771/1915043001/0922.xml",
+    "/service/ndnp/pst/batch_pst_geary_ver01/data/sn83045211/00237287812/1918121101/0957.xml",
+    "/service/ndnp/scu/batch_scu_dragonfruit_ver01/data/sn87065702/00516991148/1921120101/0757.xml",
+    "/service/ndnp/sdhi/batch_sdhi_honeydew_ver01/data/sn99068086/00332899995/1907062001/0312.xml",
+    "/service/ndnp/txdn/batch_txdn_crane_ver01/data/sn86089568/00517176710/1938082101/0553.xml",
+    "/service/ndnp/wa/batch_wa_hemlock_ver02/data/sn87093407/00211107509/1910112901/0679.xml"
+  ],
+  "source_sha256": {
+    "/Users/bodebosell/Documents/GitHub/datascience-rise-practicum/data/monthly/pages_monthly.shard1of153.jsonl": "306507235d28e817330daa441e980a1c5812ad0275356ee9bfd8cc4d7218e926"
+  },
+  "model_predictions_in_packet": false
+}

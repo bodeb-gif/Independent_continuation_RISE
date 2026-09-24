@@ -1,5 +1,39 @@
 # A Historical Analysis of Newspaper and Economic Forecasts Incorporating Machine Learning
 
+**Active analysis: annual ProQuest claims only, 1900–2010.** See
+[`docs/PROQUEST_ANALYSIS.md`](docs/PROQUEST_ANALYSIS.md). LOC pages and claims are
+reserved for extraction validation. The LOC findings below describe the earlier
+poster analysis and are not results for the ProQuest corpus.
+
+For LOC source validation, open the [claim review page](validation/loc_review/loc_claim_review.html)
+or follow the [recall handoff](validation/loc_review/README.md). These tools keep
+LOC labels separate from the ProQuest outcome analysis.
+
+First ProQuest descriptive results, without ML:
+[`report`](data/scored/proquest/descriptive/report.html) ·
+[`methods and findings`](data/scored/proquest/descriptive/report.md).
+Rebuild with `python src/proquest_descriptive.py` after installing
+`requirements-proquest.txt`.
+
+Additional descriptive analyses:
+[`follow-up report`](data/scored/proquest/followups/report.html) ·
+[`findings and methods`](data/scored/proquest/followups/report.md).
+Rebuild with `python src/proquest_followups.py` after generating the first report.
+Includes warning tradeoffs and timing, historical consensus, explicit horizons,
+publisher specialties and stability, and experts versus journalists.
+
+2008 crisis and 2009 forecast reversal:
+[`detailed report`](data/scored/proquest/crisis_2008/report.html) ·
+[`tables and methods`](data/scored/proquest/crisis_2008/report.md).
+Rebuild with `python src/proquest_2008.py` after generating the descriptive report.
+
+First ProQuest neural experiment:
+[`GRU RNN report`](data/scored/proquest/rnn/report.html) ·
+[`training script`](src/proquest_rnn.py).
+Predicts claim correctness from metadata and 12 earlier months of forecast
+patterns, with purged chronological splits and logistic baselines. Install
+`requirements-proquest-rnn.txt`, then run `python src/proquest_rnn.py`.
+
 **BU RISE Practicum — Data Science.**
 Bode Bosell, Jeremy Liu, Vincent Wang (equal contribution) · mentor Eugene Pinsky,
 Boston University.

@@ -1,0 +1,4 @@
+-r requirements-proquest.txt
+scikit-learn>=1.5
+torch>=2.6
+joblib>=1.4

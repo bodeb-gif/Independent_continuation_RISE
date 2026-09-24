@@ -1,5 +1,170 @@
 # Project Log — RISE research arms
 
+## 2026-09-24 — LOC validation reviewer and recall handoff
+
+- Added a standalone HTML reviewer for 120 LOC claims linked to 62 locally
+  available OCR pages. It shows full page context with quote locators, records
+  independent source/forecast/field judgments, autosaves, supports keyboard
+  navigation, and exports/imports JSONL. Machine labels stay in a separate
+  manifest. Generated page and manifest are committed for immediate review.
+- Added a blinded 24-page LOC recall pilot packet from the only locally
+  available 103-page monthly shard, a sampling manifest, an exact one-row-per-
+  page output contract for another model, and one-to-one matching code.
+  Model-reference coverage remains distinct from human-adjudicated recall.
+- The local LOC page set is partial. The builder accepts complete corpus shards
+  when available and records input hashes and within-supplied-page sampling
+  probabilities. LOC validation remains separate from ProQuest outcome analysis.
+
+## 2026-09-17 — ProQuest VM daily-quota retry patch
+
+- Added `scripts/proquest_enable_quota_wait.py`, a backup-preserving installer
+  for the existing VM corpus runner. Both extraction and verification wait an
+  hour on daily-quota exit code 2 and resume the same year until quota returns.
+  Other failures retain existing handling; the retry interval is configurable.
+- Documented installation and modern-extension launch commands. Prepared
+  locally; no remote VM modification or API requests performed.
+- Five checks exercise both stages, repeated limits, other errors, backups,
+  idempotence and unknown runner rejection. Validated patch and Bash syntax
+  against a temporary copy of the actual runner source.
+
+## 2026-09-17 — ProQuest forecasts around 2008
+
+- Added `src/proquest_2008.py`, a descriptive audit of verified annual claims
+  around the crisis, with three charts, reproducible CSVs and a standalone
+  report under `data/scored/proquest/crisis_2008/`. No ML or LOC claims.
+- Pooled correctness increases 22.5 points in 2008 to 64.3%, then drops 27.7
+  points in 2009 to 36.6%. Business and employment drive the peak; price
+  correctness falls to 15.1%. Direction tables distinguish optimistic misses
+  during contraction from pessimistic false alarms at recovery endpoints.
+- Checked equal article weights, grounded/stated horizons, common publishers,
+  exact horizon matching and alternative flat bands/default horizons. Added
+  exact topic-mix accounting, source/reference hashes and endpoint examples.
+- Interpretation distinguishes publication dates from later horizon outcomes,
+  successful direction calls from recession-onset foresight, and aggregate
+  changes from individual forecast behavior. Query selection and unavailable
+  quotes prevent an unbiased attention estimate or causal narrative.
+- Validation: reconciled cohort totals, topic rates, direction confusion
+  counts and equal-article results against the original saved claim scores;
+  checked decomposition with known-answer fixtures, all sensitivity settings,
+  provenance and chart embedding. Visually inspected all three charts. Main
+  suites pass (97 offline, 33 scoring, 33 forecast checks).
+
+## 2026-09-16 — First ProQuest RNN experiment
+
+- Added `src/proquest_rnn.py` and `requirements-proquest-rnn.txt`; trained
+  three small 24-unit GRUs to predict deterministic claim correctness using
+  metadata and the previous 12 full months of verified forecast distributions.
+  No quote text is available. No LOC data, speaker identities, realized outcome
+  features, verifier prose, macro values or old crisis-window exports are used.
+- Excluded 1,047 pre-1919 NBER-proxy targets and purged 7,743 unresolved
+  train/validation horizons. Train before 1985 (70,722), validate 1985–1994
+  (39,536), test 1995–2010 (56,807). A three-month outcome release allowance
+  follows every horizon; revised reference data remain a vintage limitation.
+- Train-only preprocessing, equal article weights, preset seeds, validation-
+  only early stopping (selected epochs 4, 6, 5), and two logistic baselines.
+  Ensemble equal-article test AP 0.6833, ROC-AUC 0.7614, Brier 0.1929.
+  History logistic: AP 0.5958, Brier 0.2364. Metadata logistic: AP 0.5788,
+  Brier 0.2183. No configurations or seeds selected using test performance.
+- Four five-year publication blocks give a wide paired AP-gap interval
+  [-0.1912, +0.2102]. Initial performance is promising but does not establish
+  durable improvement or isolate recurrence from neural nonlinearity.
+- Saved checkpoints, preprocessing/baselines, split assignments, predictions,
+  subgroup metrics, training histories, source/reference/version hashes,
+  three charts and a standalone report in `data/scored/proquest/rnn/`.
+- Added six known-answer checks for strict historical sequences, missing/
+  foreign context, label-maturity purging, article weighting, no-skill metrics
+  and identical-model block comparisons, and gradients through the GRU.
+- Validation: six neural, five descriptive and six follow-up tests pass;
+  main suites pass (97 offline, 33 scoring, 33 forecast checks). Audited all
+  split boundaries and article isolation, 111 verified source hashes, reference
+  hashes and train-only preprocessing. Reloaded all checkpoints and reproduced
+  saved predictions on 500 test claims; independently reconciled ensemble
+  metrics. Three charts visually inspected and embedded HTML checked.
+
+## 2026-09-16 — ProQuest descriptive follow-ups
+
+- Added `src/proquest_followups.py` and the standalone follow-up report,
+  seven charts, source/reference digests, per-claim historical consensus labels,
+  and CSVs for warning tradeoffs/timing, consensus, horizons, specialties,
+  publisher coverage and stability, and forecast voice. No ML or LOC claims.
+- Production warnings have 22.8% precision and miss 42.4% of actual declines
+  under the documented horizon and 2% production threshold. Claim-grounded
+  horizons yield 20.8% precision and miss 49.3%.
+- Across 16 matched recession starts, worsening-call shares rise from 45.5%
+  at 7–12 months before onset to 53.1% at 1–6 months before, then 50.9%
+  in the first six recession months. Retrospective timing, not a count of
+  explicit recession predictions or a model evaluation.
+- Prior other-paper consensus excludes self, same-day and future forecasts.
+  Exact publication-month/horizon matching gives a 10.7-point agreement
+  advantage, but the five-year block interval crosses zero (-16.1 to +29.2
+  points). The pooled difference is unstable across historical periods.
+- Barron's has the largest mean matched publisher gap (+3.2 points).
+  Experts versus journalists differ by -0.5 points, with no clear separation.
+  Twelve-month stated forecasts have a higher raw rate than six-month forecasts,
+  but the fixed-baseline advantage is larger than the forecast advantage.
+- Corrected the first report's Wall Street Journal coverage start from 1960
+  to 1984; Chicago Tribune scored coverage ends in 2001. Publisher comparisons
+  use only overlapping cells. Speaker strings remain conservatively unmerged;
+  alphabetized attribution coverage supports later source review.
+- Added six known-answer tests for warning denominators, single-event
+  assignment, historical consensus leakage/boundaries, matched-composition
+  reversal, and conservative name normalization.
+- Validation: all six follow-up tests and five descriptive tests pass, as do
+  the main suites (97 offline, 33 scoring, 33 forecast checks). Reconciled all
+  outcome/consensus/confusion counts, exact-match baseline equality, 28
+  publisher pairs, and 111 verified source hashes. Visually inspected all
+  seven charts and checked that the HTML embeds them without external assets.
+
+## 2026-09-16 — First machine-verified ProQuest descriptive analysis
+
+- Added `src/proquest_descriptive.py` and an isolated report under
+  `data/scored/proquest/descriptive/`: publisher/decade/topic/horizon/voice
+  tables, six charts, exclusions, sensitivity checks, and compressed per-claim
+  scores. Only annual machine-verified ProQuest claims enter the analysis.
+- Scored 175,855 of 274,070 claims: pooled hit rate 40.8%, fixed-direction
+  baseline 53.6% on the same claim mix. Claim-grounded horizons yield 39.7%;
+  equal-article weighting yields 40.9%. Publisher results are descriptive,
+  with five-year block intervals and exploratory same-year/topic/horizon peer
+  adjustment, not significance claims about a best newspaper.
+- Strict national scope; only general business, prices, employment, and
+  markets. Positive integer horizons 1–24 months are respected. Unsupported
+  labels/longer horizons remain excluded. Vague uninferred horizons use a
+  documented 12-month default, tested against 6 and 24 months.
+- Frozen production/CPI/unemployment/USREC FRED snapshots in
+  `data/reference/proquest/`; downloaded Shiller's public monthly S&P Composite
+  price workbook from its primary source. Markets use that consistent series
+  throughout 1900–2010, with explicit asset-matching/monthly-average caveats.
+  Reference hashes and coverage are recorded in the report's summary JSON.
+- No ML was fitted to the ProQuest corpus; no LOC claims, old window datasets,
+  invented confidence probabilities, or unsupported attention denominator were
+  used. The fixed baseline predicts production/stocks/prices rise and
+  unemployment falls. Forecasts trail it under each tested scoring setting.
+- Validation: new known-answer/contamination/comparator checks pass (5 tests);
+  all main suites pass (97 offline, 33 scoring, 33 forecast checks) after the
+  public economic-reference cache was restored. Charts visually inspected.
+
+## 2026-09-16 — ProQuest-only analysis on main
+
+- Switched the working checkout to main (`269d353`) and copied the 111 annual
+  raw and 111 annual machine-verified ProQuest exports from `774b68f` into
+  `data/proquest/raw/` and `data/proquest/verified/`. Source blob hashes are
+  recorded in `data/proquest/source_manifest.json`; every copy matches its
+  committed source byte for byte.
+- The analysis corpus is ProQuest only. LOC pages/claims are reserved for
+  extraction validation. Old crisis-window exports are excluded.
+- Added `src/analyze_proquest.py`, the scope guidance in `AGENTS.md`, and
+  `docs/PROQUEST_ANALYSIS.md`. The initial inventory reports 488,660 raw
+  candidates and 274,070 machine-verified claims, covering 1900–2010.
+- Inventory only: no outcome scoring or new model fit yet. Outstanding scoring
+  work includes unsupported horizon/scope labels and a post-1968 market series.
+  No sampling-attention result without ProQuest article denominators.
+- Validation: source hashes and ProQuest-only selection/export checks pass;
+  `test_scoring.py` and `test_forecasts.py` each pass 33 checks. Main's broader
+  `test_offline.py` reaches the predictor guard check but fails because the
+  public FRED cache is absent; its nominally offline test tries to load real
+  economic context. Fetching INDPRO from FRED timed out. No new outcome results
+  depend on that cache.
+
 Living status doc. Not a code diff log — see `git log` for that. This tracks
 goals, methods, what's done, what's next, and what needs a human. Update this
 alongside code changes, don't let it drift.

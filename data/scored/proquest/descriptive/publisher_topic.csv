@@ -1,0 +1,37 @@
+paper,topic,mean,size
+Barron's,employment,0.2941970310391363,741
+Barron's,general_business,0.4594112399643176,7847
+Barron's,markets,0.4166666666666667,3276
+Barron's,prices,0.45234248788368336,1857
+Boston Globe,employment,0.3968957871396896,1353
+Boston Globe,general_business,0.43945489941596366,7705
+Boston Globe,markets,0.40441176470588236,1360
+Boston Globe,prices,0.49144736842105263,1520
+Chicago Tribune,employment,0.38898916967509023,2216
+Chicago Tribune,general_business,0.397712833545108,12592
+Chicago Tribune,markets,0.38666666666666666,2325
+Chicago Tribune,prices,0.5565875472996216,2907
+Christian Science Monitor,employment,0.3298097251585624,473
+Christian Science Monitor,general_business,0.3789571694599628,2148
+Christian Science Monitor,markets,0.42676767676767674,396
+Christian Science Monitor,prices,0.4395833333333333,480
+Los Angeles Times,employment,0.3654197080291971,4384
+Los Angeles Times,general_business,0.37970167218329537,23263
+Los Angeles Times,markets,0.37725752508361204,4485
+Los Angeles Times,prices,0.4743470149253731,4288
+New York Times,employment,0.3793989211405086,3893
+New York Times,general_business,0.43875639905106756,24027
+New York Times,markets,0.37436955524988536,4362
+New York Times,prices,0.45498527555742535,4754
+USA Today,employment,0.32142857142857145,28
+USA Today,general_business,0.4339622641509434,53
+USA Today,markets,0.375,8
+USA Today,prices,0.2,5
+Wall Street Journal,employment,0.3177785080512652,3043
+Wall Street Journal,general_business,0.38555481347199694,20962
+Wall Street Journal,markets,0.3828768944429673,7522
+Wall Street Journal,prices,0.3997727272727273,4400
+Washington Post,employment,0.36513317191283295,2065
+Washington Post,general_business,0.4158397815202549,10985
+Washington Post,markets,0.37969094922737306,1812
+Washington Post,prices,0.46336206896551724,2320

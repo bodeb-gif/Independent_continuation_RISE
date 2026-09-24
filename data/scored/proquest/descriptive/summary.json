@@ -1,0 +1,82 @@
+{
+  "verified_claims": 274070,
+  "scorable_claims": 175855,
+  "hit_rate": 0.40812032640527707,
+  "fixed_baseline": 0.5362144948963635,
+  "grounded_claims": 93166,
+  "grounded_hit_rate": 0.3971083871798725,
+  "article_equal_weight_hit_rate": 0.40899117554304637,
+  "input_directory": "data/proquest/verified",
+  "reference": {
+    "general_business": {
+      "series": "INDPRO",
+      "source": "https://fred.stlouisfed.org/series/INDPRO",
+      "file": "data/reference/proquest/fred_INDPRO.csv",
+      "sha256": "a31dbb5933696e55a60e2dc44536ddde300a024e6c40022eabde1d2a0fd0e8f5",
+      "coverage": [
+        "1919-01",
+        "2026-06"
+      ],
+      "snapshot": "Existing local FRED cache; original retrieval date unavailable"
+    },
+    "prices": {
+      "series": "CPIAUCNS",
+      "source": "https://fred.stlouisfed.org/series/CPIAUCNS",
+      "file": "data/reference/proquest/fred_CPIAUCNS.csv",
+      "sha256": "3d61f656df56ff3b738a066ce87fb086945bd7d19f6fedd2c0d16e352273440d",
+      "coverage": [
+        "1913-01",
+        "2026-06"
+      ],
+      "snapshot": "Existing local FRED cache; original retrieval date unavailable"
+    },
+    "employment": {
+      "series": "UNRATE",
+      "source": "https://fred.stlouisfed.org/series/UNRATE",
+      "file": "data/reference/proquest/fred_UNRATE.csv",
+      "sha256": "0c99be07bd92f467672c4f0c5fd160b24fbb0b587ca1612867468a07f28a555f",
+      "coverage": [
+        "1948-01",
+        "2026-06"
+      ],
+      "snapshot": "Existing local FRED cache; original retrieval date unavailable"
+    },
+    "recession": {
+      "series": "USREC",
+      "source": "https://fred.stlouisfed.org/series/USREC",
+      "file": "data/reference/proquest/fred_USREC.csv",
+      "sha256": "50a6d6f351c2a190f0ddc926956afbba791ee69b86c70bda4fdcbbe28bf16feb",
+      "coverage": [
+        "1854-12",
+        "2026-07"
+      ],
+      "snapshot": "Existing local FRED cache; original retrieval date unavailable"
+    },
+    "markets": {
+      "series": "Shiller S&P Composite nominal price P",
+      "source": "https://shillerdata.com/",
+      "downloaded": "2026-09-16",
+      "file": "data/reference/proquest/shiller_ie_data.xls",
+      "sha256": "044196dafe44c3030b2facbdea023975b3f6aa68b4e52f8f9bafc403e19589c1",
+      "coverage": [
+        "1871-01",
+        "2026-09"
+      ],
+      "notes": "Monthly average price, excluding dividends; one consistent series across the corpus"
+    }
+  },
+  "rules": {
+    "bands": {
+      "general_business": 2.0,
+      "markets": 5.0,
+      "prices": 1.5,
+      "employment": 0.5
+    },
+    "max_horizon_months": 24,
+    "default_horizon_months": 12,
+    "inferred_short_months": 6,
+    "inferred_long_months": 24,
+    "scope": "explicit national only",
+    "rank_minimum_claims": 500
+  }
+}
