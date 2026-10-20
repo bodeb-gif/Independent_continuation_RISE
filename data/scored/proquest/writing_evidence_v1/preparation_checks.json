@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-19",
+  "status": "passed",
+  "python": "/tmp/bode-econ-repro-20261019/bin/python",
+  "python_checks": {
+    "tests/test_offline.py": 97,
+    "tests/test_scoring.py": 33,
+    "tests/test_forecasts.py": 33,
+    "tests/test_proquest_publication.py": 3,
+    "tests/test_proquest_review.py": 2,
+    "tests/test_proquest_writing_evidence.py": 2
+  },
+  "javascript_checks": [
+    "blind gating",
+    "immutable first-pass transitions",
+    "invalid imports rejected",
+    "unassessable mapping retained"
+  ],
+  "browser": "Isolated headless Chrome; synthetic answers only; real pilot viewed empty",
+  "browser_checks": [
+    "per-record blinding",
+    "locked controls",
+    "partial comparison autosave",
+    "export/restore",
+    "wrong-pack rejection",
+    "existing-answer overwrite rejection",
+    "unresolved mappings",
+    "desktop and mobile layout"
+  ],
+  "frozen_original_files_verified": 30,
+  "prepared_artifact_hashes_verified": 35,
+  "broken_local_links": 0,
+  "source_validation_performed": false,
+  "model_fits": 0,
+  "checked_files_sha256": {
+    "src/proquest_review.py": "554a55559eb608d42aa5da7d92e65b3274a1ec1594d9757bb5d7c8ca0577674b",
+    "src/proquest_writing_evidence.py": "a971078a9af4764c24ed67b84427f4944fcfbba7da4c303f5ab76c137fd11cfd",
+    "validation/proquest_review/review.js": "29d54c86fe140b8fce2c85c7b8f8a6d8438f237a839f9801df8876df275f64e0",
+    "validation/proquest_review/review.html": "8cca89e33fd9e1a1301418874426be811b87130d12c16d25437a1ab98c1b9bf4",
+    "tests/test_proquest_review.py": "4ac8f11a3f0774dc9cc65e2564f46f4f84f86624206e0be07290b7d86ae64701",
+    "tests/test_proquest_review.cjs": "16081d70eb6881bfa5f07c2a731cb7d5788d53a9c0c411c7633e05b407233186",
+    "tests/test_proquest_review_browser.cjs": "a2777b8f4fbcd62a6d24d929f2013eea87e904827a3fa59e5c569b8e7c995832",
+    "tests/test_proquest_writing_evidence.py": "18d031b0a85349e1f0aa0fe0ed9e68b37ed5a0acd2464bb95f2d55e644998bbb"
+  }
+}

@@ -10,7 +10,9 @@ are collected in the [analysis deep dive](../PROQUEST_ANALYSIS_DEEP_DIVE.md).
 | Material | Purpose |
 | --- | --- |
 | [Paper concept](../../paper/planning/concept.md) | Question, proposed contribution, scope, and evidence needed |
-| [Literature comparison](../../paper/references/literature.md) | Initial comparison with the nearest three studies and a citation correction |
+| [Literature comparison](../../paper/references/literature.md) | Fifteen studies with primary sources, construct distinctions and inspection levels |
+| [Review interface guide](../../validation/proquest_review/README.md) | Prepared 12-record pilot, locked first pass, separate machine labels and portable responses |
+| [Writing evidence map](../../paper/planning/evidence_map.md) | Proposed argument and exhibits with exact result provenance and dependencies |
 | [Validation and provenance status](STATUS.md) | Reconcile local evidence with planned human work and the verification queue |
 | [Source review protocol](REVIEW_PROTOCOL.md) | Retrieve the pilot, preserve blinding, grade meaning, and freeze the subsequent probability sample |
 | [Analysis specification](ANALYSIS_SPEC.md) | Constrain subsequent publication work and record prior exploration |
@@ -35,6 +37,6 @@ The manuscript numbers below have not passed source-level human validation. The 
 
 Verification on October 14, 2026 used the working environment at `/tmp/bode-econ-robustness-20261013`, not the broken repository `.venv`. The required offline, scoring, and forecasts suites passed (97, 33, and 33 checks), as did the three new publication tests for stale-source rejection, sampling eligibility/reproducibility, and source matching/blinding. The builder completed against the actual corpus; package links, generated hashes, and topic-count reconciliation were also checked. These checks establish implementation consistency, not human validation.
 
-Next steps are to resolve the pilot addresses against VM claim lineage, recover the retrieval/processing manifest, complete the pilot interpretations, and freeze the main audit rubric and sample. Expand the literature matrix to the planned 15–25 studies after checking final bibliographic versions and reading their methods. No submission, external contact, source upload, or paid action has been taken.
+Next steps are to resolve the pilot addresses against VM claim lineage, recover the retrieval/processing manifest, complete the pilot interpretations, and freeze the main audit rubric and sample. The literature matrix now covers 15 studies; remaining full-method and final-version checks are listed there. No submission, external contact, source upload, or paid action has been taken.
 
 On October 19, the author deferred source validation while proceeding with the RNN audit and modern-evaluation preparation. The saved-prediction audit is complete: political-only deterioration in 2007–2009 appears across all three seeds and is concentrated in general-business claims; both features together have a different period pattern. The baseline remains the primary RNN. The modern procedure and intake checks are prepared; the author confirmed verification is still unfinished. No local modern exports or reconciled VM manifest are available and prior exposure remains undocumented. The source pilot and main human-review sample were left untouched. Required offline/scoring/forecast checks passed (97/33/33), as did four audit and six modern-intake tests, using `/tmp/bode-econ-audit-20261019`.

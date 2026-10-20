@@ -1,0 +1,27 @@
+{
+  "pack_id": "942c47f6f5ebded30062de2c40d54f4fa341fc92da4d159152aba5202d25d80a",
+  "status": "Prepared; no human judgments",
+  "inputs_sha256": {
+    "data/scored/proquest/publication/pilot_retrieval.csv": "580d4c834f2e3a7eb0054328b0eba32c515f0009cd7ee02d98acc57c0709605d",
+    "data/scored/proquest/publication/pilot_machine_labels.csv": "ea301b1287d24fad919ec5d174487824870319e9f174d3c0270f2cc2db72b6c6",
+    "docs/publication/REVIEW_PROTOCOL.md": "dcad236f6dda365d602262abee9c18113f2295ff436d202c78b16ce2ee64415b",
+    "src/proquest_review.py": "554a55559eb608d42aa5da7d92e65b3274a1ec1594d9757bb5d7c8ca0577674b",
+    "validation/proquest_review/review.html": "8cca89e33fd9e1a1301418874426be811b87130d12c16d25437a1ab98c1b9bf4",
+    "validation/proquest_review/review.js": "29d54c86fe140b8fce2c85c7b8f8a6d8438f237a839f9801df8876df275f64e0",
+    "data/proquest/verified/pred_proquest_economy_1975.export.jsonl": "60da11fc3f925eca243955ba09054db9219b2848705200df26e566eae3a316ef",
+    "data/proquest/verified/pred_proquest_economy_1978.export.jsonl": "16378ae08aa8eff4eafe47c9879008b928b0bd34f4a86798489a59356ed502d0",
+    "data/proquest/verified/pred_proquest_economy_1987.export.jsonl": "70c2fbec90ac202660aa57d5a772184b97045b676a671818d7a5ca9490e1dd7c",
+    "data/proquest/verified/pred_proquest_economy_1988.export.jsonl": "8217fb98213e9ed7f8db08fe781540aa31efa5a73c021f7eb8ca46c076f12dcd",
+    "data/proquest/verified/pred_proquest_economy_1990.export.jsonl": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684",
+    "data/proquest/verified/pred_proquest_economy_1998.export.jsonl": "13f0339cf903690544009a8ac216ea7dcdd134f7189cc3c219d18f1b1ff30908",
+    "data/proquest/verified/pred_proquest_economy_2001.export.jsonl": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599",
+    "data/proquest/verified/pred_proquest_economy_2002.export.jsonl": "c341fa6290f075acd8857867021c6b3fd04cf3bb04697c76dcfa822b7678c92c",
+    "data/proquest/verified/pred_proquest_economy_2008.export.jsonl": "e2932cb295141d8f459452c22129672240a0f5042ff225e99fdf0dc8ed57a5e7",
+    "data/proquest/verified/pred_proquest_economy_2009.export.jsonl": "b8dd4c5adbffad9a5aa99ecdbb39dcb6f6dec74e5a2791f9ad793b5d435f78be"
+  },
+  "outputs_sha256": {
+    "review.html": "27f2aafb73bb7da38259ea43a87bc25a2de1a818948721c928662b8050ebf787",
+    "comparison.json": "6deb22dec3496b2f9de12541dee6f3af3958b64016cdf3c6a56f94f77aa477a3",
+    "pack.json": "a736f86c1b8486606fe5636585fa0da1c1236fac22487f6687b2a48b794179df"
+  }
+}

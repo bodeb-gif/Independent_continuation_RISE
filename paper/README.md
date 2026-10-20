@@ -5,11 +5,18 @@ newspapers, 1900–2010. It brings the existing writing together with links to
 the evidence. The manuscript remains an unfinished outline; source validation,
 modern evaluation and substantive drafting are still deferred.
 
+Prepared October 19: [source-review interface](../data/scored/proquest/source_review_pilot_v1/review.html)
+and [review guide](../validation/proquest_review/README.md),
+[15-study literature comparison](references/literature.md), and
+[evidence map for writing](planning/evidence_map.md). The
+[evidence browser](../data/scored/proquest/writing_evidence_v1/report.html)
+links proposed exhibits to exact saved result rows and their limitations.
+
 | Folder | Contents |
 | --- | --- |
 | [manuscript](manuscript/outline.md) | Existing outline and historical evidence tables |
 | [planning](planning/concept.md) | Paper question, scope and proposed contribution |
-| [references](references/literature.md) | Existing literature comparison and source links |
+| [references](references/literature.md) | Expanded comparison with inspection levels and primary sources |
 | [figures](figures/README.md) | Figure index with canonical generated files |
 | [tables](tables/README.md) | Table index with result roles and limitations |
 

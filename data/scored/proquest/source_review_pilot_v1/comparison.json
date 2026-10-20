@@ -1,0 +1,149 @@
+{
+  "schema": "proquest-pilot-labels-v1",
+  "records": [
+    {
+      "audit_id": "verified:1975:3299",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "6",
+      "horizon_hint": "stated",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "6.0"
+    },
+    {
+      "audit_id": "verified:1978:300",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "6",
+      "horizon_hint": "stated",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "6.0"
+    },
+    {
+      "audit_id": "verified:1987:4619",
+      "topic": "prices",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "assertive",
+      "voice": "journalist",
+      "horizon_months": "12",
+      "horizon_hint": "stated",
+      "legacy_benchmark": "CPI",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:1988:3910",
+      "topic": "employment",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "official",
+      "horizon_months": "vague",
+      "horizon_hint": "default",
+      "legacy_benchmark": "UNRATE",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:1990:3700",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "vague",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:1990:4984",
+      "topic": "general_business",
+      "direction": "improve",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "1",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "1.0"
+    },
+    {
+      "audit_id": "verified:1998:3403",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "12",
+      "horizon_hint": "stated",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:2001:6374",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "vague",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:2001:11158",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "assertive",
+      "voice": "expert",
+      "horizon_months": "12",
+      "horizon_hint": "stated",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:2002:4920",
+      "topic": "general_business",
+      "direction": "improve",
+      "scope": "national",
+      "confidence": "assertive",
+      "voice": "official",
+      "horizon_months": "vague",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:2008:13442",
+      "topic": "general_business",
+      "direction": "worsen",
+      "scope": "national",
+      "confidence": "assertive",
+      "voice": "expert",
+      "horizon_months": "vague",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "12.0"
+    },
+    {
+      "audit_id": "verified:2009:3298",
+      "topic": "general_business",
+      "direction": "improve",
+      "scope": "national",
+      "confidence": "hedged",
+      "voice": "expert",
+      "horizon_months": "3",
+      "horizon_hint": "default",
+      "legacy_benchmark": "INDPRO",
+      "legacy_horizon_used": "3.0"
+    }
+  ]
+}

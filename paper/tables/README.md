@@ -3,6 +3,10 @@
 These links identify the canonical tables and their roles. The older manuscript
 outline does not incorporate every later sensitivity result.
 
+The [writing evidence map](../planning/evidence_map.md) assigns proposed exhibit
+roles. Its [machine-readable ledger](../../data/scored/proquest/writing_evidence_v1/ledger.json)
+records exact row selectors, hashes, metrics and limitations for 12 evidence entries.
+
 | Table | Role |
 | --- | --- |
 | [Corpus flow](../../data/scored/proquest/publication/corpus_flow.csv) | Existing publication evidence snapshot |

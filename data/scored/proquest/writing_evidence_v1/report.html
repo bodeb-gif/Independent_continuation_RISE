@@ -1,0 +1,428 @@
+<!doctype html><meta charset="utf-8"><title>ProQuest writing evidence</title>
+<style>body{font:16px/1.5 system-ui;max-width:1100px;margin:40px auto;padding:0 24px}section{border-top:1px solid #bbb;margin:30px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}small{color:#555}</style>
+<h1>Evidence for writing</h1><p>Historical exploratory evidence. No new model fits or source judgments. Each number retains its exact source selector. Source validation and modern evaluation remain pending.</p>
+<section><h2>E01 · The scored sample is a subset of machine-verified extracted claims.</h2>
+<p>Table 1: sample flow<br>Annual verified ProQuest 1900–2010<br>Counts; legacy claim-weighted accuracy</p>
+<p><strong>Limit:</strong> Machine verification is not human source validation; article-processing denominators remain unavailable.</p>
+<details><summary><a href="../../../../data/scored/proquest/publication/evidence.json">data/scored/proquest/publication/evidence.json</a> · {&quot;json_path&quot;: []}</summary><pre>{
+  &quot;verified_claims&quot;: 274070,
+  &quot;verified_scored_claims&quot;: 175855,
+  &quot;pooled_legacy_hit_rate&quot;: 0.40812032640527707,
+  &quot;pooled_legacy_baseline&quot;: 0.5362144948963635
+}</pre><small>SHA256 e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339</small></details>
+</section>
+<section><h2>E02 · The legacy baseline gap persists under equal-article weighting.</h2>
+<p>Table 2: original scoring<br>All scorable verified claims; articles weighted equally<br>Accuracy and forecast-minus-fixed gap</p>
+<p><strong>Limit:</strong> Conditional on legacy targets and horizons; not a validated population forecast-error rate.</p>
+<details><summary><a href="../../../../data/scored/proquest/publication/evidence.json">data/scored/proquest/publication/evidence.json</a> · {&quot;json_path&quot;: [&quot;equal_article_comparison&quot;]}</summary><pre>{
+  &quot;verified_hit_rate&quot;: 0.4089911755430464,
+  &quot;verified_fixed_baseline&quot;: 0.5359726088302363,
+  &quot;verified_gap_vs_fixed&quot;: -0.12698143328718992
+}</pre><small>SHA256 e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339</small></details>
+</section>
+<section><h2>E03 · Employment scores and constant-baseline rankings depend on the outcome band.</h2>
+<p>Figure 1 / Table 3: all three regimes and comparators<br>9,260 matched verified employment claims; machine-stated horizons; non-NBER; equal article<br>Accuracy; forecast-minus-comparator gap; paired five-year block bootstrap interval</p>
+<p><strong>Limit:</strong> Duration scaling and sign-only rules are scenarios, not source-validated corrections; keep all regimes.</p>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;original&quot;, &quot;rule&quot;: &quot;original_fixed&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.34234807058738453&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.20054491044709458&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.14180316014028996&quot;,
+  &quot;low&quot;: &quot;0.035069890181923635&quot;,
+  &quot;high&quot;: &quot;0.2589658246955484&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;original&quot;, &quot;rule&quot;: &quot;always_flat&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.34234807058738453&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.5059404171691456&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;-0.16359234658176108&quot;,
+  &quot;low&quot;: &quot;-0.34911174662433103&quot;,
+  &quot;high&quot;: &quot;-0.015234898468920758&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;original&quot;, &quot;rule&quot;: &quot;always_opposite&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.34234807058738453&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.2935146723837599&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.048833398203624645&quot;,
+  &quot;low&quot;: &quot;-0.0026714672297693557&quot;,
+  &quot;high&quot;: &quot;0.1016237252607687&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;duration_scaled&quot;, &quot;rule&quot;: &quot;original_fixed&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.4318898098343363&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.2719415784537049&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.15994823138063136&quot;,
+  &quot;low&quot;: &quot;0.023182876911331304&quot;,
+  &quot;high&quot;: &quot;0.2999023816278852&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;duration_scaled&quot;, &quot;rule&quot;: &quot;always_flat&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.4318898098343363&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.3517821251507436&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.0801076846835927&quot;,
+  &quot;low&quot;: &quot;-0.09487279985713909&quot;,
+  &quot;high&quot;: &quot;0.19580802373252634&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;duration_scaled&quot;, &quot;rule&quot;: &quot;always_opposite&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.4318898098343363&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.3762762963955514&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.0556135134387849&quot;,
+  &quot;low&quot;: &quot;0.00011121843461598349&quot;,
+  &quot;high&quot;: &quot;0.1182322473457524&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;sign_only&quot;, &quot;rule&quot;: &quot;original_fixed&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.5763915740935707&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.46835722899638216&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.10803434509718851&quot;,
+  &quot;low&quot;: &quot;-0.0703560324883872&quot;,
+  &quot;high&quot;: &quot;0.2645419038154911&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;sign_only&quot;, &quot;rule&quot;: &quot;always_flat&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.5763915740935707&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.05824065389253651&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.5181509202010341&quot;,
+  &quot;low&quot;: &quot;0.44738072857635997&quot;,
+  &quot;high&quot;: &quot;0.5842916779176711&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+<details><summary><a href="../../../../data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv">data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;horizon_months&quot;: &quot;all&quot;, &quot;regime&quot;: &quot;sign_only&quot;, &quot;rule&quot;: &quot;always_opposite&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;n_articles&quot;: &quot;7463&quot;,
+  &quot;hit_rate&quot;: &quot;0.5763915740935707&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.47340211711108127&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.1029894569824894&quot;,
+  &quot;low&quot;: &quot;0.03164765886370221&quot;,
+  &quot;high&quot;: &quot;0.19557651345647245&quot;
+}</pre><small>SHA256 12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6</small></details>
+</section>
+<section><h2>E04 · Payroll growth and falling unemployment do not give interchangeable outcome labels.</h2>
+<p>Table 4: alternative targets<br>9,260 matched employment claims; all endpoint series available<br>Equal-article accuracy; paired five-year block bootstrap interval; label disagreement</p>
+<p><strong>Limit:</strong> Targets are hypothetical mappings pending source review. GDP quarter-average levels are not monthly IP endpoints; never interpolate GDP.</p>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/primary_comparisons.csv">data/scored/proquest/alternative_targets_v1/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;variant&quot;: &quot;frozen_sign&quot;, &quot;comparator&quot;: &quot;always_improve&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;hit_rate&quot;: &quot;0.5763915740935707&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.46835722899638216&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;0.10803434509718851&quot;,
+  &quot;low&quot;: &quot;-0.0703560324883872&quot;,
+  &quot;high&quot;: &quot;0.2645419038154911&quot;
+}</pre><small>SHA256 613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1</small></details>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/primary_comparisons.csv">data/scored/proquest/alternative_targets_v1/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;variant&quot;: &quot;alternative_sign&quot;, &quot;comparator&quot;: &quot;always_improve&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;9260&quot;,
+  &quot;hit_rate&quot;: &quot;0.5514418219831592&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.6329782482469071&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;-0.08153642626374791&quot;,
+  &quot;low&quot;: &quot;-0.3317254939958178&quot;,
+  &quot;high&quot;: &quot;0.1899207148278539&quot;
+}</pre><small>SHA256 613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1</small></details>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/label_disagreement.csv">data/scored/proquest/alternative_targets_v1/label_disagreement.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;employment&quot;, &quot;variant&quot;: &quot;alternative_sign&quot;, &quot;reference&quot;: &quot;frozen_sign&quot;}</summary><pre>{
+  &quot;article_weighted_disagreement&quot;: &quot;0.2194917146813167&quot;
+}</pre><small>SHA256 738a70df193da8797f9a186f619ba4dfc1bd64fc3febdd050e7ecd2de3ce20c3</small></details>
+</section>
+<section><h2>E05 · GDP and production sensitivity does not establish superiority to always predicting growth.</h2>
+<p>Table 4: alternative targets<br>15,680 business claims; quarter-end publication months and whole-quarter horizons, 1947–2010<br>Equal-article accuracy; paired five-year block bootstrap interval; label disagreement</p>
+<p><strong>Limit:</strong> Targets are hypothetical mappings pending source review. GDP quarter-average levels are not monthly IP endpoints; never interpolate GDP.</p>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/primary_comparisons.csv">data/scored/proquest/alternative_targets_v1/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;general_business&quot;, &quot;variant&quot;: &quot;frozen_sign&quot;, &quot;comparator&quot;: &quot;always_improve&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;15680&quot;,
+  &quot;hit_rate&quot;: &quot;0.5719999923852167&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.7308297524814675&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;-0.15882976009625083&quot;,
+  &quot;low&quot;: &quot;-0.2775526576728885&quot;,
+  &quot;high&quot;: &quot;-0.05079727149757802&quot;
+}</pre><small>SHA256 613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1</small></details>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/primary_comparisons.csv">data/scored/proquest/alternative_targets_v1/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;general_business&quot;, &quot;variant&quot;: &quot;quarterly_ip_sign&quot;, &quot;comparator&quot;: &quot;always_improve&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;15680&quot;,
+  &quot;hit_rate&quot;: &quot;0.5657731746412485&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.7304843877904563&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;-0.16471121314920778&quot;,
+  &quot;low&quot;: &quot;-0.28123805576207106&quot;,
+  &quot;high&quot;: &quot;-0.06037301667046719&quot;
+}</pre><small>SHA256 613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1</small></details>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/primary_comparisons.csv">data/scored/proquest/alternative_targets_v1/primary_comparisons.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;general_business&quot;, &quot;variant&quot;: &quot;alternative_sign&quot;, &quot;comparator&quot;: &quot;always_improve&quot;}</summary><pre>{
+  &quot;n_claims&quot;: &quot;15680&quot;,
+  &quot;hit_rate&quot;: &quot;0.5485026823074316&quot;,
+  &quot;fixed_baseline&quot;: &quot;0.8657071125883791&quot;,
+  &quot;gap_vs_fixed&quot;: &quot;-0.31720443028094747&quot;,
+  &quot;low&quot;: &quot;-0.39457057311514604&quot;,
+  &quot;high&quot;: &quot;-0.24684178113305336&quot;
+}</pre><small>SHA256 613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1</small></details>
+<details><summary><a href="../../../../data/scored/proquest/alternative_targets_v1/label_disagreement.csv">data/scored/proquest/alternative_targets_v1/label_disagreement.csv</a> · {&quot;source_set&quot;: &quot;verified&quot;, &quot;cohort&quot;: &quot;machine_stated_non_NBER&quot;, &quot;topic&quot;: &quot;general_business&quot;, &quot;variant&quot;: &quot;alternative_sign&quot;, &quot;reference&quot;: &quot;quarterly_ip_sign&quot;}</summary><pre>{
+  &quot;article_weighted_disagreement&quot;: &quot;0.14325790509695524&quot;
+}</pre><small>SHA256 738a70df193da8797f9a186f619ba4dfc1bd64fc3febdd050e7ecd2de3ce20c3</small></details>
+</section>
+<section><h2>E06 · The press-augmented aggregate model has a small, uncertain average Brier improvement.</h2>
+<p>Table 5: aggregate macro task<br>408 monthly forecasts, 1977–2010, six-month IP direction<br>Three-class Brier (0–2); positive improvement favors press; five-year block interval</p>
+<p><strong>Limit:</strong> Do not compare directly with binary claim-correctness Brier; interval spans zero.</p>
+<details><summary><a href="../../../../data/scored/proquest/macro_benchmark/core/metrics.csv">data/scored/proquest/macro_benchmark/core/metrics.csv</a> · {&quot;grouping&quot;: &quot;overall&quot;, &quot;model&quot;: &quot;macro_only&quot;}</summary><pre>{
+  &quot;n_months&quot;: &quot;408&quot;,
+  &quot;brier&quot;: &quot;0.6327043013208867&quot;
+}</pre><small>SHA256 f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_benchmark/core/metrics.csv">data/scored/proquest/macro_benchmark/core/metrics.csv</a> · {&quot;grouping&quot;: &quot;overall&quot;, &quot;model&quot;: &quot;macro_plus_press&quot;}</summary><pre>{
+  &quot;n_months&quot;: &quot;408&quot;,
+  &quot;brier&quot;: &quot;0.6228094107656541&quot;
+}</pre><small>SHA256 f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2</small></details>
+<details><summary><a href="../../../../data/scored/proquest/publication/evidence.json">data/scored/proquest/publication/evidence.json</a> · {&quot;json_path&quot;: [&quot;monthly_core_brier_interval&quot;]}</summary><pre>{
+  &quot;improvement&quot;: &quot;0.009894890555232686&quot;,
+  &quot;low&quot;: &quot;-0.06373022417225763&quot;,
+  &quot;high&quot;: &quot;0.0808064374350468&quot;,
+  &quot;n_blocks&quot;: &quot;7&quot;
+}</pre><small>SHA256 e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339</small></details>
+</section>
+<section><h2>E07 · Excluding 2007–2009 reverses the aggregate Brier ranking.</h2>
+<p>Table 5: adjacent robustness panel<br>372 monthly forecasts after removing 2007–2009<br>Three-class Brier (0–2); lower is better</p>
+<p><strong>Limit:</strong> Exploratory era sensitivity, not proof that text has no information or that crises cause the difference.</p>
+<details><summary><a href="../../../../data/scored/proquest/macro_benchmark/core/metrics.csv">data/scored/proquest/macro_benchmark/core/metrics.csv</a> · {&quot;grouping&quot;: &quot;sensitivity&quot;, &quot;period&quot;: &quot;Exclude 2007\u20132009&quot;, &quot;model&quot;: &quot;macro_only&quot;}</summary><pre>{
+  &quot;n_months&quot;: &quot;372&quot;,
+  &quot;brier&quot;: &quot;0.6163901372991306&quot;
+}</pre><small>SHA256 f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_benchmark/core/metrics.csv">data/scored/proquest/macro_benchmark/core/metrics.csv</a> · {&quot;grouping&quot;: &quot;sensitivity&quot;, &quot;period&quot;: &quot;Exclude 2007\u20132009&quot;, &quot;model&quot;: &quot;macro_plus_press&quot;}</summary><pre>{
+  &quot;n_months&quot;: &quot;372&quot;,
+  &quot;brier&quot;: &quot;0.621350298031051&quot;
+}</pre><small>SHA256 f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2</small></details>
+</section>
+<section><h2>E08 · The original RNN comparison does not reject equal predictive performance at 0.05.</h2>
+<p>Appendix A: original model inference<br>1995–2010; four publication-time blocks; 16 paired swaps<br>Binary Brier improvement; one-sided paired permutation p; Holm adjustment across primary comparisons</p>
+<p><strong>Limit:</strong> Minimum exact one-sided p is 1/16 = 0.0625. Do not shorten blocks to seek significance. Non-rejection does not prove equivalence.</p>
+<details><summary><a href="../../../../data/scored/proquest/rnn_permutation/paired_tests.csv">data/scored/proquest/rnn_permutation/paired_tests.csv</a> · {&quot;metric&quot;: &quot;brier&quot;, &quot;comparison&quot;: &quot;gru_vs_metadata&quot;}</summary><pre>{
+  &quot;improvement&quot;: &quot;0.02542368476277357&quot;,
+  &quot;p_one_sided&quot;: &quot;0.3125&quot;,
+  &quot;n_blocks&quot;: &quot;4&quot;,
+  &quot;n_permutations&quot;: &quot;16&quot;,
+  &quot;primary_holm_p&quot;: &quot;0.5&quot;
+}</pre><small>SHA256 3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a</small></details>
+<details><summary><a href="../../../../data/scored/proquest/rnn_permutation/paired_tests.csv">data/scored/proquest/rnn_permutation/paired_tests.csv</a> · {&quot;metric&quot;: &quot;brier&quot;, &quot;comparison&quot;: &quot;gru_vs_history_logistic&quot;}</summary><pre>{
+  &quot;improvement&quot;: &quot;0.04348298875220408&quot;,
+  &quot;p_one_sided&quot;: &quot;0.25&quot;,
+  &quot;n_blocks&quot;: &quot;4&quot;,
+  &quot;n_permutations&quot;: &quot;16&quot;,
+  &quot;primary_holm_p&quot;: &quot;0.5&quot;
+}</pre><small>SHA256 3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a</small></details>
+</section>
+<section><h2>E09 · Production inputs improve average RNN loss in the matched experiment, but metadata logistic remains stronger.</h2>
+<p>Appendix B: complete input ablation<br>Matched business/employment claims; four exposed five-year eras, 1975–1994<br>Mean of four article-weighted binary Brier scores; lower is better</p>
+<p><strong>Limit:</strong> Historical exploratory comparison; no new superiority test or promotion. Not comparable to the original broader 1995–2010 sample.</p>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;none&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.1991995461141491&quot;,
+  &quot;mean_improvement&quot;: &quot;0.0&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.23422539384080307&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;production&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.1910216294265029&quot;,
+  &quot;mean_improvement&quot;: &quot;0.008177916687646232&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.24122875919276587&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;unemployment&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.2128580253676755&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.01365847925352641&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.2800967927968502&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;both&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.20961514551247576&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.010415599398326647&quot;,
+  &quot;folds_improved&quot;: &quot;1&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.25219558554785904&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;none&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.1743221575197912&quot;,
+  &quot;mean_improvement&quot;: &quot;0.0&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.24848981381113436&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;production&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.18637388058880927&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.01205172306901807&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.25943378183526933&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;unemployment&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.224141089246638&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.049818931726846816&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.29617344750642066&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;both&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.20486581371569978&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.030543656195908597&quot;,
+  &quot;folds_improved&quot;: &quot;1&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.2987699316030355&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;none&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.2986476471076992&quot;,
+  &quot;mean_improvement&quot;: &quot;0.0&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.4063848139657962&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;production&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.26531784563558003&quot;,
+  &quot;mean_improvement&quot;: &quot;0.03332980147211914&quot;,
+  &quot;folds_improved&quot;: &quot;3&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.32803138688827616&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;unemployment&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.31200025996308195&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.013352612855382771&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.4055105984067686&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;all&quot;, &quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;both&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.29363644581706727&quot;,
+  &quot;mean_improvement&quot;: &quot;0.005011201290631907&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;,
+  &quot;worst_fold_brier&quot;: &quot;0.3824157107493495&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+</section>
+<section><h2>E10 · Added macro inputs have different effects across business and employment claims.</h2>
+<p>Appendix B: topic panels<br>Same matched 1975–1994 experiment; topic-specific article weights<br>Mean binary Brier and number of improved eras out of four</p>
+<p><strong>Limit:</strong> Small topic support and historical selection limit interpretation; retain adverse input results.</p>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;general_business&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;none&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.1987712814648466&quot;,
+  &quot;mean_improvement&quot;: &quot;0.0&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;general_business&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;production&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.18762359153739044&quot;,
+  &quot;mean_improvement&quot;: &quot;0.011147689927456156&quot;,
+  &quot;folds_improved&quot;: &quot;3&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;general_business&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;unemployment&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.21332237661772716&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.014551095152880555&quot;,
+  &quot;folds_improved&quot;: &quot;2&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;general_business&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;both&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.20902719535398565&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.010255913889139039&quot;,
+  &quot;folds_improved&quot;: &quot;1&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;employment&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;none&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.20591721564388327&quot;,
+  &quot;mean_improvement&quot;: &quot;0.0&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;employment&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;production&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.21452585264016&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.008608636996276758&quot;,
+  &quot;folds_improved&quot;: &quot;1&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;employment&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;unemployment&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.21899056833976882&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.01307335269588554&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+<details><summary><a href="../../../../data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv">data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv</a> · {&quot;topic&quot;: &quot;employment&quot;, &quot;model&quot;: &quot;gru&quot;, &quot;arm&quot;: &quot;both&quot;}</summary><pre>{
+  &quot;mean_brier&quot;: &quot;0.22223341184346346&quot;,
+  &quot;mean_improvement&quot;: &quot;-0.016316196199580198&quot;,
+  &quot;folds_improved&quot;: &quot;0&quot;
+}</pre><small>SHA256 8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5</small></details>
+</section>
+<section><h2>E11 · Twelve pilot addresses are fixed; source interpretation remains unmeasured.</h2>
+<p>Table 6: reserved for future audit, no estimates yet<br>Pilot SRS of 12 from 175,855 scored verified records<br>Sample design only; no validity rate</p>
+<p><strong>Limit:</strong> Do not replace missing mappings or combine pilot and main-audit estimates. Main sample is not yet drawn.</p>
+<details><summary><a href="../../../../data/scored/proquest/publication/evidence.json">data/scored/proquest/publication/evidence.json</a> · {&quot;json_path&quot;: [&quot;pilot&quot;]}</summary><pre>{
+  &quot;seed&quot;: 20261014,
+  &quot;n&quot;: 12,
+  &quot;population_n&quot;: 175855,
+  &quot;design&quot;: &quot;Simple random sample without replacement of scored verified records&quot;,
+  &quot;source_mapping&quot;: &quot;Pending VM lineage/context; do not guess from labels&quot;
+}</pre><small>SHA256 e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339</small></details>
+</section>
+<section><h2>E12 · Political and forecast polarization remain separate ablations; neither improves the original RNN average Brier.</h2>
+<p>Appendix A: original RNN and polarization metrics<br>56,807 scored claims, 1995–2010; original saved model experiment<br>Article-weighted binary Brier, accuracy, AUC and average precision</p>
+<p><strong>Limit:</strong> Political roll-call separation and forecast-direction disagreement are different constructs. This is not a causal polarization effect or a fresh holdout after tuning.</p>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;gru_ensemble&quot;, &quot;arm&quot;: &quot;baseline&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.19291293776659127,
+  &quot;accuracy&quot;: 0.6897320529391935,
+  &quot;auc&quot;: 0.7614302092395144,
+  &quot;average_precision&quot;: 0.6833303786800521
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;gru_ensemble&quot;, &quot;arm&quot;: &quot;political&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.21439729747470768,
+  &quot;accuracy&quot;: 0.6652468374963076,
+  &quot;auc&quot;: 0.6970875031796497,
+  &quot;average_precision&quot;: 0.6422226914311413
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;gru_ensemble&quot;, &quot;arm&quot;: &quot;forecast&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.19968150464587617,
+  &quot;accuracy&quot;: 0.6926467199154804,
+  &quot;auc&quot;: 0.7518349132724683,
+  &quot;average_precision&quot;: 0.6751562796699183
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;gru_ensemble&quot;, &quot;arm&quot;: &quot;both&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.19912503031958986,
+  &quot;accuracy&quot;: 0.674301846146246,
+  &quot;auc&quot;: 0.7447242802813375,
+  &quot;average_precision&quot;: 0.679469740744843
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;baseline&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.2183366224822681,
+  &quot;accuracy&quot;: 0.6665833295949332,
+  &quot;auc&quot;: 0.6783856530541345,
+  &quot;average_precision&quot;: 0.5787963546048043
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;political&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.21928501192305827,
+  &quot;accuracy&quot;: 0.6676507528003897,
+  &quot;auc&quot;: 0.6728782200476321,
+  &quot;average_precision&quot;: 0.5787316150583284
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;forecast&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.2184271900344842,
+  &quot;accuracy&quot;: 0.6664954449744076,
+  &quot;auc&quot;: 0.6763708666902134,
+  &quot;average_precision&quot;: 0.5808471518067087
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata&quot;, &quot;arm&quot;: &quot;both&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.21921847497081523,
+  &quot;accuracy&quot;: 0.6676558129686547,
+  &quot;auc&quot;: 0.672788582590285,
+  &quot;average_precision&quot;: 0.5800891584544102
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;baseline&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.2363959264999156,
+  &quot;accuracy&quot;: 0.6614146005636153,
+  &quot;auc&quot;: 0.6343953765181172,
+  &quot;average_precision&quot;: 0.5957598065030248
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;political&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.24683621162942307,
+  &quot;accuracy&quot;: 0.6508659627303935,
+  &quot;auc&quot;: 0.6256740443759612,
+  &quot;average_precision&quot;: 0.5882790109757289
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;forecast&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.23946393752109327,
+  &quot;accuracy&quot;: 0.6622873623394693,
+  &quot;auc&quot;: 0.6279551288558838,
+  &quot;average_precision&quot;: 0.5928951717299867
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+<details><summary><a href="../../../../data/scored/proquest/polarization/claims_summary.json">data/scored/proquest/polarization/claims_summary.json</a> · {&quot;json_path&quot;: [&quot;metrics&quot;, {&quot;model&quot;: &quot;logistic_metadata_history&quot;, &quot;arm&quot;: &quot;both&quot;, &quot;scope&quot;: &quot;overall&quot;}]}</summary><pre>{
+  &quot;n&quot;: 56807,
+  &quot;brier&quot;: 0.2541250899016542,
+  &quot;accuracy&quot;: 0.6386271570598259,
+  &quot;auc&quot;: 0.6192547773762986,
+  &quot;average_precision&quot;: 0.578977319269186
+}</pre><small>SHA256 c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53</small></details>
+</section>

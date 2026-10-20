@@ -50,6 +50,12 @@ automatically replaces original targets or establishes source validity.
 
 ## Provenance and handoff
 
+[source_review_pilot_v1](source_review_pilot_v1/review.html) is the prepared
+12-record review interface, with machine labels in a separate file and no human
+judgments. [writing_evidence_v1](writing_evidence_v1/report.html) indexes 12
+proposed writing claims/exhibits with exact source rows, hashes and limitations.
+Neither directory contains a new source audit or model experiment.
+
 `export_reconciliation/` records source matching. `modern_readiness/` holds the
 original model freeze and deferred evaluation procedure. `publication/` is the
 older evidence packet, not the manuscript folder. `prepared_*_check_v1/`

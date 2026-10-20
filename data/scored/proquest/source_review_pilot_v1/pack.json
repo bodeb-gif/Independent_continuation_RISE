@@ -1,0 +1,152 @@
+{
+  "schema": "proquest-pilot-v1",
+  "rubric": "2026-10-14-v1",
+  "records": [
+    {
+      "audit_id": "verified:1975:3299",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1975.export.jsonl",
+      "source_sha256": "60da11fc3f925eca243955ba09054db9219b2848705200df26e566eae3a316ef",
+      "source_line": "3299",
+      "page_id": "157875659",
+      "date": "1975-09-03",
+      "publisher": "Los Angeles Times (1923-1995)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1978:300",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1978.export.jsonl",
+      "source_sha256": "16378ae08aa8eff4eafe47c9879008b928b0bd34f4a86798489a59356ed502d0",
+      "source_line": "300",
+      "page_id": "123539566",
+      "date": "1978-12-31",
+      "publisher": "New York Times  (1923-)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1987:4619",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1987.export.jsonl",
+      "source_sha256": "70c2fbec90ac202660aa57d5a772184b97045b676a671818d7a5ca9490e1dd7c",
+      "source_line": "4619",
+      "page_id": "814679990",
+      "date": "1987-09-28",
+      "publisher": "Los Angeles Times (1923-1995)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1988:3910",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1988.export.jsonl",
+      "source_sha256": "8217fb98213e9ed7f8db08fe781540aa31efa5a73c021f7eb8ca46c076f12dcd",
+      "source_line": "3910",
+      "page_id": "901646398",
+      "date": "1988-03-16",
+      "publisher": "Los Angeles Times (1923-1995)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1990:3700",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1990.export.jsonl",
+      "source_sha256": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684",
+      "source_line": "3700",
+      "page_id": "1459823011",
+      "date": "1990-06-20",
+      "publisher": "Los Angeles Times (1923-1995)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1990:4984",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1990.export.jsonl",
+      "source_sha256": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684",
+      "source_line": "4984",
+      "page_id": "1467053909",
+      "date": "1990-12-19",
+      "publisher": "Los Angeles Times (1923-1995)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:1998:3403",
+      "source_path": "data/proquest/verified/pred_proquest_economy_1998.export.jsonl",
+      "source_sha256": "13f0339cf903690544009a8ac216ea7dcdd134f7189cc3c219d18f1b1ff30908",
+      "source_line": "3403",
+      "page_id": "2111495496",
+      "date": "1998-10-06",
+      "publisher": "Los Angeles Times (1996-)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:2001:6374",
+      "source_path": "data/proquest/verified/pred_proquest_economy_2001.export.jsonl",
+      "source_sha256": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599",
+      "source_line": "6374",
+      "page_id": "2155734178",
+      "date": "2001-03-16",
+      "publisher": "Los Angeles Times (1996-)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:2001:11158",
+      "source_path": "data/proquest/verified/pred_proquest_economy_2001.export.jsonl",
+      "source_sha256": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599",
+      "source_line": "11158",
+      "page_id": "398788334",
+      "date": "2001-10-01",
+      "publisher": "Wall Street Journal",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:2002:4920",
+      "source_path": "data/proquest/verified/pred_proquest_economy_2002.export.jsonl",
+      "source_sha256": "c341fa6290f075acd8857867021c6b3fd04cf3bb04697c76dcfa822b7678c92c",
+      "source_line": "4920",
+      "page_id": "308498672",
+      "date": "2002-01-31",
+      "publisher": "Wall Street Journal",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:2008:13442",
+      "source_path": "data/proquest/verified/pred_proquest_economy_2008.export.jsonl",
+      "source_sha256": "e2932cb295141d8f459452c22129672240a0f5042ff225e99fdf0dc8ed57a5e7",
+      "source_line": "13442",
+      "page_id": "405565363",
+      "date": "2008-12-03",
+      "publisher": "The Christian Science Monitor",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    },
+    {
+      "audit_id": "verified:2009:3298",
+      "source_path": "data/proquest/verified/pred_proquest_economy_2009.export.jsonl",
+      "source_sha256": "b8dd4c5adbffad9a5aa99ecdbb39dcb6f6dec74e5a2791f9ad793b5d435f78be",
+      "source_line": "3298",
+      "page_id": "1929288415",
+      "date": "2009-05-29",
+      "publisher": "New York Times (2008-)",
+      "pilot_inclusion_probability": "6.823803701913508e-05",
+      "source_locator": "",
+      "mapping_status": "pending"
+    }
+  ],
+  "comparison_sha256": "6deb22dec3496b2f9de12541dee6f3af3958b64016cdf3c6a56f94f77aa477a3",
+  "pack_id": "942c47f6f5ebded30062de2c40d54f4fa341fc92da4d159152aba5202d25d80a"
+}

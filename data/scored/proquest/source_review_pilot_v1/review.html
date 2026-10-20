@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; form-action 'none'; base-uri 'none'">
+<title>ProQuest · source review pilot</title>
+<style>
+:root{font:16px/1.5 system-ui;color:#183138;background:#f1f4f1}body{max-width:1150px;margin:32px auto;padding:0 24px}h1{font-size:30px;margin-bottom:8px}h2{font-size:21px}p{max-width:85ch}.bar{display:flex;gap:14px;flex-wrap:wrap;align-items:center}.card{background:white;border:1px solid #c8d5d0;border-radius:10px;padding:22px;margin:20px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-weight:600}label small{display:block;font-weight:400;color:#4a6065}input,select,textarea,button{font:inherit;box-sizing:border-box}input:not([type=file]),select,textarea{width:100%;padding:9px;border:1px solid #9badab;border-radius:4px;margin-top:5px}textarea{min-height:85px}button{padding:10px 16px;background:#165849;color:white;border:0;border-radius:5px;cursor:pointer}button:disabled,input:disabled{opacity:.5;cursor:not-allowed}pre{white-space:pre-wrap;overflow-wrap:anywhere}#message{position:sticky;top:0;background:#fff2cb;padding:12px;z-index:2}#message:empty{display:none}.muted{color:#52676a;font-size:14px}.full{grid-column:1/-1}fieldset{border:0;padding:0;margin:0}fieldset:disabled{color:#52676a}@media(max-width:650px){.grid{grid-template-columns:1fr}body{padding:0 12px}}
+</style>
+<header><div class="muted">HISTORICAL ECONOMIC FORECASTS · 12-RECORD PILOT</div><h1>Review the source, then compare the labels</h1>
+<p>This pilot tests retrieval and the rubric. It does not estimate corpus accuracy. Work in your authorized source environment. No source passages or human judgments have been supplied.</p></header>
+<div id="message" role="status" aria-live="polite"></div>
+<div class="card"><div class="bar"><button id="export">Export review JSON</button><label>Restore exported JSON <input id="restore" type="file" accept=".json"></label></div>
+<p class="muted" id="storage">Drafts save in this browser when local storage is available. Export frequently. Exports contain your notes; keep them in an authorized location. No network requests are made.</p>
+<label for="claim">Sampled record</label><select id="claim"></select><p id="progress"></p></div>
+<section class="card"><h2>1. Retrieve and interpret</h2><pre id="metadata"></pre>
+<p>Recover the original claim identifier or offsets from VM lineage. A file/line address alone is not a unique passage. Do not choose a sentence because it matches machine labels. For unresolved mapping, record the reason and lock an unassessable record.</p>
+<fieldset id="first"><div class="grid" id="firstFields"></div></fieldset>
+<p class="muted">Target dates can be source-supported intervals; leave unknown endpoints blank. Enter “unknown” for an unknown original forecast date. Elapsed time includes idle time and time away from this record.</p>
+<button id="lock">Save and lock first pass</button><p id="locked" class="muted"></p></section>
+<section class="card"><h2>2. Compare with machine labels</h2>
+<p>Load the separate <code>comparison.json</code> only after locking this record. Each record stays hidden until its own first pass is locked. Record any previous exposure in the blinding field. Realized outcomes are never included here.</p>
+<label>Comparison file <input id="labels" type="file" accept=".json"></label><button id="reveal" disabled>Reveal this record’s labels</button>
+<pre id="machine"></pre><fieldset id="second" disabled><div class="grid" id="secondFields"></div></fieldset>
+<p class="muted">Grade machine fields against the source, including confidence and voice from the context. Benchmark compatibility is a separate judgment from whether the legacy benchmark label was copied correctly.</p>
+<button id="finish" disabled>Save comparison</button></section>
+<section class="card"><h2>3. Corrections and audit trail</h2><p>Locked answers remain intact. Record a dated amendment if retrieval or interpretation changes; downstream review must reconcile it explicitly.</p>
+<label>Amendment reviewer <input id="amender"></label><label>Amendment note <textarea id="amendment"></textarea></label><button id="amend">Append amendment</button><pre id="trail"></pre></section>
+<script>
+/* Pure review state machine, shared by the browser and Node tests. */
+const Review = (() => {
+  const enums = {
+    mapping_status: ['unique', 'ambiguous', 'unavailable', 'wrong_article'],
+    blinding: ['unexposed', 'machine_labels_exposed', 'unknown'],
+    is_forecast: ['yes', 'no', 'unclear'],
+    change_type: ['level', 'growth_rate', 'event_occurrence', 'other', 'unclear'],
+    direction: ['rise', 'fall', 'unchanged', 'unclear'],
+    scope: ['US_national', 'regional', 'foreign', 'firm_asset', 'unclear'],
+    horizon_support: ['explicit', 'inferable', 'absent', 'unclear'],
+    condition: ['unconditional', 'conditional', 'unclear']
+  };
+  const textFields = ['reviewer', 'source_locator', 'lineage', 'context_note', 'mapping_reason',
+    'quantity', 'target_start', 'target_end', 'condition_text', 'attribution',
+    'original_forecast_date', 'initial_note'];
+  const fields = [...textFields, ...Object.keys(enums)];
+  const comparisons = ['topic', 'direction', 'scope', 'confidence', 'voice', 'horizon_months',
+    'horizon_hint', 'legacy_benchmark', 'legacy_horizon_used'];
+  const grades = ['correct', 'incorrect', 'unclear', 'not_assessable'];
+  const finalEnums = Object.fromEntries(comparisons.map(k => [k, grades]));
+  finalEnums.benchmark_compatibility = ['direct', 'proxy', 'mismatch', 'unclear'];
+  finalEnums.joint_usability = ['yes', 'no', 'unclear'];
+  const finalFields = [...Object.keys(finalEnums), 'error_category', 'comparison_note'];
+  function assert(ok, message) { if (!ok) throw new Error(message); }
+  function keys(obj, allowed) {
+    assert(obj && typeof obj === 'object' && !Array.isArray(obj), 'Expected an object');
+    assert(Object.keys(obj).every(k => allowed.includes(k)), 'Unknown field in imported data');
+  }
+  function form(data, complete = false) {
+    keys(data, fields);
+    for (const [k,v] of Object.entries(data)) {
+      assert(typeof v === 'string' && v.length <= 20000, `Invalid text: ${k}`);
+      if (enums[k] && v) assert(enums[k].includes(v), `Invalid choice: ${k}`);
+    }
+    if (!complete) return;
+    for (const k of ['reviewer','mapping_status','mapping_reason','blinding'])
+      assert(data[k]?.trim(), `Required: ${k}`);
+    if (data.mapping_status === 'unique') {
+      for (const k of ['source_locator','lineage','context_note','is_forecast','quantity','change_type',
+        'direction','scope','horizon_support','condition','attribution','original_forecast_date','initial_note'])
+        assert(data[k]?.trim(), `Required for unique mapping: ${k}`);
+      if (data.condition === 'conditional') assert(data.condition_text?.trim(), 'Record the condition');
+    }
+  }
+  function finalForm(data, complete = true) {
+    keys(data, finalFields);
+    for (const k of (complete ? finalFields : Object.keys(data))) assert(typeof data[k] === 'string' && (!complete || data[k].trim()) && data[k].length <= 20000,
+      `Required comparison: ${k}`);
+    for (const k of Object.keys(finalEnums)) if(complete || data[k]) assert(finalEnums[k].includes(data[k]), `Invalid comparison: ${k}`);
+  }
+  function time(t) { assert(typeof t === 'string' && Number.isFinite(Date.parse(t)), 'Invalid timestamp'); return Date.parse(t); }
+  function blank(pack) { return {schema:'proquest-human-review-v1', pack_id:pack.pack_id, rubric:pack.rubric, records:{}}; }
+  function record(state, id, now) {
+    if (!state.records[id]) state.records[id] = {started_at:now, draft:{}, amendments:[]};
+    return state.records[id];
+  }
+  function lock(rec, now) {
+    assert(!rec.first_pass, 'First pass is already locked'); form(rec.draft, true);
+    assert(time(now) >= time(rec.started_at), 'Clock moved backwards');
+    rec.first_pass = {saved_at:now, elapsed_seconds:(time(now)-time(rec.started_at))/1000,
+      answers:structuredClone(rec.draft)};
+    delete rec.draft;
+  }
+  function reveal(rec, now) {
+    assert(rec.first_pass && rec.first_pass.answers.mapping_status === 'unique', 'Lock a uniquely mapped first pass before reveal');
+    assert(time(now) >= time(rec.first_pass.saved_at), 'Reveal precedes first pass');
+    rec.revealed_at ||= now;
+  }
+  function finish(rec, data, now) {
+    assert(rec.revealed_at, 'Reveal comparison labels first'); assert(!rec.comparison, 'Comparison already saved');
+    finalForm(data); assert(time(now) >= time(rec.revealed_at), 'Comparison precedes reveal');
+    rec.comparison = {saved_at:now, answers:structuredClone(data)};
+    delete rec.comparison_draft;
+  }
+  function validate(state, pack) {
+    keys(state, ['schema','pack_id','rubric','records']);
+    assert(state.schema === 'proquest-human-review-v1' && state.pack_id === pack.pack_id && state.rubric === pack.rubric,
+      'Wrong review pack or rubric');
+    keys(state.records, pack.records.map(r=>r.audit_id));
+    for (const rec of Object.values(state.records)) {
+      keys(rec, ['started_at','draft','first_pass','revealed_at','comparison_draft','comparison','amendments']); time(rec.started_at);
+      if (rec.first_pass) {
+        assert(!rec.draft, 'Locked record cannot contain an editable draft');
+        keys(rec.first_pass, ['saved_at','elapsed_seconds','answers']); form(rec.first_pass.answers, true);
+        const elapsed = (time(rec.first_pass.saved_at)-time(rec.started_at))/1000;
+        assert(elapsed >= 0 && rec.first_pass.elapsed_seconds === elapsed, 'Invalid elapsed time');
+      } else { assert(rec.draft, 'Missing draft'); form(rec.draft); }
+      if (rec.revealed_at) {
+        assert(rec.first_pass?.answers.mapping_status === 'unique', 'Invalid reveal');
+        assert(time(rec.revealed_at) >= time(rec.first_pass.saved_at), 'Reveal precedes lock');
+      }
+      if (rec.comparison) {
+        assert(!rec.comparison_draft, 'Saved comparison cannot contain an editable draft');
+        keys(rec.comparison, ['saved_at','answers']); assert(rec.revealed_at, 'Comparison without reveal');
+        assert(time(rec.comparison.saved_at) >= time(rec.revealed_at), 'Comparison precedes reveal');
+        finalForm(rec.comparison.answers);
+      }
+      if (rec.comparison_draft) { assert(rec.revealed_at, 'Comparison draft without reveal'); finalForm(rec.comparison_draft, false); }
+      assert(Array.isArray(rec.amendments), 'Missing amendments');
+      for (const a of rec.amendments) {
+        keys(a, ['saved_at','reviewer','note']);
+        assert(rec.first_pass && time(a.saved_at) >= time(rec.first_pass.saved_at), 'Amendment precedes lock');
+        assert(typeof a.reviewer === 'string' && a.reviewer.trim() && typeof a.note === 'string' && a.note.trim(), 'Empty amendment');
+      }
+    }
+    return state;
+  }
+  return {enums, textFields, fields, comparisons, finalEnums, finalFields, assert, form, blank, record, lock, reveal, finish, validate};
+})();
+if (typeof module !== 'undefined') module.exports = Review;
+
+const PACK = {"schema": "proquest-pilot-v1", "rubric": "2026-10-14-v1", "records": [{"audit_id": "verified:1975:3299", "source_path": "data/proquest/verified/pred_proquest_economy_1975.export.jsonl", "source_sha256": "60da11fc3f925eca243955ba09054db9219b2848705200df26e566eae3a316ef", "source_line": "3299", "page_id": "157875659", "date": "1975-09-03", "publisher": "Los Angeles Times (1923-1995)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1978:300", "source_path": "data/proquest/verified/pred_proquest_economy_1978.export.jsonl", "source_sha256": "16378ae08aa8eff4eafe47c9879008b928b0bd34f4a86798489a59356ed502d0", "source_line": "300", "page_id": "123539566", "date": "1978-12-31", "publisher": "New York Times  (1923-)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1987:4619", "source_path": "data/proquest/verified/pred_proquest_economy_1987.export.jsonl", "source_sha256": "70c2fbec90ac202660aa57d5a772184b97045b676a671818d7a5ca9490e1dd7c", "source_line": "4619", "page_id": "814679990", "date": "1987-09-28", "publisher": "Los Angeles Times (1923-1995)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1988:3910", "source_path": "data/proquest/verified/pred_proquest_economy_1988.export.jsonl", "source_sha256": "8217fb98213e9ed7f8db08fe781540aa31efa5a73c021f7eb8ca46c076f12dcd", "source_line": "3910", "page_id": "901646398", "date": "1988-03-16", "publisher": "Los Angeles Times (1923-1995)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1990:3700", "source_path": "data/proquest/verified/pred_proquest_economy_1990.export.jsonl", "source_sha256": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684", "source_line": "3700", "page_id": "1459823011", "date": "1990-06-20", "publisher": "Los Angeles Times (1923-1995)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1990:4984", "source_path": "data/proquest/verified/pred_proquest_economy_1990.export.jsonl", "source_sha256": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684", "source_line": "4984", "page_id": "1467053909", "date": "1990-12-19", "publisher": "Los Angeles Times (1923-1995)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:1998:3403", "source_path": "data/proquest/verified/pred_proquest_economy_1998.export.jsonl", "source_sha256": "13f0339cf903690544009a8ac216ea7dcdd134f7189cc3c219d18f1b1ff30908", "source_line": "3403", "page_id": "2111495496", "date": "1998-10-06", "publisher": "Los Angeles Times (1996-)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:2001:6374", "source_path": "data/proquest/verified/pred_proquest_economy_2001.export.jsonl", "source_sha256": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599", "source_line": "6374", "page_id": "2155734178", "date": "2001-03-16", "publisher": "Los Angeles Times (1996-)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:2001:11158", "source_path": "data/proquest/verified/pred_proquest_economy_2001.export.jsonl", "source_sha256": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599", "source_line": "11158", "page_id": "398788334", "date": "2001-10-01", "publisher": "Wall Street Journal", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:2002:4920", "source_path": "data/proquest/verified/pred_proquest_economy_2002.export.jsonl", "source_sha256": "c341fa6290f075acd8857867021c6b3fd04cf3bb04697c76dcfa822b7678c92c", "source_line": "4920", "page_id": "308498672", "date": "2002-01-31", "publisher": "Wall Street Journal", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:2008:13442", "source_path": "data/proquest/verified/pred_proquest_economy_2008.export.jsonl", "source_sha256": "e2932cb295141d8f459452c22129672240a0f5042ff225e99fdf0dc8ed57a5e7", "source_line": "13442", "page_id": "405565363", "date": "2008-12-03", "publisher": "The Christian Science Monitor", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}, {"audit_id": "verified:2009:3298", "source_path": "data/proquest/verified/pred_proquest_economy_2009.export.jsonl", "source_sha256": "b8dd4c5adbffad9a5aa99ecdbb39dcb6f6dec74e5a2791f9ad793b5d435f78be", "source_line": "3298", "page_id": "1929288415", "date": "2009-05-29", "publisher": "New York Times (2008-)", "pilot_inclusion_probability": "6.823803701913508e-05", "source_locator": "", "mapping_status": "pending"}], "comparison_sha256": "6deb22dec3496b2f9de12541dee6f3af3958b64016cdf3c6a56f94f77aa477a3", "pack_id": "942c47f6f5ebded30062de2c40d54f4fa341fc92da4d159152aba5202d25d80a"};
+const $ = id => document.getElementById(id), now = () => new Date().toISOString();
+const storageKey = 'proquest-review-' + PACK.pack_id;
+let state = Review.blank(PACK), labels = null, active = PACK.records[0].audit_id, corruptCache = false;
+function message(s) { $('message').textContent = s; }
+function persist() { if(corruptCache)return;try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch(e) { $('storage').textContent = 'Browser autosave unavailable. Export JSON before closing or navigating away.'; } }
+try { const saved = localStorage.getItem(storageKey); if(saved) state = Review.validate(JSON.parse(saved),PACK); } catch(e) { corruptCache=true;$('storage').textContent='Autosave disabled to preserve unreadable cached data. Export new work and use a fresh browser profile.';message('Saved data could not be restored: '+e.message+'. Cached data has not been overwritten.'); }
+const hints = {source_locator:'Permitted article locator, not machine labels',lineage:'Original claim ID / source offsets and how you established the mapping',context_note:'Evidence from the authorized source; avoid copying restricted text outside its permitted environment',mapping_reason:'Why this mapping is unique or why it is unresolved',blinding:'unexposed means no prior machine-label exposure for this record',quantity:'Exact predicted quantity, or unclear',attribution:'Speaker and reported versus endorsed voice, or unclear',initial_note:'Evidence and remaining ambiguity',error_category:'Use none if no error; otherwise identify the issue',comparison_note:'Evidence for the comparison; explain any unassessable fields'};
+function fields(container,names,enums,prefix) {
+  for(const name of names) {
+    const label=document.createElement('label'); label.textContent=name.replaceAll('_',' ');
+    const input=document.createElement(enums[name]?'select':(['reviewer','source_locator','target_start','target_end','original_forecast_date'].includes(name)?'input':'textarea'));
+    input.id=prefix+name;
+    if(enums[name]) { const options=['',...enums[name]]; for(const value of options) { const o=document.createElement('option');o.value=value;o.textContent=value||'Choose…';input.append(o); } }
+    if(hints[name]) {const small=document.createElement('small');small.textContent=hints[name];label.append(small);}
+    label.append(input);$(container).append(label);
+  }
+}
+const ordered=['reviewer','source_locator','mapping_status','mapping_reason','lineage','context_note','blinding','is_forecast','quantity','change_type','direction','scope','horizon_support','target_start','target_end','condition','condition_text','attribution','original_forecast_date','initial_note'];
+fields('firstFields',ordered,Review.enums,'f_'); fields('secondFields',Review.finalFields,Review.finalEnums,'c_');
+for(const r of PACK.records) { const o=document.createElement('option');o.value=r.audit_id;o.textContent=`${r.audit_id} · ${r.date} · ${r.publisher}`;$('claim').append(o); }
+function rec() { return Review.record(state,active,now()); }
+function collect(names,prefix) { return Object.fromEntries(names.map(k=>[k,$(prefix+k).value])); }
+function draft() { const r=rec();if(!r.first_pass)r.draft=collect(Review.fields,'f_');if(r.revealed_at&&!r.comparison&&labels)r.comparison_draft=collect(Review.finalFields,'c_');persist(); }
+function render() {
+  const r=rec(), meta=PACK.records.find(x=>x.audit_id===active), a=r.first_pass?.answers||r.draft;
+  $('metadata').textContent=JSON.stringify(meta,null,2);$('claim').value=active;
+  for(const k of Review.fields) $('f_'+k).value=a[k]||'';
+  $('first').disabled=!!r.first_pass;$('lock').disabled=!!r.first_pass;
+  $('locked').textContent=r.first_pass?`First pass locked ${r.first_pass.saved_at}${a.mapping_status!=='unique'?' · Unassessable mapping retained; comparison is unavailable.':''}`:'';
+  const eligible=!!r.first_pass&&a.mapping_status==='unique';
+  $('labels').disabled=!eligible;$('reveal').disabled=!eligible||!labels;
+  $('machine').textContent=r.revealed_at?(labels?JSON.stringify(labels.find(x=>x.audit_id===active),null,2):'Labels were previously revealed. Reload comparison.json to display them.'):'Machine labels hidden.';
+  $('second').disabled=!r.revealed_at||!!r.comparison||!labels;$('finish').disabled=$('second').disabled;
+  for(const k of Review.finalFields) $('c_'+k).value=r.comparison?.answers[k]||r.comparison_draft?.[k]||'';
+  $('amend').disabled=!r.first_pass;$('trail').textContent=JSON.stringify({first_pass_saved:r.first_pass?.saved_at||null,revealed:r.revealed_at||null,comparison_saved:r.comparison?.saved_at||null,amendments:r.amendments},null,2);
+  const rs=Object.values(state.records);$('progress').textContent=`${rs.filter(x=>x.first_pass).length}/12 first passes locked · ${rs.filter(x=>x.comparison).length} comparisons saved · ${rs.filter(x=>x.first_pass&&x.first_pass.answers.mapping_status!=='unique').length} unresolved mappings retained`;
+  persist();
+}
+function guard(fn){return async e=>{try{await fn(e);}catch(err){message(err.message);}};}
+$('first').addEventListener('input',draft);
+$('second').addEventListener('input',draft);
+$('claim').onchange=()=>{draft();active=$('claim').value;render();};
+$('lock').onclick=guard(()=>{draft();Review.form(rec().draft,true);if(!confirm('Lock this first pass? Answers cannot be overwritten; later corrections use amendments.'))return;Review.lock(rec(),now());render();message('First pass saved. Export a backup.');});
+$('labels').onchange=guard(async e=>{Review.assert(rec().first_pass,'Lock first pass first');const file=e.target.files[0];if(!file)return;const bytes=await file.arrayBuffer();const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');Review.assert(hash===PACK.comparison_sha256,'Wrong or modified comparison file');labels=JSON.parse(new TextDecoder().decode(bytes)).records;render();message('Comparison file loaded; use Reveal for this record.');});
+$('reveal').onclick=guard(()=>{Review.assert(labels,'Load comparison file');Review.reveal(rec(),now());render();message('Machine labels revealed for this record.');});
+$('finish').onclick=guard(()=>{Review.finish(rec(),collect(Review.finalFields,'c_'),now());render();message('Comparison saved. Export a backup.');});
+$('amend').onclick=guard(()=>{Review.assert(rec().first_pass,'Lock first pass first');Review.assert($('amender').value.trim()&&$('amendment').value.trim(),'Enter amendment reviewer and note');rec().amendments.push({saved_at:now(),reviewer:$('amender').value,note:$('amendment').value});$('amendment').value='';render();});
+$('export').onclick=guard(()=>{draft();Review.validate(state,PACK);const url=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)+'\n'],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='proquest-pilot-review-'+new Date().toISOString().replaceAll(':','-')+'.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);message('Review export requested. Confirm the file is saved before closing.');});
+$('restore').onchange=guard(async e=>{const file=e.target.files[0];e.target.value='';if(!file)return;const imported=Review.validate(JSON.parse(await file.text()),PACK);const existing=Object.values(state.records).some(r=>r.first_pass||Object.values(r.draft||{}).some(Boolean));Review.assert(!existing,'Restore requires an empty browser workspace. Export current work, then use a separate browser profile to restore; existing answers will not be overwritten.');state=imported;render();message('Review restored; locked answers preserved.');});
+window.addEventListener('beforeunload',draft);render();
+</script></html>

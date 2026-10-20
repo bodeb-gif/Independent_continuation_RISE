@@ -1,0 +1,1143 @@
+{
+  "status": "Writing preparation; no new analyses or human judgments",
+  "entries": [
+    {
+      "id": "E01",
+      "question": "Corpus and measurement",
+      "supported_statement": "The scored sample is a subset of machine-verified extracted claims.",
+      "exhibit_role": "Table 1: sample flow",
+      "sample": "Annual verified ProQuest 1900\u20132010",
+      "metric": "Counts; legacy claim-weighted accuracy",
+      "limitation": "Machine verification is not human source validation; article-processing denominators remain unavailable.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/publication/evidence.json",
+          "sha256": "e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339",
+          "selector": {
+            "json_path": []
+          },
+          "values": {
+            "verified_claims": 274070,
+            "verified_scored_claims": 175855,
+            "pooled_legacy_hit_rate": 0.40812032640527707,
+            "pooled_legacy_baseline": 0.5362144948963635
+          }
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "question": "Corpus and measurement",
+      "supported_statement": "The legacy baseline gap persists under equal-article weighting.",
+      "exhibit_role": "Table 2: original scoring",
+      "sample": "All scorable verified claims; articles weighted equally",
+      "metric": "Accuracy and forecast-minus-fixed gap",
+      "limitation": "Conditional on legacy targets and horizons; not a validated population forecast-error rate.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/publication/evidence.json",
+          "sha256": "e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339",
+          "selector": {
+            "json_path": [
+              "equal_article_comparison"
+            ]
+          },
+          "values": {
+            "verified_hit_rate": 0.4089911755430464,
+            "verified_fixed_baseline": 0.5359726088302363,
+            "verified_gap_vs_fixed": -0.12698143328718992
+          }
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "question": "Interpretation sensitivity",
+      "supported_statement": "Employment scores and constant-baseline rankings depend on the outcome band.",
+      "exhibit_role": "Figure 1 / Table 3: all three regimes and comparators",
+      "sample": "9,260 matched verified employment claims; machine-stated horizons; non-NBER; equal article",
+      "metric": "Accuracy; forecast-minus-comparator gap; paired five-year block bootstrap interval",
+      "limitation": "Duration scaling and sign-only rules are scenarios, not source-validated corrections; keep all regimes.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "original",
+            "rule": "original_fixed"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.34234807058738453",
+            "fixed_baseline": "0.20054491044709458",
+            "gap_vs_fixed": "0.14180316014028996",
+            "low": "0.035069890181923635",
+            "high": "0.2589658246955484"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "original",
+            "rule": "always_flat"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.34234807058738453",
+            "fixed_baseline": "0.5059404171691456",
+            "gap_vs_fixed": "-0.16359234658176108",
+            "low": "-0.34911174662433103",
+            "high": "-0.015234898468920758"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "original",
+            "rule": "always_opposite"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.34234807058738453",
+            "fixed_baseline": "0.2935146723837599",
+            "gap_vs_fixed": "0.048833398203624645",
+            "low": "-0.0026714672297693557",
+            "high": "0.1016237252607687"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "duration_scaled",
+            "rule": "original_fixed"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.4318898098343363",
+            "fixed_baseline": "0.2719415784537049",
+            "gap_vs_fixed": "0.15994823138063136",
+            "low": "0.023182876911331304",
+            "high": "0.2999023816278852"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "duration_scaled",
+            "rule": "always_flat"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.4318898098343363",
+            "fixed_baseline": "0.3517821251507436",
+            "gap_vs_fixed": "0.0801076846835927",
+            "low": "-0.09487279985713909",
+            "high": "0.19580802373252634"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "duration_scaled",
+            "rule": "always_opposite"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.4318898098343363",
+            "fixed_baseline": "0.3762762963955514",
+            "gap_vs_fixed": "0.0556135134387849",
+            "low": "0.00011121843461598349",
+            "high": "0.1182322473457524"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "sign_only",
+            "rule": "original_fixed"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.5763915740935707",
+            "fixed_baseline": "0.46835722899638216",
+            "gap_vs_fixed": "0.10803434509718851",
+            "low": "-0.0703560324883872",
+            "high": "0.2645419038154911"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "sign_only",
+            "rule": "always_flat"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.5763915740935707",
+            "fixed_baseline": "0.05824065389253651",
+            "gap_vs_fixed": "0.5181509202010341",
+            "low": "0.44738072857635997",
+            "high": "0.5842916779176711"
+          }
+        },
+        {
+          "source": "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv",
+          "sha256": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "horizon_months": "all",
+            "regime": "sign_only",
+            "rule": "always_opposite"
+          },
+          "values": {
+            "n_claims": "9260",
+            "n_articles": "7463",
+            "hit_rate": "0.5763915740935707",
+            "fixed_baseline": "0.47340211711108127",
+            "gap_vs_fixed": "0.1029894569824894",
+            "low": "0.03164765886370221",
+            "high": "0.19557651345647245"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "question": "Interpretation sensitivity",
+      "supported_statement": "Payroll growth and falling unemployment do not give interchangeable outcome labels.",
+      "exhibit_role": "Table 4: alternative targets",
+      "sample": "9,260 matched employment claims; all endpoint series available",
+      "metric": "Equal-article accuracy; paired five-year block bootstrap interval; label disagreement",
+      "limitation": "Targets are hypothetical mappings pending source review. GDP quarter-average levels are not monthly IP endpoints; never interpolate GDP.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv",
+          "sha256": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "variant": "frozen_sign",
+            "comparator": "always_improve"
+          },
+          "values": {
+            "n_claims": "9260",
+            "hit_rate": "0.5763915740935707",
+            "fixed_baseline": "0.46835722899638216",
+            "gap_vs_fixed": "0.10803434509718851",
+            "low": "-0.0703560324883872",
+            "high": "0.2645419038154911"
+          }
+        },
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv",
+          "sha256": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "variant": "alternative_sign",
+            "comparator": "always_improve"
+          },
+          "values": {
+            "n_claims": "9260",
+            "hit_rate": "0.5514418219831592",
+            "fixed_baseline": "0.6329782482469071",
+            "gap_vs_fixed": "-0.08153642626374791",
+            "low": "-0.3317254939958178",
+            "high": "0.1899207148278539"
+          }
+        },
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/label_disagreement.csv",
+          "sha256": "738a70df193da8797f9a186f619ba4dfc1bd64fc3febdd050e7ecd2de3ce20c3",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "employment",
+            "variant": "alternative_sign",
+            "reference": "frozen_sign"
+          },
+          "values": {
+            "article_weighted_disagreement": "0.2194917146813167"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "question": "Interpretation sensitivity",
+      "supported_statement": "GDP and production sensitivity does not establish superiority to always predicting growth.",
+      "exhibit_role": "Table 4: alternative targets",
+      "sample": "15,680 business claims; quarter-end publication months and whole-quarter horizons, 1947\u20132010",
+      "metric": "Equal-article accuracy; paired five-year block bootstrap interval; label disagreement",
+      "limitation": "Targets are hypothetical mappings pending source review. GDP quarter-average levels are not monthly IP endpoints; never interpolate GDP.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv",
+          "sha256": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "general_business",
+            "variant": "frozen_sign",
+            "comparator": "always_improve"
+          },
+          "values": {
+            "n_claims": "15680",
+            "hit_rate": "0.5719999923852167",
+            "fixed_baseline": "0.7308297524814675",
+            "gap_vs_fixed": "-0.15882976009625083",
+            "low": "-0.2775526576728885",
+            "high": "-0.05079727149757802"
+          }
+        },
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv",
+          "sha256": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "general_business",
+            "variant": "quarterly_ip_sign",
+            "comparator": "always_improve"
+          },
+          "values": {
+            "n_claims": "15680",
+            "hit_rate": "0.5657731746412485",
+            "fixed_baseline": "0.7304843877904563",
+            "gap_vs_fixed": "-0.16471121314920778",
+            "low": "-0.28123805576207106",
+            "high": "-0.06037301667046719"
+          }
+        },
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv",
+          "sha256": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "general_business",
+            "variant": "alternative_sign",
+            "comparator": "always_improve"
+          },
+          "values": {
+            "n_claims": "15680",
+            "hit_rate": "0.5485026823074316",
+            "fixed_baseline": "0.8657071125883791",
+            "gap_vs_fixed": "-0.31720443028094747",
+            "low": "-0.39457057311514604",
+            "high": "-0.24684178113305336"
+          }
+        },
+        {
+          "source": "data/scored/proquest/alternative_targets_v1/label_disagreement.csv",
+          "sha256": "738a70df193da8797f9a186f619ba4dfc1bd64fc3febdd050e7ecd2de3ce20c3",
+          "selector": {
+            "source_set": "verified",
+            "cohort": "machine_stated_non_NBER",
+            "topic": "general_business",
+            "variant": "alternative_sign",
+            "reference": "quarterly_ip_sign"
+          },
+          "values": {
+            "article_weighted_disagreement": "0.14325790509695524"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "question": "Incremental macro information",
+      "supported_statement": "The press-augmented aggregate model has a small, uncertain average Brier improvement.",
+      "exhibit_role": "Table 5: aggregate macro task",
+      "sample": "408 monthly forecasts, 1977\u20132010, six-month IP direction",
+      "metric": "Three-class Brier (0\u20132); positive improvement favors press; five-year block interval",
+      "limitation": "Do not compare directly with binary claim-correctness Brier; interval spans zero.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/macro_benchmark/core/metrics.csv",
+          "sha256": "f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2",
+          "selector": {
+            "grouping": "overall",
+            "model": "macro_only"
+          },
+          "values": {
+            "n_months": "408",
+            "brier": "0.6327043013208867"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_benchmark/core/metrics.csv",
+          "sha256": "f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2",
+          "selector": {
+            "grouping": "overall",
+            "model": "macro_plus_press"
+          },
+          "values": {
+            "n_months": "408",
+            "brier": "0.6228094107656541"
+          }
+        },
+        {
+          "source": "data/scored/proquest/publication/evidence.json",
+          "sha256": "e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339",
+          "selector": {
+            "json_path": [
+              "monthly_core_brier_interval"
+            ]
+          },
+          "values": {
+            "improvement": "0.009894890555232686",
+            "low": "-0.06373022417225763",
+            "high": "0.0808064374350468",
+            "n_blocks": "7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "question": "Incremental macro information",
+      "supported_statement": "Excluding 2007\u20132009 reverses the aggregate Brier ranking.",
+      "exhibit_role": "Table 5: adjacent robustness panel",
+      "sample": "372 monthly forecasts after removing 2007\u20132009",
+      "metric": "Three-class Brier (0\u20132); lower is better",
+      "limitation": "Exploratory era sensitivity, not proof that text has no information or that crises cause the difference.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/macro_benchmark/core/metrics.csv",
+          "sha256": "f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2",
+          "selector": {
+            "grouping": "sensitivity",
+            "period": "Exclude 2007\u20132009",
+            "model": "macro_only"
+          },
+          "values": {
+            "n_months": "372",
+            "brier": "0.6163901372991306"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_benchmark/core/metrics.csv",
+          "sha256": "f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2",
+          "selector": {
+            "grouping": "sensitivity",
+            "period": "Exclude 2007\u20132009",
+            "model": "macro_plus_press"
+          },
+          "values": {
+            "n_months": "372",
+            "brier": "0.621350298031051"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "question": "Claim-correctness prediction",
+      "supported_statement": "The original RNN comparison does not reject equal predictive performance at 0.05.",
+      "exhibit_role": "Appendix A: original model inference",
+      "sample": "1995\u20132010; four publication-time blocks; 16 paired swaps",
+      "metric": "Binary Brier improvement; one-sided paired permutation p; Holm adjustment across primary comparisons",
+      "limitation": "Minimum exact one-sided p is 1/16 = 0.0625. Do not shorten blocks to seek significance. Non-rejection does not prove equivalence.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/rnn_permutation/paired_tests.csv",
+          "sha256": "3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a",
+          "selector": {
+            "metric": "brier",
+            "comparison": "gru_vs_metadata"
+          },
+          "values": {
+            "improvement": "0.02542368476277357",
+            "p_one_sided": "0.3125",
+            "n_blocks": "4",
+            "n_permutations": "16",
+            "primary_holm_p": "0.5"
+          }
+        },
+        {
+          "source": "data/scored/proquest/rnn_permutation/paired_tests.csv",
+          "sha256": "3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a",
+          "selector": {
+            "metric": "brier",
+            "comparison": "gru_vs_history_logistic"
+          },
+          "values": {
+            "improvement": "0.04348298875220408",
+            "p_one_sided": "0.25",
+            "n_blocks": "4",
+            "n_permutations": "16",
+            "primary_holm_p": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E09",
+      "question": "Claim-correctness prediction",
+      "supported_statement": "Production inputs improve average RNN loss in the matched experiment, but metadata logistic remains stronger.",
+      "exhibit_role": "Appendix B: complete input ablation",
+      "sample": "Matched business/employment claims; four exposed five-year eras, 1975\u20131994",
+      "metric": "Mean of four article-weighted binary Brier scores; lower is better",
+      "limitation": "Historical exploratory comparison; no new superiority test or promotion. Not comparable to the original broader 1995\u20132010 sample.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "gru",
+            "arm": "none"
+          },
+          "values": {
+            "mean_brier": "0.1991995461141491",
+            "mean_improvement": "0.0",
+            "folds_improved": "0",
+            "worst_fold_brier": "0.23422539384080307"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "gru",
+            "arm": "production"
+          },
+          "values": {
+            "mean_brier": "0.1910216294265029",
+            "mean_improvement": "0.008177916687646232",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.24122875919276587"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "gru",
+            "arm": "unemployment"
+          },
+          "values": {
+            "mean_brier": "0.2128580253676755",
+            "mean_improvement": "-0.01365847925352641",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.2800967927968502"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "gru",
+            "arm": "both"
+          },
+          "values": {
+            "mean_brier": "0.20961514551247576",
+            "mean_improvement": "-0.010415599398326647",
+            "folds_improved": "1",
+            "worst_fold_brier": "0.25219558554785904"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata",
+            "arm": "none"
+          },
+          "values": {
+            "mean_brier": "0.1743221575197912",
+            "mean_improvement": "0.0",
+            "folds_improved": "0",
+            "worst_fold_brier": "0.24848981381113436"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata",
+            "arm": "production"
+          },
+          "values": {
+            "mean_brier": "0.18637388058880927",
+            "mean_improvement": "-0.01205172306901807",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.25943378183526933"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata",
+            "arm": "unemployment"
+          },
+          "values": {
+            "mean_brier": "0.224141089246638",
+            "mean_improvement": "-0.049818931726846816",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.29617344750642066"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata",
+            "arm": "both"
+          },
+          "values": {
+            "mean_brier": "0.20486581371569978",
+            "mean_improvement": "-0.030543656195908597",
+            "folds_improved": "1",
+            "worst_fold_brier": "0.2987699316030355"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata_history",
+            "arm": "none"
+          },
+          "values": {
+            "mean_brier": "0.2986476471076992",
+            "mean_improvement": "0.0",
+            "folds_improved": "0",
+            "worst_fold_brier": "0.4063848139657962"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata_history",
+            "arm": "production"
+          },
+          "values": {
+            "mean_brier": "0.26531784563558003",
+            "mean_improvement": "0.03332980147211914",
+            "folds_improved": "3",
+            "worst_fold_brier": "0.32803138688827616"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata_history",
+            "arm": "unemployment"
+          },
+          "values": {
+            "mean_brier": "0.31200025996308195",
+            "mean_improvement": "-0.013352612855382771",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.4055105984067686"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "all",
+            "model": "logistic_metadata_history",
+            "arm": "both"
+          },
+          "values": {
+            "mean_brier": "0.29363644581706727",
+            "mean_improvement": "0.005011201290631907",
+            "folds_improved": "2",
+            "worst_fold_brier": "0.3824157107493495"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "question": "Claim-correctness prediction",
+      "supported_statement": "Added macro inputs have different effects across business and employment claims.",
+      "exhibit_role": "Appendix B: topic panels",
+      "sample": "Same matched 1975\u20131994 experiment; topic-specific article weights",
+      "metric": "Mean binary Brier and number of improved eras out of four",
+      "limitation": "Small topic support and historical selection limit interpretation; retain adverse input results.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "general_business",
+            "model": "gru",
+            "arm": "none"
+          },
+          "values": {
+            "mean_brier": "0.1987712814648466",
+            "mean_improvement": "0.0",
+            "folds_improved": "0"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "general_business",
+            "model": "gru",
+            "arm": "production"
+          },
+          "values": {
+            "mean_brier": "0.18762359153739044",
+            "mean_improvement": "0.011147689927456156",
+            "folds_improved": "3"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "general_business",
+            "model": "gru",
+            "arm": "unemployment"
+          },
+          "values": {
+            "mean_brier": "0.21332237661772716",
+            "mean_improvement": "-0.014551095152880555",
+            "folds_improved": "2"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "general_business",
+            "model": "gru",
+            "arm": "both"
+          },
+          "values": {
+            "mean_brier": "0.20902719535398565",
+            "mean_improvement": "-0.010255913889139039",
+            "folds_improved": "1"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "employment",
+            "model": "gru",
+            "arm": "none"
+          },
+          "values": {
+            "mean_brier": "0.20591721564388327",
+            "mean_improvement": "0.0",
+            "folds_improved": "0"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "employment",
+            "model": "gru",
+            "arm": "production"
+          },
+          "values": {
+            "mean_brier": "0.21452585264016",
+            "mean_improvement": "-0.008608636996276758",
+            "folds_improved": "1"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "employment",
+            "model": "gru",
+            "arm": "unemployment"
+          },
+          "values": {
+            "mean_brier": "0.21899056833976882",
+            "mean_improvement": "-0.01307335269588554",
+            "folds_improved": "0"
+          }
+        },
+        {
+          "source": "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv",
+          "sha256": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+          "selector": {
+            "topic": "employment",
+            "model": "gru",
+            "arm": "both"
+          },
+          "values": {
+            "mean_brier": "0.22223341184346346",
+            "mean_improvement": "-0.016316196199580198",
+            "folds_improved": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "question": "Source validation",
+      "supported_statement": "Twelve pilot addresses are fixed; source interpretation remains unmeasured.",
+      "exhibit_role": "Table 6: reserved for future audit, no estimates yet",
+      "sample": "Pilot SRS of 12 from 175,855 scored verified records",
+      "metric": "Sample design only; no validity rate",
+      "limitation": "Do not replace missing mappings or combine pilot and main-audit estimates. Main sample is not yet drawn.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/publication/evidence.json",
+          "sha256": "e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339",
+          "selector": {
+            "json_path": [
+              "pilot"
+            ]
+          },
+          "values": {
+            "seed": 20261014,
+            "n": 12,
+            "population_n": 175855,
+            "design": "Simple random sample without replacement of scored verified records",
+            "source_mapping": "Pending VM lineage/context; do not guess from labels"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "question": "Claim-correctness prediction",
+      "supported_statement": "Political and forecast polarization remain separate ablations; neither improves the original RNN average Brier.",
+      "exhibit_role": "Appendix A: original RNN and polarization metrics",
+      "sample": "56,807 scored claims, 1995\u20132010; original saved model experiment",
+      "metric": "Article-weighted binary Brier, accuracy, AUC and average precision",
+      "limitation": "Political roll-call separation and forecast-direction disagreement are different constructs. This is not a causal polarization effect or a fresh holdout after tuning.",
+      "status": "historical_exploratory",
+      "facts": [
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "gru_ensemble",
+                "arm": "baseline",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.19291293776659127,
+            "accuracy": 0.6897320529391935,
+            "auc": 0.7614302092395144,
+            "average_precision": 0.6833303786800521
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "gru_ensemble",
+                "arm": "political",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.21439729747470768,
+            "accuracy": 0.6652468374963076,
+            "auc": 0.6970875031796497,
+            "average_precision": 0.6422226914311413
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "gru_ensemble",
+                "arm": "forecast",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.19968150464587617,
+            "accuracy": 0.6926467199154804,
+            "auc": 0.7518349132724683,
+            "average_precision": 0.6751562796699183
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "gru_ensemble",
+                "arm": "both",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.19912503031958986,
+            "accuracy": 0.674301846146246,
+            "auc": 0.7447242802813375,
+            "average_precision": 0.679469740744843
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata",
+                "arm": "baseline",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.2183366224822681,
+            "accuracy": 0.6665833295949332,
+            "auc": 0.6783856530541345,
+            "average_precision": 0.5787963546048043
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata",
+                "arm": "political",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.21928501192305827,
+            "accuracy": 0.6676507528003897,
+            "auc": 0.6728782200476321,
+            "average_precision": 0.5787316150583284
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata",
+                "arm": "forecast",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.2184271900344842,
+            "accuracy": 0.6664954449744076,
+            "auc": 0.6763708666902134,
+            "average_precision": 0.5808471518067087
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata",
+                "arm": "both",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.21921847497081523,
+            "accuracy": 0.6676558129686547,
+            "auc": 0.672788582590285,
+            "average_precision": 0.5800891584544102
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata_history",
+                "arm": "baseline",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.2363959264999156,
+            "accuracy": 0.6614146005636153,
+            "auc": 0.6343953765181172,
+            "average_precision": 0.5957598065030248
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata_history",
+                "arm": "political",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.24683621162942307,
+            "accuracy": 0.6508659627303935,
+            "auc": 0.6256740443759612,
+            "average_precision": 0.5882790109757289
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata_history",
+                "arm": "forecast",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.23946393752109327,
+            "accuracy": 0.6622873623394693,
+            "auc": 0.6279551288558838,
+            "average_precision": 0.5928951717299867
+          }
+        },
+        {
+          "source": "data/scored/proquest/polarization/claims_summary.json",
+          "sha256": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+          "selector": {
+            "json_path": [
+              "metrics",
+              {
+                "model": "logistic_metadata_history",
+                "arm": "both",
+                "scope": "overall"
+              }
+            ]
+          },
+          "values": {
+            "n": 56807,
+            "brier": 0.2541250899016542,
+            "accuracy": 0.6386271570598259,
+            "auc": 0.6192547773762986,
+            "average_precision": 0.578977319269186
+          }
+        }
+      ]
+    }
+  ]
+}

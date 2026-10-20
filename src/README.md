@@ -22,3 +22,8 @@ refuse to overwrite an existing output; use their `--out` option where
 supported. New source claims belong in the intake workflow, not in derived
 result files. Earlier LOC scripts remain for historical reproduction and
 extraction validation only.
+
+`proquest_review.py` builds the fixed 12-record blinded pilot interface from
+existing retrieval addresses; see [the review guide](../validation/proquest_review/README.md).
+`proquest_writing_evidence.py` assembles a traceable writing ledger from saved
+result rows, without refitting models or interpreting sources.

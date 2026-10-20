@@ -1,0 +1,23 @@
+{
+  "inputs_sha256": {
+    "data/scored/proquest/publication/evidence.json": "e3657d4f32d3cb0f5954a67e80bc9ddb7906b59c1410813df0748cf9cf028339",
+    "data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv": "12ea42c244eb63c5e88f29be5108d7407426d8d687e0b4b3483f9e52468adbb6",
+    "data/scored/proquest/alternative_targets_v1/primary_comparisons.csv": "613c81b2e8c8a67122a52d20f686396335a93d0065a092cc9673532dd0977be1",
+    "data/scored/proquest/alternative_targets_v1/label_disagreement.csv": "738a70df193da8797f9a186f619ba4dfc1bd64fc3febdd050e7ecd2de3ce20c3",
+    "data/scored/proquest/macro_benchmark/core/metrics.csv": "f3a2d9c948f112b19479f951ab766d234a27481dd2cec89fe7f841bc1bbcd2a2",
+    "data/scored/proquest/rnn_permutation/paired_tests.csv": "3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a",
+    "data/scored/proquest/macro_claim_inputs_v1/summary_metrics.csv": "8cbff4d61a89a33ff717875e0d98f0a1409a38c36d0def8d975d9edf1b59eee5",
+    "data/scored/proquest/polarization/claims_summary.json": "c2c02b8188ee76e5bd864bd5c2652c905c32be04d1562163c2feee8a0a871e53",
+    "data/scored/proquest/benchmark_interpretation_v2/specification.json": "aea123b3a6b1fa2e31a9ef9429eebc67842a5cefb4a51189b7dae1215f76a06d",
+    "data/scored/proquest/alternative_targets_v1/specification.json": "2aff14ec46ad0d7c798013c18544de88e49ae4da896bf5f7ce4002e0437ce3ce",
+    "data/scored/proquest/macro_claim_inputs_v1/specification.json": "8e2d2faafb77ea1d9c9601f55dd6629908fbd49a261a2c373b48c90986d1c18e",
+    "data/scored/proquest/modern_readiness/model_freeze.json": "4f3d06d0be7c85a14fc725fc0a5efc314d2c7db05d41c1be384c49f416b8214c",
+    "src/proquest_writing_evidence.py": "a971078a9af4764c24ed67b84427f4944fcfbba7da4c303f5ab76c137fd11cfd"
+  },
+  "outputs_sha256": {
+    "ledger.json": "dcf7343cd279c0a7f22cee4cb402954d6ad6d2c01b7e55d6ffc7fa81c3e2863a",
+    "facts.csv": "5ec76302477304c60cd83c731e240248200ff1da8c86787a488586c87952293c",
+    "report.html": "dd0f8dea24eda1bcf05f4411151cd573bcff6e7aa09297b67a943fb0d6a031e4"
+  },
+  "entries": 12
+}
