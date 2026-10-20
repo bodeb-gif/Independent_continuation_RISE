@@ -55,12 +55,14 @@ original model freeze and deferred evaluation procedure. `publication/` is the
 older evidence packet, not the manuscript folder. `prepared_*_check_v1/`
 contains historical checks of the future-data adapters.
 
-`reproducibility_v1/` and `v2/` retain failed rebuild attempts; `v3/` and `v4/`
-retain intermediate successful runs; `v5/` is the completed broader rebuild.
-`results_inventory_v1/` is its historical inventory. The newer
-`results_inventory_v2/` audits the commit-ready collection. These are dated
-snapshots, not automatically updated status pages.
+`reproducibility_v5/` is the completed broader rebuild.
+`results_inventory_v2/` audits the collection before cleanup. These are dated
+snapshots, not automatically updated status pages. The superseded v1–v4 rebuild
+directories and v1 inventory were retired; their execution outcomes and recovery
+information are retained in [the cleanup record](repository_cleanup_v1/report.html).
 
-`rnn_runner_check*`, `rnn_development_v1_reload_check/`, and
+`rnn_runner_check_v2/`, `rnn_development_v1_reload_check/`, and
 `rnn_development_diagnostics_v1/` are auxiliary checks, not independent studies.
-Preserve failed and superseded runs so exploratory choices stay visible.
+The first `rnn_runner_check/` was retired after verifying its predictions were
+byte-identical to v2. Scientific experiments, including unsuccessful candidates,
+remain intact so exploratory choices stay visible.

@@ -4,7 +4,7 @@ The October 19, 2026 audit separates primary results, exploratory extensions, re
 
 ## Results roles
 
-The [generated inventory](../data/scored/proquest/results_inventory_v1/inventory.html) and [machine-readable inventory](../data/scored/proquest/results_inventory_v1/results_inventory.csv) identify the existing runs, including the final article-direction audit. Primary describes a result's role in the analysis, not demonstrated superiority or source validity.
+The [commit-time inventory](../data/scored/proquest/results_inventory_v2/inventory.html) and [machine-readable inventory](../data/scored/proquest/results_inventory_v2/results_inventory.csv) identify the runs recorded before cleanup. The [cleanup record](../data/scored/proquest/repository_cleanup_v1/report.html) identifies retired execution artifacts and verifies the retained collection. Primary describes a result's role in the analysis, not demonstrated superiority or source validity.
 
 | Result | Current role |
 | --- | --- |
@@ -48,7 +48,7 @@ The [completed rebuild record](../data/scored/proquest/reproducibility_v5/rebuil
 
 The expanded rebuild passed 32 commands and 59 comparisons. The subsequent article-direction audit ran separately in the same fresh environment and passed its synthetic grouping test. The required offline, scoring and forecasts checks passed again after that addition (97/33/33). The latest results inventory snapshots all current code; the rebuild snapshot preserves the version actually executed.
 
-An older offline test depended on a saved model merely to reach a missing-feature guard. It now supplies a synthetic empty model bundle and synthetic missing macro inputs to test that guard without model artifacts or network access. The legacy cached-series checks still use their small local fixtures. Earlier harness attempts and logs remain in `reproducibility_v1` and `v2`; `v3` and `v4` record intermediate successful coverage. Use `v5` for the expanded rebuild.
+An older offline test depended on a saved model merely to reach a missing-feature guard. It now supplies a synthetic empty model bundle and synthetic missing macro inputs to test that guard without model artifacts or network access. The legacy cached-series checks still use their small local fixtures. The superseded `reproducibility_v1`–`v4` directories were removed during the requested cleanup. Their command outcomes, failed-run traces and intermediate rebuild summaries remain in the [deletion manifest](../data/scored/proquest/repository_cleanup_v1/deletion_manifest.json), along with exact Git recovery information. Use `v5` for the expanded rebuild. Unsuccessful scientific model experiments remain intact.
 
 ## Boundaries
 

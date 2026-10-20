@@ -8,6 +8,7 @@ holds the existing manuscript, concept and literature files.
 
 | Document | Purpose |
 | --- | --- |
+| [Research plan](RESEARCH_PLAN.md) | Active paper objective, validation design and dependencies |
 | [Analysis](PROQUEST_ANALYSIS.md) | Scope, methods and analysis history |
 | [Deep dive](PROQUEST_ANALYSIS_DEEP_DIVE.md) | Interpretation, benchmark and input findings |
 | [Reproducibility](PROQUEST_REPRODUCIBILITY.md) | Environment, inventory and isolated rebuild |
@@ -18,8 +19,8 @@ holds the existing manuscript, concept and literature files.
 
 ## Earlier project material
 
-The root-level poster, LOC and monthly-pipeline documents remain at their
+The poster, LOC and monthly-pipeline documents remain at their
 existing paths for historical reference. Their estimates must not be pooled
 with active ProQuest results. This includes the poster/abstract material,
-`RESULTS_*`, `MONTHLY_PIPELINE.md`, and the earlier `RESEARCH_PLAN.md`.
+`RESULTS_*` and `MONTHLY_PIPELINE.md`.
 For the active project use the ProQuest-specific documents above.

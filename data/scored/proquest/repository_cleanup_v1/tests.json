@@ -1,0 +1,122 @@
+[
+  {
+    "test": "tests/test_context_sources.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_forecasts.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_loc_validation.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_offline.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_alternative_targets.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_article_direction_audit.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_benchmark_interpretation.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_descriptive.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_direction_diagnostics.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_followups.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_information.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_macro_benchmark.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_macro_claim_inputs.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_macro_diagnostics.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_macro_information.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_modern_intake.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_polarization.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_prepare_features.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_prepare_inputs.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_publication.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_quota_wait.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn_age_weighting.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn_audit.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn_development.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn_permutation.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_rnn_runner.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_robustness.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_proquest_target_robustness.py",
+    "exit_code": 0
+  },
+  {
+    "test": "tests/test_scoring.py",
+    "exit_code": 0
+  }
+]

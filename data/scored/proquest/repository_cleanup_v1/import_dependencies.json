@@ -1,0 +1,345 @@
+{
+  "modules": 81,
+  "active_validation_test_closure": [
+    "analyze_proquest",
+    "context_sources",
+    "disagreement",
+    "forecast_credibility",
+    "forecast_data",
+    "grade_claims",
+    "greenbook_analysis",
+    "greenbook_benchmark",
+    "hedging_lexicon",
+    "hit_predictor",
+    "loc_validation",
+    "macro_context",
+    "model_hit",
+    "newspaper_scraper",
+    "proquest_2008",
+    "proquest_alternative_targets",
+    "proquest_article_direction_audit",
+    "proquest_benchmark_input_report",
+    "proquest_benchmark_interpretation",
+    "proquest_descriptive",
+    "proquest_direction_diagnostics",
+    "proquest_followups",
+    "proquest_information",
+    "proquest_macro_benchmark",
+    "proquest_macro_claim_inputs",
+    "proquest_macro_diagnostics",
+    "proquest_macro_information",
+    "proquest_modern_intake",
+    "proquest_panel",
+    "proquest_polarization",
+    "proquest_polarization_models",
+    "proquest_prepare_features",
+    "proquest_prepare_inputs",
+    "proquest_publication",
+    "proquest_reproducibility",
+    "proquest_rnn",
+    "proquest_rnn_age_weighting",
+    "proquest_rnn_audit",
+    "proquest_rnn_development",
+    "proquest_rnn_permutation",
+    "proquest_rnn_runner",
+    "proquest_robustness",
+    "proquest_target_robustness",
+    "proquest_vintages",
+    "report_proquest_polarization",
+    "score_claims",
+    "score_predictions",
+    "spf_benchmark",
+    "tier2_analysis",
+    "truth_data"
+  ],
+  "retained_historical_entrypoints": [
+    "analysis_v2",
+    "build_poster",
+    "build_press_index",
+    "combine_shards",
+    "extract_llm",
+    "make_feature_importance_figure",
+    "make_hit_auc_by_block_figure",
+    "make_index_figures",
+    "make_l1_ladder_figure",
+    "make_logistic_figure",
+    "make_lr_figures",
+    "make_macro_figures",
+    "make_method_figure",
+    "make_model_diagram",
+    "make_poster_figures",
+    "make_prelim_figures",
+    "make_recession_signal_figure",
+    "make_regularization_figure",
+    "make_roc_figure",
+    "make_topic_accuracy_figure",
+    "model",
+    "model_figures",
+    "model_interactions",
+    "model_variants",
+    "perm_test_l1",
+    "predict_claim",
+    "preview_poster",
+    "recover_shard",
+    "scrape_monthly",
+    "validate_interactions",
+    "verify_claims"
+  ],
+  "edges": {
+    "make_regularization_figure": [
+      "hit_predictor",
+      "model_variants"
+    ],
+    "proquest_polarization_models": [
+      "proquest_followups",
+      "proquest_information",
+      "proquest_macro_information",
+      "proquest_panel",
+      "proquest_polarization",
+      "proquest_rnn",
+      "proquest_vintages"
+    ],
+    "perm_test_l1": [
+      "hit_predictor",
+      "macro_context",
+      "make_l1_ladder_figure",
+      "model_variants"
+    ],
+    "proquest_rnn": [
+      "proquest_followups"
+    ],
+    "make_topic_accuracy_figure": [
+      "make_index_figures"
+    ],
+    "build_poster": [
+      "truth_data"
+    ],
+    "greenbook_analysis": [
+      "greenbook_benchmark",
+      "score_claims"
+    ],
+    "model_interactions": [
+      "model"
+    ],
+    "proquest_macro_information": [
+      "proquest_information",
+      "proquest_panel",
+      "proquest_vintages"
+    ],
+    "newspaper_scraper": [],
+    "proquest_alternative_targets": [
+      "proquest_descriptive",
+      "proquest_target_robustness"
+    ],
+    "make_feature_importance_figure": [],
+    "make_index_figures": [
+      "truth_data"
+    ],
+    "score_predictions": [
+      "truth_data"
+    ],
+    "proquest_rnn_audit": [],
+    "proquest_macro_benchmark": [
+      "proquest_information",
+      "proquest_macro_information",
+      "proquest_panel",
+      "proquest_vintages"
+    ],
+    "make_poster_figures": [
+      "truth_data"
+    ],
+    "tier2_analysis": [
+      "score_claims"
+    ],
+    "model_figures": [
+      "model"
+    ],
+    "make_logistic_figure": [],
+    "macro_context": [
+      "tier2_analysis",
+      "truth_data"
+    ],
+    "make_method_figure": [
+      "hit_predictor",
+      "macro_context"
+    ],
+    "validate_interactions": [
+      "model",
+      "model_interactions"
+    ],
+    "proquest_followups": [
+      "analyze_proquest",
+      "proquest_descriptive"
+    ],
+    "build_press_index": [],
+    "spf_benchmark": [
+      "score_claims"
+    ],
+    "score_claims": [],
+    "make_prelim_figures": [],
+    "proquest_information": [
+      "proquest_descriptive",
+      "proquest_panel"
+    ],
+    "make_lr_figures": [
+      "hit_predictor",
+      "macro_context"
+    ],
+    "hit_predictor": [
+      "macro_context"
+    ],
+    "preview_poster": [],
+    "context_sources": [],
+    "make_roc_figure": [
+      "hit_predictor",
+      "macro_context",
+      "model_variants"
+    ],
+    "hedging_lexicon": [
+      "grade_claims"
+    ],
+    "proquest_prepare_inputs": [
+      "analyze_proquest",
+      "proquest_descriptive",
+      "proquest_modern_intake",
+      "proquest_rnn_runner"
+    ],
+    "proquest_rnn_permutation": [
+      "proquest_followups",
+      "proquest_rnn"
+    ],
+    "proquest_direction_diagnostics": [
+      "proquest_target_robustness"
+    ],
+    "proquest_benchmark_input_report": [
+      "proquest_target_robustness"
+    ],
+    "predict_claim": [
+      "model"
+    ],
+    "proquest_macro_diagnostics": [
+      "proquest_information",
+      "proquest_macro_information"
+    ],
+    "disagreement": [],
+    "report_proquest_polarization": [
+      "proquest_polarization"
+    ],
+    "make_model_diagram": [],
+    "model": [
+      "disagreement",
+      "tier2_analysis"
+    ],
+    "proquest_vintages": [],
+    "model_variants": [
+      "hit_predictor",
+      "macro_context"
+    ],
+    "verify_claims": [
+      "extract_llm"
+    ],
+    "proquest_panel": [
+      "analyze_proquest",
+      "proquest_descriptive",
+      "score_predictions"
+    ],
+    "proquest_target_robustness": [],
+    "truth_data": [],
+    "make_l1_ladder_figure": [
+      "hit_predictor",
+      "macro_context",
+      "model_variants"
+    ],
+    "proquest_rnn_runner": [
+      "proquest_polarization_models",
+      "proquest_rnn",
+      "proquest_rnn_age_weighting",
+      "proquest_rnn_development",
+      "proquest_rnn_permutation"
+    ],
+    "proquest_article_direction_audit": [
+      "proquest_target_robustness"
+    ],
+    "greenbook_benchmark": [
+      "score_claims",
+      "spf_benchmark"
+    ],
+    "loc_validation": [],
+    "extract_llm": [],
+    "proquest_reproducibility": [],
+    "proquest_benchmark_interpretation": [
+      "proquest_descriptive",
+      "proquest_direction_diagnostics",
+      "proquest_target_robustness"
+    ],
+    "proquest_rnn_age_weighting": [
+      "proquest_rnn_development",
+      "proquest_rnn_runner"
+    ],
+    "proquest_rnn_development": [
+      "proquest_rnn",
+      "proquest_rnn_permutation",
+      "proquest_rnn_runner"
+    ],
+    "proquest_descriptive": [
+      "analyze_proquest",
+      "score_predictions"
+    ],
+    "make_macro_figures": [
+      "macro_context"
+    ],
+    "proquest_prepare_features": [
+      "proquest_panel",
+      "proquest_polarization",
+      "proquest_rnn_runner"
+    ],
+    "grade_claims": [],
+    "recover_shard": [],
+    "proquest_publication": [
+      "analyze_proquest"
+    ],
+    "proquest_2008": [
+      "proquest_descriptive",
+      "proquest_followups"
+    ],
+    "scrape_monthly": [],
+    "proquest_robustness": [
+      "analyze_proquest",
+      "proquest_descriptive"
+    ],
+    "forecast_credibility": [
+      "score_claims"
+    ],
+    "make_hit_auc_by_block_figure": [],
+    "combine_shards": [],
+    "model_hit": [
+      "truth_data"
+    ],
+    "proquest_polarization": [
+      "proquest_panel"
+    ],
+    "make_recession_signal_figure": [
+      "make_index_figures",
+      "truth_data"
+    ],
+    "analyze_proquest": [],
+    "proquest_macro_claim_inputs": [
+      "proquest_descriptive",
+      "proquest_rnn",
+      "proquest_rnn_development",
+      "proquest_rnn_permutation",
+      "proquest_rnn_runner",
+      "proquest_vintages"
+    ],
+    "proquest_modern_intake": [],
+    "analysis_v2": [
+      "truth_data"
+    ],
+    "forecast_data": [
+      "greenbook_benchmark",
+      "score_claims",
+      "spf_benchmark"
+    ]
+  },
+  "caution": "Dynamic entry points and file references also matter; import reachability alone does not justify deletion."
+}

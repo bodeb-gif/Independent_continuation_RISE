@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "reviewed_tracked_files": 1702,
+  "deleted_tracked_files": 113,
+  "deleted_tracked_bytes": 10950431,
+  "disposable_local_files": 76,
+  "disposable_local_bytes": 1663961,
+  "test_files_passed": 30,
+  "test_failures": 0,
+  "retained_hash_checks": 4697,
+  "retained_hash_differences": 0,
+  "frozen_originals_verified": 30,
+  "recovery_commit": "1ae62420f7af0ef567e57b26a565faf7ffddee51"
+}

@@ -1,0 +1,1544 @@
+{
+  "date": "2026-10-19",
+  "recovery_commit": "1ae62420f7af0ef567e57b26a565faf7ffddee51",
+  "status": "removed",
+  "deleted_files": [
+    {
+      "path": "data/scored/proquest/reproducibility_v1/commands.json",
+      "bytes": 177,
+      "sha256": "ce33a7283712f40405c67a9b2d70dfdb5f6caffc7749378dc58855746aa4b479",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/current_code_snapshot.json",
+      "bytes": 4728,
+      "sha256": "d75bced44238bef12c03cb41cac4307397c97d85106db59496e75197dfdac22f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/inventory.html",
+      "bytes": 3519,
+      "sha256": "35b04c04a9742ba3e6056e49e8d4600c2948f8bb913b47aeaa9ac1f7d926bd9d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/inventory_summary.json",
+      "bytes": 2725,
+      "sha256": "315ffb81190e1f12362dfa8552c0e086fe94caae9336727ab2e3f2797ce5a703",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/logs/test_proquest_descriptive.log",
+      "bytes": 210,
+      "sha256": "ef1cbd61878bc89390ea45c14b7f3e29c3acec6b308061f971e07134dfd94351",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/provenance_checks.json",
+      "bytes": 1216406,
+      "sha256": "80c998a8d491f4545a55212b5994e9fd827755bf8a6477fa4ea5658d5dc5293f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v1/results_inventory.csv",
+      "bytes": 3839,
+      "sha256": "89b7c89ffc82fe4d6c0670a8d6d25563782b70c052d9f0d041e09fbb802ef78e",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/commands.json",
+      "bytes": 3312,
+      "sha256": "48f6019b6346dd1350846080e32f462f173853dfefcf433dd3c79a77acddf80d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/current_code_snapshot.json",
+      "bytes": 4728,
+      "sha256": "fdadbaa9a2937e42c834d4b18f45d06588fc37dea89c0ee8a0f99c64824450c1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/inventory.html",
+      "bytes": 3519,
+      "sha256": "35b04c04a9742ba3e6056e49e8d4600c2948f8bb913b47aeaa9ac1f7d926bd9d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/inventory_summary.json",
+      "bytes": 2770,
+      "sha256": "4ff0bf81f53fab04f155b1724c2594cd053101d1bc009ea48b0310eb727680a4",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_offline.log",
+      "bytes": 5512,
+      "sha256": "662c88a303e3d2dfc6850744f513b9fcc3d3d2b750f5ea79b94ba3f814680d1b",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_descriptive.log",
+      "bytes": 166,
+      "sha256": "190262d7324d4a53d55eb0fe4dbcf5b585a52b401ae7a60da59f09b4a956829d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_followups.log",
+      "bytes": 104,
+      "sha256": "25d216cf950a9d015514b3c5df60576ec6f3ba23a9960c1136a7b37ec6b7e87b",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_information.log",
+      "bytes": 111,
+      "sha256": "e9f4145743db78f146b05a941fe915655d4fe1059af36b3128672ff3688bc116",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_macro_benchmark.log",
+      "bytes": 542,
+      "sha256": "ef4f8346794f2d7581bfec2aa170911d0ce1b87a97b2fc35d96f91466c46d164",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_macro_diagnostics.log",
+      "bytes": 104,
+      "sha256": "0c4c5c2184d00bb1a2cc8247d010064830edfd9055be88923c8c8f632a6b3dcd",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_macro_information.log",
+      "bytes": 110,
+      "sha256": "7a7060a0973a2227184d2aedd7c7addf1b777334cc4c49091f6ec771dbf68f7c",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_modern_intake.log",
+      "bytes": 104,
+      "sha256": "065c7d15facfd20f14fb9182747be315f3349fa1d5e1a0e966047509f4bfa9b1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_polarization.log",
+      "bytes": 104,
+      "sha256": "38f4be995c1bb305dc5d7f1c806efbe264aa65ec6a86669aa31361674503f9a3",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_publication.log",
+      "bytes": 101,
+      "sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_quota_wait.log",
+      "bytes": 461,
+      "sha256": "a44cfa5ade36755452e9082a350a49b221dc3783e5b82cde217b5fa4aa52e013",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn.log",
+      "bytes": 104,
+      "sha256": "7f08aac2e1c4b0a002e5588cb3b842d7b3c96645b6f4af1883f750f2ae5c30c4",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn_age_weighting.log",
+      "bytes": 101,
+      "sha256": "946acfd74cc11aff8da84cf35f68137c7af2d277f03e4bec7c5baf2f80df4833",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn_audit.log",
+      "bytes": 102,
+      "sha256": "3b0dbb90387b342ccecc50446a0fb5e4385d86a3f467e5b97d63f8924fc08aff",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn_development.log",
+      "bytes": 103,
+      "sha256": "0081d5a961e72df3841755bde0a15a265d6ec39983a7f42e71fddae9e19e7c88",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn_permutation.log",
+      "bytes": 103,
+      "sha256": "789cb31f0eaef2e7ff45cf17950724b278954f73553fc5cdc9e31fc094de3d71",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_rnn_runner.log",
+      "bytes": 105,
+      "sha256": "e881cf9cdd8bfc380c6cdb0e72b47f6bc086755ca8d3ba5dc341c4d0e46eabf0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_robustness.log",
+      "bytes": 105,
+      "sha256": "87578f2fe4d6902dff24988aed54087da09e87393d7135be492b1066cbaba89d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/logs/test_proquest_target_robustness.log",
+      "bytes": 102,
+      "sha256": "7137eeba0f1475e79f6dce65a349431fdd4c73ecad493315cc596f599d3a273f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/provenance_checks.json",
+      "bytes": 1216406,
+      "sha256": "80c998a8d491f4545a55212b5994e9fd827755bf8a6477fa4ea5658d5dc5293f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v2/results_inventory.csv",
+      "bytes": 3839,
+      "sha256": "89b7c89ffc82fe4d6c0670a8d6d25563782b70c052d9f0d041e09fbb802ef78e",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/commands.json",
+      "bytes": 5060,
+      "sha256": "9db4fb017a4ced213c305dba02dcdd792322d2c3c25c3c62757dd62eeee68752",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/current_code_snapshot.json",
+      "bytes": 4943,
+      "sha256": "f6781152bd1b4421dc3f0eea0f652d8d8ec46e985e445a11c88db9c2591da36c",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/inventory.html",
+      "bytes": 3519,
+      "sha256": "35b04c04a9742ba3e6056e49e8d4600c2948f8bb913b47aeaa9ac1f7d926bd9d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/inventory_summary.json",
+      "bytes": 2918,
+      "sha256": "ff6445910fa6e246c889ca18e63832553ace5bdeab2a8366b3a26ba07bcabb01",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/descriptive.log",
+      "bytes": 1100,
+      "sha256": "455896b3ac3333520508adfd5d5e7b6c473afe78b429c3935c2ce6e734a8a28f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/inventory.log",
+      "bytes": 461,
+      "sha256": "4ea8e199cee4bf3641dbc1b9b16b45ae7759ade0da1761a33589047bf893faba",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/macro_benchmark.log",
+      "bytes": 2294,
+      "sha256": "72765f03b29a4731e6ec413493ae0ae4163d9c3720a2d75e374ccd372acbf949",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/rnn_reload.log",
+      "bytes": 45,
+      "sha256": "9a455aec35689d16439d89e5ccc9daa82615ae27402d9baea86a2983943cf9b1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/target_robustness.log",
+      "bytes": 415,
+      "sha256": "28a8955ba1c5995a2fd2bab025367fe9e475f4b6d596bd5a6798fc8f41da6f56",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_forecasts.log",
+      "bytes": 21,
+      "sha256": "7ff6f5a50e09a35894cbd25649ada05c7e2893c995427bd08efa774c71f26ff1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_offline.log",
+      "bytes": 6638,
+      "sha256": "085705173b0b5fc46f3be5d57a7c6ed65fad95bfa5688f2ab11a8a499f6a21a0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_descriptive.log",
+      "bytes": 166,
+      "sha256": "4ddcec9c43d6c1a5ce0ea88d5240f3531e2d58c60a79ede410558d3f67b8f9f1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_followups.log",
+      "bytes": 104,
+      "sha256": "64687c347beaf01c2465e40d77de0c8df26f410e2630f8bc9300ce4244039804",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_information.log",
+      "bytes": 111,
+      "sha256": "99de69205100af650cbfae329a29a019a1878561988df693b5dce6b0e12efac0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_macro_benchmark.log",
+      "bytes": 542,
+      "sha256": "56b6da30b970102185a8d9c1b67312175e94bd5d282ea40c13645de876b92c76",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_macro_diagnostics.log",
+      "bytes": 104,
+      "sha256": "0c4c5c2184d00bb1a2cc8247d010064830edfd9055be88923c8c8f632a6b3dcd",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_macro_information.log",
+      "bytes": 110,
+      "sha256": "a2f4153553e746b4c04de97953ff172e6720dc3a249e94e7e4442b3960c13119",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_modern_intake.log",
+      "bytes": 104,
+      "sha256": "065c7d15facfd20f14fb9182747be315f3349fa1d5e1a0e966047509f4bfa9b1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_polarization.log",
+      "bytes": 104,
+      "sha256": "64687c347beaf01c2465e40d77de0c8df26f410e2630f8bc9300ce4244039804",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_prepare_inputs.log",
+      "bytes": 101,
+      "sha256": "5279d1fc9a1ced44f9c96da1414ef59e4676f963fbad52e7a1a2903538819b0d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_publication.log",
+      "bytes": 101,
+      "sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_quota_wait.log",
+      "bytes": 461,
+      "sha256": "e3760c5ce33a6edefa00c29b8d2ef51300d2fc57e5d58706506312f6e6cc2bc1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn.log",
+      "bytes": 104,
+      "sha256": "e07d6010e472563caad92fc41e6ffa653b8ecc338f1f5743cfff5ceb58f7d046",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn_age_weighting.log",
+      "bytes": 101,
+      "sha256": "55acadf0454ddcc94b077c0c2c736842df089ee096c225ff97919952791f409d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn_audit.log",
+      "bytes": 102,
+      "sha256": "d52cbb1058abf83e3acb402d1c2b8ee089749613d6075f5d973dd66c8ef09200",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn_development.log",
+      "bytes": 103,
+      "sha256": "9bcf06d9c2b03215b8342bc5ebab66dc5c9f15c18372f6b019fb1490a3afaff8",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn_permutation.log",
+      "bytes": 103,
+      "sha256": "884ae734946814c0dbc2bd5af83098848b94b0f83df33bafe5ff150b0b096756",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_rnn_runner.log",
+      "bytes": 105,
+      "sha256": "22c147df949f8498951654d427f6e3e0668fa57debb56b1a2df3720dd550f761",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_robustness.log",
+      "bytes": 105,
+      "sha256": "eda43d56bc548095bfd3d5bc09ddb642b676e43538d31594253d33c8dbfa3069",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_proquest_target_robustness.log",
+      "bytes": 102,
+      "sha256": "5610bb341ae4df72930d9f88afd8d925eec567770a8ccf6387603ee214544c29",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/logs/test_scoring.log",
+      "bytes": 2001,
+      "sha256": "66e756837ac78ff209d9f42d14e4149c911d610f3f840b85d3543a4e32252a13",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/provenance_checks.json",
+      "bytes": 1216406,
+      "sha256": "80c998a8d491f4545a55212b5994e9fd827755bf8a6477fa4ea5658d5dc5293f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/rebuild_comparisons.json",
+      "bytes": 7881,
+      "sha256": "f063d24a0fc086b5e575f71c11b6454514734402ce2a2a2b7212e3469f29926a",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/rebuild_summary.json",
+      "bytes": 1594,
+      "sha256": "b6ac55f5a9179c0818a7c65f074ff1bd2cc3ce2f8d6f36db8cf8500ae5d4361b",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v3/results_inventory.csv",
+      "bytes": 3839,
+      "sha256": "89b7c89ffc82fe4d6c0670a8d6d25563782b70c052d9f0d041e09fbb802ef78e",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/commands.json",
+      "bytes": 5899,
+      "sha256": "49709f9a5efa78e352ff5d8daed846c236d140f5756def3c99e5904df4e1b5a6",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/current_code_snapshot.json",
+      "bytes": 5172,
+      "sha256": "dad5602b2ba8fe14995bac049fc1ca89f93d11acc59fc880b18d02cfb893a516",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/inventory.html",
+      "bytes": 5225,
+      "sha256": "2d3bb461f0ec03b8d6e89028c9115493b76ef6800cbd3a7605fb6779cd58da5c",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/inventory_summary.json",
+      "bytes": 3208,
+      "sha256": "40f180ad6524522333557bfb342055ecdd9191470aa4a5ba792a414bb49325af",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/descriptive.log",
+      "bytes": 1100,
+      "sha256": "455896b3ac3333520508adfd5d5e7b6c473afe78b429c3935c2ce6e734a8a28f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/direction_diagnostics.log",
+      "bytes": 1209,
+      "sha256": "46593ba7344659b125bc7107547c5139866a757f4902abce077294448bf416b1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/inventory.log",
+      "bytes": 461,
+      "sha256": "4ea8e199cee4bf3641dbc1b9b16b45ae7759ade0da1761a33589047bf893faba",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/macro_benchmark.log",
+      "bytes": 2294,
+      "sha256": "72765f03b29a4731e6ec413493ae0ae4163d9c3720a2d75e374ccd372acbf949",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/prepare_scored_inputs.log",
+      "bytes": 45,
+      "sha256": "450e8ce74d676c8771d2e77e33163c4380f141110a1a6dce5ab42210b28cdccf",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/rnn_reload.log",
+      "bytes": 45,
+      "sha256": "9a455aec35689d16439d89e5ccc9daa82615ae27402d9baea86a2983943cf9b1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/target_robustness.log",
+      "bytes": 415,
+      "sha256": "28a8955ba1c5995a2fd2bab025367fe9e475f4b6d596bd5a6798fc8f41da6f56",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_forecasts.log",
+      "bytes": 21,
+      "sha256": "7ff6f5a50e09a35894cbd25649ada05c7e2893c995427bd08efa774c71f26ff1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_offline.log",
+      "bytes": 6638,
+      "sha256": "085705173b0b5fc46f3be5d57a7c6ed65fad95bfa5688f2ab11a8a499f6a21a0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_descriptive.log",
+      "bytes": 166,
+      "sha256": "da6b326b0cc1d343580165f8b4e718b92dbae9d181c1edae563e1437d03a0898",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_direction_diagnostics.log",
+      "bytes": 100,
+      "sha256": "cc4ce8d54ec0f6a2d972abf34157488e5e132e9d71efaebb422979f2bf3356f8",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_followups.log",
+      "bytes": 104,
+      "sha256": "b9ba6442c95876138526fec949f1e813b286c0ffcc021435d55eb5d2b50dd6ed",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_information.log",
+      "bytes": 111,
+      "sha256": "e4bbd35f38b1cc5d55598fecf7a8592342297f7b94566f0123ad86fa4d645cef",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_macro_benchmark.log",
+      "bytes": 542,
+      "sha256": "3794a3786059d9dad98e86ae986dbd38e9e008f6915daf3b9e8b8dada069147f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_macro_diagnostics.log",
+      "bytes": 104,
+      "sha256": "fb526d31566ebddce2817c65d6141b21b917818c314ade6c7bae1ee5fdd84c32",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_macro_information.log",
+      "bytes": 110,
+      "sha256": "7812aa5d1f4254ff60d113c22ead1bf9fa166a642726423069d99b4e8ff2e56b",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_modern_intake.log",
+      "bytes": 104,
+      "sha256": "b95b5805bef96b568b1b2424b637003cd6f306e6312d682e4f2e4e23f635b26a",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_polarization.log",
+      "bytes": 104,
+      "sha256": "ec5c7a14d020c8e93eee133ecd150e04f42663449263b4b674806c0ee47247b9",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_prepare_inputs.log",
+      "bytes": 102,
+      "sha256": "120fcf1e1b1ef6883b716f1b33b4fbea79c7089f1d1ff950e98c9608d82abb42",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_publication.log",
+      "bytes": 101,
+      "sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_quota_wait.log",
+      "bytes": 461,
+      "sha256": "48e9fd7a328fade92f08760f8f56ebb9e9416b1b4f3a7a0b004b0ebffcf421c4",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn.log",
+      "bytes": 104,
+      "sha256": "d29937c3f97351469eb16392fa1d99d2bfe5e74e86c245dc4b65aeace7ba75a8",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn_age_weighting.log",
+      "bytes": 101,
+      "sha256": "f97776321b6d5f1db3efd766ff27e384b1098780b3a47b31413c7c947e35e6e5",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn_audit.log",
+      "bytes": 102,
+      "sha256": "84ff24306afcf5e19892adf32493aa9bc9dbc8db16870c6155e8e03c23864a33",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn_development.log",
+      "bytes": 103,
+      "sha256": "3bdbbd01290a11ec52b0479ed73b295822454bfa94b042cde919628d3c8ce3d4",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn_permutation.log",
+      "bytes": 103,
+      "sha256": "f945a8240ca4cf76be06b8803c11ed2e7564bed9546c5aee8b5c93b9f07d9592",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_rnn_runner.log",
+      "bytes": 105,
+      "sha256": "be46ad0ff7407d5aafaa7ea2fc10b20ff832e5ea86b7784aef2dd5eeafe8e99a",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_robustness.log",
+      "bytes": 105,
+      "sha256": "aeb8eab8eeb87c97d150804b54d470279b25d480780ccf79e9464381ccfc401a",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_proquest_target_robustness.log",
+      "bytes": 102,
+      "sha256": "71f385628efaeed61b8ca36819a695a12058846f3539952fa581e781da33250f",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/logs/test_scoring.log",
+      "bytes": 2001,
+      "sha256": "66e756837ac78ff209d9f42d14e4149c911d610f3f840b85d3543a4e32252a13",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/provenance_checks.json",
+      "bytes": 1308172,
+      "sha256": "514c19586f9316ff85d19e25640dab793117e04176260b936eb54d8119a1151d",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/rebuild_comparisons.json",
+      "bytes": 9070,
+      "sha256": "59ce4a353dd8b4400e03aaaaea2fd8955fbe1e3881be2869eb969bef0ff94f43",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/rebuild_summary.json",
+      "bytes": 1594,
+      "sha256": "920f9c5d45a535da7e888f24b836bebfbf0bd40d44a9c1648ce6f97f32018966",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/reproducibility_v4/results_inventory.csv",
+      "bytes": 5442,
+      "sha256": "1a152ef5e11025d83e39ec9cc044644d6cc3ee484c4397c83c700ca53c454af1",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/results_inventory_v1/current_code_snapshot.json",
+      "bytes": 11095,
+      "sha256": "50c2a5af51098ce4e97f953567ccfc2579ea88e01bdc79fb5f959568a342a3d6",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/results_inventory_v1/inventory.html",
+      "bytes": 5936,
+      "sha256": "c09412a0d0cd890d34223f26f4d1743373bae85099234626a1ad18bcc2c02b91",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/results_inventory_v1/inventory_summary.json",
+      "bytes": 3693,
+      "sha256": "79da2edbc4bbecc49fb5f15c3d783b614d3abbd5076cc27c525d9cc881ad6667",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/results_inventory_v1/provenance_checks.json",
+      "bytes": 1310829,
+      "sha256": "9996ccf2838bc0e3c725bd29dfab62eb141582bbac14fd743906084f07f2a1a0",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/results_inventory_v1/results_inventory.csv",
+      "bytes": 6164,
+      "sha256": "0aae864e5ea8003fc993fbe2602d60fc05ac765f4804b9bb9adf69304d33764c",
+      "reason": "Superseded execution/inventory artifacts; final v5 rebuild and v2 inventory retained"
+    },
+    {
+      "path": "data/scored/proquest/rnn_runner_check/predictions.csv.gz",
+      "bytes": 4511298,
+      "sha256": "dcdc50b50b002645b2cca592a4378253dccc87e54344c37d914a4a220139003a",
+      "reason": "Exact duplicate prediction reload superseded by rnn_runner_check_v2"
+    },
+    {
+      "path": "data/scored/proquest/rnn_runner_check/reproduction.json",
+      "bytes": 985,
+      "sha256": "4133cdada37b94fb6e4a4c46ae23a93a2f71d0da1ae7d9768bb51a0ab3c90008",
+      "reason": "Exact duplicate prediction reload superseded by rnn_runner_check_v2"
+    },
+    {
+      "path": "data/scored/proquest/rnn_runner_check/run_manifest.json",
+      "bytes": 3096,
+      "sha256": "9e076111d683f9d604bf0ebec23471a9647eb26ce33f0d19e6e74742385c960b",
+      "reason": "Exact duplicate prediction reload superseded by rnn_runner_check_v2"
+    }
+  ],
+  "retired_execution_records": [
+    {
+      "directory": "data/scored/proquest/reproducibility_v1",
+      "replacement": "reproducibility_v5",
+      "commands.json": [
+        {
+          "name": "test_proquest_descriptive",
+          "arguments": [
+            "tests/test_proquest_descriptive.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.04934125021100044
+        }
+      ],
+      "failed_command_records": [
+        {
+          "name": "test_proquest_descriptive",
+          "arguments": [
+            "tests/test_proquest_descriptive.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.04934125021100044
+        }
+      ],
+      "failure_traces": {
+        "test_proquest_descriptive": "Traceback (most recent call last):\n  File \"/private/tmp/bode-econ-rebuild-20261019/tests/test_proquest_descriptive.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n"
+      }
+    },
+    {
+      "directory": "data/scored/proquest/reproducibility_v2",
+      "replacement": "reproducibility_v5",
+      "commands.json": [
+        {
+          "name": "test_proquest_descriptive",
+          "arguments": [
+            "tests/test_proquest_descriptive.py"
+          ],
+          "exit_code": 0,
+          "seconds": 13.705487500177696
+        },
+        {
+          "name": "test_proquest_followups",
+          "arguments": [
+            "tests/test_proquest_followups.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.6203323339577764
+        },
+        {
+          "name": "test_proquest_information",
+          "arguments": [
+            "tests/test_proquest_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 17.247506042011082
+        },
+        {
+          "name": "test_proquest_macro_benchmark",
+          "arguments": [
+            "tests/test_proquest_macro_benchmark.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.212899124948308
+        },
+        {
+          "name": "test_proquest_macro_diagnostics",
+          "arguments": [
+            "tests/test_proquest_macro_diagnostics.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.1428736250381917
+        },
+        {
+          "name": "test_proquest_macro_information",
+          "arguments": [
+            "tests/test_proquest_macro_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.2089401250705123
+        },
+        {
+          "name": "test_proquest_modern_intake",
+          "arguments": [
+            "tests/test_proquest_modern_intake.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.043277500197291374
+        },
+        {
+          "name": "test_proquest_polarization",
+          "arguments": [
+            "tests/test_proquest_polarization.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.1615969580598176
+        },
+        {
+          "name": "test_proquest_publication",
+          "arguments": [
+            "tests/test_proquest_publication.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.05217058304697275
+        },
+        {
+          "name": "test_proquest_quota_wait",
+          "arguments": [
+            "tests/test_proquest_quota_wait.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.36009295796975493
+        },
+        {
+          "name": "test_proquest_rnn",
+          "arguments": [
+            "tests/test_proquest_rnn.py"
+          ],
+          "exit_code": 0,
+          "seconds": 9.13511816598475
+        },
+        {
+          "name": "test_proquest_rnn_age_weighting",
+          "arguments": [
+            "tests/test_proquest_rnn_age_weighting.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.7675473329145461
+        },
+        {
+          "name": "test_proquest_rnn_audit",
+          "arguments": [
+            "tests/test_proquest_rnn_audit.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.41910495795309544
+        },
+        {
+          "name": "test_proquest_rnn_development",
+          "arguments": [
+            "tests/test_proquest_rnn_development.py"
+          ],
+          "exit_code": 0,
+          "seconds": 3.131590500008315
+        },
+        {
+          "name": "test_proquest_rnn_permutation",
+          "arguments": [
+            "tests/test_proquest_rnn_permutation.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.6500902080442756
+        },
+        {
+          "name": "test_proquest_rnn_runner",
+          "arguments": [
+            "tests/test_proquest_rnn_runner.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.491632292047143
+        },
+        {
+          "name": "test_proquest_robustness",
+          "arguments": [
+            "tests/test_proquest_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.43707554088905454
+        },
+        {
+          "name": "test_proquest_target_robustness",
+          "arguments": [
+            "tests/test_proquest_target_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.3853391669690609
+        },
+        {
+          "name": "test_offline",
+          "arguments": [
+            "tests/test_offline.py"
+          ],
+          "exit_code": 1,
+          "seconds": 3.985856750048697
+        }
+      ],
+      "failed_command_records": [
+        {
+          "name": "test_offline",
+          "arguments": [
+            "tests/test_offline.py"
+          ],
+          "exit_code": 1,
+          "seconds": 3.985856750048697
+        }
+      ],
+      "failure_traces": {
+        "test_offline": "extract_claims:\n  [ok] finds future-marker sentence near phrase\n  [ok] drops ad/junk sentences\n  [ok] drops too-short and too-long sentences\n  [ok] ignores retrospective sentence without future marker\nsearch_pages pagination:\n  'business slump': 14 total pages, taking up to 30\n  [ok] stops at reported total instead of paging past the end (the 404 bug)\n  'recession': 50 total pages, taking up to 30\n  [ok] respects max_pages cap when results exceed it\n  [ok] empty result set yields nothing\nfetch_full_text:\n  [ok] pulls text via resource.fulltext_file\n  [ok] missing fulltext_file returns empty string, not crash\nscoring rules:\n  [ok] prices: CPI step up -> 'up'\n  [ok] prices before 1913 unscorable\n  [ok] general business: INDPRO crash -> 'worsen'\n  [ok] pre-1919 falls back to NBER; May 1908 in recession -> 'worsen'\n  [ok] NBER: Oct 1908 after trough -> 'improve'\n  [ok] predicted_label maps employment 'improve' to unemployment 'down'\n  [ok] predicted_label passes general direction through\nheuristic grading:\n  [ok] optimistic keywords -> improve\n  [ok] pessimistic keywords -> worsen\n  [ok] no signal -> not a prediction\ntier2 geography:\n  [ok] all four census regions present\n  [ok] covers 50 states + DC\n  [ok] sample mappings correct\n  [ok] financial centers are a subset of known states\ncohens_kappa:\n  [ok] perfect agreement -> 1.0\n  [ok] random labels -> kappa near 0\ndisagreement:\n  [ok] episode_disagreement_rate: 3 improve/2 worsen -> minority share 0.4\n  [ok] first claim in episode (no prior claims) imputed to episode rate\n  [ok] second claim sees only claim A (improve) -> full agreement, 0.0\n  [ok] no_change claim still gets a local_disagreement computed from context (A, B both improve, no worsen -> 0.0), it's just excluded from COUNTING\n  [ok] claim C sees A, B (both improve) -> full agreement, 0.0\n  [ok] claim D sees A, B (improve) + C (worsen) -> minority share 1/3\n  [ok] claim E is >3 months after D (backward window empty) -> imputed to episode rate, not leaking from claims before the window OR the empty window silently becoming 0\n  [ok] backward-only window: claim X must NOT see claim Y, which comes after it -- X has no prior claims so it's imputed to the episode rate (0.5 here), not contaminated by Y's later, opposite-direction claim\n  [ok] claim Y correctly sees X (the one claim strictly before it, improve) -> full agreement, 0.0\nhedging_lexicon:\n  [ok] hedging_features: hedge-heavy sentence classed 'hedged'\n  [ok] hedging_features: counts multiple hedge terms (may, perhaps, seems, uncertain)\n  [ok] hedging_features: booster-heavy sentence classed 'assertive'\n  [ok] hedging_features: assertive sentence has negative hedge_score\n  [ok] hedging_features: no markers -> neutral, zero score\nnaive_skill (baseline-relative scoring):\n  [ok] always-improve forecaster gets hit rate == naive baseline\n  [ok] ...and therefore exactly zero skill\n  [ok] counts only directional rows\n  [ok] perfect forecaster shows positive skill\n  [ok] excludes up/down/stable price-direction rows\n  [ok] empty input returns n=0 without raising\ngreenbook_analysis:\n  [ok] NBER_MODERN: every peak precedes its trough\n  [ok] NBER_MODERN: recessions are in chronological order\n  [ok] NBER_MODERN: no overlapping contractions\n  [ok] NBER_MODERN: covers the Greenbook era, picking up where score_claims stops\n  [ok] HORIZONS: nowcast through 8 quarters, in order\nspf_benchmark:\n  [ok] direction_label: strong growth -> improve\n  [ok] direction_label: contraction -> worsen\n  [ok] direction_label: within band -> no_change\n  [ok] direction_label: NaN forecast -> empty (unscorable)\n  [ok] survey_date: 1970 Q2 starts in April 1970\n  [ok] score_spf: mean forecast +4 -> predicted 'improve'\n  [ok] score_spf: predicted improve vs realized improve -> hit=1\n  [ok] score_spf: mean forecast -1 -> predicted 'worsen', realized improve -> hit=0\nmacro_context:\n  [ok] _pct_change: +10% over the trailing 6 months\n  [ok] _pct_change: returns NaN before the series starts\n  [ok] _pct_change: returns NaN past the series end (never extrapolates)\n  [ok] publication lag hides contemporaneous data from the claim\n  [skip] INDPRO not cached locally; contiguity unchecked\n  [skip] CPIAUCNS not cached locally; contiguity unchecked\n  [skip] UNRATE not cached locally; contiguity unchecked\n  [ok] LAGS: stock prices take no lag (same day's ticker), CPI/INDPRO do\n  [ok] wilson: interval brackets the point estimate and stays inside [0,1]\n  [ok] wilson: a 0-of-n cell gives a non-negative lower bound\n  [ok] wilson: interval narrows as n grows\n  [ok] bh_qvalues: monotone non-decreasing and >= the raw p-values\n  [ok] bh_qvalues: q never exceeds 1\n  [ok] bh_qvalues: NaN p-values stay NaN, others still computed\n  [ok] FACTORS carries no hindsight (NBER) column\n  [ok] every factor has a human-readable label for the figures\nhit_predictor:\n  [ok] no hindsight feature can reach the model's feature lists\n  [ok] DIR_SIGN: optimistic +1, pessimistic -1, 'flat' is not a directional bet\n  [ok] interaction_block: same economy, opposite sign by forecast direction\n  [ok] interaction_block: an unknown direction contributes 0, never NaN\n  [ok] claim_features: works on a forecast missing most optional columns\n  [ok] claim_features: an absent categorical becomes 'na', not a crash\n  [ok] LOAD_BEARING names the two interaction terms the model actually leans on\n  [FAIL] predict_new refuses to score when a load-bearing factor is missing\nTEST FAILED: predict_new refuses to score when a load-bearing factor is missing\n"
+      }
+    },
+    {
+      "directory": "data/scored/proquest/reproducibility_v3",
+      "replacement": "reproducibility_v5",
+      "commands.json": [
+        {
+          "name": "test_proquest_descriptive",
+          "arguments": [
+            "tests/test_proquest_descriptive.py"
+          ],
+          "exit_code": 0,
+          "seconds": 9.945696791866794
+        },
+        {
+          "name": "test_proquest_followups",
+          "arguments": [
+            "tests/test_proquest_followups.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.4189158328808844
+        },
+        {
+          "name": "test_proquest_information",
+          "arguments": [
+            "tests/test_proquest_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.2278627920895815
+        },
+        {
+          "name": "test_proquest_macro_benchmark",
+          "arguments": [
+            "tests/test_proquest_macro_benchmark.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.017221709014848
+        },
+        {
+          "name": "test_proquest_macro_diagnostics",
+          "arguments": [
+            "tests/test_proquest_macro_diagnostics.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.1593218338675797
+        },
+        {
+          "name": "test_proquest_macro_information",
+          "arguments": [
+            "tests/test_proquest_macro_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.2378813338000327
+        },
+        {
+          "name": "test_proquest_modern_intake",
+          "arguments": [
+            "tests/test_proquest_modern_intake.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.04511887487024069
+        },
+        {
+          "name": "test_proquest_polarization",
+          "arguments": [
+            "tests/test_proquest_polarization.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.1601869999431074
+        },
+        {
+          "name": "test_proquest_prepare_inputs",
+          "arguments": [
+            "tests/test_proquest_prepare_inputs.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.79288937500678
+        },
+        {
+          "name": "test_proquest_publication",
+          "arguments": [
+            "tests/test_proquest_publication.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.04587333300150931
+        },
+        {
+          "name": "test_proquest_quota_wait",
+          "arguments": [
+            "tests/test_proquest_quota_wait.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.412889959057793
+        },
+        {
+          "name": "test_proquest_rnn",
+          "arguments": [
+            "tests/test_proquest_rnn.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.1028543340507895
+        },
+        {
+          "name": "test_proquest_rnn_age_weighting",
+          "arguments": [
+            "tests/test_proquest_rnn_age_weighting.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.682114833034575
+        },
+        {
+          "name": "test_proquest_rnn_audit",
+          "arguments": [
+            "tests/test_proquest_rnn_audit.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.3941578750964254
+        },
+        {
+          "name": "test_proquest_rnn_development",
+          "arguments": [
+            "tests/test_proquest_rnn_development.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.3481800828594714
+        },
+        {
+          "name": "test_proquest_rnn_permutation",
+          "arguments": [
+            "tests/test_proquest_rnn_permutation.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.7509300000965595
+        },
+        {
+          "name": "test_proquest_rnn_runner",
+          "arguments": [
+            "tests/test_proquest_rnn_runner.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.456590458052233
+        },
+        {
+          "name": "test_proquest_robustness",
+          "arguments": [
+            "tests/test_proquest_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.454154749866575
+        },
+        {
+          "name": "test_proquest_target_robustness",
+          "arguments": [
+            "tests/test_proquest_target_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.3936838749796152
+        },
+        {
+          "name": "test_offline",
+          "arguments": [
+            "tests/test_offline.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.104205291951075
+        },
+        {
+          "name": "test_scoring",
+          "arguments": [
+            "tests/test_scoring.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.23404995794408023
+        },
+        {
+          "name": "test_forecasts",
+          "arguments": [
+            "tests/test_forecasts.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.832641958957538
+        },
+        {
+          "name": "inventory",
+          "arguments": [
+            "src/analyze_proquest.py",
+            "--out",
+            "data/scored/proquest/rebuilt_inventory"
+          ],
+          "exit_code": 0,
+          "seconds": 8.931857583113015
+        },
+        {
+          "name": "descriptive",
+          "arguments": [
+            "src/proquest_descriptive.py",
+            "--out",
+            "data/scored/proquest/rebuilt_descriptive"
+          ],
+          "exit_code": 0,
+          "seconds": 13.251047792145982
+        },
+        {
+          "name": "target_robustness",
+          "arguments": [
+            "src/proquest_target_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 4.689745625015348
+        },
+        {
+          "name": "macro_benchmark",
+          "arguments": [
+            "src/proquest_macro_benchmark.py"
+          ],
+          "exit_code": 0,
+          "seconds": 12.888787375064567
+        },
+        {
+          "name": "rnn_reload",
+          "arguments": [
+            "src/proquest_rnn_runner.py",
+            "predict",
+            "--claims",
+            "data/scored/proquest/descriptive/scored_claims.csv.gz",
+            "--features",
+            "data/scored/proquest/polarization/features.csv",
+            "--bundle",
+            "data/scored/proquest/polarization/claims",
+            "--start",
+            "1995-01",
+            "--through",
+            "2010-12",
+            "--out",
+            "data/scored/proquest/rebuilt_rnn_predictions"
+          ],
+          "exit_code": 0,
+          "seconds": 6.921843708027154
+        }
+      ],
+      "rebuild_summary.json": {
+        "status": "passed",
+        "scratch": "/private/tmp/bode-econ-rebuild-20261019-v3",
+        "python": "/tmp/bode-econ-repro-20261019/bin/python",
+        "versions": {
+          "narwhals": "2.27.1",
+          "filelock": "4.2.4",
+          "scikit-learn": "1.9.1",
+          "cloudpickle": "3.1.2",
+          "kiwisolver": "1.5.1",
+          "packaging": "26.3",
+          "networkx": "3.7",
+          "joblib": "1.6.0",
+          "soupsieve": "3.0.3",
+          "requests": "2.34.2",
+          "torch": "2.14.0",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "contourpy": "1.4.0",
+          "sympy": "1.14.0",
+          "xlrd": "2.0.2",
+          "setuptools": "84.0.0",
+          "urllib3": "2.8.0",
+          "python-dateutil": "2.9.0.post0",
+          "mpmath": "1.3.0",
+          "certifi": "2026.10.18",
+          "fsspec": "2026.9.0",
+          "matplotlib": "3.11.2",
+          "cycler": "0.12.1",
+          "jinja2": "3.1.6",
+          "threadpoolctl": "3.7.0",
+          "pandas": "3.0.6",
+          "typing-extensions": "4.16.0",
+          "markupsafe": "3.0.4",
+          "beautifulsoup4": "4.15.0",
+          "fonttools": "4.67.0",
+          "charset-normalizer": "3.5.2",
+          "pyparsing": "3.3.3",
+          "six": "1.17.0",
+          "scipy": "1.18.1",
+          "idna": "3.20"
+        },
+        "commands": 27,
+        "comparisons": 51,
+        "neural_refits": 0,
+        "scope": "Complete annual inventory, verified deterministic scoring/tables, paired target sensitivity, both selected macro studies and saved four-arm neural/logistic inference. Neural training checked with synthetic tests, not full historical refits.",
+        "code_snapshot_sha256": "f6781152bd1b4421dc3f0eea0f652d8d8ec46e985e445a11c88db9c2591da36c",
+        "lock_sha256": "a04af54d55ebd7b4e0181a763474c25b985d053a026139e554f4e601cc13bbf8"
+      }
+    },
+    {
+      "directory": "data/scored/proquest/reproducibility_v4",
+      "replacement": "reproducibility_v5",
+      "commands.json": [
+        {
+          "name": "test_proquest_descriptive",
+          "arguments": [
+            "tests/test_proquest_descriptive.py"
+          ],
+          "exit_code": 0,
+          "seconds": 10.240730499848723
+        },
+        {
+          "name": "test_proquest_direction_diagnostics",
+          "arguments": [
+            "tests/test_proquest_direction_diagnostics.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.4765019998885691
+        },
+        {
+          "name": "test_proquest_followups",
+          "arguments": [
+            "tests/test_proquest_followups.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.5054722081404179
+        },
+        {
+          "name": "test_proquest_information",
+          "arguments": [
+            "tests/test_proquest_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.6627417909912765
+        },
+        {
+          "name": "test_proquest_macro_benchmark",
+          "arguments": [
+            "tests/test_proquest_macro_benchmark.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.320413541048765
+        },
+        {
+          "name": "test_proquest_macro_diagnostics",
+          "arguments": [
+            "tests/test_proquest_macro_diagnostics.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.3471911249216646
+        },
+        {
+          "name": "test_proquest_macro_information",
+          "arguments": [
+            "tests/test_proquest_macro_information.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.5306034579407424
+        },
+        {
+          "name": "test_proquest_modern_intake",
+          "arguments": [
+            "tests/test_proquest_modern_intake.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.054052290972322226
+        },
+        {
+          "name": "test_proquest_polarization",
+          "arguments": [
+            "tests/test_proquest_polarization.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.3112517499830574
+        },
+        {
+          "name": "test_proquest_prepare_inputs",
+          "arguments": [
+            "tests/test_proquest_prepare_inputs.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.1635143749881536
+        },
+        {
+          "name": "test_proquest_publication",
+          "arguments": [
+            "tests/test_proquest_publication.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.05069425003603101
+        },
+        {
+          "name": "test_proquest_quota_wait",
+          "arguments": [
+            "tests/test_proquest_quota_wait.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.41181429219432175
+        },
+        {
+          "name": "test_proquest_rnn",
+          "arguments": [
+            "tests/test_proquest_rnn.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.4390332500915974
+        },
+        {
+          "name": "test_proquest_rnn_age_weighting",
+          "arguments": [
+            "tests/test_proquest_rnn_age_weighting.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.9247062921058387
+        },
+        {
+          "name": "test_proquest_rnn_audit",
+          "arguments": [
+            "tests/test_proquest_rnn_audit.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.443405999802053
+        },
+        {
+          "name": "test_proquest_rnn_development",
+          "arguments": [
+            "tests/test_proquest_rnn_development.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.7591752919834107
+        },
+        {
+          "name": "test_proquest_rnn_permutation",
+          "arguments": [
+            "tests/test_proquest_rnn_permutation.py"
+          ],
+          "exit_code": 0,
+          "seconds": 1.9137874168809503
+        },
+        {
+          "name": "test_proquest_rnn_runner",
+          "arguments": [
+            "tests/test_proquest_rnn_runner.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.7919242919888347
+        },
+        {
+          "name": "test_proquest_robustness",
+          "arguments": [
+            "tests/test_proquest_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.5222535422071815
+        },
+        {
+          "name": "test_proquest_target_robustness",
+          "arguments": [
+            "tests/test_proquest_target_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.43502591690048575
+        },
+        {
+          "name": "test_offline",
+          "arguments": [
+            "tests/test_offline.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.410711499862373
+        },
+        {
+          "name": "test_scoring",
+          "arguments": [
+            "tests/test_scoring.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.29515270912088454
+        },
+        {
+          "name": "test_forecasts",
+          "arguments": [
+            "tests/test_forecasts.py"
+          ],
+          "exit_code": 0,
+          "seconds": 2.23033562512137
+        },
+        {
+          "name": "inventory",
+          "arguments": [
+            "src/analyze_proquest.py",
+            "--out",
+            "data/scored/proquest/rebuilt_inventory"
+          ],
+          "exit_code": 0,
+          "seconds": 9.490584708051756
+        },
+        {
+          "name": "descriptive",
+          "arguments": [
+            "src/proquest_descriptive.py",
+            "--out",
+            "data/scored/proquest/rebuilt_descriptive"
+          ],
+          "exit_code": 0,
+          "seconds": 13.37207854213193
+        },
+        {
+          "name": "target_robustness",
+          "arguments": [
+            "src/proquest_target_robustness.py"
+          ],
+          "exit_code": 0,
+          "seconds": 4.757558917161077
+        },
+        {
+          "name": "direction_diagnostics",
+          "arguments": [
+            "src/proquest_direction_diagnostics.py"
+          ],
+          "exit_code": 0,
+          "seconds": 6.517106957966462
+        },
+        {
+          "name": "prepare_scored_inputs",
+          "arguments": [
+            "src/proquest_prepare_inputs.py",
+            "--exports",
+            "data/proquest/verified",
+            "--first-year",
+            "1900",
+            "--last-year",
+            "2010",
+            "--score",
+            "--as-of",
+            "2026-10-19",
+            "--reference-dir",
+            "data/reference/proquest",
+            "--out",
+            "data/scored/proquest/rebuilt_prepared_inputs"
+          ],
+          "exit_code": 0,
+          "seconds": 12.005859333788976
+        },
+        {
+          "name": "macro_benchmark",
+          "arguments": [
+            "src/proquest_macro_benchmark.py"
+          ],
+          "exit_code": 0,
+          "seconds": 12.841240999987349
+        },
+        {
+          "name": "rnn_reload",
+          "arguments": [
+            "src/proquest_rnn_runner.py",
+            "predict",
+            "--claims",
+            "data/scored/proquest/descriptive/scored_claims.csv.gz",
+            "--features",
+            "data/scored/proquest/polarization/features.csv",
+            "--bundle",
+            "data/scored/proquest/polarization/claims",
+            "--start",
+            "1995-01",
+            "--through",
+            "2010-12",
+            "--out",
+            "data/scored/proquest/rebuilt_rnn_predictions"
+          ],
+          "exit_code": 0,
+          "seconds": 6.740925124846399
+        }
+      ],
+      "rebuild_summary.json": {
+        "status": "passed",
+        "scratch": "/private/tmp/bode-econ-rebuild-20261019-v4",
+        "python": "/tmp/bode-econ-repro-20261019/bin/python",
+        "versions": {
+          "narwhals": "2.27.1",
+          "filelock": "4.2.4",
+          "scikit-learn": "1.9.1",
+          "cloudpickle": "3.1.2",
+          "kiwisolver": "1.5.1",
+          "packaging": "26.3",
+          "networkx": "3.7",
+          "joblib": "1.6.0",
+          "soupsieve": "3.0.3",
+          "requests": "2.34.2",
+          "torch": "2.14.0",
+          "numpy": "2.5.4",
+          "pillow": "13.0.0",
+          "contourpy": "1.4.0",
+          "sympy": "1.14.0",
+          "xlrd": "2.0.2",
+          "setuptools": "84.0.0",
+          "urllib3": "2.8.0",
+          "python-dateutil": "2.9.0.post0",
+          "mpmath": "1.3.0",
+          "certifi": "2026.10.18",
+          "fsspec": "2026.9.0",
+          "matplotlib": "3.11.2",
+          "cycler": "0.12.1",
+          "jinja2": "3.1.6",
+          "threadpoolctl": "3.7.0",
+          "pandas": "3.0.6",
+          "typing-extensions": "4.16.0",
+          "markupsafe": "3.0.4",
+          "beautifulsoup4": "4.15.0",
+          "fonttools": "4.67.0",
+          "charset-normalizer": "3.5.2",
+          "pyparsing": "3.3.3",
+          "six": "1.17.0",
+          "scipy": "1.18.1",
+          "idna": "3.20"
+        },
+        "commands": 30,
+        "comparisons": 58,
+        "neural_refits": 0,
+        "scope": "Complete annual inventory, verified deterministic scoring/tables, paired target sensitivity, both selected macro studies and saved four-arm neural/logistic inference. Neural training checked with synthetic tests, not full historical refits.",
+        "code_snapshot_sha256": "dad5602b2ba8fe14995bac049fc1ca89f93d11acc59fc880b18d02cfb893a516",
+        "lock_sha256": "a04af54d55ebd7b4e0181a763474c25b985d053a026139e554f4e601cc13bbf8"
+      }
+    },
+    {
+      "directory": "data/scored/proquest/results_inventory_v1",
+      "replacement": "results_inventory_v2"
+    },
+    {
+      "directory": "data/scored/proquest/rnn_runner_check",
+      "replacement": "rnn_runner_check_v2",
+      "reproduction.json": {
+        "prediction_rows": 56807,
+        "saved_rows": 56807,
+        "missing_saved_rows": 0,
+        "max_errors": {
+          "logistic_metadata__baseline": 0.0,
+          "logistic_metadata_history__baseline": 0.0,
+          "gru_seed_11__baseline": 0.0,
+          "gru_seed_29__baseline": 0.0,
+          "gru_seed_47__baseline": 0.0,
+          "gru_ensemble__baseline": 0.0,
+          "logistic_metadata__political": 0.0,
+          "logistic_metadata_history__political": 0.0,
+          "gru_seed_11__political": 0.0,
+          "gru_seed_29__political": 0.0,
+          "gru_seed_47__political": 0.0,
+          "gru_ensemble__political": 0.0,
+          "logistic_metadata__forecast": 0.0,
+          "logistic_metadata_history__forecast": 0.0,
+          "gru_seed_11__forecast": 0.0,
+          "gru_seed_29__forecast": 0.0,
+          "gru_seed_47__forecast": 0.0,
+          "gru_ensemble__forecast": 0.0,
+          "logistic_metadata__both": 0.0,
+          "logistic_metadata_history__both": 0.0,
+          "gru_seed_11__both": 0.0,
+          "gru_seed_29__both": 0.0,
+          "gru_seed_47__both": 0.0,
+          "gru_ensemble__both": 0.0
+        }
+      }
+    }
+  ],
+  "protected": "Source exports, all scientific experiment outputs including unsuccessful model candidates, frozen models/protocols, final rebuild, current inventory, and historical LOC pipeline/results",
+  "checks": {
+    "external_path_addressed_manifest_dependencies": 0,
+    "rnn_reload_predictions_byte_identical": true
+  },
+  "deleted_count": 113,
+  "deleted_bytes": 10950431
+}

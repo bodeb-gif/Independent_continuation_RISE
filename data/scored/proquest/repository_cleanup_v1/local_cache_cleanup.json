@@ -1,0 +1,315 @@
+{
+  "files": 76,
+  "bytes": 1663961,
+  "types": [
+    "untracked Python bytecode",
+    "Finder metadata"
+  ],
+  "files_removed": [
+    {
+      "path": ".DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_rnn_runner.cpython-312.pyc",
+      "bytes": 10330
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_rnn_permutation.cpython-312.pyc",
+      "bytes": 6454
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_modern_intake.cpython-312.pyc",
+      "bytes": 9645
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_rnn_development.cpython-312.pyc",
+      "bytes": 11070
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_descriptive.cpython-314.pyc",
+      "bytes": 8528
+    },
+    {
+      "path": "tests/__pycache__/test_proquest_quota_wait.cpython-314.pyc",
+      "bytes": 6560
+    },
+    {
+      "path": "scripts/__pycache__/proquest_enable_quota_wait.cpython-314.pyc",
+      "bytes": 5592
+    },
+    {
+      "path": "scripts/__pycache__/proquest_enable_quota_wait.cpython-312.pyc",
+      "bytes": 5369
+    },
+    {
+      "path": "data/.DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "data/scored/.DS_Store",
+      "bytes": 8196
+    },
+    {
+      "path": "data/scored/proquest/.DS_Store",
+      "bytes": 6148
+    },
+    {
+      "path": "src/__pycache__/macro_context.cpython-312.pyc",
+      "bytes": 24661
+    },
+    {
+      "path": "src/__pycache__/newspaper_scraper.cpython-314.pyc",
+      "bytes": 15808
+    },
+    {
+      "path": "src/__pycache__/spf_benchmark.cpython-312.pyc",
+      "bytes": 15804
+    },
+    {
+      "path": "src/__pycache__/proquest_benchmark_interpretation.cpython-312.pyc",
+      "bytes": 19730
+    },
+    {
+      "path": "src/__pycache__/score_claims.cpython-312.pyc",
+      "bytes": 37469
+    },
+    {
+      "path": "src/__pycache__/proquest_polarization_models.cpython-312.pyc",
+      "bytes": 32488
+    },
+    {
+      "path": "src/__pycache__/macro_context.cpython-314.pyc",
+      "bytes": 25730
+    },
+    {
+      "path": "src/__pycache__/newspaper_scraper.cpython-312.pyc",
+      "bytes": 14417
+    },
+    {
+      "path": "src/__pycache__/loc_validation.cpython-314.pyc",
+      "bytes": 23420
+    },
+    {
+      "path": "src/__pycache__/spf_benchmark.cpython-314.pyc",
+      "bytes": 16167
+    },
+    {
+      "path": "src/__pycache__/proquest_macro_claim_inputs.cpython-312.pyc",
+      "bytes": 27145
+    },
+    {
+      "path": "src/__pycache__/score_claims.cpython-314.pyc",
+      "bytes": 38717
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn_development.cpython-312.pyc",
+      "bytes": 35592
+    },
+    {
+      "path": "src/__pycache__/proquest_2008.cpython-314.pyc",
+      "bytes": 33576
+    },
+    {
+      "path": "src/__pycache__/truth_data.cpython-314.pyc",
+      "bytes": 13793
+    },
+    {
+      "path": "src/__pycache__/disagreement.cpython-312.pyc",
+      "bytes": 5382
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn.cpython-314.pyc",
+      "bytes": 38253
+    },
+    {
+      "path": "src/__pycache__/proquest_article_direction_audit.cpython-312.pyc",
+      "bytes": 6343
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn_runner.cpython-312.pyc",
+      "bytes": 30222
+    },
+    {
+      "path": "src/__pycache__/greenbook_analysis.cpython-312.pyc",
+      "bytes": 12626
+    },
+    {
+      "path": "src/__pycache__/proquest_polarization.cpython-312.pyc",
+      "bytes": 16863
+    },
+    {
+      "path": "src/__pycache__/grade_claims.cpython-314.pyc",
+      "bytes": 43328
+    },
+    {
+      "path": "src/__pycache__/proquest_direction_diagnostics.cpython-312.pyc",
+      "bytes": 17989
+    },
+    {
+      "path": "src/__pycache__/truth_data.cpython-312.pyc",
+      "bytes": 13416
+    },
+    {
+      "path": "src/__pycache__/proquest_panel.cpython-312.pyc",
+      "bytes": 12359
+    },
+    {
+      "path": "src/__pycache__/disagreement.cpython-314.pyc",
+      "bytes": 5381
+    },
+    {
+      "path": "src/__pycache__/proquest_information.cpython-312.pyc",
+      "bytes": 42692
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn.cpython-312.pyc",
+      "bytes": 36661
+    },
+    {
+      "path": "src/__pycache__/proquest_prepare_inputs.cpython-312.pyc",
+      "bytes": 13954
+    },
+    {
+      "path": "src/__pycache__/greenbook_analysis.cpython-314.pyc",
+      "bytes": 12859
+    },
+    {
+      "path": "src/__pycache__/proquest_macro_benchmark.cpython-312.pyc",
+      "bytes": 39892
+    },
+    {
+      "path": "src/__pycache__/grade_claims.cpython-312.pyc",
+      "bytes": 41350
+    },
+    {
+      "path": "src/__pycache__/proquest_alternative_targets.cpython-312.pyc",
+      "bytes": 18717
+    },
+    {
+      "path": "src/__pycache__/hedging_lexicon.cpython-314.pyc",
+      "bytes": 12780
+    },
+    {
+      "path": "src/__pycache__/hit_predictor.cpython-314.pyc",
+      "bytes": 38858
+    },
+    {
+      "path": "src/__pycache__/proquest_robustness.cpython-312.pyc",
+      "bytes": 40552
+    },
+    {
+      "path": "src/__pycache__/proquest_descriptive.cpython-312.pyc",
+      "bytes": 47058
+    },
+    {
+      "path": "src/__pycache__/analyze_proquest.cpython-314.pyc",
+      "bytes": 12357
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn_permutation.cpython-312.pyc",
+      "bytes": 30078
+    },
+    {
+      "path": "src/__pycache__/proquest_modern_intake.cpython-312.pyc",
+      "bytes": 17471
+    },
+    {
+      "path": "src/__pycache__/proquest_macro_information.cpython-312.pyc",
+      "bytes": 40185
+    },
+    {
+      "path": "src/__pycache__/hedging_lexicon.cpython-312.pyc",
+      "bytes": 11143
+    },
+    {
+      "path": "src/__pycache__/hit_predictor.cpython-312.pyc",
+      "bytes": 37243
+    },
+    {
+      "path": "src/__pycache__/proquest_vintages.cpython-312.pyc",
+      "bytes": 19927
+    },
+    {
+      "path": "src/__pycache__/proquest_prepare_features.cpython-312.pyc",
+      "bytes": 6796
+    },
+    {
+      "path": "src/__pycache__/proquest_descriptive.cpython-314.pyc",
+      "bytes": 48433
+    },
+    {
+      "path": "src/__pycache__/analyze_proquest.cpython-312.pyc",
+      "bytes": 11719
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn_audit.cpython-312.pyc",
+      "bytes": 26957
+    },
+    {
+      "path": "src/__pycache__/proquest_publication.cpython-312.pyc",
+      "bytes": 12921
+    },
+    {
+      "path": "src/__pycache__/forecast_data.cpython-312.pyc",
+      "bytes": 14308
+    },
+    {
+      "path": "src/__pycache__/proquest_macro_diagnostics.cpython-312.pyc",
+      "bytes": 37540
+    },
+    {
+      "path": "src/__pycache__/forecast_credibility.cpython-312.pyc",
+      "bytes": 25885
+    },
+    {
+      "path": "src/__pycache__/greenbook_benchmark.cpython-312.pyc",
+      "bytes": 15120
+    },
+    {
+      "path": "src/__pycache__/score_predictions.cpython-312.pyc",
+      "bytes": 10606
+    },
+    {
+      "path": "src/__pycache__/proquest_followups.cpython-312.pyc",
+      "bytes": 61943
+    },
+    {
+      "path": "src/__pycache__/tier2_analysis.cpython-312.pyc",
+      "bytes": 18331
+    },
+    {
+      "path": "src/__pycache__/forecast_data.cpython-314.pyc",
+      "bytes": 14744
+    },
+    {
+      "path": "src/__pycache__/forecast_credibility.cpython-314.pyc",
+      "bytes": 26562
+    },
+    {
+      "path": "src/__pycache__/greenbook_benchmark.cpython-314.pyc",
+      "bytes": 15675
+    },
+    {
+      "path": "src/__pycache__/score_predictions.cpython-314.pyc",
+      "bytes": 10947
+    },
+    {
+      "path": "src/__pycache__/proquest_followups.cpython-314.pyc",
+      "bytes": 64062
+    },
+    {
+      "path": "src/__pycache__/proquest_target_robustness.cpython-312.pyc",
+      "bytes": 20391
+    },
+    {
+      "path": "src/__pycache__/tier2_analysis.cpython-314.pyc",
+      "bytes": 18905
+    },
+    {
+      "path": "src/__pycache__/proquest_rnn_age_weighting.cpython-312.pyc",
+      "bytes": 17376
+    }
+  ],
+  "raw_and_source_caches": "preserved"
+}
