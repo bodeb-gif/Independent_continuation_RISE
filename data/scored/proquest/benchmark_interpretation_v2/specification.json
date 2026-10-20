@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory; motivated by previously inspected flat-label and employment results",
+  "scope": "Annual ProQuest 1900\u20132010, verified primary and raw sensitivity; saved scorable non-NBER rows only",
+  "primary_cohort": "machine_stated_non_NBER; machine timing is not source validated",
+  "secondary_cohort": "non_NBER, including assumed horizons",
+  "regimes": {
+    "original": "Original endpoint bands independent of horizon",
+    "duration_scaled": "Original bands times horizon_months/12; linear scenario, not a validated semantic correction",
+    "sign_only": "Zero band, retaining original numerical boundary tolerance; even tiny nonzero changes count"
+  },
+  "bands_at_12_months": {
+    "general_business": 2.0,
+    "markets": 5.0,
+    "prices": 1.5,
+    "employment": 0.5
+  },
+  "units": "Employment: unemployment-rate percentage points; other topics: percentage change in level",
+  "comparators": [
+    "original_fixed",
+    "always_flat",
+    "always_opposite"
+  ],
+  "weights": "Equal article within each source/cohort/topic/horizon subset; identical rows and weights across regimes and comparators",
+  "horizons": [
+    "all",
+    "1-6",
+    "7-12",
+    "13-24"
+  ],
+  "uncertainty": "Paired occupied calendar-block bootstrap, 5000 draws. Five years primary, 2/10 sensitivity for all horizons; horizon bins use five years. Marginal intervals conditional on scoring, not selection or interpretation uncertainty.",
+  "decision": "Retain every scenario; no winning threshold/baseline selected. No p-values, training, feature changes, primary target replacement or source review. RNN correctness probabilities cannot be compared with constant economic-direction forecasts as if the tasks were identical."
+}

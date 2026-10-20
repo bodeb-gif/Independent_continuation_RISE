@@ -1,0 +1,9 @@
+source_set,cohort,topic,before_claims,matched_claims,matched_articles,first_year,last_year,alignment_exclusions,endpoint_exclusions
+verified,machine_stated_non_NBER,general_business,53569,15680,9475,1947,2010,36517,1372
+verified,machine_stated_non_NBER,employment,9260,9260,7463,1948,2010,0,0
+verified,non_NBER,general_business,108535,30810,16156,1947,2010,73989,3736
+verified,non_NBER,employment,18196,18196,13453,1948,2010,0,0
+raw,machine_stated_non_NBER,general_business,66536,19326,10674,1947,2010,45407,1803
+raw,machine_stated_non_NBER,employment,10893,10893,8437,1948,2010,0,0
+raw,non_NBER,general_business,188176,52530,19890,1947,2010,128110,7536
+raw,non_NBER,employment,29279,29279,18394,1948,2010,0,0

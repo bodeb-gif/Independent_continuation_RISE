@@ -1,0 +1,13 @@
+{
+  "matched_rows": 24756,
+  "prediction_rows": 28000,
+  "max_absolute_error": {
+    "gru_seed_11__baseline": 0.0,
+    "gru_seed_29__baseline": 0.0,
+    "gru_seed_47__baseline": 9.999999994736442e-09,
+    "gru_ensemble__baseline": 0.0
+  },
+  "study_output_hashes_verified": 299,
+  "original_freeze_verified": true,
+  "dates": "1990\u20131994 only; stopping predictions, not independent evaluation"
+}

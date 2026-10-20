@@ -116,7 +116,15 @@ def load_reference():
     return series, metadata
 
 
-def score_claims(directory, series):
+def score_claims(directory, series, *, source_set="verified"):
+    """Apply identical outcome rules with an explicit raw sensitivity adapter.
+
+    Existing callers remain verified-only. Raw inputs must be requested by name;
+    no verification field is fabricated, and verifier prose never enters scores.
+    Record IDs are source-local file/line addresses, not cross-set claim IDs.
+    """
+    if source_set not in {"verified", "raw"}:
+        raise ValueError(f"Unknown ProQuest source set: {source_set}")
     @lru_cache(maxsize=None)
     def outcome(topic, month, months):
         return realized_outcome(series, topic, month, months)
@@ -132,8 +140,10 @@ def score_claims(directory, series):
                     continue
                 if claim.get("source") != "proquest" or claim.get("schema_version") != 2:
                     raise ValueError(f"Unexpected corpus: {path}:{line_number}")
-                if "verify_reason" not in claim:
+                if source_set == "verified" and "verify_reason" not in claim:
                     raise ValueError(f"Not a machine-verified claim: {path}:{line_number}")
+                if source_set == "raw" and "verify_reason" in claim:
+                    raise ValueError(f"Verified claim in raw sensitivity input: {path}:{line_number}")
                 printed = pd.Timestamp(claim["date"])
                 assert printed.year == int(path.name.split('_')[-1].split('.')[0])
                 months, hb, error = horizon(claim)

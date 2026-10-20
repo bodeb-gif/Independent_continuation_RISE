@@ -427,9 +427,11 @@ check("claim_features: an absent categorical becomes 'na', not a crash",
 # at predict time against a model trained with that factor.
 check("LOAD_BEARING names the two interaction terms the model actually leans on",
       "epu" in hp.LOAD_BEARING and "stock_ret6" in hp.LOAD_BEARING)
-_saved_epu = mc._epu_or_none
-try:
-    mc._epu_or_none = lambda: None          # simulate the data source failing
+from unittest.mock import patch
+# The guard precedes pipeline prediction, so neither a fitted model artifact
+# nor external macro downloads are needed to exercise it in a clean checkout.
+with patch('joblib.load', return_value={}), patch.object(
+        hp, 'build_context', return_value=pd.DataFrame({'epu': [np.nan], 'stock_ret6': [.1]})):
     try:
         hp.predict_new(hp.DEMO)
         _guarded = False
@@ -437,8 +439,6 @@ try:
         _guarded = True
     except Exception:
         _guarded = False                     # any OTHER error is not the guard
-finally:
-    mc._epu_or_none = _saved_epu
 check("predict_new refuses to score when a load-bearing factor is missing",
       _guarded)
 

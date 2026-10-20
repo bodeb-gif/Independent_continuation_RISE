@@ -1,0 +1,235 @@
+[
+  {
+    "name": "test_proquest_descriptive",
+    "arguments": [
+      "tests/test_proquest_descriptive.py"
+    ],
+    "exit_code": 0,
+    "seconds": 9.945696791866794
+  },
+  {
+    "name": "test_proquest_followups",
+    "arguments": [
+      "tests/test_proquest_followups.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.4189158328808844
+  },
+  {
+    "name": "test_proquest_information",
+    "arguments": [
+      "tests/test_proquest_information.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.2278627920895815
+  },
+  {
+    "name": "test_proquest_macro_benchmark",
+    "arguments": [
+      "tests/test_proquest_macro_benchmark.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.017221709014848
+  },
+  {
+    "name": "test_proquest_macro_diagnostics",
+    "arguments": [
+      "tests/test_proquest_macro_diagnostics.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.1593218338675797
+  },
+  {
+    "name": "test_proquest_macro_information",
+    "arguments": [
+      "tests/test_proquest_macro_information.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.2378813338000327
+  },
+  {
+    "name": "test_proquest_modern_intake",
+    "arguments": [
+      "tests/test_proquest_modern_intake.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.04511887487024069
+  },
+  {
+    "name": "test_proquest_polarization",
+    "arguments": [
+      "tests/test_proquest_polarization.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.1601869999431074
+  },
+  {
+    "name": "test_proquest_prepare_inputs",
+    "arguments": [
+      "tests/test_proquest_prepare_inputs.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.79288937500678
+  },
+  {
+    "name": "test_proquest_publication",
+    "arguments": [
+      "tests/test_proquest_publication.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.04587333300150931
+  },
+  {
+    "name": "test_proquest_quota_wait",
+    "arguments": [
+      "tests/test_proquest_quota_wait.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.412889959057793
+  },
+  {
+    "name": "test_proquest_rnn",
+    "arguments": [
+      "tests/test_proquest_rnn.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.1028543340507895
+  },
+  {
+    "name": "test_proquest_rnn_age_weighting",
+    "arguments": [
+      "tests/test_proquest_rnn_age_weighting.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.682114833034575
+  },
+  {
+    "name": "test_proquest_rnn_audit",
+    "arguments": [
+      "tests/test_proquest_rnn_audit.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.3941578750964254
+  },
+  {
+    "name": "test_proquest_rnn_development",
+    "arguments": [
+      "tests/test_proquest_rnn_development.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.3481800828594714
+  },
+  {
+    "name": "test_proquest_rnn_permutation",
+    "arguments": [
+      "tests/test_proquest_rnn_permutation.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.7509300000965595
+  },
+  {
+    "name": "test_proquest_rnn_runner",
+    "arguments": [
+      "tests/test_proquest_rnn_runner.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.456590458052233
+  },
+  {
+    "name": "test_proquest_robustness",
+    "arguments": [
+      "tests/test_proquest_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.454154749866575
+  },
+  {
+    "name": "test_proquest_target_robustness",
+    "arguments": [
+      "tests/test_proquest_target_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.3936838749796152
+  },
+  {
+    "name": "test_offline",
+    "arguments": [
+      "tests/test_offline.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.104205291951075
+  },
+  {
+    "name": "test_scoring",
+    "arguments": [
+      "tests/test_scoring.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.23404995794408023
+  },
+  {
+    "name": "test_forecasts",
+    "arguments": [
+      "tests/test_forecasts.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.832641958957538
+  },
+  {
+    "name": "inventory",
+    "arguments": [
+      "src/analyze_proquest.py",
+      "--out",
+      "data/scored/proquest/rebuilt_inventory"
+    ],
+    "exit_code": 0,
+    "seconds": 8.931857583113015
+  },
+  {
+    "name": "descriptive",
+    "arguments": [
+      "src/proquest_descriptive.py",
+      "--out",
+      "data/scored/proquest/rebuilt_descriptive"
+    ],
+    "exit_code": 0,
+    "seconds": 13.251047792145982
+  },
+  {
+    "name": "target_robustness",
+    "arguments": [
+      "src/proquest_target_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 4.689745625015348
+  },
+  {
+    "name": "macro_benchmark",
+    "arguments": [
+      "src/proquest_macro_benchmark.py"
+    ],
+    "exit_code": 0,
+    "seconds": 12.888787375064567
+  },
+  {
+    "name": "rnn_reload",
+    "arguments": [
+      "src/proquest_rnn_runner.py",
+      "predict",
+      "--claims",
+      "data/scored/proquest/descriptive/scored_claims.csv.gz",
+      "--features",
+      "data/scored/proquest/polarization/features.csv",
+      "--bundle",
+      "data/scored/proquest/polarization/claims",
+      "--start",
+      "1995-01",
+      "--through",
+      "2010-12",
+      "--out",
+      "data/scored/proquest/rebuilt_rnn_predictions"
+    ],
+    "exit_code": 0,
+    "seconds": 6.921843708027154
+  }
+]

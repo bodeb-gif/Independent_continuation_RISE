@@ -1,0 +1,289 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ProQuest polarization comparisons</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:1150px;margin:40px auto;padding:0 24px;color:#19313c}h1,h2{line-height:1.25}h2{margin-top:40px}img{width:100%}.table{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:8px 10px;border-bottom:1px solid #ddd;text-align:right}td:first-child,th:first-child{text-align:left}a{color:#087f83}</style><main><h1>Polarization in the ProQuest models</h1>
+<p><strong>Adding both features worsens the two headline Brier results:</strong> selected macro plus newspapers rises from 0.6228 to 0.6644; GRU claim correctness rises from 0.1929 to 0.1991. Lower loss is better. The full comparisons and uncertainty follow; these results do not establish that polarization is intrinsically uninformative.</p>
+<p>Exploratory comparisons on annual verified ProQuest claims, 1900–2010. Every active learned model family receives two separate scalar inputs, each alone and together. Existing results remain unchanged. Constant class-frequency forecasts remain controls.</p>
+<h2>What the two features measure</h2>
+<p><strong>Political:</strong> earlier House Democratic–Republican differences in observed yes-vote shares. This is a legislative voting proxy, not the standard <a href="https://voteview.com/articles/party_polarization">Voteview NOMINATE party-mean gap</a> and not mass or affective polarization. Current career-based ideological estimates can use later votes, so they are excluded from predictive inputs. See <a href="https://voteview.com/articles/data_help_members">Voteview’s ideology documentation</a>.</p>
+<p>The political window uses twelve complete months ending two months before the prediction month, with one complete intervening month as a reporting buffer. Actual yea/nay votes only; at least five Democratic and five Republican voters per rollcall, and ten eligible rollcalls per window. Agenda and participation affect this proxy. Historical votes are reconstructed from the current database, not archived release vintages.</p>
+<p><strong>Forecast:</strong> mean 4 × positive share × negative share over the preceding three complete months of general-business forecasts. Equal-sized opposing camps score 1; absence of either camp scores 0. Equal article weights within newspaper and equal newspaper weights within month follow the existing panel. This differs from the existing three-class disagreement measure and does not measure newspaper political ideology.</p>
+<p>Observed coverage: political 1,332/1,332 months; forecast 1,255/1,332. Missing values use training-only median imputation plus a missingness flag; no evaluation rows are removed.</p>
+<img src="feature_history.png" alt="Monthly histories of two distinct polarization features">
+<h2>Comparison design</h2>
+<p>Baseline, political only, forecast only, and both use identical targets, training rows, evaluation observations, regularization and weights within each model. Saved training-only macro selections are reused. All logistic baseline refits must reproduce saved probabilities within tolerance. The GRU baseline and all extensions are rerun with seeds 11, 29 and 47 in the same environment; epochs are selected only by prior validation log loss. New scalar inputs enter the GRU head and both claim-logistic models; their existing twelve-month history remains identical.</p>
+<p>Binary claim Brier and three-class monthly Brier are different losses. Intervals resample five-year blocks while conditioning on fitted forecasts; they omit extraction and model-selection uncertainty. Multiple comparisons are exploratory. The short CPI study has only two blocks. A wide interval is not evidence of no effect.</p>
+<h2>Monthly economic direction</h2>
+<p>Brier loss, lower is better. Each row is a matched comparison.</p>
+<div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>arm</th>
+      <th>Model</th>
+      <th>baseline</th>
+      <th>political</th>
+      <th>forecast</th>
+      <th>both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>Original macro + CPI: economy</td>
+      <td>0.9216</td>
+      <td>1.0022</td>
+      <td>0.8603</td>
+      <td>0.9375</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro + CPI: economy + press</td>
+      <td>0.7721</td>
+      <td>0.8492</td>
+      <td>0.8246</td>
+      <td>0.8913</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro: economy</td>
+      <td>0.6672</td>
+      <td>0.7128</td>
+      <td>0.6733</td>
+      <td>0.7212</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro: economy + press</td>
+      <td>0.6249</td>
+      <td>0.6974</td>
+      <td>0.6315</td>
+      <td>0.7038</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Press experiment: coverage logistic</td>
+      <td>0.6391</td>
+      <td>0.6452</td>
+      <td>0.6278</td>
+      <td>0.6349</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Press experiment: press logistic</td>
+      <td>0.5739</td>
+      <td>0.5822</td>
+      <td>0.5766</td>
+      <td>0.5848</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro + CPI: economy</td>
+      <td>0.6626</td>
+      <td>0.6603</td>
+      <td>0.6634</td>
+      <td>0.6592</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro + CPI: economy + press</td>
+      <td>0.6588</td>
+      <td>0.6552</td>
+      <td>0.6614</td>
+      <td>0.6573</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro: economy</td>
+      <td>0.6327</td>
+      <td>0.6399</td>
+      <td>0.6404</td>
+      <td>0.6527</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro: economy + press</td>
+      <td>0.6228</td>
+      <td>0.6564</td>
+      <td>0.6303</td>
+      <td>0.6644</td>
+    </tr>
+  </tbody>
+</table></div>
+<img src="monthly_effects.png" alt="Paired Brier improvement intervals across monthly models">
+<h3>Excluding 2007–2009 evaluation observations</h3><p>This changes evaluation only; it does not remove crisis observations from later training histories.</p>
+<div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>arm</th>
+      <th>Model</th>
+      <th>baseline</th>
+      <th>political</th>
+      <th>forecast</th>
+      <th>both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>Original macro + CPI: economy</td>
+      <td>0.8980</td>
+      <td>0.8934</td>
+      <td>0.8955</td>
+      <td>0.8705</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro + CPI: economy + press</td>
+      <td>0.8382</td>
+      <td>0.7840</td>
+      <td>0.8935</td>
+      <td>0.8369</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro: economy</td>
+      <td>0.6675</td>
+      <td>0.7057</td>
+      <td>0.6768</td>
+      <td>0.7153</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Original macro: economy + press</td>
+      <td>0.6391</td>
+      <td>0.6965</td>
+      <td>0.6458</td>
+      <td>0.7013</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Press experiment: coverage logistic</td>
+      <td>0.6300</td>
+      <td>0.6356</td>
+      <td>0.6168</td>
+      <td>0.6234</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Press experiment: press logistic</td>
+      <td>0.5698</td>
+      <td>0.5796</td>
+      <td>0.5722</td>
+      <td>0.5818</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro + CPI: economy</td>
+      <td>0.5686</td>
+      <td>0.5606</td>
+      <td>0.5706</td>
+      <td>0.5599</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro + CPI: economy + press</td>
+      <td>0.5661</td>
+      <td>0.5564</td>
+      <td>0.5707</td>
+      <td>0.5602</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro: economy</td>
+      <td>0.6164</td>
+      <td>0.6148</td>
+      <td>0.6299</td>
+      <td>0.6310</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Selected macro: economy + press</td>
+      <td>0.6214</td>
+      <td>0.6387</td>
+      <td>0.6292</td>
+      <td>0.6469</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Full <a href="monthly_metrics.csv">metrics</a>, <a href="monthly_paired_intervals.csv">paired intervals</a>, and <a href="monthly_calibration.csv">calibration bins with sample counts</a>.</p>
+<h2>Claim correctness</h2>
+<p>Brier loss, lower is better. Each row is a matched comparison.</p>
+<div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>arm</th>
+      <th>Model</th>
+      <th>baseline</th>
+      <th>political</th>
+      <th>forecast</th>
+      <th>both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>Claims: GRU ensemble</td>
+      <td>0.1929</td>
+      <td>0.2144</td>
+      <td>0.1997</td>
+      <td>0.1991</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Claims: history logistic</td>
+      <td>0.2364</td>
+      <td>0.2468</td>
+      <td>0.2395</td>
+      <td>0.2541</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Claims: metadata logistic</td>
+      <td>0.2183</td>
+      <td>0.2193</td>
+      <td>0.2184</td>
+      <td>0.2192</td>
+    </tr>
+  </tbody>
+</table></div>
+<img src="claims_effects.png" alt="Paired Brier improvement intervals across claims models">
+<h3>Excluding 2007–2009 evaluation observations</h3><p>This changes evaluation only; it does not remove crisis observations from later training histories.</p>
+<div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>arm</th>
+      <th>Model</th>
+      <th>baseline</th>
+      <th>political</th>
+      <th>forecast</th>
+      <th>both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>Claims: GRU ensemble</td>
+      <td>0.1924</td>
+      <td>0.1851</td>
+      <td>0.1797</td>
+      <td>0.2086</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Claims: history logistic</td>
+      <td>0.1954</td>
+      <td>0.2008</td>
+      <td>0.1964</td>
+      <td>0.2057</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>Claims: metadata logistic</td>
+      <td>0.1835</td>
+      <td>0.1829</td>
+      <td>0.1836</td>
+      <td>0.1829</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Full <a href="claims_metrics.csv">metrics</a>, <a href="claims_paired_intervals.csv">paired intervals</a>, and <a href="claims_calibration.csv">calibration bins with sample counts</a>.</p>
+<h2>Reproducibility and interpretation</h2>
+<p><a href="evaluation_spec.json">Specification</a>; <a href="feature_manifest.json">feature provenance</a>; <a href="download_manifest.json">public source hashes</a>; <a href="monthly_summary.json">monthly run manifest</a>; <a href="claims_summary.json">claim run manifest</a>. The specification precedes these polarization fits, after inspection of earlier results. No modern claims or LOC outcomes enter.</p>
+<p>These are predictive associations, not causal estimates of polarization. Changes can reflect time trends, agenda, query selection and coverage. The features do not establish that newspapers become politically polarized or that polarization causes forecast errors. Human source validation remains unfinished.</p></main></html>

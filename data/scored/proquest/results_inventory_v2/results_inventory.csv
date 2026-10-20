@@ -1,0 +1,41 @@
+directory,status,interpretation,entrypoint,exists,report,file_count
+data/scored/proquest/descriptive,primary descriptive,Legacy deterministic individual-claim scoring; source interpretation unresolved,src/proquest_descriptive.py,True,data/scored/proquest/descriptive/report.html,26
+data/scored/proquest/robustness,primary sensitivity,Raw versus verified and matched composition; not a causal filter effect,src/proquest_robustness.py,True,data/scored/proquest/robustness/report.html,22
+data/scored/proquest/target_robustness_v1,primary descriptive uncertainty,Paired baseline gaps; marginal conditional block intervals,src/proquest_target_robustness.py,True,data/scored/proquest/target_robustness_v1/report.html,8
+data/scored/proquest/direction_diagnostics_v1,exploratory comparator audit,All constant directions and warning costs retained; original baseline unchanged,src/proquest_direction_diagnostics.py,True,data/scored/proquest/direction_diagnostics_v1/report.html,10
+data/scored/proquest/article_direction_audit_v1,exploratory unit-of-analysis audit,Multiple directions within article/target/horizon groups; no deduplication or error judgment,src/proquest_article_direction_audit.py,True,,3
+data/scored/proquest/macro_benchmark,primary aggregate model,Selected simple macro versus macro plus press; stable advantage not established,src/proquest_macro_benchmark.py,True,data/scored/proquest/macro_benchmark/report.html,34
+data/scored/proquest/macro_information,superseded benchmark,Earlier richer macro benchmark retained for comparison,src/proquest_macro_information.py,True,data/scored/proquest/macro_information/report.html,45
+data/scored/proquest/monthly_information,exploratory weaker benchmark,Newspaper signals against class-frequency controls,src/proquest_information.py,True,data/scored/proquest/monthly_information/report.html,21
+data/scored/proquest/macro_diagnostics,diagnostic,Explains earlier macro errors; no new model,src/proquest_macro_diagnostics.py,True,data/scored/proquest/macro_diagnostics/report.html,20
+data/scored/proquest/followups,exploratory descriptive,"Warnings, horizons, attribution and matched publishers",src/proquest_followups.py,True,data/scored/proquest/followups/report.html,32
+data/scored/proquest/crisis_2008,exploratory annual-corpus subset,"2008–2009 analysis from annual exports, not old crisis-window exports",src/proquest_2008.py,True,data/scored/proquest/crisis_2008/report.html,26
+data/scored/proquest/rnn,secondary frozen reference,24-unit GRU; historical superiority not established,src/proquest_rnn.py,True,data/scored/proquest/rnn/report.html,15
+data/scored/proquest/polarization,exploratory feature extension,Political and forecast measures separate; added arms not promoted,src/proquest_polarization_models.py,True,data/scored/proquest/polarization/report.html,118
+data/scored/proquest/rnn_audit,diagnostic,Saved-prediction stability and subgroup losses,src/proquest_rnn_audit.py,True,data/scored/proquest/rnn_audit/report.html,17
+data/scored/proquest/rnn_permutation,diagnostic inference,Original four-block comparison and input perturbations; no chance-learning test,src/proquest_rnn_permutation.py,True,data/scored/proquest/rnn_permutation/report.html,9
+data/scored/proquest/rnn_block_sensitivity,diagnostic sensitivity,All tested block lengths retained; no p-value selection,,True,data/scored/proquest/rnn_block_sensitivity/report.html,7
+data/scored/proquest/rnn_development_v1,provisional candidate,8-unit 20-year-window baseline candidate; no fresh independent evaluation,src/proquest_rnn_development.py,True,data/scored/proquest/rnn_development_v1/report.html,300
+data/scored/proquest/rnn_age_weighting_v1,failed improvement rule,Three age-decay candidates retained; incumbent unchanged,src/proquest_rnn_age_weighting.py,True,data/scored/proquest/rnn_age_weighting_v1/report.html,127
+data/scored/proquest/export_reconciliation,provenance,222 historical files reconciled; processing completeness remains separate,,True,,4
+data/scored/proquest/modern_readiness,deferred execution,Prepared manifest and original model freeze; no modern evaluation,src/proquest_modern_intake.py,True,,2
+data/scored/proquest/prepared_inputs_check_v1,data handoff check,All historical print-time columns reproduced without outcome columns,src/proquest_prepare_inputs.py,True,,3
+data/scored/proquest/prepared_scoring_check_v1,data handoff check,Historical eligibility and deterministic outcomes reproduced with maturity gates,src/proquest_prepare_inputs.py,True,,3
+data/scored/proquest/prepared_features_check_v1,data handoff check,Explicit-calendar political and forecast feature reconstruction,src/proquest_prepare_features.py,True,,3
+data/scored/proquest/publication,evidence assembly only,Prior manuscript snapshot and uncompleted source-review pilot,src/proquest_publication.py,True,,7
+data/scored/proquest/alternative_target_inputs_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,6
+data/scored/proquest/alternative_targets_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,data/scored/proquest/alternative_targets_v1/report.html,8
+data/scored/proquest/benchmark_input_review_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,data/scored/proquest/benchmark_input_review_v1/report.html,4
+data/scored/proquest/benchmark_interpretation_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,2
+data/scored/proquest/benchmark_interpretation_v2,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,data/scored/proquest/benchmark_interpretation_v2/report.html,9
+data/scored/proquest/macro_claim_inputs_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,data/scored/proquest/macro_claim_inputs_v1/report.html,102
+data/scored/proquest/reproducibility_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,7
+data/scored/proquest/reproducibility_v2,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,25
+data/scored/proquest/reproducibility_v3,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,35
+data/scored/proquest/reproducibility_v4,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,38
+data/scored/proquest/reproducibility_v5,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,40
+data/scored/proquest/results_inventory_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,5
+data/scored/proquest/rnn_development_diagnostics_v1,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,3
+data/scored/proquest/rnn_development_v1_reload_check,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,3
+data/scored/proquest/rnn_runner_check,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,3
+data/scored/proquest/rnn_runner_check_v2,auxiliary check or diagnostic,Retained run artifacts; not a replacement for primary results,,True,,3

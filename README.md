@@ -5,6 +5,10 @@
 reserved for extraction validation. The LOC findings below describe the earlier
 poster analysis and are not results for the ProQuest corpus.
 
+Project navigation: [paper workspace](paper/README.md) ·
+[documentation](docs/README.md) · [analysis code](src/README.md) ·
+[results by workstream](data/scored/proquest/README.md).
+
 For LOC source validation, open the [claim review page](validation/loc_review/loc_claim_review.html)
 or follow the [recall handoff](validation/loc_review/README.md). These tools keep
 LOC labels separate from the ProQuest outcome analysis.
@@ -33,6 +37,44 @@ First ProQuest neural experiment:
 Predicts claim correctness from metadata and 12 earlier months of forecast
 patterns, with purged chronological splits and logistic baselines. Install
 `requirements-proquest-rnn.txt`, then run `python src/proquest_rnn.py`.
+
+Raw-versus-verified ProQuest robustness:
+[`comparison report`](data/scored/proquest/robustness/report.html) ·
+[`analysis script`](src/proquest_robustness.py).
+Compares export composition, article-weighted accuracy, fixed-baseline gaps,
+and shared newspaper/time/topic/horizon cells using identical scoring rules.
+Rebuild with `python src/proquest_robustness.py`.
+
+Monthly ProQuest economic-information experiment:
+[`panel and model report`](data/scored/proquest/monthly_information/report.html) ·
+[`evaluation specification`](data/scored/proquest/monthly_information/evaluation_spec.json).
+Tests six-month industrial-production direction using historical base rates
+and prior newspaper signals, with annual chronological refits and era/crisis
+stability checks. Install `requirements-proquest-information.txt`, then run
+`python src/proquest_information.py`.
+
+Vintage macro baseline and added newspaper information:
+[`comparison and calibration report`](data/scored/proquest/macro_information/report.html) ·
+[`frozen specification`](data/scored/proquest/macro_information/evaluation_spec.json).
+Uses historical production/unemployment vintages, with a shorter CPI check,
+and vintage-correct training labels. Newspapers lower average core Brier loss,
+but uncertainty and weak baseline performance prevent a robust skill claim.
+Run `python src/proquest_vintages.py`, then
+`python src/proquest_macro_information.py`; dependencies are shared with the
+monthly experiment. Full methods and the CPI eligibility deviation are in
+[`docs/PROQUEST_ANALYSIS.md`](docs/PROQUEST_ANALYSIS.md#vintage-macro-baseline-and-incremental-newspaper-information).
+
+Macro model diagnostics:
+[`error and calibration audit`](data/scored/proquest/macro_diagnostics/report.html).
+Explains the frozen models' losses by class and era, tests confidence against
+accuracy, and audits training fit, feature extrapolation and label revisions.
+Rebuild with `python src/proquest_macro_diagnostics.py`; no models are refitted.
+
+Simpler macro benchmark with forward-time model selection:
+[`replacement benchmark and newspaper comparison`](data/scored/proquest/macro_benchmark/report.html).
+Selects small, regularized models using earlier historical folds. Probability
+scores improve, but the incremental newspaper benefit remains uncertain.
+Rebuild with `python src/proquest_macro_benchmark.py`.
 
 **BU RISE Practicum — Data Science.**
 Bode Bosell, Jeremy Liu, Vincent Wang (equal contribution) · mentor Eugene Pinsky,

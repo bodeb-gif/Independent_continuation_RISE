@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory diagnostics motivated by already inspected topic results and flat-label imbalance",
+  "inputs": "Saved annual ProQuest 1900\u20132010 scores; verified primary, raw sensitivity",
+  "comparators": [
+    "original fixed direction",
+    "always flat",
+    "always opposite direction"
+  ],
+  "cohorts": [
+    "all_legacy",
+    "non_NBER",
+    "machine_stated_non_NBER"
+  ],
+  "weights": "Equal article within each source set, cohort, topic and horizon subset",
+  "uncertainty": "Paired occupied publication-block percentile intervals, 5000 resamples; 5 years primary, 2 and 10 sensitivity. Marginal and conditional on fixed scoring, not source-error or selection uncertainty.",
+  "horizons": "Machine-stated non-NBER claims in fixed 1\u20136, 7\u201312 and 13\u201324 month bins; do not relabel them source-validated",
+  "warning_task": "Binary detection of the direction opposite the original fixed baseline. A flat prediction is a nonwarning; a flat outcome is a nonevent. This is a different task from three-class accuracy. For prices, the event is a price decline, not universally an adverse economic event.",
+  "costs": "Illustrative missed-event/false-alarm cost ratios 1,2,5,10. Compare to both never warn and always warn on identical rows; retain every result. No data-selected cost ratio or policy recommendation.",
+  "decision": "Do not replace any primary model/baseline, alter scoring bands, calculate new superiority p-values, or use later data for tuning."
+}

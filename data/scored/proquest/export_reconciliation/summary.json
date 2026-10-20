@@ -1,0 +1,85 @@
+{
+  "checked_date": "2026-10-19",
+  "scope": "Mechanical reconciliation of historical annual exports only; no source validation, model fitting, or scoring",
+  "status": "historical_files_reconciled; modern_exports_unavailable; upstream_processing_unreconciled",
+  "source_manifest_sha256": "0a653fffd06c01dc5350688167b8f73588289abf0a18eed1a7c07bcb9420f6e9",
+  "source_commit": "774b68fb202955a83ebc035fc63b01ead725cc82",
+  "live_remote_export_branch_commit": "774b68fb202955a83ebc035fc63b01ead725cc82",
+  "manifest_files": 222,
+  "git_blob_matches": 222,
+  "unmanifested_files": [],
+  "missing_files": [],
+  "record_contract_issues": [],
+  "sets": {
+    "raw": {
+      "annual_shards": 111,
+      "claims": 488660,
+      "records": 529776,
+      "empty_records": 41116,
+      "unique_article_ids": 156435,
+      "unique_article_ids_with_empty_rows": 41116,
+      "claims_without_verification_marker": null
+    },
+    "verified": {
+      "annual_shards": 111,
+      "claims": 274070,
+      "records": 315186,
+      "empty_records": 41116,
+      "unique_article_ids": 146720,
+      "unique_article_ids_with_empty_rows": 41116,
+      "claims_without_verification_marker": 0
+    }
+  },
+  "raw_article_ids_absent_from_verified": 9715,
+  "verified_article_ids_absent_from_raw": 0,
+  "archives": [
+    {
+      "path": "/Users/bodebosell/Downloads/proquest_exports (1).tar",
+      "sha256": "fef80d033edaa822299229a90e947895c17d488845981db385e1dc24d33d857c",
+      "annual_files": 222,
+      "matching_local_files": 222,
+      "nonmatching_or_unmapped": [],
+      "duplicate_annual_paths": 0,
+      "modern_members": [],
+      "excluded_nonannual_members": 2,
+      "missing_historical_files": 0
+    },
+    {
+      "path": "/Users/bodebosell/Downloads/proquest_exports (2).tar",
+      "sha256": "fef80d033edaa822299229a90e947895c17d488845981db385e1dc24d33d857c",
+      "annual_files": 222,
+      "matching_local_files": 222,
+      "nonmatching_or_unmapped": [],
+      "duplicate_annual_paths": 0,
+      "modern_members": [],
+      "excluded_nonannual_members": 2,
+      "missing_historical_files": 0
+    },
+    {
+      "path": "/Users/bodebosell/Downloads/proquest_exports.tar",
+      "sha256": "84bb2f34f3ed7df3a5673675752a181d84f2cb9aa6e5061e44c8bc57b171b797",
+      "annual_files": 0,
+      "matching_local_files": 0,
+      "nonmatching_or_unmapped": [],
+      "duplicate_annual_paths": 0,
+      "modern_members": [],
+      "excluded_nonannual_members": 9,
+      "missing_historical_files": 222
+    }
+  ],
+  "unresolved": [
+    "Current VM exports and processing logs are not available locally.",
+    "No 2011-onward annual shards in inspected archives or export branch.",
+    "Raw-to-verified claim lineage and upstream retrieved/failed/pending counts are unavailable; differences are not rejection or completion rates."
+  ],
+  "unchanged_source_hashes_after_read": true,
+  "output_sha256": {
+    "archive_comparison.csv": "1b6204302e9fb219c48b58ddd36892a51d66d759de036b18c45e6da733d9cbab",
+    "annual_flow.csv": "aa3aba9cfacb5ddb213835bddaab8f8158f577f200302211a4d14062e1c1df0a",
+    "files.csv": "b1231e113ce8b26997f189f0f232d9644c04d1beba528c24f360486ec6011f54"
+  },
+  "archive_directory_mapping": {
+    "unverified": "raw",
+    "verified": "verified"
+  }
+}

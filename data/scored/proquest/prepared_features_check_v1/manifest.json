@@ -1,0 +1,17 @@
+{
+  "inputs_sha256": {
+    "data/scored/proquest/prepared_inputs_check_v1/claims.csv.gz": "5ac8c443f47fdbcbae6e6459b20e521d0f06bcac28b3496ff11aa038f34be8f3",
+    "data/scored/proquest/polarization/rollcall_separation.csv.gz": "b298b9f0c74369445f0bf4f9c9b4b36cad536406f9c96ae9ac178e54258fbcff"
+  },
+  "code_sha256": "fb927f5aa4c37ed81aed29c5c78a0f5c239997fac034cafff95499b8205e19ba",
+  "measurement_code_sha256": {
+    "src/proquest_panel.py": "602825cb1de94e2cb6e7c48c4c4d360e9156a9af6c75554cdb2e4913d8bb6783",
+    "src/proquest_polarization.py": "70634646927384c1e87c6107b10a08bb1a5e91d1ad05719e1f5cc60375ceed05"
+  },
+  "output_sha256": "f3d732f93a7f00611e714a6509deb50b079c83e76e1aba3d836c623894449f6d",
+  "months": 1332,
+  "outcomes_read": false,
+  "source_coverage": "Must be established from input provenance; not inferred from row presence",
+  "start": "1900-01",
+  "through": "2010-12"
+}

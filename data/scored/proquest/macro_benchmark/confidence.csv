@@ -1,0 +1,13 @@
+version,model,n_months,n_confidence_ge_90,accuracy_ge_90,mean_confidence_ge_90,study
+original,recent_base_rate,408,0,,,core
+original,macro_only,408,21,0.38095238095238093,0.931865651487332,core
+original,macro_plus_press,408,30,0.5,0.955771454459253,core
+selected,recent_base_rate,408,0,,,core
+selected,macro_only,408,0,,,core
+selected,macro_plus_press,408,0,,,core
+original,recent_base_rate,108,0,,,with_cpi
+original,macro_only,108,21,0.09523809523809523,0.9780066965972257,with_cpi
+original,macro_plus_press,108,29,0.27586206896551724,0.9707827773665708,with_cpi
+selected,recent_base_rate,108,0,,,with_cpi
+selected,macro_only,108,0,,,with_cpi
+selected,macro_plus_press,108,0,,,with_cpi

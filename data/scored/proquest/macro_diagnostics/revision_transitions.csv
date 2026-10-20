@@ -1,0 +1,15 @@
+training_target,target,n_origins,study
+fall,fall,59,core
+fall,flat,4,core
+flat,fall,3,core
+flat,flat,199,core
+flat,rise,35,core
+rise,flat,40,core
+rise,rise,181,core
+fall,fall,21,with_cpi
+fall,flat,2,with_cpi
+flat,fall,3,with_cpi
+flat,flat,72,with_cpi
+flat,rise,15,with_cpi
+rise,flat,16,with_cpi
+rise,rise,47,with_cpi

@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "mode": "predict",
+  "arguments": {
+    "mode": "predict",
+    "claims": "data/scored/proquest/descriptive/scored_claims.csv.gz",
+    "features": "data/scored/proquest/polarization/features.csv",
+    "bundle": "data/scored/proquest/polarization/claims",
+    "start": "1995-01",
+    "through": "2010-12",
+    "validation_start": "1985-01",
+    "test_start": "1995-01",
+    "arms": [
+      "baseline",
+      "political",
+      "forecast",
+      "both"
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "epochs": 20,
+    "allow_new_years": false,
+    "out": "data/scored/proquest/rnn_runner_check"
+  },
+  "inputs_sha256": {
+    "data/scored/proquest/descriptive/scored_claims.csv.gz": "a3e85bd008073343e49efadd72ad542965ccc4e704ba893b9e6e2c84695cc9bf",
+    "data/scored/proquest/polarization/features.csv": "1cfe71a6a25b0bce1cb828595d58e80f70d1c16e686e066085d3fb4bf5d8640d",
+    "data/scored/proquest/polarization/claims/preprocessing_and_baselines.joblib": "d01b89c44e08d349c61be7796fba06ccf3bb7654bae14b8c23d7388d43f432bc",
+    "data/scored/proquest/polarization/claims/gru_baseline_11.pt": "8d89b9292d194a3cc71595aa2156a97bc70f63267159dd3ce17a123b5b8db203",
+    "data/scored/proquest/polarization/claims/gru_baseline_29.pt": "35e02f25b193ab37ec3a29b293cbe6d8a4f4ee9e86fa4df40846c7cc0bc20a2d",
+    "data/scored/proquest/polarization/claims/gru_baseline_47.pt": "78d95b983090fde9e8986dedbbabea08aa3ba12772f87e5955f940eb0c2b4622",
+    "data/scored/proquest/polarization/claims/gru_political_11.pt": "f51ae3806068c9c3096d866bdaf4bd1d10e824e250038996c60ef51a76d09f7d",
+    "data/scored/proquest/polarization/claims/gru_political_29.pt": "1fbdae3be5a5c998f49166ec84035e95530223e608959c1dafb55c6f9a5136c6",
+    "data/scored/proquest/polarization/claims/gru_political_47.pt": "912c34aa2329262f50e99a5c61b4f006f53f38675e2c899cff04fadbb98e7ab5",
+    "data/scored/proquest/polarization/claims/gru_forecast_11.pt": "b49985f26b38436794f2962a0eb9b7af6e63053b0f4c4f00fb4218dcb1f7b492",
+    "data/scored/proquest/polarization/claims/gru_forecast_29.pt": "f9b1df8bc7929742110bdfbb2ee06d5cc139d8de9f9a5c16280ca82814ce9682",
+    "data/scored/proquest/polarization/claims/gru_forecast_47.pt": "134da9b475662b2efa46d64db2af88cbc868a7865435734f47f8df58163f50f6",
+    "data/scored/proquest/polarization/claims/gru_both_11.pt": "9774df88892406c2711bdd20c7a2d6ff2c06fc0377bcb9710093a001eb3b30e6",
+    "data/scored/proquest/polarization/claims/gru_both_29.pt": "4c77183351e4134aac3367ede01edc05f60d0feedec50a662d3c8b4a38db88ca",
+    "data/scored/proquest/polarization/claims/gru_both_47.pt": "7938df12a436d3abc65719e24538c9038454113521857c93a24dd5a3738f8bb8"
+  },
+  "code_sha256": "0b37ad54634bd9ca105a7e4e844a619776c2c8ba25c9d175b1ac920259928398",
+  "metadata": {
+    "prediction_rows": 56807,
+    "outcomes_read": false,
+    "model_fits": 0
+  },
+  "versions": {
+    "python": "3.12.13",
+    "torch": "2.14.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "outputs_sha256": {
+    "predictions.csv.gz": "dcdc50b50b002645b2cca592a4378253dccc87e54344c37d914a4a220139003a"
+  }
+}

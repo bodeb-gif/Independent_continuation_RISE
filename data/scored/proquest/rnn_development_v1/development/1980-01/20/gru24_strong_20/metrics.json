@@ -1,0 +1,10 @@
+{
+  "candidate": "gru24_strong_20",
+  "n_claims": 20237,
+  "n_articles": 8106,
+  "brier": 0.26872499412587825,
+  "log_loss": 0.7677174979716558,
+  "accuracy": 0.6068053165988345,
+  "auc": 0.6562544234287019,
+  "average_precision": 0.6405969799383231
+}

@@ -1,0 +1,8 @@
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.369s
+
+OK
+Enabled hourly quota retries in /var/folders/5k/bjw8vmld4hvb16nb8df96vt40000gn/T/tmp7pmrj22a/run_corpus_economy.sh. Backup: /var/folders/5k/bjw8vmld4hvb16nb8df96vt40000gn/T/tmp7pmrj22a/run_corpus_economy.sh.before-quota-wait-20261019T230855610591Z
+Restart the runner to use this change; an already-running job is unchanged.
+Quota waiting is already enabled.

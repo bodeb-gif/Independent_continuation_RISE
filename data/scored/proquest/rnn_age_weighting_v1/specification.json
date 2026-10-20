@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "status": "Adaptive exploratory follow-up motivated by inspected development errors; not independent confirmation",
+  "candidates": [
+    {
+      "id": "gru8_age_10",
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": null,
+      "half_life_years": 10
+    },
+    {
+      "id": "gru8_age_20",
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": null,
+      "half_life_years": 20
+    },
+    {
+      "id": "gru8_age_40",
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": null,
+      "half_life_years": 40
+    }
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "origins": [
+    "1965-01",
+    "1970-01",
+    "1975-01",
+    "1980-01"
+  ],
+  "scope": "Verified annual ProQuest only; discard publications from 1985 onward before model arrays. Baseline feature arm only.",
+  "weights": "Training article weights multiplied by 2**(-age_months/(12*half_life_years)), with age measured from the stopping-window start. Normalize resulting training weights to mean one. Same-month articles share the age factor. Stopping and assessment weights remain unchanged.",
+  "preprocessing": "Expanding-history train-only scalers and vocabulary unchanged from gru8_standard_expanding; decay affects the fitting loss only. No observation truncation or feature changes.",
+  "evaluation": "Same four five-year development folds, nested five-year stopping windows, horizon+3 month purges, and training settings as development_v1. Reuse hash-verified saved incumbent and unweighted control predictions; assess identical claim IDs.",
+  "selection": "Qualify only if equal-fold mean Brier improves over incumbent by >=0.002, at least three of four folds improve, worst-fold loss is no worse than incumbent, and mean loss beats the same-size expanding control. Choose lowest mean then worst fold then ID. Otherwise retain incumbent. No seed or p-value selection.",
+  "later_data": "No 1985\u20131994 confirmation fitting/evaluation and no 1995\u20132010 test evaluation. No new final production bundle or automatic replacement. No new p-values."
+}

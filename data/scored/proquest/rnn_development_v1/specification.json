@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory model development after earlier historical results were inspected",
+  "inputs": "Annual verified ProQuest prepared labels only; all model arrays and context exclude publication dates >=1995-01. No LOC, raw sensitivity, or crisis-window exports.",
+  "candidate_grid": [
+    {
+      "id": "gru24_standard_expanding",
+      "hidden": 24,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": null
+    },
+    {
+      "id": "gru24_standard_20",
+      "hidden": 24,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": 20
+    },
+    {
+      "id": "gru24_strong_expanding",
+      "hidden": 24,
+      "dropout": 0.35,
+      "weight_decay": 0.01,
+      "window_years": null
+    },
+    {
+      "id": "gru24_strong_20",
+      "hidden": 24,
+      "dropout": 0.35,
+      "weight_decay": 0.01,
+      "window_years": 20
+    },
+    {
+      "id": "gru8_standard_expanding",
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": null
+    },
+    {
+      "id": "gru8_standard_20",
+      "hidden": 8,
+      "dropout": 0.15,
+      "weight_decay": 0.001,
+      "window_years": 20
+    },
+    {
+      "id": "gru8_strong_expanding",
+      "hidden": 8,
+      "dropout": 0.35,
+      "weight_decay": 0.01,
+      "window_years": null
+    },
+    {
+      "id": "gru8_strong_20",
+      "hidden": 8,
+      "dropout": 0.35,
+      "weight_decay": 0.01,
+      "window_years": 20
+    }
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "reference": "gru24_standard_expanding",
+  "features": "Unchanged baseline GRU metadata and preceding 12 complete monthly contexts. No polarization feature selection in this experiment. Existing four-arm polarization results remain intact.",
+  "development_origins": [
+    "1965-01",
+    "1970-01",
+    "1975-01",
+    "1980-01"
+  ],
+  "confirmation_origins": [
+    "1985-01",
+    "1990-01"
+  ],
+  "fold_protocol": "At origin T: fit on publications before T-5 years, use T-5 through T-1 years for stopping, and assess the next five publication years. Label endpoint+3 months must strictly precede the next stage boundary, including the end of the assessment block. A 20-year window restricts fitting dates relative to the stopping-window start. Context scalers use only months in that fitting window; claim scalers and vocabularies use only eligible fitting rows.",
+  "training": {
+    "epochs_max": 20,
+    "patience": 4,
+    "improvement": 0.0001,
+    "batch_size": 1024,
+    "learning_rate": 0.001,
+    "head_units": 32,
+    "gradient_clip": 1.0,
+    "early_stopping": "weighted validation log loss"
+  },
+  "selection": "Equal mean of four development-fold ensemble Brier losses. Alternative must beat the rolling reference by >=0.002 on that mean and improve in >=3 of 4 folds. Among qualifying alternatives choose lowest mean, then lowest worst-fold loss, then smaller hidden dimension, then ID. Otherwise retain reference. No seed selection.",
+  "confirmation": "After selection, fit only selected and reference configurations on the two later folds. No tuning after reading them. Promote only if selected improves in both folds and mean Brier improves >=0.002. Otherwise retain old baseline. These years were previously used in historical development, so this is not an untouched holdout.",
+  "controls": "Metadata logistic and metadata plus flattened history logistic, C=1, on each fitting-window variant. Descriptive controls, not new candidates selected by held-out results.",
+  "final_bundle": "Fit selected and reference candidates before 1990 with stopping on 1990\u20131994, purged at 1995. Save provisional baseline-arm bundles for the existing runner without evaluating 1995\u20132010. Existing production/research bundles are never replaced.",
+  "limitations": "Fixed candidate search reduces flexibility but does not remove prior exploration, revised outcomes, source-label uncertainty, or dependence between folds. Do not optimize a p-value or claim significance from selection scores."
+}

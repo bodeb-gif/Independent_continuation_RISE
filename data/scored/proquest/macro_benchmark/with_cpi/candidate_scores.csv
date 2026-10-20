@@ -1,0 +1,109 @@
+outer_year,candidate,feature_set,C,window,n_macro_features,eligible,exclusion,n_validation,n_inner_refits,mean_validation_brier,selected
+2002,production_C0.001_expanding,production,0.001,expanding,2,False,insufficient inner validation history,0,0,,True
+2002,production_C0.001_recent_120,production,0.001,recent_120,2,False,insufficient inner validation history,0,0,,False
+2002,production_C0.01_expanding,production,0.01,expanding,2,False,insufficient inner validation history,0,0,,False
+2002,production_C0.01_recent_120,production,0.01,recent_120,2,False,insufficient inner validation history,0,0,,False
+2002,production_C0.1_expanding,production,0.1,expanding,2,False,insufficient inner validation history,0,0,,False
+2002,production_C0.1_recent_120,production,0.1,recent_120,2,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,False,insufficient inner validation history,0,0,,False
+2002,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,False,insufficient inner validation history,0,0,,False
+2003,production_C0.001_expanding,production,0.001,expanding,2,False,insufficient inner validation history,4,1,,True
+2003,production_C0.001_recent_120,production,0.001,recent_120,2,False,insufficient inner validation history,4,1,,False
+2003,production_C0.01_expanding,production,0.01,expanding,2,False,insufficient inner validation history,4,1,,False
+2003,production_C0.01_recent_120,production,0.01,recent_120,2,False,insufficient inner validation history,4,1,,False
+2003,production_C0.1_expanding,production,0.1,expanding,2,False,insufficient inner validation history,4,1,,False
+2003,production_C0.1_recent_120,production,0.1,recent_120,2,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,False,insufficient inner validation history,4,1,,False
+2003,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,False,insufficient inner validation history,4,1,,False
+2004,production_C0.001_expanding,production,0.001,expanding,2,False,insufficient inner validation history,16,2,,True
+2004,production_C0.001_recent_120,production,0.001,recent_120,2,False,insufficient inner validation history,16,2,,False
+2004,production_C0.01_expanding,production,0.01,expanding,2,False,insufficient inner validation history,16,2,,False
+2004,production_C0.01_recent_120,production,0.01,recent_120,2,False,insufficient inner validation history,16,2,,False
+2004,production_C0.1_expanding,production,0.1,expanding,2,False,insufficient inner validation history,16,2,,False
+2004,production_C0.1_recent_120,production,0.1,recent_120,2,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,False,insufficient inner validation history,16,2,,False
+2004,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,False,insufficient inner validation history,16,2,,False
+2005,production_C0.001_expanding,production,0.001,expanding,2,True,,28,3,0.5796128763080282,False
+2005,production_C0.001_recent_120,production,0.001,recent_120,2,True,,28,3,0.5796128763080282,False
+2005,production_C0.01_expanding,production,0.01,expanding,2,True,,28,3,0.5821958124191972,False
+2005,production_C0.01_recent_120,production,0.01,recent_120,2,True,,28,3,0.5821958124191972,False
+2005,production_C0.1_expanding,production,0.1,expanding,2,True,,28,3,0.5935374141864302,False
+2005,production_C0.1_recent_120,production,0.1,recent_120,2,True,,28,3,0.5935374141864302,False
+2005,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,28,3,0.5790694987741952,False
+2005,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,28,3,0.5790694987741952,False
+2005,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,28,3,0.578422139454862,True
+2005,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,28,3,0.578422139454862,False
+2005,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,28,3,0.5909744791281761,False
+2005,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,28,3,0.5909744791281761,False
+2006,production_C0.001_expanding,production,0.001,expanding,2,True,,40,4,0.5524386001938109,True
+2006,production_C0.001_recent_120,production,0.001,recent_120,2,True,,40,4,0.5524386001938109,False
+2006,production_C0.01_expanding,production,0.01,expanding,2,True,,40,4,0.5620385049758976,False
+2006,production_C0.01_recent_120,production,0.01,recent_120,2,True,,40,4,0.5620385049758976,False
+2006,production_C0.1_expanding,production,0.1,expanding,2,True,,40,4,0.5857474617119072,False
+2006,production_C0.1_recent_120,production,0.1,recent_120,2,True,,40,4,0.5857474617119072,False
+2006,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,40,4,0.55410449004953,False
+2006,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,40,4,0.55410449004953,False
+2006,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,40,4,0.5721831649672343,False
+2006,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,40,4,0.5721831649672343,False
+2006,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,40,4,0.603754978359768,False
+2006,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,40,4,0.603754978359768,False
+2007,production_C0.001_expanding,production,0.001,expanding,2,True,,52,5,0.5907972581200414,False
+2007,production_C0.001_recent_120,production,0.001,recent_120,2,True,,52,5,0.59010466588613,True
+2007,production_C0.01_expanding,production,0.01,expanding,2,True,,52,5,0.6000461934837903,False
+2007,production_C0.01_recent_120,production,0.01,recent_120,2,True,,52,5,0.5986817513672189,False
+2007,production_C0.1_expanding,production,0.1,expanding,2,True,,52,5,0.641516272953451,False
+2007,production_C0.1_recent_120,production,0.1,recent_120,2,True,,52,5,0.6399033106913247,False
+2007,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,52,5,0.5917755485588404,False
+2007,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,52,5,0.5910876958173275,False
+2007,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,52,5,0.6062880976136886,False
+2007,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,52,5,0.6049635557040485,False
+2007,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,52,5,0.6554001247875119,False
+2007,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,52,5,0.6537786747902411,False
+2008,production_C0.001_expanding,production,0.001,expanding,2,True,,52,5,0.5681900609751989,True
+2008,production_C0.001_recent_120,production,0.001,recent_120,2,True,,52,5,0.5716556573135075,False
+2008,production_C0.01_expanding,production,0.01,expanding,2,True,,52,5,0.5738673642303149,False
+2008,production_C0.01_recent_120,production,0.01,recent_120,2,True,,52,5,0.578814639915107,False
+2008,production_C0.1_expanding,production,0.1,expanding,2,True,,52,5,0.6202748036416176,False
+2008,production_C0.1_recent_120,production,0.1,recent_120,2,True,,52,5,0.6269584197652563,False
+2008,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,52,5,0.5691643485707383,False
+2008,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,52,5,0.5726149011027499,False
+2008,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,52,5,0.5802539812856631,False
+2008,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,52,5,0.5850891255825766,False
+2008,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,52,5,0.6341839595403381,False
+2008,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,52,5,0.6406875345867946,False
+2009,production_C0.001_expanding,production,0.001,expanding,2,True,,52,5,0.5491541570977091,True
+2009,production_C0.001_recent_120,production,0.001,recent_120,2,True,,52,5,0.5523755447776669,False
+2009,production_C0.01_expanding,production,0.01,expanding,2,True,,52,5,0.549263309662664,False
+2009,production_C0.01_recent_120,production,0.01,recent_120,2,True,,52,5,0.555940285469448,False
+2009,production_C0.1_expanding,production,0.1,expanding,2,True,,52,5,0.5809091198499214,False
+2009,production_C0.1_recent_120,production,0.1,recent_120,2,True,,52,5,0.590455260358535,False
+2009,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,52,5,0.5501693199394662,False
+2009,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,52,5,0.5533944923044902,False
+2009,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,52,5,0.5555844753851552,False
+2009,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,52,5,0.5622332684219651,False
+2009,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,52,5,0.5954765281883739,False
+2009,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,52,5,0.6050839922977269,False
+2010,production_C0.001_expanding,production,0.001,expanding,2,True,,52,5,0.6904013963139228,False
+2010,production_C0.001_recent_120,production,0.001,recent_120,2,True,,52,5,0.6834886434938088,False
+2010,production_C0.01_expanding,production,0.01,expanding,2,True,,52,5,0.6681276201509851,False
+2010,production_C0.01_recent_120,production,0.01,recent_120,2,True,,52,5,0.6700467870097742,False
+2010,production_C0.1_expanding,production,0.1,expanding,2,True,,52,5,0.5600228272889615,False
+2010,production_C0.1_recent_120,production,0.1,recent_120,2,True,,52,5,0.6036393299887041,False
+2010,production_jobs_C0.001_expanding,production_jobs,0.001,expanding,3,True,,52,5,0.6896090205018943,False
+2010,production_jobs_C0.001_recent_120,production_jobs,0.001,recent_120,3,True,,52,5,0.6828031747332998,False
+2010,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,3,True,,52,5,0.6584421409281647,False
+2010,production_jobs_C0.01_recent_120,production_jobs,0.01,recent_120,3,True,,52,5,0.6646131222941244,False
+2010,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,3,True,,52,5,0.5543269958947881,True
+2010,production_jobs_C0.1_recent_120,production_jobs,0.1,recent_120,3,True,,52,5,0.600576147813803,False

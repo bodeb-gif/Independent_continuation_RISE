@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-14",
+  "timing": "Recorded after the first core fit, when the initial CPI fit stopped before producing predictions because its training set lacked a fall class.",
+  "deviation_from_specification": "For an annual refit with fewer than three observed training classes, exclude that entire evaluation year from all three models. Keep the originally specified study window and export the excluded year. Do not change predictors, regularization, training labels, or outcome thresholds.",
+  "reason": "A three-class fitted regression is not estimable as specified when a class is absent. The January 2001 CPI training sample has 48 rise, 20 flat, and zero fall labels. January 2002 has all three classes (43 rise, 29 flat, 8 fall).",
+  "effect": "The core comparison is unchanged. The CPI check evaluates January 2002–December 2010 (108 common months); 2001 is excluded for every model. This is an implementation deviation, not a fully preregistered analysis."
+}

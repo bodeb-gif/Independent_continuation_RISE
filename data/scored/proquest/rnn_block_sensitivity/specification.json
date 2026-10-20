@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-19",
+  "status": "Post-hoc sensitivity prompted by concern about p=0.250; no primary-test replacement or significance-based selection",
+  "block_years": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "anchor_year": 1995,
+  "metric": "equal-article binary Brier",
+  "comparisons": [
+    "metadata logistic",
+    "metadata-history logistic"
+  ],
+  "test": "Exhaustive blockwise sign swaps of weighted paired loss contributions, one-sided, ties included; same model-swap statistic as existing five-year test",
+  "limitations": "Smaller blocks can split overlapping forecast outcomes and shared economic regimes. These nominal conditional p-values do not establish independence or valid type-I error for any particular block length. No claim-level permutations. No fitting. Report every result; preserve existing five-year comparison."
+}

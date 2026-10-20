@@ -1,0 +1,10 @@
+refit_year,candidate,feature_set,C,window,selection_reason,n_eligible_training,n_selected_training,n_evaluation,label_vintage,label_available_by,first_training_origin,last_training_origin,n_inner_refits,n_validation
+2002,production_C0.001_expanding,production,0.001,expanding,fixed fallback: insufficient inner validation history,80,80,12,IPT01M12,2001-12-31,1994-09,2001-04,0,0
+2003,production_C0.001_expanding,production,0.001,expanding,fixed fallback: insufficient inner validation history,92,92,12,IPT02M12,2002-12-31,1994-09,2002-04,1,4
+2004,production_C0.001_expanding,production,0.001,expanding,fixed fallback: insufficient inner validation history,104,104,12,IPT03M12,2003-12-31,1994-09,2003-04,2,16
+2005,production_jobs_C0.01_expanding,production_jobs,0.01,expanding,selected on earlier validation months,116,116,12,IPT04M12,2004-12-31,1994-09,2004-04,3,28
+2006,production_C0.001_expanding,production,0.001,expanding,selected on earlier validation months,128,128,12,IPT05M12,2005-12-31,1994-09,2005-04,4,40
+2007,production_C0.001_recent_120,production,0.001,recent_120,selected on earlier validation months,140,120,12,IPT06M12,2006-12-31,1996-05,2006-04,5,52
+2008,production_C0.001_expanding,production,0.001,expanding,selected on earlier validation months,152,152,12,IPT07M12,2007-12-31,1994-09,2007-04,5,52
+2009,production_C0.001_expanding,production,0.001,expanding,selected on earlier validation months,164,164,12,IPT08M12,2008-12-31,1994-09,2008-04,5,52
+2010,production_jobs_C0.1_expanding,production_jobs,0.1,expanding,selected on earlier validation months,176,176,12,IPT09M12,2009-12-31,1994-09,2009-04,5,52

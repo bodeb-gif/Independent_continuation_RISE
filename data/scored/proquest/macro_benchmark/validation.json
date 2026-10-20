@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "tests": {
+    "offline": 97,
+    "scoring": 33,
+    "forecasts": 33,
+    "information": 12,
+    "macro_information": 11,
+    "macro_diagnostics": 6,
+    "macro_benchmark": 9
+  },
+  "total_test_checks": 201,
+  "studies": {
+    "core": {
+      "evaluation_months": 408,
+      "annual_refits": 34,
+      "inner_prediction_rows": 21216,
+      "selected_training_rows": 9435,
+      "fallback_years": []
+    },
+    "with_cpi": {
+      "evaluation_months": 108,
+      "annual_refits": 9,
+      "inner_prediction_rows": 3312,
+      "selected_training_rows": 1132,
+      "fallback_years": [
+        2002,
+        2003,
+        2004
+      ]
+    }
+  },
+  "maximum_outer_probability_reconstruction_error": 3.3306690738754696e-16,
+  "maximum_independent_inner_refit_probability_error": 8.326672684688674e-17,
+  "checks": [
+    "Source, original forecast, code and specification hashes unchanged",
+    "Identical evaluation origins and final truth; unchanged recent base rate",
+    "Strict inner training and outer selection label maturity and vintage dates",
+    "Common validation support for every eligible candidate",
+    "Candidate scores independently recomputed; selections and tie breaks verified",
+    "Selected training windows and train-only scaling verified",
+    "Every final regression probability reconstructed from coefficients",
+    "Three representative inner models independently refitted"
+  ],
+  "figures": "Comparison and calibration figures visually inspected."
+}

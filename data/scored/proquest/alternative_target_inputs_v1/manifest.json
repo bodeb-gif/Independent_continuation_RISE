@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "series": "PAYEMS",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PAYEMS&cosd=1939-01-01&coed=2012-12-31",
+      "source_page": "https://fred.stlouisfed.org/series/PAYEMS",
+      "retrieved": "2026-10-19",
+      "role": "Revised outcome sensitivity only; never historical predictors",
+      "file": "data/scored/proquest/alternative_target_inputs_v1/PAYEMS.csv",
+      "sha256": "ec5e63b2d873da9411b6691338e7d5f0c8afb8d4d5f2351de4914da0ecca426a"
+    },
+    {
+      "series": "GDPC1",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=1939-01-01&coed=2012-12-31",
+      "source_page": "https://fred.stlouisfed.org/series/GDPC1",
+      "retrieved": "2026-10-19",
+      "role": "Revised outcome sensitivity only; never historical predictors",
+      "file": "data/scored/proquest/alternative_target_inputs_v1/GDPC1.csv",
+      "sha256": "b703b523a3635f58a6782a86ff08093a6c480f4b6b7d8c89b04b53d432df876d"
+    }
+  ]
+}

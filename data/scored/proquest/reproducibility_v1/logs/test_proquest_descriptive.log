@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/tmp/bode-econ-rebuild-20261019/tests/test_proquest_descriptive.py", line 8, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

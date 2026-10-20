@@ -1,0 +1,3 @@
+# Derived research artifacts have recorded byte hashes. Preserve original line
+# endings (including CSV CRLF) and source-page formatting across checkouts.
+data/scored/proquest/** -text -whitespace

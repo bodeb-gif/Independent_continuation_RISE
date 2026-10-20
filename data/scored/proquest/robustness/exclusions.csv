@@ -1,0 +1,13 @@
+source_set,unscorable_reason,n_claims
+raw,no scorable direction,10739
+raw,not explicitly US-national,144334
+raw,numeric horizon outside 1–24 months,3176
+raw,outside benchmark coverage,4695
+raw,topic has no defensible benchmark,17857
+raw,unusable horizon label,9540
+verified,no scorable direction,3176
+verified,not explicitly US-national,80183
+verified,numeric horizon outside 1–24 months,2490
+verified,outside benchmark coverage,2297
+verified,topic has no defensible benchmark,7894
+verified,unusable horizon label,2175

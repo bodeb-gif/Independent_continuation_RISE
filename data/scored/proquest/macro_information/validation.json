@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "test_checks": {
+    "offline": 97,
+    "scoring": 33,
+    "forecasts": 33,
+    "proquest_information": 12,
+    "proquest_macro_information": 11
+  },
+  "independent_artifact_checks": {
+    "core": {
+      "common_evaluation_months": 408,
+      "training_label_rows_checked": 10834,
+      "max_reconstructed_probability_error": 5.551115123125783e-16
+    },
+    "with_cpi": {
+      "common_evaluation_months": 108,
+      "training_label_rows_checked": 1152,
+      "max_reconstructed_probability_error": 1.3322676295501878e-15
+    }
+  },
+  "checks": [
+    "input and code hashes unchanged",
+    "all probabilities reconstructed from saved coefficients and scaling",
+    "training-only scaling reconstructed from eligible months",
+    "recent base rate reconstructed from vintage training labels",
+    "shared evaluation support",
+    "strict vintage and label maturity timing",
+    "monthly and overall Brier arithmetic"
+  ],
+  "figure_review": "All three exported figures visually inspected; no clipping or overlap found."
+}

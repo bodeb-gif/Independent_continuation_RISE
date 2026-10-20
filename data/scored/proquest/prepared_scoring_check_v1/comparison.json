@@ -1,0 +1,6 @@
+{
+  "rows": 274070,
+  "scorable_rows": 175855,
+  "status": "Normalized inputs, eligibility and deterministic hits match existing historical scores",
+  "exclusion_reason_wording": "Not compared; new adapter uses explicit maturity/reference gate labels"
+}

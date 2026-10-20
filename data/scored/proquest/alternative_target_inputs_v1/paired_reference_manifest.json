@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "series": "INDPRO",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO&cosd=1939-01-01&coed=2012-12-31",
+      "source_page": "https://fred.stlouisfed.org/series/INDPRO",
+      "retrieved": "2026-10-19",
+      "role": "Same-retrieval-date revised outcome comparison only; never historical predictors",
+      "file": "data/scored/proquest/alternative_target_inputs_v1/INDPRO.csv",
+      "sha256": "ae2977894b189a51436de98ed83c215ee9606bae39a0299035f50c6c544f6ef5"
+    },
+    {
+      "series": "UNRATE",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE&cosd=1939-01-01&coed=2012-12-31",
+      "source_page": "https://fred.stlouisfed.org/series/UNRATE",
+      "retrieved": "2026-10-19",
+      "role": "Same-retrieval-date revised outcome comparison only; never historical predictors",
+      "file": "data/scored/proquest/alternative_target_inputs_v1/UNRATE.csv",
+      "sha256": "f866ecda2f5df4f1094143b65c160b5507aac0ae603b51dc6bc10db4285d2bb6"
+    }
+  ]
+}

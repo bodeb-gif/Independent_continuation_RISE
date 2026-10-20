@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>RNN block length sensitivity</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:40px auto;padding:20px}td,th{padding:10px;border-bottom:1px solid #ddd}table{border-collapse:collapse}</style><h1>RNN block length sensitivity</h1><p>Post-hoc checks of saved 1995–2010 predictions. All tested block lengths are reported. The original five-year comparison remains primary. Positive loss improvements favor the RNN; changing the block length does not change its fitted predictions or observed effect size.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comparison</th>
+      <th>metadata logistic</th>
+      <th>metadata-history logistic</th>
+    </tr>
+    <tr>
+      <th>block_years</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.18701</td>
+      <td>0.10971</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.22656</td>
+      <td>0.16797</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.32812</td>
+      <td>0.25000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.37500</td>
+      <td>0.31250</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.31250</td>
+      <td>0.25000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.50000</td>
+      <td>0.50000</td>
+    </tr>
+  </tbody>
+</table><p>Values are nominal one-sided block-swap p-values, conditional on exchangeability assumptions. Blocks begin in 1995; the final block can be shorter. One-year blocks can split the 24-month outcome windows. Shorter blocks can increase apparent precision without supplying independent evidence. None is chosen on the basis of crossing 0.05. No source validation or modern evaluation was performed.</p><p>The full counts and contributions are in scores.csv and block_contributions.csv; exhaustive null statistics are in null_scores.csv.gz.</p></html>

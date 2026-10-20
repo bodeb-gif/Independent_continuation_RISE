@@ -1,0 +1,5 @@
+           topic  n_claims  n_articles  gap_vs_fixed       low      high  n_blocks
+general_business    109582       58115     -0.123650 -0.225853 -0.020932        23
+         markets     25546       16159     -0.195875 -0.304652 -0.070117        23
+          prices     22531       16098     -0.285742 -0.344019 -0.201540        21
+      employment     18196       13453      0.137273  0.009383  0.263181        14

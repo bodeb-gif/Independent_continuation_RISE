@@ -1,0 +1,6 @@
+{
+  "status": "failed before result tables were produced",
+  "reason": "Outcome loop included previously added regime columns; fixed to iterate only topic/month/horizon keys.",
+  "successful_run": "data/scored/proquest/benchmark_interpretation_v2",
+  "interpretation": "Retained specification from failed execution; no scientific result. Specification unchanged for successful run."
+}

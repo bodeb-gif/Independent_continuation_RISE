@@ -1,0 +1,5 @@
+topic,n_claims,n_articles,n_groups,multiple_direction_groups,same_voice_category_multiple_groups,article_weighted_claim_share_in_multiple_groups
+employment,18196,13453,14728,796,635,0.05481599720431208
+general_business,109582,58115,71071,8562,7220,0.1282947154520074
+markets,25546,16159,18909,1726,1578,0.09246650859954858
+prices,22531,16098,17940,1270,1106,0.07216041419824498

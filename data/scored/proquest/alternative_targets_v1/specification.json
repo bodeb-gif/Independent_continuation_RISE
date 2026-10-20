@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory after inspecting historical scoring sensitivity; no benchmark promotion",
+  "scope": "Annual ProQuest 1900\u20132010, verified primary and raw sensitivity; non-NBER scored business/employment claims only",
+  "cohorts": [
+    "machine_stated_non_NBER",
+    "non_NBER"
+  ],
+  "employment": "Compare frozen UNRATE original bands, frozen UNRATE sign, freshly retrieved UNRATE sign, and PAYEMS sign on identical claims with all endpoints. Reverse UNRATE direction so improve means unemployment falls or payroll jobs rise. This assumes broad labor-market interpretation, not source-validated targets.",
+  "general_business": "Restrict publication month to March/June/September/December and horizon to multiples of three months. Compare frozen IP original bands, frozen IP sign, freshly retrieved IP sign, fresh IP quarterly-average sign and real GDP quarterly-level sign. IP quarterly averages require all three months. No interpolated GDP.",
+  "unit_caution": "Quarterly-average levels differ from monthly endpoint levels. Quarter-end publication-month restriction does not mean publication was on the last day. No annualization of GDP level ratios. Sign-only differences outside 1e-10 percentage points count, even economically tiny changes.",
+  "references": "New reference downloads retrieved together on 2026-10-19, frozen bytes and hashes. Keep original snapshots unchanged and report changes between frozen and refreshed original series separately. Assessment outcomes only, never historical inputs.",
+  "weighting": "Equal article within each source/cohort/topic on common support across all variants. Do not compare these rates directly to full-population results.",
+  "uncertainty": "Paired occupied publication-block bootstrap, 5000 draws, five years primary and 2/10 sensitivity; marginal conditional intervals only",
+  "comparators": [
+    "always_improve",
+    "always_flat",
+    "always_worsen"
+  ],
+  "decision": "Retain all outcomes and constant comparators. No automatic claim relabeling, new model fits, p-values or source validation."
+}

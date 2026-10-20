@@ -1,0 +1,3 @@
+source_set,claims,represented_articles,claim_articles,scorable_claims,scorable_articles,unscorable_claims,publication_months,outcome_cells
+raw,488660,156435,115319,298319,88834,190341,1327,14231
+verified,274070,146720,105604,175855,76851,98215,1317,12684

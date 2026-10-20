@@ -1,0 +1,13 @@
+audit_id,topic,direction,scope,confidence,voice,horizon_months,horizon_hint,legacy_benchmark,legacy_horizon_used
+verified:1975:3299,general_business,worsen,national,hedged,expert,6,stated,INDPRO,6.0
+verified:1978:300,general_business,worsen,national,hedged,expert,6,stated,INDPRO,6.0
+verified:1987:4619,prices,worsen,national,assertive,journalist,12,stated,CPI,12.0
+verified:1988:3910,employment,worsen,national,hedged,official,vague,default,UNRATE,12.0
+verified:1990:3700,general_business,worsen,national,hedged,expert,vague,default,INDPRO,12.0
+verified:1990:4984,general_business,improve,national,hedged,expert,1,default,INDPRO,1.0
+verified:1998:3403,general_business,worsen,national,hedged,expert,12,stated,INDPRO,12.0
+verified:2001:6374,general_business,worsen,national,hedged,expert,vague,default,INDPRO,12.0
+verified:2001:11158,general_business,worsen,national,assertive,expert,12,stated,INDPRO,12.0
+verified:2002:4920,general_business,improve,national,assertive,official,vague,default,INDPRO,12.0
+verified:2008:13442,general_business,worsen,national,assertive,expert,vague,default,INDPRO,12.0
+verified:2009:3298,general_business,improve,national,hedged,expert,3,default,INDPRO,3.0

@@ -1,0 +1,468 @@
+[
+  {
+    "name": "annual inventory",
+    "status": "exact JSON match"
+  },
+  {
+    "name": "descriptive/confidence.csv",
+    "rows": 3,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/decades.csv",
+    "rows": 12,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/decades_grounded.csv",
+    "rows": 12,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/economic_state.csv",
+    "rows": 2,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/exclusions.csv",
+    "rows": 6,
+    "columns": 2,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/horizons.csv",
+    "rows": 4,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/optimism_by_decade.csv",
+    "rows": 12,
+    "columns": 2,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/publisher_topic.csv",
+    "rows": 36,
+    "columns": 4,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/publishers.csv",
+    "rows": 9,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/publishers_common_period.csv",
+    "rows": 9,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/publishers_grounded.csv",
+    "rows": 9,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/scored_claims.csv.gz",
+    "rows": 274070,
+    "columns": 24,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/sensitivity.csv",
+    "rows": 6,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/topics.csv",
+    "rows": 4,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/voice.csv",
+    "rows": 15,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/year_topic.csv",
+    "rows": 383,
+    "columns": 4,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "descriptive/yearly.csv",
+    "rows": 111,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "target_robustness/block_support.csv",
+    "rows": 1640,
+    "columns": 7,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "target_robustness/comparisons.csv",
+    "rows": 240,
+    "columns": 17,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "target_robustness/leave_one_block_out.csv",
+    "rows": 1640,
+    "columns": 7,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "target_robustness/primary_verified_topics.csv",
+    "rows": 4,
+    "columns": 17,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/comparisons.csv",
+    "rows": 216,
+    "columns": 14,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/direction_mix.csv",
+    "rows": 72,
+    "columns": 6,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/gap_decomposition.csv",
+    "rows": 72,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/horizon_comparisons.csv",
+    "rows": 72,
+    "columns": 15,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/illustrative_costs.csv",
+    "rows": 64,
+    "columns": 9,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "direction_diagnostics/warning_metrics.csv",
+    "rows": 16,
+    "columns": 14,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "prepared inputs and mature deterministic scores",
+    "rows": 274070,
+    "status": "match",
+    "note": "Exclusion reason wording differs; scoring eligibility, outcomes and feature columns compared"
+  },
+  {
+    "name": "political and forecast feature reconstruction",
+    "rows": 1332,
+    "columns": 9,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/comparison.csv",
+    "rows": 132,
+    "columns": 15,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/confidence.csv",
+    "rows": 12,
+    "columns": 7,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/annual_refits.csv",
+    "rows": 34,
+    "columns": 15,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/calibration.csv",
+    "rows": 55,
+    "columns": 6,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/candidate_scores.csv",
+    "rows": 408,
+    "columns": 12,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/coefficients.csv",
+    "rows": 906,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/inner_folds.csv",
+    "rows": 170,
+    "columns": 10,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/inner_predictions.csv",
+    "rows": 21216,
+    "columns": 12,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/leave_block_out.csv",
+    "rows": 16,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/metrics.csv",
+    "rows": 45,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/paired_intervals.csv",
+    "rows": 18,
+    "columns": 8,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/predictions.csv",
+    "rows": 408,
+    "columns": 35,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/preprocessing.csv",
+    "rows": 234,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/selected_training_rows.csv",
+    "rows": 9435,
+    "columns": 7,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/core/training_label_audit.csv",
+    "rows": 11739,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/annual_refits.csv",
+    "rows": 9,
+    "columns": 15,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/calibration.csv",
+    "rows": 31,
+    "columns": 6,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/candidate_scores.csv",
+    "rows": 108,
+    "columns": 12,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/coefficients.csv",
+    "rows": 282,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/inner_folds.csv",
+    "rows": 45,
+    "columns": 10,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/inner_predictions.csv",
+    "rows": 3312,
+    "columns": 12,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/leave_block_out.csv",
+    "rows": 6,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/metrics.csv",
+    "rows": 21,
+    "columns": 13,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/paired_intervals.csv",
+    "rows": 18,
+    "columns": 8,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/predictions.csv",
+    "rows": 108,
+    "columns": 35,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/preprocessing.csv",
+    "rows": 76,
+    "columns": 5,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/selected_training_rows.csv",
+    "rows": 1132,
+    "columns": 7,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "macro_benchmark/with_cpi/training_label_audit.csv",
+    "rows": 1484,
+    "columns": 11,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  {
+    "name": "frozen RNN/logistic probability reload",
+    "rows": 56807,
+    "columns": 28,
+    "status": "match",
+    "rtol": 1e-10,
+    "atol": 1e-12
+  }
+]

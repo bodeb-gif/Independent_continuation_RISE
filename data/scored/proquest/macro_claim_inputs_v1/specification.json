@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory matched input ablation; all four eras have prior exposure",
+  "scope": "Verified annual ProQuest national general-business and employment claims only; all model arrays exclude 1995 onward. Prior monthly press context may contain other supported topics, using print-time labels only.",
+  "origins": [
+    "1975-01",
+    "1980-01",
+    "1985-01",
+    "1990-01"
+  ],
+  "arms": {
+    "none": [],
+    "production": [
+      "ip_growth_3m",
+      "ip_growth_6m",
+      "ip_growth_12m",
+      "ip_age_months",
+      "production_alignment"
+    ],
+    "unemployment": [
+      "unemployment_level",
+      "unemployment_change_3m",
+      "unemployment_change_12m",
+      "unemployment_age_months",
+      "unemployment_alignment"
+    ],
+    "both": [
+      "ip_growth_3m",
+      "ip_growth_6m",
+      "ip_growth_12m",
+      "ip_age_months",
+      "production_alignment",
+      "unemployment_level",
+      "unemployment_change_3m",
+      "unemployment_change_12m",
+      "unemployment_age_months",
+      "unemployment_alignment"
+    ]
+  },
+  "configuration": {
+    "id": "gru8_standard_20",
+    "hidden": 8,
+    "dropout": 0.15,
+    "weight_decay": 0.001,
+    "window_years": 20
+  },
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "support": "Every arm/model uses identical eligible claim rows. Require all eight core macro fields and endpoint outcomes; no backfill or imputation. Earlier rows remain only in print-time context.",
+  "features": "Latest nonempty macro snapshot strictly before publication-month start. Changes stay within vintage. Include observation ages and topic-specific forecast-direction times own-target trend interactions. Monthly current macro scalars enter the claim head, not a reconstructed historical sequence.",
+  "labels": "Original bands (production +/-2 percent, unemployment +/-0.5 percentage points). Training labels from latest archive strictly before stopping-window start, stopping labels from latest archive strictly before assessment start. Endpoint+3 months must strictly precede its stage boundary. Revised assessment hits used only for scoring after fits.",
+  "folds": "Twenty-year fitting window ending five years before origin; five earlier years for stopping, next five for assessment, horizon+3-month purges at each boundary. Common support begins no earlier than 1965-12.",
+  "models": [
+    "8-unit GRU ensemble of all three seeds",
+    "metadata logistic C=1",
+    "metadata plus flattened press history logistic C=1",
+    "training prevalence"
+  ],
+  "metrics": "Article-weighted Brier and log loss, accuracy, AUC and AP, pooled and separately by topic; equal mean across four folds. Recompute topic article weights.",
+  "decision": "Display every arm. No hyperparameter search, promotion, new superiority p-values or 1995\u20132010 evaluation. Compare within this matched experiment, not directly to earlier whole-corpus RNN scores.",
+  "limits": "Machine interpretation remains unvalidated. Archive coverage is incomplete and quarterly unemployment vintages can be stale. Historical corpus selection and stopping-stage target revisions limit real-time reconstruction. Revised assessment truth differs from real-time training truth."
+}

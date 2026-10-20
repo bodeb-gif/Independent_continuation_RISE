@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "source": "proquest",
+  "export_set": "verified",
+  "expected_years": [],
+  "run_id": null,
+  "completed_at": null,
+  "query": null,
+  "coverage": null,
+  "retrieval_limits": null,
+  "extraction_model": null,
+  "verification_model": null,
+  "decoding_and_chunking": null,
+  "extraction_prompt_sha256": null,
+  "verification_prompt_sha256": null,
+  "processing_log_sha256": null,
+  "prior_exposure": {
+    "status": "unknown",
+    "statement": null,
+    "recorded_at": null
+  },
+  "files": [],
+  "file_entry_template": {
+    "year": null,
+    "path": null,
+    "sha256": null,
+    "verification_status": null,
+    "export_status": null,
+    "counts": {
+      "retrieved_articles": null,
+      "text_available_articles": null,
+      "missing_text_articles": null,
+      "extracted_articles": null,
+      "extraction_failed_articles": null,
+      "extraction_pending_articles": null,
+      "raw_candidates": null,
+      "accepted_claims": null,
+      "rejected_claims": null,
+      "verification_failed_claims": null,
+      "verification_pending_claims": null,
+      "export_records": null,
+      "export_articles": null,
+      "empty_records": null
+    },
+    "terminal_exclusions": null,
+    "nonexported_article_explanation": null
+  }
+}

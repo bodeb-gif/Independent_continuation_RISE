@@ -1,0 +1,30 @@
+{
+  "status": "Post-hoc descriptive diagnosis of already inspected historical forecasts; no new holdout or fitted model",
+  "studies": [
+    "core",
+    "with_cpi"
+  ],
+  "high_confidence_threshold": 0.9,
+  "large_feature_z_threshold": 3.0,
+  "confidence_bins": [
+    0.0,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0000001
+  ],
+  "worst_months_per_model": 10,
+  "comparisons": "Frozen economy-only and economy-plus-newspaper forecasts versus recent base rate on identical months",
+  "loss_decomposition": "Class/period contribution = sum(model loss minus base-rate loss in group) / all evaluation months; contributions add to the overall gap",
+  "revisions": "Compare labels actually used at each annual refit with final revised outcomes. Report each refit separately and one first-used row per distinct training origin. First use is not first release.",
+  "feature_shift": "Standardize using saved training parameters; compare with observed training range. A large z-score is descriptive, not a hypothesis test or a causal effect.",
+  "training_fit": "Reconstruct training probabilities from saved coefficients, using the exact original eligible training months and vintage labels. In-sample fit is optimistic and is not validation.",
+  "forbidden_actions": [
+    "refit models",
+    "calibrate on evaluation outcomes",
+    "use revised labels as features",
+    "modify original exports"
+  ]
+}

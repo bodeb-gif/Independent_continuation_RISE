@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "test_checks": 192,
+  "source_and_forecast_hashes_unchanged": true,
+  "same_forecast_months_per_model": "{('core', 'macro_only'): 408, ('core', 'macro_plus_press'): 408, ('core', 'recent_base_rate'): 408, ('with_cpi', 'macro_only'): 108, ('with_cpi', 'macro_plus_press'): 108, ('with_cpi', 'recent_base_rate'): 108}",
+  "checks": [
+    "Class and five-year excess-loss contributions reconcile to overall gaps",
+    "Class probability components reconcile to multiclass Brier loss",
+    "High-confidence counts and accuracy independently reproduced",
+    "All coefficient terms reconcile to observed log probability margins",
+    "First-used revision summaries count each training origin once",
+    "All 3 plots visually reviewed"
+  ],
+  "maximum_logit_margin_error": 2.0161650127192843e-13
+}

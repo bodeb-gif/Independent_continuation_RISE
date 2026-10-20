@@ -1,0 +1,17 @@
+{
+  "inputs_sha256": {
+    "data/scored/proquest/polarization/claims/test_predictions.csv.gz": "b2e19ed98dcf565e19be87c550f349c399764c13286a7b879ad7c2ec5ee144df",
+    "data/scored/proquest/rnn_permutation/paired_tests.csv": "3ab786531caa9b0afd543a67bf7defa1590a0e52882e2186e84d83bbd851752a"
+  },
+  "code_sha256": "6eed0fca11bc50b41c00c7012cbef9d48b1b182608a7fcbc678764a77aa64155",
+  "five_year_reproduction": true,
+  "model_fits": 0,
+  "output_sha256": {
+    "reproduce.py": "6eed0fca11bc50b41c00c7012cbef9d48b1b182608a7fcbc678764a77aa64155",
+    "specification.json": "0e3fc0705ff2f05bfbc4c09f97c184a540a325e3e783ab7501a359910ed8bfa7",
+    "scores.csv": "7782dbda8cbdaf5ce56e4374dd95f73f9b999aea8a6345cf420550668c7e7b9f",
+    "null_scores.csv.gz": "5fd7c6b3e3b892337b752c802026985b150489b74a37bbc84ccd9248672a5695",
+    "report.html": "b4a463291ce33184e97863fd493a9e7c9bef223ee6aa2677fc7ba4d2ccb114cb",
+    "block_contributions.csv": "b416f0d90d0acb3926395c0aedd2e1119e6750afd140bb3ed74f459a1ff005c8"
+  }
+}

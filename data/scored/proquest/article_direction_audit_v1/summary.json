@@ -1,0 +1,22 @@
+{
+  "status": "Exploratory structural diagnostic; no deduplication or source judgments",
+  "n_claims": 175855,
+  "n_groups": 122648,
+  "multiple_direction_groups": 12354,
+  "group_definition": [
+    "page_id",
+    "date",
+    "topic",
+    "basis",
+    "horizon_used"
+  ],
+  "interpretation": "Different speakers, conditions, subtargets or extraction errors could explain multiple directions. Voice categories do not identify individual speakers. Source review is required to distinguish explanations.",
+  "inputs_sha256": {
+    "data/scored/proquest/descriptive/scored_claims.csv.gz": "a3e85bd008073343e49efadd72ad542965ccc4e704ba893b9e6e2c84695cc9bf"
+  },
+  "code_sha256": "f48653de7110a5ebaa5436da8f687dac5b0a303bf2022629f6313305a6ca0d72",
+  "outputs_sha256": {
+    "data/scored/proquest/article_direction_audit_v1/article_target_horizon_groups.csv.gz": "c7e93fe235a8b4406863760a2dcb237cb5ce298703347e934fe4e5874ab18732",
+    "data/scored/proquest/article_direction_audit_v1/topic_summary.csv": "060540fee53e0feff5507aa2fb7ccc37e4e665241cea28c8fbb680617036ed2a"
+  }
+}

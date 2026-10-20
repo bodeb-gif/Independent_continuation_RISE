@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-19",
+  "moves": [
+    {
+      "previous": "docs/publication/MANUSCRIPT.md",
+      "current": "paper/manuscript/outline.md",
+      "previous_sha256": "afe40e6c0df68c673e319462c22beea35815d4dac96a7572b3a51a82c8b9921b",
+      "relocated_sha256": "bded51b2c8cc21b3aedded46e644492bdc15f679d138238b460305d0453b9aea",
+      "change": "Location and relative links only; old path retained as a navigation pointer"
+    },
+    {
+      "previous": "docs/publication/CONCEPT.md",
+      "current": "paper/planning/concept.md",
+      "previous_sha256": "2e94f7e9fd47fc1a877719b1956abd9040adfc33ad18990f0977c350a8982382",
+      "relocated_sha256": "bbcc5089dfae470f404593bb2f33d7075e598d8738555f18133eda74dc48f197",
+      "change": "Location and relative links only; old path retained as a navigation pointer"
+    },
+    {
+      "previous": "docs/publication/LITERATURE.md",
+      "current": "paper/references/literature.md",
+      "previous_sha256": "c984753c2dab6382f56a9b9ae9eb1c9f83c756772d95e76c229025273823a828",
+      "relocated_sha256": "c984753c2dab6382f56a9b9ae9eb1c9f83c756772d95e76c229025273823a828",
+      "change": "Location and relative links only; old path retained as a navigation pointer"
+    }
+  ],
+  "fixed_paths": "Analysis code, outputs and hashed protocol paths remain unchanged"
+}

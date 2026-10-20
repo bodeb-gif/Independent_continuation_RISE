@@ -1,0 +1,38 @@
+{
+  "status": "Exploratory saved results; human validation pending",
+  "verified_claims": 274070,
+  "verified_scored_claims": 175855,
+  "pooled_legacy_hit_rate": 0.40812032640527707,
+  "pooled_legacy_baseline": 0.5362144948963635,
+  "equal_article_comparison": {
+    "comparison": "All scorable, equal article",
+    "raw_hit_rate": 0.41711906626914236,
+    "raw_fixed_baseline": 0.5518059766398984,
+    "raw_gap_vs_fixed": -0.13468691037075603,
+    "verified_hit_rate": 0.4089911755430464,
+    "verified_fixed_baseline": 0.5359726088302363,
+    "verified_gap_vs_fixed": -0.12698143328718992,
+    "delta_hit_rate": -0.008127890726095932,
+    "delta_fixed_baseline": -0.015833367809662047,
+    "delta_gap_vs_fixed": 0.007705477083566115
+  },
+  "monthly_core_brier_interval": {
+    "model": "macro_plus_press",
+    "baseline": "macro_only",
+    "metric": "brier",
+    "block_years": "5",
+    "n_blocks": "7",
+    "improvement": "0.009894890555232686",
+    "low": "-0.06373022417225763",
+    "high": "0.0808064374350468"
+  },
+  "pilot": {
+    "seed": 20261014,
+    "n": 12,
+    "population_n": 175855,
+    "design": "Simple random sample without replacement of scored verified records",
+    "purpose": "Source recovery and rubric development only",
+    "main_audit": "Not drawn; freeze after pilot; exclude pilot records",
+    "source_mapping": "Pending VM lineage/context; do not guess from labels"
+  }
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "name": "test_proquest_descriptive",
+    "arguments": [
+      "tests/test_proquest_descriptive.py"
+    ],
+    "exit_code": 0,
+    "seconds": 10.240730499848723
+  },
+  {
+    "name": "test_proquest_direction_diagnostics",
+    "arguments": [
+      "tests/test_proquest_direction_diagnostics.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.4765019998885691
+  },
+  {
+    "name": "test_proquest_followups",
+    "arguments": [
+      "tests/test_proquest_followups.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.5054722081404179
+  },
+  {
+    "name": "test_proquest_information",
+    "arguments": [
+      "tests/test_proquest_information.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.6627417909912765
+  },
+  {
+    "name": "test_proquest_macro_benchmark",
+    "arguments": [
+      "tests/test_proquest_macro_benchmark.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.320413541048765
+  },
+  {
+    "name": "test_proquest_macro_diagnostics",
+    "arguments": [
+      "tests/test_proquest_macro_diagnostics.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.3471911249216646
+  },
+  {
+    "name": "test_proquest_macro_information",
+    "arguments": [
+      "tests/test_proquest_macro_information.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.5306034579407424
+  },
+  {
+    "name": "test_proquest_modern_intake",
+    "arguments": [
+      "tests/test_proquest_modern_intake.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.054052290972322226
+  },
+  {
+    "name": "test_proquest_polarization",
+    "arguments": [
+      "tests/test_proquest_polarization.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.3112517499830574
+  },
+  {
+    "name": "test_proquest_prepare_inputs",
+    "arguments": [
+      "tests/test_proquest_prepare_inputs.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.1635143749881536
+  },
+  {
+    "name": "test_proquest_publication",
+    "arguments": [
+      "tests/test_proquest_publication.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.05069425003603101
+  },
+  {
+    "name": "test_proquest_quota_wait",
+    "arguments": [
+      "tests/test_proquest_quota_wait.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.41181429219432175
+  },
+  {
+    "name": "test_proquest_rnn",
+    "arguments": [
+      "tests/test_proquest_rnn.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.4390332500915974
+  },
+  {
+    "name": "test_proquest_rnn_age_weighting",
+    "arguments": [
+      "tests/test_proquest_rnn_age_weighting.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.9247062921058387
+  },
+  {
+    "name": "test_proquest_rnn_audit",
+    "arguments": [
+      "tests/test_proquest_rnn_audit.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.443405999802053
+  },
+  {
+    "name": "test_proquest_rnn_development",
+    "arguments": [
+      "tests/test_proquest_rnn_development.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.7591752919834107
+  },
+  {
+    "name": "test_proquest_rnn_permutation",
+    "arguments": [
+      "tests/test_proquest_rnn_permutation.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.9137874168809503
+  },
+  {
+    "name": "test_proquest_rnn_runner",
+    "arguments": [
+      "tests/test_proquest_rnn_runner.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.7919242919888347
+  },
+  {
+    "name": "test_proquest_robustness",
+    "arguments": [
+      "tests/test_proquest_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.5222535422071815
+  },
+  {
+    "name": "test_proquest_target_robustness",
+    "arguments": [
+      "tests/test_proquest_target_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.43502591690048575
+  },
+  {
+    "name": "test_offline",
+    "arguments": [
+      "tests/test_offline.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.410711499862373
+  },
+  {
+    "name": "test_scoring",
+    "arguments": [
+      "tests/test_scoring.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.29515270912088454
+  },
+  {
+    "name": "test_forecasts",
+    "arguments": [
+      "tests/test_forecasts.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.23033562512137
+  },
+  {
+    "name": "inventory",
+    "arguments": [
+      "src/analyze_proquest.py",
+      "--out",
+      "data/scored/proquest/rebuilt_inventory"
+    ],
+    "exit_code": 0,
+    "seconds": 9.490584708051756
+  },
+  {
+    "name": "descriptive",
+    "arguments": [
+      "src/proquest_descriptive.py",
+      "--out",
+      "data/scored/proquest/rebuilt_descriptive"
+    ],
+    "exit_code": 0,
+    "seconds": 13.37207854213193
+  },
+  {
+    "name": "target_robustness",
+    "arguments": [
+      "src/proquest_target_robustness.py"
+    ],
+    "exit_code": 0,
+    "seconds": 4.757558917161077
+  },
+  {
+    "name": "direction_diagnostics",
+    "arguments": [
+      "src/proquest_direction_diagnostics.py"
+    ],
+    "exit_code": 0,
+    "seconds": 6.517106957966462
+  },
+  {
+    "name": "prepare_scored_inputs",
+    "arguments": [
+      "src/proquest_prepare_inputs.py",
+      "--exports",
+      "data/proquest/verified",
+      "--first-year",
+      "1900",
+      "--last-year",
+      "2010",
+      "--score",
+      "--as-of",
+      "2026-10-19",
+      "--reference-dir",
+      "data/reference/proquest",
+      "--out",
+      "data/scored/proquest/rebuilt_prepared_inputs"
+    ],
+    "exit_code": 0,
+    "seconds": 12.005859333788976
+  },
+  {
+    "name": "macro_benchmark",
+    "arguments": [
+      "src/proquest_macro_benchmark.py"
+    ],
+    "exit_code": 0,
+    "seconds": 12.841240999987349
+  },
+  {
+    "name": "rnn_reload",
+    "arguments": [
+      "src/proquest_rnn_runner.py",
+      "predict",
+      "--claims",
+      "data/scored/proquest/descriptive/scored_claims.csv.gz",
+      "--features",
+      "data/scored/proquest/polarization/features.csv",
+      "--bundle",
+      "data/scored/proquest/polarization/claims",
+      "--start",
+      "1995-01",
+      "--through",
+      "2010-12",
+      "--out",
+      "data/scored/proquest/rebuilt_rnn_predictions"
+    ],
+    "exit_code": 0,
+    "seconds": 6.740925124846399
+  }
+]

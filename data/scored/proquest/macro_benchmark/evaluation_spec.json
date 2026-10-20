@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "specified_date": "2026-10-14",
+  "status": "Specified before fitting this replacement, after inspecting the original forecasts and their error audit. Exploratory development, not a fresh holdout.",
+  "source": "Same annual verified ProQuest 1900–2010 panel and frozen historical macro vintages; no source edits or new claims",
+  "target": "Six-month industrial-production direction from t-1 to t+5 with inclusive +/-2 percent flat band. Final revised truth is used only after forecasting for evaluation.",
+  "horizon_months": 6,
+  "flat_band_percent": 2.0,
+  "label_release_allowance_months": 3,
+  "class_order": ["fall", "flat", "rise"],
+  "studies": [
+    {"name": "core", "training_start": "1965-12", "evaluation_start": "1977-01", "evaluation_end": "2010-12", "include_cpi": false},
+    {"name": "with_cpi", "training_start": "1994-09", "evaluation_start": "2002-01", "evaluation_end": "2010-12", "include_cpi": true}
+  ],
+  "evaluation_support": "Exactly the original core 408 and CPI 108 evaluation months, including its documented exclusion of 2001 from the CPI study",
+  "eligibility": "All original macro and four press features observed; same eligible source months as the preceding comparison; no imputation",
+  "macro_feature_sets": {
+    "production": ["ip_growth_6m"],
+    "production_jobs": ["ip_growth_6m", "unemployment_change_3m"]
+  },
+  "additional_cpi_feature": "cpi_change_12m",
+  "press_features": ["net_direction_3m", "net_change_common_papers", "disagreement_3m", "paper_dispersion_3m"],
+  "C_candidates": [0.001, 0.01, 0.1],
+  "training_windows": ["expanding", "recent_120"],
+  "training_window_definition": "recent_120 uses the latest 120 eligible mature training months; expanding uses all eligible mature months. No future rows or revised evaluation truth enter either.",
+  "refits": "January annually; same historical IPT label vintage and three-month maturity rule at every outer and inner refit",
+  "inner_validation": {
+    "lookback_years": 5,
+    "minimum_training_months": 60,
+    "minimum_validation_months": 24,
+    "minimum_valid_refits": 2,
+    "rule": "For each outer January, build annual folds at the prior five January origins. Fit each fold using its own as-of-inner-refit labels and training-only standardization. Predict the subsequent calendar year, restricted to origins whose labels are mature and available in the outer January vintage. Score inner predictions against those as-of-outer-refit labels, never final revised evaluation truth.",
+    "common_support": "Every eligible candidate is scored on exactly the same inner validation months. A candidate with insufficient training history or a missing training class at any eligible inner refit is unavailable for that outer selection.",
+    "criterion": "Mean multiclass Brier loss across all common validation months; no adjustment based on outer evaluation outcomes",
+    "tie_break": "Lowest score; numerical ties within 1e-12 prefer fewer macro features, smaller C, then expanding history",
+    "fallback": "If fewer than 24 validation months or two valid annual folds exist, use production features, C=0.001, expanding history. CPI appends its fixed inflation feature. Record fallback explicitly."
+  },
+  "macro_plus_press": "Add the same four press signals using the macro-selected feature set, C and training window. Do not retune these settings using press performance. Both regressions share the same training months.",
+  "recent_base_rate": "Original Laplace-smoothed latest 120 eligible mature labels; unchanged comparator",
+  "preprocessing": "StandardScaler fitted only on the relevant inner or outer training rows. No winsorization, class weighting, feature interactions, probability clipping or fitted recalibration.",
+  "solver": "lbfgs",
+  "max_iter": 2000,
+  "primary_comparison": "Selected macro plus press versus selected macro alone, core study",
+  "primary_metric": "Multiclass Brier score, sum over three classes, range 0–2",
+  "secondary_metrics": ["log_loss", "accuracy", "balanced_accuracy", "fall_auc", "fall_ap"],
+  "calibration": "Fixed tenths probability bins per class; report forecast counts, confidence and accuracy for predictions with maximum probability >=0.9; no evaluation-set recalibration",
+  "bootstrap_seed": 20261014,
+  "bootstrap_draws": 2000,
+  "block_lengths_years": [2, 5, 10],
+  "stability": "Same calendar five-year/decade cells, omission of 2007–2009 scoring origins, and leave-one-five-year-cell-out scoring as the preceding experiment; no refit for scoring exclusions",
+  "uncertainty": "Paired year-block resampling anchored at each study evaluation start. Fixed fitted forecasts; not a nested bootstrap of model selection. CPI long-block intervals have too few blocks for strong inference.",
+  "limitations": "Feature choices motivated by already inspected results; repeated historical evaluation remains exploratory. Vintage reconstruction, quarterly macro staleness, query selection, human-validation gaps and overlapping six-month outcomes remain. Revisions between inner and outer vintages can alter validation labels but are known at outer selection time."
+}

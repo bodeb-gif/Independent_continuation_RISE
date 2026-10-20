@@ -1,0 +1,13 @@
+           topic            rule  hit_rate  fixed_baseline  gap_vs_fixed       low      high
+general_business  original_fixed  0.412885        0.536535     -0.123650 -0.225853 -0.020932
+general_business     always_flat  0.412885        0.260635      0.152250  0.038877  0.280776
+general_business always_opposite  0.412885        0.202830      0.210055  0.139763  0.283536
+         markets  original_fixed  0.386997        0.582872     -0.195875 -0.304652 -0.070117
+         markets     always_flat  0.386997        0.196517      0.190480  0.119080  0.260220
+         markets always_opposite  0.386997        0.220611      0.166386  0.050982  0.267610
+          prices  original_fixed  0.459571        0.745314     -0.285742 -0.344019 -0.201540
+          prices     always_flat  0.459571        0.210141      0.249430  0.041487  0.407306
+          prices always_opposite  0.459571        0.044546      0.415025  0.304655  0.501325
+      employment  original_fixed  0.366823        0.229550      0.137273  0.009383  0.263181
+      employment     always_flat  0.366823        0.453910     -0.087086 -0.271238  0.044418
+      employment always_opposite  0.366823        0.316540      0.050283 -0.000648  0.107016

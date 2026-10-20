@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "mode": "predict",
+  "arguments": {
+    "mode": "predict",
+    "claims": "data/scored/proquest/descriptive/scored_claims.csv.gz",
+    "features": null,
+    "bundle": "data/scored/proquest/rnn_development_v1/bundles/gru8_standard_20",
+    "configuration": null,
+    "start": "1990-01",
+    "through": "1994-12",
+    "validation_start": "1985-01",
+    "test_start": "1995-01",
+    "as_of": "2026-10-19",
+    "arms": [
+      "baseline"
+    ],
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "epochs": 20,
+    "allow_new_years": false,
+    "out": "data/scored/proquest/rnn_development_v1_reload_check"
+  },
+  "inputs_sha256": {
+    "data/scored/proquest/descriptive/scored_claims.csv.gz": "a3e85bd008073343e49efadd72ad542965ccc4e704ba893b9e6e2c84695cc9bf",
+    "data/scored/proquest/rnn_development_v1/bundles/gru8_standard_20/preprocessing_and_baselines.joblib": "57c63e8e8e45e184305fe221c2ff60a250a22edb7f706e02fe43cbdf587f7288",
+    "data/scored/proquest/rnn_development_v1/bundles/gru8_standard_20/gru_baseline_11.pt": "030f2705f8c2cb286ffd98031c4388bc72f410fe80ecd275535f0ac6cfe9c0e5",
+    "data/scored/proquest/rnn_development_v1/bundles/gru8_standard_20/gru_baseline_29.pt": "9742f9291b427127c161d04b40b7f02e75c5f0cc528e7f690a45ed8b8a7468be",
+    "data/scored/proquest/rnn_development_v1/bundles/gru8_standard_20/gru_baseline_47.pt": "fe78aa6a0d44c98ff84726d9a045df471ae92392b801fc50d1ec8ea992d6bbcc"
+  },
+  "code_sha256": "885f8bbf7ad34972698a7726396e29983aa261765e5f95f8d3e99251d26d6730",
+  "metadata": {
+    "prediction_rows": 28000,
+    "outcomes_read": false,
+    "model_fits": 0
+  },
+  "imported_code_sha256": {
+    "proquest_rnn.py": "703fbc9e71565540c7c80ff43808a24c4343a3cc6ca41bcbad0de8c65c96ba3e",
+    "proquest_followups.py": "47ad7052712e741cfef34c378270c9ecc1f56287e942013f3a5d68233ade539a",
+    "proquest_polarization_models.py": "4de842fe72f4b07a6deb78dbf64dcec78fe2c7731deac3b5749732daf3ba2986",
+    "proquest_rnn_permutation.py": "ddea048e1cab69e392755639ef8d5ed8ce8fd3b1d324416bc685628ba5893a5c"
+  },
+  "versions": {
+    "python": "3.12.13",
+    "torch": "2.14.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "outputs_sha256": {
+    "predictions.csv.gz": "850479ac3eece41a2b773a4843c0311a083d79a90739d6f0ad4b12a06f2e9eac"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory diagnostics specified after historical results were inspected",
+  "population": "Frozen annual verified ProQuest test predictions, 1995\u20132010; equal total weight per article",
+  "models": "Saved 3-seed ensembles and saved logistic predictions; no fitting or model selection",
+  "primary_metric": "Binary Brier loss; lower is better",
+  "paired_test": "Swap the two models' entire prediction vectors within each five-year publication block (1995\u201399, 2000\u201304, 2005\u201309, 2010). Enumerate all 16 swaps including identity; one-sided tail counts include ties. Null requires joint within-block model-label exchangeability, not merely equal mean loss. Cross-block outcome dependence and four blocks limit interpretation. Not a target-permutation test of learning versus chance.",
+  "primary_comparisons": [
+    "baseline GRU vs metadata logistic",
+    "baseline GRU vs metadata-history logistic"
+  ],
+  "secondary_comparisons": "baseline GRU vs frozen training prevalence; each augmented GRU vs baseline GRU",
+  "multiplicity": "Holm-adjust the two primary Brier p-values; other metrics/comparisons are exploratory",
+  "feature_permutation": "All 24 permutations of four consecutive 48-month origin blocks from 1995\u20132010. Preserve within-block month order, season, all claims at a month, and full donor 12-month sequences. Keep claim metadata and outcomes fixed. Permute sequence, individual polarization scalar with its missingness flag, or all monthly inputs jointly. Use a common mapping across all seeds and arms. Importance = perturbed Brier minus original Brier; mean/quantiles exclude identity. Scores are diagnostic synthetic perturbations, may assign later context to earlier claims and break dependencies with metadata; never deployable forecasts or causal effects. Rank fractions are descriptive, not calibrated significance p-values.",
+  "sequence_order": "Baseline only: reverse all 12 monthly steps; also 99 unique random nonidentity step permutations with seed 20261019, shared across every sequence and seed. Keep values and metadata fixed. Measures reliance on ordering; not superiority to a nonrecurrent neural model.",
+  "references": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html",
+    "https://scikit-learn.org/stable/modules/permutation_importance"
+  ],
+  "modern": "Deferred at user request. Only 1900\u20132010 available; build reusable data-path/model runner instead."
+}

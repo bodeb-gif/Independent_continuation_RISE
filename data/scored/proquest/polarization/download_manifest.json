@@ -1,0 +1,302 @@
+{
+  "retrieved_date": "2026-10-14",
+  "provider": "Voteview Congressional Roll-Call Votes Database",
+  "sources": [
+    {
+      "url": "https://voteview.com/static/data/out/members/HSall_members.csv",
+      "path": "data/scored/proquest/polarization/source_cache/HSall_members.csv",
+      "sha256": "d78f55120b59534e99f30541469325059f953b210f0ddb6ebb54601c9303c0f6"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/rollcalls/HSall_rollcalls.csv",
+      "path": "data/scored/proquest/polarization/source_cache/HSall_rollcalls.csv",
+      "sha256": "98fcc6eac8d966557c4f10c3a64aaee321b88b68522bf339ee18da858f5b1988"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H055_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H055_votes.csv",
+      "sha256": "9c4b896f44d534a1679cebe99b47737062ccfa0692e7101438e045de4dced9f7"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H056_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H056_votes.csv",
+      "sha256": "9784fe05cd8ba9ad84769518ac20e2608255153f04b1ea58bb3fb487f3d7f57f"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H057_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H057_votes.csv",
+      "sha256": "4321e9db20bd5d7ead87bd34afd55eedb0e3344501b1ddb44559f7151665ee8c"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H058_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H058_votes.csv",
+      "sha256": "d739dba4792f2aaa551489dc7667b1eb03faee12ad251f973891e49e355a1b87"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H059_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H059_votes.csv",
+      "sha256": "9a138decbba846a85e722b04d524bd085769167ea3934aec4f8d9c96c9bc2a54"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H060_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H060_votes.csv",
+      "sha256": "541d5e5cbe64e97fdc23fdb78ceb691f56fb4eb6b56ab94b761ff45fd1936140"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H061_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H061_votes.csv",
+      "sha256": "226b9b674391c0cfe2fb45e9c85ecebcc906adf7234fc6aade2bf757f7b22c46"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H062_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H062_votes.csv",
+      "sha256": "486f798eea4df8866b066372edae606c81e34990f4065efc78f934d285cc8b35"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H063_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H063_votes.csv",
+      "sha256": "90e157d41d0be281cd8d56b115094c176dd2b27e1a1bd09a80b457050930364d"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H064_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H064_votes.csv",
+      "sha256": "ace0dc256d1993192469a3b07ef5bc48dbcd19ce87fbb401254007d7f1ade1ab"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H065_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H065_votes.csv",
+      "sha256": "c2ccbede01e65a9f291ae3a7abcf5068e48b43e66ede29fbe283f164cfddfac8"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H066_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H066_votes.csv",
+      "sha256": "fd90055c08ce4245ac2c7536a17d26a68c379dfc051d16a999672b14397085ff"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H067_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H067_votes.csv",
+      "sha256": "bb7f1dd1fa7c7ce5dbbe171ef3b4747087dc82f95efe0d6ae73b402e55d32589"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H068_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H068_votes.csv",
+      "sha256": "191b2f92464aefde50772b0f12f85f8520ff7adfffb00ff1af2900f1b2be08b4"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H069_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H069_votes.csv",
+      "sha256": "19c926b83e84a9b25dce7cab55dfabf08eaedcafe3a6c3b82aad43314bf5f3ab"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H070_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H070_votes.csv",
+      "sha256": "2ead570665f4bb655b85aa013e42a06168a6b7fd620f21a319274ae944194534"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H071_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H071_votes.csv",
+      "sha256": "9549429e837929b6e6dfe7c52ef26f0ef2870339f398a6427b2a673bab86925f"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H072_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H072_votes.csv",
+      "sha256": "9c02b09b59d4f2bc3b8a9712ab40cfdd6477bbf972cfc40e73014c7783054769"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H073_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H073_votes.csv",
+      "sha256": "ad5b947c379417edc48e140e1d7c47fb36d0b5e38a40171fa34abdb49b1dd365"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H074_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H074_votes.csv",
+      "sha256": "e1c2b7954ff954be182c3654ea721cab83c6df8b8d9db444622206a4f83f175d"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H075_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H075_votes.csv",
+      "sha256": "b650dcc207bead9f94a19ef25c4e2493aac56cca2efb93542f56b414cd85ae44"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H076_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H076_votes.csv",
+      "sha256": "86d749159a633103ae2c459260e9a4929a7c560c5e6b96fa014d0150982fb9fb"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H077_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H077_votes.csv",
+      "sha256": "5c2df193dd8ee98b341c77d40d241326f93fba24e8ec10e0c8ec050a4e292173"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H078_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H078_votes.csv",
+      "sha256": "39fc5c579bb83af33fafce77524dacb8e28afbb308f812433a53466df882e4e7"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H079_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H079_votes.csv",
+      "sha256": "09d03c0106596c01134e2f6438e441000204d3565fd57c20341dc2fcfe53f5d1"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H080_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H080_votes.csv",
+      "sha256": "f27b57682406ece09219fcafd0a1f3cfc51ee63570c85842fa16b7a9f49fb8c3"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H081_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H081_votes.csv",
+      "sha256": "874890f2456f50b17f7f7b671539a141703a1abb976d7f7c24877d827c4df627"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H082_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H082_votes.csv",
+      "sha256": "25f2421926aecc9b2c885b7ad1309966a1f1c38b930848c3e88baa247abd58c3"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H083_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H083_votes.csv",
+      "sha256": "9ce231fc1e2b1d60dc0e6cd747f1953949b1ff5b5c4677cad85bf8ce0a861633"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H084_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H084_votes.csv",
+      "sha256": "97b1682fa24d6b10178bbe02416267d7ffaab2e9c64fef761b4daa34a4040510"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H085_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H085_votes.csv",
+      "sha256": "9842da1cf62e920e0e923105a2306b61659835e2e6e3cb2c96192ff1a9e30a3f"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H086_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H086_votes.csv",
+      "sha256": "7f605dea5adaea3d724759659b29cd5b967b2da2eb53ebbd41e1e6bcb89e5f13"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H087_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H087_votes.csv",
+      "sha256": "0d138f16bf85b9446ec97605f441cc085f9a8b7744f18f75a89f23eb501ccd7e"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H088_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H088_votes.csv",
+      "sha256": "4ad543b062e74295581bd2ee2c51296c634da962cd067d3abad27bcee78e484b"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H089_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H089_votes.csv",
+      "sha256": "3139c5aa87ef1875fd5740ea56e9c3b3ee81a01529bea32aacf5c879cb7a0f19"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H090_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H090_votes.csv",
+      "sha256": "34173e4819b3cc4542b54762a1eaa3059b9a7ea9d20aca2f9effd7234eee3069"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H091_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H091_votes.csv",
+      "sha256": "ce1ffaf34fee138e8ca561eb0d42f249bd14d73ea82585665e4ab0beadc563ae"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H092_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H092_votes.csv",
+      "sha256": "3dd0fa507d1586175b88dd698a446fa6e59053dcce3fd0c599b4e8451d3e5b51"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H093_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H093_votes.csv",
+      "sha256": "8348bb5441ffeae1b6788a52d5fcc5b679523ece2007581717e6b22fb64ce483"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H094_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H094_votes.csv",
+      "sha256": "52486c6159999bbc8db1fa3950ee0df71b353dfa4a0762bfa28a0b6180ae3c5c"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H095_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H095_votes.csv",
+      "sha256": "ef1a1c2c44aa62b11c3f028bfb6637d5fa31d1a346d691a04b8ee32d84d23feb"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H096_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H096_votes.csv",
+      "sha256": "32d28e7fe8737d3c1b25b3e92f4caa4519fc2a2c61e1dba5804253d22c9c68d8"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H097_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H097_votes.csv",
+      "sha256": "fd9d248e36b80980564e4dffbaddaf41bd490b620127231059f02ff63cf286b7"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H098_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H098_votes.csv",
+      "sha256": "3f982c91e5d80eff58374853afa3cfb559b6614982a2b69dd23fe84b9644f679"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H099_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H099_votes.csv",
+      "sha256": "8b6d89decbaf4466b353ae2fad9652d1031a8c51c08407c473349262e3496747"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H100_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H100_votes.csv",
+      "sha256": "a962dbbfc237ff02879269fe4d81509254c26f4a8ea2f2fd06029f94fa99e9db"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H101_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H101_votes.csv",
+      "sha256": "0e12693849dc2cc62a45e5902efc233638769eb75ada11104a8e2c3e1f9f1db4"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H102_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H102_votes.csv",
+      "sha256": "7dad253036adcf662e6ba57681550fb2833d4c9635286328bac5b52f8d6ec94c"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H103_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H103_votes.csv",
+      "sha256": "b217761987834f9d781aadf0f7013787ce355aff75feb311ee4af8fcb906481f"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H104_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H104_votes.csv",
+      "sha256": "fc09cf8d6c17b26a8c2613eb7ad7b86ffa5d544e177540b5583bd0601ba4baa8"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H105_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H105_votes.csv",
+      "sha256": "1079f1aef42d5d09501289b60cd060d58fe1535234cb06aa8880f0496bf84f4c"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H106_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H106_votes.csv",
+      "sha256": "f1b7db30a9745ebc97e893cb4b1e52bdd537daa9dc023109de2cfc21713b1c0d"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H107_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H107_votes.csv",
+      "sha256": "e9fe49a9db06370b2aa2d0ef45f2614f7f2385dda76ec232f30e572123c8f55a"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H108_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H108_votes.csv",
+      "sha256": "cca91b906bee01489e00132777a4c21ec385879283c5623dd039b2a3a9800ff5"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H109_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H109_votes.csv",
+      "sha256": "df03c1c66456343bf6687e25ceb00ad2c8f27de9c4e9093bf4b91b14d185fb00"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H110_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H110_votes.csv",
+      "sha256": "1312017b5c3b5cc10655244722a2e9dcbbb5cc4e6c00e9f0e4e100baeb3f1420"
+    },
+    {
+      "url": "https://voteview.com/static/data/out/votes/H111_votes.csv",
+      "path": "data/scored/proquest/polarization/source_cache/H111_votes.csv",
+      "sha256": "6f7111afd8382763a1594ea9db8292e21dfad5d80f326917a55388e3a3e06de1"
+    }
+  ],
+  "note": "Current historical reconstruction; not historical release vintages. Existing cached files retained."
+}

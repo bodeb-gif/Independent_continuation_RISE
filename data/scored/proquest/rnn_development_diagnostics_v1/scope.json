@@ -1,0 +1,12 @@
+{
+  "status": "Exploratory diagnostics of previously examined development predictions only; no tuning or model fitting",
+  "origins": [
+    "1965-01",
+    "1970-01",
+    "1975-01",
+    "1980-01"
+  ],
+  "confirmation_or_test_predictions_read": false,
+  "weights": "Equal article, normalized within each fold; topic contributions preserve full-fold weights",
+  "interpretation": "Average prediction bias is a calibration diagnostic, not evidence that calibration will improve future scores."
+}

@@ -1,0 +1,10 @@
+{
+  "candidate": "gru8_strong_expanding",
+  "n_claims": 8088,
+  "n_articles": 3249,
+  "brier": 0.16178224380722123,
+  "log_loss": 0.48972152010996556,
+  "accuracy": 0.7571840512139025,
+  "auc": 0.850332930424733,
+  "average_precision": 0.8591771885028001
+}

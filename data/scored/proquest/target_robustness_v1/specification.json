@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "status": "Exploratory extension of already inspected descriptive results",
+  "scope": "Annual ProQuest 1900\u20132010; verified primary, raw sensitivity. No LOC or old crisis-window exports.",
+  "estimand": "Within each source set, cohort and topic, newspaper correctness minus fixed-direction correctness on identical rows and weights. Pooled all-topic summaries are separate estimands.",
+  "cohorts": [
+    "all_legacy",
+    "non_NBER",
+    "machine_stated",
+    "machine_stated_non_NBER"
+  ],
+  "cohort_meaning": "Machine stated is horizon_basis==stated, not source-validated explicit timing. non_NBER excludes basis==NBER proxy, but does not establish semantic target compatibility or strict eligibility.",
+  "weighting": "Equal article within each source/cohort/topic is primary. Equal observed publication month is sensitivity. Recompute weights for each analysis population; never sum topic article counts into unique articles.",
+  "uncertainty": "5000 paired nonoverlapping publication-block bootstrap draws; blocks anchored at 1900, five years primary, two and ten years sensitivity. Resample occupied blocks, summing weighted correct counts and denominator together before computing each ratio. Require at least four occupied blocks. 95% percentile intervals are marginal and conditional on recovered claims and fixed scoring.",
+  "stability": "Leave each occupied five-year publication block out once; report every remaining-sample gap and range. Never select exclusions by results.",
+  "limits": "Not sampling-representative of the press. Intervals omit extraction, interpretation, retrieval and scoring uncertainty; nonstationarity and cross-block overlapping outcomes limit interpretation. No multiplicity-adjusted significance claims, p-value selection or source-validated strict estimates.",
+  "seed": 20261019,
+  "bootstrap_draws": 5000,
+  "block_lengths": [
+    2,
+    5,
+    10
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": {
+    "id": "gru8_standard_20",
+    "hidden": 8,
+    "dropout": 0.15,
+    "weight_decay": 0.001,
+    "window_years": 20
+  },
+  "arms": [
+    "baseline"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "fit_before": "1990-01",
+  "stopping_end_exclusive": "1995-01",
+  "status": "Provisional development bundle; no 1995\u20132010 evaluation; original artifacts unchanged",
+  "promoted_by_confirmation": true,
+  "bundle_sha256": {
+    "gru_baseline_11.pt": "030f2705f8c2cb286ffd98031c4388bc72f410fe80ecd275535f0ac6cfe9c0e5",
+    "gru_baseline_29.pt": "9742f9291b427127c161d04b40b7f02e75c5f0cc528e7f690a45ed8b8a7468be",
+    "preprocessing_and_baselines.joblib": "57c63e8e8e45e184305fe221c2ff60a250a22edb7f706e02fe43cbdf587f7288",
+    "gru_baseline_47.pt": "fe78aa6a0d44c98ff84726d9a045df471ae92392b801fc50d1ec8ea992d6bbcc"
+  }
+}

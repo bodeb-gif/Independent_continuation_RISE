@@ -46,6 +46,8 @@ data/corpus/
 
 # Regenerable run logs
 *.log
+# Retain the small execution logs that document reproducibility attempts.
+!data/scored/proquest/reproducibility_v*/logs/*.log
 
 # Grading output that is partial by nature — commit a finished corpus
 # deliberately with `git add -f`, never let an in-progress file slip in

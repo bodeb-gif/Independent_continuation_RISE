@@ -1,0 +1,35 @@
+{
+  "IPT": {
+    "file": "iptMvMd.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/iptMvMd.xlsx",
+    "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ipt",
+    "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/documentation/doc_ip.pdf",
+    "frequency": "monthly",
+    "quantity": "Total industrial production index, seasonally adjusted; base varies by vintage",
+    "retrieved_date": "2026-10-14",
+    "sha256": "89ac73de4144749bf8ef2ce47314da8448ecb235f7f369c32465be1588ea5a97",
+    "documentation_sha256": "dc263f7a4a53ae1c9181f24e5a9cb5c50384daddab11fedc4a9ea4394bb4ce3e"
+  },
+  "RUC": {
+    "file": "rucQvMd.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/rucQvMd.xlsx",
+    "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ruc",
+    "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/RUC/specific_documentation_RUC.pdf",
+    "frequency": "quarterly",
+    "quantity": "Civilian unemployment rate, seasonally adjusted, percentage points",
+    "retrieved_date": "2026-10-14",
+    "sha256": "d971e59d3ed5f1322a46631743508fb1ad5eee39bfbe12425a641a277fdd9b9a",
+    "documentation_sha256": "e8121b567946d81e7a9e439ed37f8369548d0ecfa5bcf4986b51877420f4c721"
+  },
+  "CPI": {
+    "file": "cpiQvMd.xlsx",
+    "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/cpiQvMd.xlsx",
+    "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/cpi",
+    "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/CPI/specific_documentation_CPI.pdf",
+    "frequency": "quarterly",
+    "quantity": "Consumer price index, seasonally adjusted; within-vintage percentage changes",
+    "retrieved_date": "2026-10-14",
+    "sha256": "57d28f99b28ca9a37801fcdd5026fae9b859e58b0f3dc1e150a55c544598bc34",
+    "documentation_sha256": "a2b2ba1f16256b4cb0dd2fd64954dd26ccb78fef3495843e71ede02eb1415533"
+  }
+}

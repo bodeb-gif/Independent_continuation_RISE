@@ -1,0 +1,40 @@
+{
+  "sources": {
+    "IPT": {
+      "file": "iptMvMd.xlsx",
+      "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/iptMvMd.xlsx",
+      "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ipt",
+      "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/documentation/doc_ip.pdf",
+      "frequency": "monthly",
+      "quantity": "Total industrial production index, seasonally adjusted; base varies by vintage",
+      "path": "data/scored/proquest/macro_information/reference/iptMvMd.xlsx",
+      "sha256": "89ac73de4144749bf8ef2ce47314da8448ecb235f7f369c32465be1588ea5a97"
+    },
+    "RUC": {
+      "file": "rucQvMd.xlsx",
+      "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/rucQvMd.xlsx",
+      "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ruc",
+      "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/RUC/specific_documentation_RUC.pdf",
+      "frequency": "quarterly",
+      "quantity": "Civilian unemployment rate, seasonally adjusted, percentage points",
+      "path": "data/scored/proquest/macro_information/reference/rucQvMd.xlsx",
+      "sha256": "d971e59d3ed5f1322a46631743508fb1ad5eee39bfbe12425a641a277fdd9b9a"
+    },
+    "CPI": {
+      "file": "cpiQvMd.xlsx",
+      "url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/xlsx/cpiQvMd.xlsx",
+      "page": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/cpi",
+      "documentation": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/real-time-data/data-files/CPI/specific_documentation_CPI.pdf",
+      "frequency": "quarterly",
+      "quantity": "Consumer price index, seasonally adjusted; within-vintage percentage changes",
+      "path": "data/scored/proquest/macro_information/reference/cpiQvMd.xlsx",
+      "sha256": "57d28f99b28ca9a37801fcdd5026fae9b859e58b0f3dc1e150a55c544598bc34"
+    }
+  },
+  "rule": "No backward fills; select latest nonempty vintage strictly before forecast-month start. IPT uses month-end availability bound; quarterly RUC/CPI use February/May/August/November 15.",
+  "core_first_origin": "1965-12",
+  "cpi_first_origin": "1994-09",
+  "core_months": 541,
+  "cpi_months": 196,
+  "local_revised_snapshots": "Prior frozen INDPRO/UNRATE/CPI snapshots have no vintage dimension and are rejected as historical predictor inputs."
+}

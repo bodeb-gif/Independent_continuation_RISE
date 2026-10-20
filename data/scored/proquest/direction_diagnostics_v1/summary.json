@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "code_sha256": "f06727bd3a080af4b0e5f2753efae542d6231e155cbf6bc3e476a0e0c50d00e9",
+  "inputs_sha256": {
+    "data/scored/proquest/robustness/scored_claims.csv.gz": "0f1bdf84e8bec1b91e86d0a9187e081e75c24dc474d0c8e85f50c220e7840a03",
+    "data/scored/proquest/target_robustness_v1/summary.json": "e2a4dd42fc7f89e9c4de5eeb96d86620594b3b71db1c9d5ed0dbb62b6858127b"
+  },
+  "imported_code_sha256": {
+    "src/proquest_target_robustness.py": "b11ea61296af03675c1a1bca8a3911cdff25989931255383109b175f74603fc7"
+  },
+  "model_fits": 0,
+  "source_reviews": 0,
+  "new_p_values": false,
+  "outputs_sha256": {
+    "data/scored/proquest/direction_diagnostics_v1/direction_mix.csv": "6852555cb74aa1b0a6b8be426b098e42bdec354ce1678d05d7a19a070e02cf62",
+    "data/scored/proquest/direction_diagnostics_v1/warning_metrics.csv": "11b330c440b25ac5b737809402d13879b729b72b0af7e1f71ab241480ed8b41e",
+    "data/scored/proquest/direction_diagnostics_v1/illustrative_costs.csv": "0b0453efc4c10b67214a1986d9c8c0c580eb2f0803fd66a9a2dcd49dc3999b98",
+    "data/scored/proquest/direction_diagnostics_v1/gap_decomposition.csv": "43d8a9c6c2118b963af283229484e1a47fdab3344524825ffbcb5071b0c6563d",
+    "data/scored/proquest/direction_diagnostics_v1/direction_diagnostics.png": "2a712bb9a1ae6d71fe2c63f4f6c976d7d64332eeef763898a79a25dcbed1b34d",
+    "data/scored/proquest/direction_diagnostics_v1/specification.json": "db596ce83621a07afe036b09b4d4abaa3a26966542209ab8623d39dd29583c5b",
+    "data/scored/proquest/direction_diagnostics_v1/comparisons.csv": "22bef8bb4b564128b5b5d3ed2fc969dd916fa5bfe83e1a7e7b3894147ade4cf0",
+    "data/scored/proquest/direction_diagnostics_v1/report.html": "2cd4a564d26bc3d0b5cc1184662ec8be694dfd586f9d52b4ac5021e271657ae3",
+    "data/scored/proquest/direction_diagnostics_v1/horizon_comparisons.csv": "38f583cb572db89f25d23bdbe1a8772aabb1da6650b8b52e55411198689458b5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "verified_claims": 274070,
+  "scorable_claims": 175855,
+  "hit_rate": 0.40812032640527707,
+  "fixed_baseline": 0.5362144948963635,
+  "grounded_claims": 93166,
+  "grounded_hit_rate": 0.3971083871798725,
+  "article_equal_weight_hit_rate": 0.40899117554304637,
+  "input_directory": "data/proquest/verified"
+}
+                    paper  n_claims  hit_rate  fixed_baseline  peer_adjusted_gap
+                 Barron's     13721  0.439327        0.566941           0.023038
+             Boston Globe     11938  0.437259        0.521695           0.006282
+           New York Times     37036  0.427017        0.529620          -0.001027
+          Chicago Tribune     20040  0.418513        0.554591           0.005688
+          Washington Post     17182  0.412350        0.504481          -0.012381
+        Los Angeles Times     36420  0.388825        0.525041          -0.006991
+Christian Science Monitor      3497  0.386045        0.592794          -0.016906
+      Wall Street Journal     35927  0.380995        0.546553           0.001242
+Report: data/scored/proquest/rebuilt_descriptive/report.html

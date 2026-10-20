@@ -1,0 +1,10 @@
+.  fixture 2000: production_jobs_C0.1_expanding (selected on earlier validation months)
+..  fixture 2000: production_jobs_C0.1_expanding (selected on earlier validation months)
+  fixture 2000: production_jobs_C0.1_expanding (selected on earlier validation months)
+...  fixture 2000: production_jobs_C0.1_expanding (selected on earlier validation months)
+  fixture 2000: production_jobs_C0.1_expanding (selected on earlier validation months)
+...
+----------------------------------------------------------------------
+Ran 9 tests in 0.881s
+
+OK

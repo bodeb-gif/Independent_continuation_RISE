@@ -1,0 +1,4 @@
+series,quantity,vintage_frequency,first_nonempty_vintage,first_availability_bound,last_used_vintage,nonempty_vintages,empty_vintage_columns,first_forecast_origin,source_url
+IPT,"Total industrial production index, seasonally adjusted; base varies by vintage",monthly,IPT62M11,1962-11-30,IPT10M11,577,0,1962-12,https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ipt
+RUC,"Civilian unemployment rate, seasonally adjusted, percentage points",quarterly,RUC65Q4,1965-11-15,RUC10Q4,181,0,1965-12,https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/ruc
+CPI,"Consumer price index, seasonally adjusted; within-vintage percentage changes",quarterly,CPI94Q3,1994-08-15,CPI10Q4,66,115,1994-09,https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/cpi
