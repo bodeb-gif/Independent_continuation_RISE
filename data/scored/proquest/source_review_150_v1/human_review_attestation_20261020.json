@@ -1,0 +1,43 @@
+{
+  "recorded_date": "2026-10-20",
+  "reviewer_type": "human_author",
+  "sample_size": 150,
+  "attestation": "no sorry I did 150 claims. I edited the 150-claims labels/comparison. That is my human validation.",
+  "applies_to_vm_directory": "/home/ec2-user/SageMaker/election_arm/source_review_150_v1",
+  "applies_to_files": [
+    "reviewed_labels.json",
+    "comparison.json"
+  ],
+  "provenance": "Author-confirmed human review/editing of existing artifacts with earlier AI review history; independent blinded first-pass human labels are not established.",
+  "observed_vm_summary": {
+    "include": 105,
+    "exclude": 44,
+    "unclear": 1,
+    "original100": {
+      "include": 71,
+      "exclude": 28,
+      "unclear": 1
+    },
+    "additional50": {
+      "include": 34,
+      "exclude": 16,
+      "unclear": 0
+    }
+  },
+  "local_claim_level_reconciliation": "complete; all 150 source addresses and 11 agreement totals matched",
+  "export": {
+    "filename": "human_validation_150_20261020.json",
+    "prepared_in_vm": true,
+    "submitted": true,
+    "status": "Explicitly approved by author; ProQuest upload succeeded; complete categorical JSON supplied by author in chat"
+  },
+  "limitations": [
+    "Positive-candidate sample measures inclusion precision, not recall or economic forecast accuracy.",
+    "Original 100 had prior model-label exposure. Additional 50 labels were hidden during the earlier annotation pass; final human-review blinding is not established.",
+    "Current-state conventions need alignment; all-eleven-field agreement is not valid overall model accuracy."
+  ],
+  "subsequent_author_clarification": {
+    "statement": "No but AI didn't help me that much. I just needed it to explain context in a couple of situations",
+    "interpretation": "The author describes their AI use during human validation as limited contextual explanation. Earlier artifact history is not evidence that AI made their review decisions."
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "total": {
+    "n": 150,
+    "distinct_articles": 150,
+    "decisions": {
+      "include": 107,
+      "exclude": 43
+    },
+    "inclusion_fraction": 0.7133333333333334,
+    "field_agreement": {
+      "topic": {
+        "matches": 95,
+        "denominator": 107,
+        "fraction": 0.8878504672897196
+      },
+      "direction": {
+        "matches": 89,
+        "denominator": 107,
+        "fraction": 0.8317757009345794
+      },
+      "price_direction": {
+        "matches": 85,
+        "denominator": 107,
+        "fraction": 0.794392523364486
+      },
+      "unemployment_direction": {
+        "matches": 92,
+        "denominator": 107,
+        "fraction": 0.8598130841121495
+      },
+      "horizon_months": {
+        "matches": 75,
+        "denominator": 107,
+        "fraction": 0.7009345794392523
+      },
+      "confidence": {
+        "matches": 77,
+        "denominator": 107,
+        "fraction": 0.719626168224299
+      },
+      "voice": {
+        "matches": 81,
+        "denominator": 107,
+        "fraction": 0.7570093457943925
+      },
+      "speaker_name": {
+        "matches": 70,
+        "denominator": 107,
+        "fraction": 0.6542056074766355
+      },
+      "scope": {
+        "matches": 73,
+        "denominator": 107,
+        "fraction": 0.6822429906542056
+      },
+      "is_quoted_forecaster": {
+        "matches": 79,
+        "denominator": 107,
+        "fraction": 0.7383177570093458
+      },
+      "current_state": {
+        "matches": 82,
+        "denominator": 107,
+        "fraction": 0.7663551401869159
+      }
+    },
+    "all_fields_match": 6
+  },
+  "historical": {
+    "n": 100,
+    "distinct_articles": 100,
+    "decisions": {
+      "include": 72,
+      "exclude": 28
+    },
+    "inclusion_fraction": 0.72,
+    "field_agreement": {
+      "topic": {
+        "matches": 66,
+        "denominator": 72,
+        "fraction": 0.9166666666666666
+      },
+      "direction": {
+        "matches": 60,
+        "denominator": 72,
+        "fraction": 0.8333333333333334
+      },
+      "price_direction": {
+        "matches": 55,
+        "denominator": 72,
+        "fraction": 0.7638888888888888
+      },
+      "unemployment_direction": {
+        "matches": 61,
+        "denominator": 72,
+        "fraction": 0.8472222222222222
+      },
+      "horizon_months": {
+        "matches": 49,
+        "denominator": 72,
+        "fraction": 0.6805555555555556
+      },
+      "confidence": {
+        "matches": 55,
+        "denominator": 72,
+        "fraction": 0.7638888888888888
+      },
+      "voice": {
+        "matches": 57,
+        "denominator": 72,
+        "fraction": 0.7916666666666666
+      },
+      "speaker_name": {
+        "matches": 43,
+        "denominator": 72,
+        "fraction": 0.5972222222222222
+      },
+      "scope": {
+        "matches": 49,
+        "denominator": 72,
+        "fraction": 0.6805555555555556
+      },
+      "is_quoted_forecaster": {
+        "matches": 56,
+        "denominator": 72,
+        "fraction": 0.7777777777777778
+      },
+      "current_state": {
+        "matches": 55,
+        "denominator": 72,
+        "fraction": 0.7638888888888888
+      }
+    },
+    "all_fields_match": 4
+  },
+  "modern": {
+    "n": 50,
+    "distinct_articles": 50,
+    "decisions": {
+      "include": 35,
+      "exclude": 15
+    },
+    "inclusion_fraction": 0.7,
+    "field_agreement": {
+      "topic": {
+        "matches": 29,
+        "denominator": 35,
+        "fraction": 0.8285714285714286
+      },
+      "direction": {
+        "matches": 29,
+        "denominator": 35,
+        "fraction": 0.8285714285714286
+      },
+      "price_direction": {
+        "matches": 30,
+        "denominator": 35,
+        "fraction": 0.8571428571428571
+      },
+      "unemployment_direction": {
+        "matches": 31,
+        "denominator": 35,
+        "fraction": 0.8857142857142857
+      },
+      "horizon_months": {
+        "matches": 26,
+        "denominator": 35,
+        "fraction": 0.7428571428571429
+      },
+      "confidence": {
+        "matches": 22,
+        "denominator": 35,
+        "fraction": 0.6285714285714286
+      },
+      "voice": {
+        "matches": 24,
+        "denominator": 35,
+        "fraction": 0.6857142857142857
+      },
+      "speaker_name": {
+        "matches": 27,
+        "denominator": 35,
+        "fraction": 0.7714285714285715
+      },
+      "scope": {
+        "matches": 24,
+        "denominator": 35,
+        "fraction": 0.6857142857142857
+      },
+      "is_quoted_forecaster": {
+        "matches": 23,
+        "denominator": 35,
+        "fraction": 0.6571428571428571
+      },
+      "current_state": {
+        "matches": 27,
+        "denominator": 35,
+        "fraction": 0.7714285714285715
+      }
+    },
+    "all_fields_match": 2
+  },
+  "years": {
+    "1928": 1,
+    "1931": 2,
+    "1932": 1,
+    "1933": 1,
+    "1934": 1,
+    "1937": 1,
+    "1940": 1,
+    "1949": 1,
+    "1951": 1,
+    "1953": 2,
+    "1958": 1,
+    "1959": 1,
+    "1966": 1,
+    "1969": 1,
+    "1970": 2,
+    "1971": 2,
+    "1972": 1,
+    "1973": 1,
+    "1974": 1,
+    "1975": 2,
+    "1976": 1,
+    "1977": 1,
+    "1979": 3,
+    "1980": 4,
+    "1981": 1,
+    "1982": 4,
+    "1983": 4,
+    "1984": 2,
+    "1985": 3,
+    "1986": 1,
+    "1987": 2,
+    "1988": 2,
+    "1989": 5,
+    "1990": 3,
+    "1991": 7,
+    "1992": 5,
+    "1993": 1,
+    "1994": 2,
+    "1995": 2,
+    "1996": 1,
+    "1997": 3,
+    "1998": 1,
+    "1999": 2,
+    "2000": 2,
+    "2001": 5,
+    "2002": 1,
+    "2003": 2,
+    "2004": 1,
+    "2005": 1,
+    "2008": 1,
+    "2009": 2,
+    "2011": 4,
+    "2012": 3,
+    "2013": 3,
+    "2014": 3,
+    "2015": 3,
+    "2016": 3,
+    "2017": 3,
+    "2018": 3,
+    "2019": 3,
+    "2020": 3,
+    "2021": 3,
+    "2022": 3,
+    "2023": 3,
+    "2024": 3,
+    "2025": 3,
+    "2026": 4
+  },
+  "categorical_projection_sha256": "378529b335980eb5d547d330829217ecd785eb6d9c023e98bcf36b66892b3b5c",
+  "original_labels_projection_sha256": "2b220703c1ba7f1a4a9e96eb0554f7d875797af53a5bb29293a825d917facb49",
+  "comparison": "Existing saved GPT-4o mini labels; no new model run",
+  "measurement": "Extraction inclusion and literal field agreement, not economic forecast accuracy or recall",
+  "source_context_reviewed_n": 150,
+  "source_recovered_n": 150,
+  "verbatim_quote_matches": 87,
+  "unresolved_n": 0,
+  "reviewer": "Codex",
+  "input_hashes": {
+    "data/proquest/verified/pred_proquest_economy_1928.export.jsonl": "80d73a57df8e7c160fa4f805345aa41637c33cc9a9fcda1d3b4b42df7ab9e496",
+    "data/proquest/verified/pred_proquest_economy_1931.export.jsonl": "f512984b77bc7c99bfa7a60c78d554ab302378ebf5fd3f0a36378ca7ac90c286",
+    "data/proquest/verified/pred_proquest_economy_1932.export.jsonl": "073385402cb92b9d9ccc7ac4dc9a0a5264c9626e9a4f7a8a59fea5673ba695cf",
+    "data/proquest/verified/pred_proquest_economy_1933.export.jsonl": "68de02531923b817aa678368ce814bacb2f60f179742177db952070f692d17c2",
+    "data/proquest/verified/pred_proquest_economy_1934.export.jsonl": "1038940836df3ffaf3edea3bc655427b8fb9cfe8733562cb714a171da2c4f69e",
+    "data/proquest/verified/pred_proquest_economy_1937.export.jsonl": "d8a6f9517e0e5471690a4b5700a8aa733d175bd7b936bf575e43a9290ecc2c1f",
+    "data/proquest/verified/pred_proquest_economy_1940.export.jsonl": "63cc1b61959860942d9ae39aa28308b0a08792343cb813faacb759d5182d3767",
+    "data/proquest/verified/pred_proquest_economy_1949.export.jsonl": "344627d0669c608c20823e67230220db5f0fc9b2be5611457732c573b5122208",
+    "data/proquest/verified/pred_proquest_economy_1951.export.jsonl": "4b5a9bf64b4563cb1106e862da88124dd018bb3683900f7006acd6788a3f4ed7",
+    "data/proquest/verified/pred_proquest_economy_1953.export.jsonl": "1b8e3cdbc8b49e6f86adf05433735d4e262008e46ce75681037ed276f8318116",
+    "data/proquest/verified/pred_proquest_economy_1958.export.jsonl": "046f9383cb39142fa1631e31a7f7fee05a962f2e75fabecefa23a59cf29ae820",
+    "data/proquest/verified/pred_proquest_economy_1959.export.jsonl": "3bf3bf873bcbd384314d3db1f8ad920bc10ec31a09585d7ca6da0ee1a478a5e0",
+    "data/proquest/verified/pred_proquest_economy_1966.export.jsonl": "69622c748f4d523442b356de9a618bd8701dbeed45117ab699473e9517e94255",
+    "data/proquest/verified/pred_proquest_economy_1969.export.jsonl": "978b817957279a90ba3777ef02e2769037f6a945a9596d8b091955d60a54f4e8",
+    "data/proquest/verified/pred_proquest_economy_1970.export.jsonl": "766cd9a59f397dc7e889f6a3a83fc4d2aba371018b16a1ab27c8d3e540958e48",
+    "data/proquest/verified/pred_proquest_economy_1971.export.jsonl": "4e85417e51c54f1b8fa52d37ce012c82c8419fd121b60ec8b837460dfe3fb309",
+    "data/proquest/verified/pred_proquest_economy_1972.export.jsonl": "857b60c9c6b7c5e664d16ee7c199df4bba3427b3bcd56a6ac8c0bfc46a4afb71",
+    "data/proquest/verified/pred_proquest_economy_1973.export.jsonl": "21ea6c0eef1c573784d10bd63250d3240b1bdfe6102da2cc420e4417bbe619fe",
+    "data/proquest/verified/pred_proquest_economy_1974.export.jsonl": "7305066cce182bea587eb7c8d46f92ccbd25bba4a117e6fc814756735f605999",
+    "data/proquest/verified/pred_proquest_economy_1975.export.jsonl": "60da11fc3f925eca243955ba09054db9219b2848705200df26e566eae3a316ef",
+    "data/proquest/verified/pred_proquest_economy_1976.export.jsonl": "543d0e71d695bdd8f33ce8e23546fc69d97fd62c2cfa44b4e1c0db88242f0b0a",
+    "data/proquest/verified/pred_proquest_economy_1977.export.jsonl": "fc9db0dce06f0bd65a28a3c996d96cc464dca66e1a99579ba033fad400824484",
+    "data/proquest/verified/pred_proquest_economy_1979.export.jsonl": "0d45a6fec707f347d43348ae98c2e2fc758a9554851707a6baba19a42dfa8bb7",
+    "data/proquest/verified/pred_proquest_economy_1980.export.jsonl": "182c54814d90c14ea27ea98c2e273f4eadf61e4d32c04d1ca6fcfd2fdc7ff444",
+    "data/proquest/verified/pred_proquest_economy_1981.export.jsonl": "638d2fc4f9a7c11351075caf156bbaedadf7d00d90524f91c6a011d14c738e74",
+    "data/proquest/verified/pred_proquest_economy_1982.export.jsonl": "3e80aba383c74ff328302f1ab3fa6f32deb1da1062a8903e6cbf94c7ddc7f599",
+    "data/proquest/verified/pred_proquest_economy_1983.export.jsonl": "2760c2c2ca51bcf980070f6c2c9dad53c5c5b579b398e05e6b977daa50a15974",
+    "data/proquest/verified/pred_proquest_economy_1984.export.jsonl": "c528decbc89c023cded1f0580abf57e78de49946b7711eef86ac9b961dd2e88c",
+    "data/proquest/verified/pred_proquest_economy_1985.export.jsonl": "fb5f82517a1e328be240438b0223518871711691f2f4993b61ed62a5075d5558",
+    "data/proquest/verified/pred_proquest_economy_1986.export.jsonl": "00bd0d6a3e33f5064c542eaeb3f44076f8821941c0be128d7d49bfb1da0c272e",
+    "data/proquest/verified/pred_proquest_economy_1987.export.jsonl": "70c2fbec90ac202660aa57d5a772184b97045b676a671818d7a5ca9490e1dd7c",
+    "data/proquest/verified/pred_proquest_economy_1988.export.jsonl": "8217fb98213e9ed7f8db08fe781540aa31efa5a73c021f7eb8ca46c076f12dcd",
+    "data/proquest/verified/pred_proquest_economy_1989.export.jsonl": "bfe0e7722f2f754c9078a00bb4b70c7de28d5f6693c5e9cb1a3865541fa7b537",
+    "data/proquest/verified/pred_proquest_economy_1990.export.jsonl": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684",
+    "data/proquest/verified/pred_proquest_economy_1991.export.jsonl": "28c2b66c3084b2e25434352062e6444aab061dfea0d7d53a1d0107e18e844359",
+    "data/proquest/verified/pred_proquest_economy_1992.export.jsonl": "221663a5ee4874e9f383f7c8debfe46f9548b018b3335c90e355b51738a019ea",
+    "data/proquest/verified/pred_proquest_economy_1993.export.jsonl": "ebc252f7215167fa7ead5cab18635629b5183202aba363bbcffad439fb998d4a",
+    "data/proquest/verified/pred_proquest_economy_1994.export.jsonl": "a88226066a2b89d9dfa302c662edbc50f0a51c15520a55835adeff3466ecf75b",
+    "data/proquest/verified/pred_proquest_economy_1995.export.jsonl": "32060a7b94e2968fef3769090a97de49d762faa0edd7f1d1fadae73f0d5c5603",
+    "data/proquest/verified/pred_proquest_economy_1996.export.jsonl": "502ea9e32b1147fee263040a7607cc4e1eea4767d96fe5f75b7e7233157b394d",
+    "data/proquest/verified/pred_proquest_economy_1997.export.jsonl": "964e32f3ae86018323f0a51af2289934a483b3b434a2132a41afa66ef441cac7",
+    "data/proquest/verified/pred_proquest_economy_1998.export.jsonl": "13f0339cf903690544009a8ac216ea7dcdd134f7189cc3c219d18f1b1ff30908",
+    "data/proquest/verified/pred_proquest_economy_1999.export.jsonl": "f0877b32506f4e3596341492c1b9aa2abe9018f85675efd78f0c215dbc4e1627",
+    "data/proquest/verified/pred_proquest_economy_2000.export.jsonl": "4c8879df0d887152ae7a7cfdb9f332540700bd12a5f9ddc37cc07f7c36628c28",
+    "data/proquest/verified/pred_proquest_economy_2001.export.jsonl": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599",
+    "data/proquest/verified/pred_proquest_economy_2002.export.jsonl": "c341fa6290f075acd8857867021c6b3fd04cf3bb04697c76dcfa822b7678c92c",
+    "data/proquest/verified/pred_proquest_economy_2003.export.jsonl": "5399183be8c57a346ae58a94b988fe66081d8ca4020a8a619a7a77b11ab7b9ce",
+    "data/proquest/verified/pred_proquest_economy_2004.export.jsonl": "3ea59ddcab85cdcd9ddddebc868374f78d9c82c72afc00cc56d359707b71acee",
+    "data/proquest/verified/pred_proquest_economy_2005.export.jsonl": "beeb42912183e17d7a7b86b84303cce1737166ecbbccc879a726afd0e55e0a09",
+    "data/proquest/verified/pred_proquest_economy_2008.export.jsonl": "e2932cb295141d8f459452c22129672240a0f5042ff225e99fdf0dc8ed57a5e7",
+    "data/proquest/verified/pred_proquest_economy_2009.export.jsonl": "b8dd4c5adbffad9a5aa99ecdbb39dcb6f6dec74e5a2791f9ad793b5d435f78be",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2011.export.jsonl": "c70022e489052a5488e353cc40ea269c095cdb2a1870e7dbfda8fc667aa3a7da",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2012.export.jsonl": "01cacdd7162ed860c3f705205d8c28d3c8ba7bf18d6bb2c9c649b1c34b0e4669",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2013.export.jsonl": "5f18be017c4bb4d5d427b4d7e18fa60dbd86dc7677576bb438a9946f46e9f641",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2014.export.jsonl": "844958f36106fd5ed448f62176b13913cc4ca3bf60e32e7eede679caf08baac6",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2015.export.jsonl": "a805b2ff719d4e8056f38914ab09621292f460a74fbf5366827c34405d40e595",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2016.export.jsonl": "462d1286291cca19efa83e12f1214e362cca249174f58689059c7bf83921c89d",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2017.export.jsonl": "b18817ec88cb7d1cc5b7f00bbc742dc41a7c5698fbaafc4851b8722f691444f5",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2018.export.jsonl": "d102e1caf3feb7385e073c68a4f5855eb3e87e3bd7aa40e248ff931b85772d0e",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2019.export.jsonl": "fbf05080ce94c4bd4f26b0b2856f7d72c345539a9c0d45fa1863fc6b5c9ca685",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2020.export.jsonl": "cd5c3f4709cd8125b3690deabbf64921ebc753fd36386aa755e4001e05e3f0c8",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2021.export.jsonl": "bd2a40504056c426441ba036303ccefe6e13ab8ae17dbe04a881e83d522b9624",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2022.export.jsonl": "fb92c7a46fec66196d5524ba74f89e831d12e78bf91b8bd4b386f668ee0ff592",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2023.export.jsonl": "e5a06d9c2be79ee9574b3ea2100c9a238d5043aad199e040b1d10d62f6fd2ea9",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2024.export.jsonl": "15cd4a36d9aeefd3dd747039a4984d35a02ef4734055e270abec2b397810c646",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2025.export.jsonl": "d5bb7bbf8f86a275b0ce79096a75bc439e601a761fe357ad529d935f52a41e03",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2026.export.jsonl": "61d65c58ee8f3274589721c1b5df34519714178dc8d1ab17f292e31233b0cdb5"
+  },
+  "categorical_input_sha256": "11b34febd12adcc8d287cbd46006af9889ffe9c174c236ee7f9e3a604a408319",
+  "modern_design_weighted": {
+    "frame_n": 91118,
+    "inclusion_fraction": 0.7339192036699664,
+    "field_agreement": {
+      "topic": 0.8043525126514214,
+      "direction": 0.8858350187356927,
+      "price_direction": 0.9144762666686604,
+      "unemployment_direction": 0.9218023150761577,
+      "horizon_months": 0.7778596075411319,
+      "confidence": 0.6906735254131261,
+      "voice": 0.697838821950481,
+      "speaker_name": 0.7466263914694341,
+      "scope": 0.6303791127244451,
+      "is_quoted_forecaster": 0.6824614725120532,
+      "current_state": 0.7377476544557553
+    },
+    "interpretation": "Inverse inclusion-probability ratio estimates for the retained modern candidate frame; point estimates only."
+  },
+  "applicable_field_agreement": {
+    "price_direction": {
+      "matches": 12,
+      "denominator": 14
+    },
+    "unemployment_direction": {
+      "matches": 4,
+      "denominator": 6
+    }
+  }
+}

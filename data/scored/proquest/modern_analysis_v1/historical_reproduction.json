@@ -1,0 +1,29 @@
+{
+  "rows": 56807,
+  "maximum_probability_errors": {
+    "logistic_metadata__baseline": 2.9725646943923323e-08,
+    "logistic_metadata_history__baseline": 2.9787445066098428e-08,
+    "gru_seed_11__baseline": 2.9792022737673562e-08,
+    "gru_seed_29__baseline": 2.9797363243488917e-08,
+    "gru_seed_47__baseline": 2.9789733901885995e-08,
+    "gru_ensemble__baseline": 2.9797363243488917e-08,
+    "logistic_metadata__political": 2.9798889134013962e-08,
+    "logistic_metadata_history__political": 2.979812618875144e-08,
+    "gru_seed_11__political": 2.9798889134013962e-08,
+    "gru_seed_29__political": 2.9790496847148518e-08,
+    "gru_seed_47__political": 2.9785919175573383e-08,
+    "gru_ensemble__political": 2.9799652079276484e-08,
+    "logistic_metadata__forecast": 2.9799652079276484e-08,
+    "logistic_metadata_history__forecast": 2.9796600298226394e-08,
+    "gru_seed_11__forecast": 2.9797363243488917e-08,
+    "gru_seed_29__forecast": 2.9797363243488917e-08,
+    "gru_seed_47__forecast": 2.9780578558735726e-08,
+    "gru_ensemble__forecast": 2.9800415024539006e-08,
+    "logistic_metadata__both": 2.9799652079276484e-08,
+    "logistic_metadata_history__both": 2.9795837352963872e-08,
+    "gru_seed_11__both": 2.9798889134013962e-08,
+    "gru_seed_29__both": 2.9799652079276484e-08,
+    "gru_seed_47__both": 2.980194091506405e-08,
+    "gru_ensemble__both": 2.979812618875144e-08
+  }
+}

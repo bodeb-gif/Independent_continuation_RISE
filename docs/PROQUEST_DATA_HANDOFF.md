@@ -58,3 +58,15 @@ The original four-arm bundle remains `data/scored/proquest/polarization/claims`.
 For a frozen external evaluation, use the preselected bundle and preserve prediction files before joining mature outcomes. If using a refitted model, its training and stopping periods must precede the evaluation period with the existing horizon purge. Do not repeatedly refit against inspected modern scores. `train` already reports its test metrics; choose all settings before invoking it. Give every run a new directory under `data/scored/proquest/` and preserve the original historical outputs.
 
 The prepared table, feature table, reference snapshot, source/processing manifest, configuration, prior-exposure statement, software lock and run manifest form the handoff. Package permissions and public release are separate from this local research workflow.
+
+## October 20, 2026 receipt
+
+The modern package is now in `data/proquest/modern/20261020/`. Its original
+manifest and archive are retained. All 16 annual hashes/counts match; see
+`data/scored/proquest/modern_export_20261020/receipt.json` for inventory and
+remaining readiness requirements. This receipt is separate from passing the
+frozen `proquest_modern_intake.py` evaluation gate.
+
+Human validation is now author-confirmed for the expanded 150-claim sample.
+See `data/scored/proquest/source_review_150_v1/README.md`; the earlier 100-only
+AI-audit status is historical. Source-free categorical labels were supplied by the author and all 150 addresses and field-agreement totals reconcile locally.

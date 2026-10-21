@@ -1,5 +1,52 @@
 # Validation and provenance status
 
+## Current update — October 20, 2026
+
+This update supersedes the pending human-review and modern-export status in
+the dated historical entries below. Historical source files and all 30 frozen
+model/protocol artifacts remain unchanged.
+
+- **Human validation:** 300 distinct claims across 299 articles: 250 historical
+  and 50 modern. Decisions are 212 include, 87 exclude and one unclear. The author
+  performed the validation, using AI for contextual explanations in a couple
+  of situations. Earlier artifact metadata are retained without attributing the
+  author's decisions to AI. Blinding and a second human reviewer are not
+  established. See the [review status](../../data/scored/proquest/source_review_additional150_v1/human_review_status.html).
+- **Modern extraction evidence:** all years 2011–2026 appear in the 50-claim
+  modern sample; 35 are included, with direction agreement of 29/35 among
+  included claims. The design-weighted inclusion estimate is 73.4%; unweighted
+  sample inclusion is 70.0%. These assess extraction, not recall or forecasting
+  performance. Historical and modern sampling frames differ.
+- **Modern export:** 91,118 retained claims imported unchanged. All 33,071 empty
+  records and 19 default-kept verification exceptions are excluded from primary
+  analysis inputs. Processing metadata gaps and undocumented prior outcome
+  exposure remain; the full original readiness gate is not certified.
+- **Exploratory modern evaluation:** 56,886 mature, supported claims from 23,775
+  articles. Frozen RNN AUC 0.7376 versus 0.6545 for metadata-plus-history logistic;
+  both-polarization RNN AUC 0.7486. Employment AUC is only 0.3064. Paired block
+  intervals do not establish the main model improvements; no new permutation
+  significance claim is made. See the [dated amendment](MODERN_ANALYSIS_AMENDMENT_20261020.md)
+  and [completed analysis](../../data/scored/proquest/modern_analysis_v1/report.html).
+- **Separate downturn forecasts:** the pre-2011-selected models estimate 6.9%
+  recession onset and 28.0% industrial-production decline for September 2026–
+  August 2027, using prints through August 2026. Modern recession evaluation
+  contains only one distinct onset, improvements have intervals crossing zero,
+  and the production estimate is essentially its historical base rate. These
+  are exploratory research probabilities, not a strong downturn call.
+- **Export receipt:** the additional 150 labels were submitted successfully
+  through ProQuest. The returned user attachment matches all 87,510 export bytes.
+  No article text or free-text notes were exported.
+- **Pre-commit checks:** 191 checks passed across the three main suites and five
+  intake/review/modern suites; one optional widget test was skipped. Source-free
+  review notebooks have no executed outputs. Frozen artifacts and completed
+  modern output hashes were verified.
+
+The modern report predates the additional review batch; its statement that no
+modern claims appear in the human sample is superseded by the review status
+above. Preserve its model results as the completed dated run.
+
+## Earlier status history
+
 Age-weighting follow-up, October 19: three fixed decay rates were tested on development periods through 1984. The best mean Brier fell from 0.180864 to 0.179436 but improved only one of four blocks, failing the preset rule. The current candidate is retained. [Full follow-up](RNN_DEVELOPMENT.md#gradual-age-weighting-follow-up). No later evaluation or new permutation p-value was produced.
 
 Latest October 19 update: [forward-time RNN development](RNN_DEVELOPMENT.md) selected an 8-unit GRU with a 20-year fitting window. It passed the prespecified rule on both later historical confirmation blocks, lowering their mean Brier from 0.16198 to 0.15741. The candidate is provisional, with worse early-1980s performance; confirmation is exploratory because these years have prior project exposure. No 1995–2010 re-evaluation or new significance claim was made. Original frozen models remain unchanged, and source validation and modern evaluation remain deferred.

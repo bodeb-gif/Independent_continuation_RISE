@@ -1,0 +1,558 @@
+{
+  "schema": "proquest-modern-export-v1",
+  "created_at": "2026-10-21T00:47:09.297319+00:00",
+  "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "source": "proquest",
+  "files": [
+    {
+      "path": "verified/pred_proquest_economy_2011.export.jsonl",
+      "year": 2011,
+      "set": "verified",
+      "sha256": "c70022e489052a5488e353cc40ea269c095cdb2a1870e7dbfda8fc667aa3a7da",
+      "bytes": 9032787,
+      "records": 31443,
+      "claims": 9883,
+      "min_date": "2011-01-01",
+      "max_date": "2011-12-31",
+      "stage_counts": {
+        "articles": 4887,
+        "candidates": 19519,
+        "retained": 9883,
+        "rejected": 9636,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2012.export.jsonl",
+      "year": 2012,
+      "set": "verified",
+      "sha256": "01cacdd7162ed860c3f705205d8c28d3c8ba7bf18d6bb2c9c649b1c34b0e4669",
+      "bytes": 5466245,
+      "records": 8460,
+      "claims": 7418,
+      "min_date": "2012-01-01",
+      "max_date": "2012-12-31",
+      "stage_counts": {
+        "articles": 3953,
+        "candidates": 14838,
+        "retained": 7418,
+        "rejected": 7420,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2013.export.jsonl",
+      "year": 2013,
+      "set": "verified",
+      "sha256": "5f18be017c4bb4d5d427b4d7e18fa60dbd86dc7677576bb438a9946f46e9f641",
+      "bytes": 4020596,
+      "records": 6415,
+      "claims": 5435,
+      "min_date": "2013-01-01",
+      "max_date": "2013-12-31",
+      "stage_counts": {
+        "articles": 3045,
+        "candidates": 10773,
+        "retained": 5435,
+        "rejected": 5338,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2014.export.jsonl",
+      "year": 2014,
+      "set": "verified",
+      "sha256": "844958f36106fd5ed448f62176b13913cc4ca3bf60e32e7eede679caf08baac6",
+      "bytes": 3277722,
+      "records": 5277,
+      "claims": 4427,
+      "min_date": "2014-01-02",
+      "max_date": "2014-12-31",
+      "stage_counts": {
+        "articles": 2555,
+        "candidates": 8825,
+        "retained": 4427,
+        "rejected": 4398,
+        "verification_default_kept": 8
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2015.export.jsonl",
+      "year": 2015,
+      "set": "verified",
+      "sha256": "a805b2ff719d4e8056f38914ab09621292f460a74fbf5366827c34405d40e595",
+      "bytes": 2954463,
+      "records": 4819,
+      "claims": 3986,
+      "min_date": "2015-01-01",
+      "max_date": "2015-12-31",
+      "stage_counts": {
+        "articles": 2354,
+        "candidates": 7799,
+        "retained": 3986,
+        "rejected": 3813,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2016.export.jsonl",
+      "year": 2016,
+      "set": "verified",
+      "sha256": "462d1286291cca19efa83e12f1214e362cca249174f58689059c7bf83921c89d",
+      "bytes": 3064747,
+      "records": 5004,
+      "claims": 4138,
+      "min_date": "2016-01-01",
+      "max_date": "2016-12-31",
+      "stage_counts": {
+        "articles": 2499,
+        "candidates": 8275,
+        "retained": 4138,
+        "rejected": 4137,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2017.export.jsonl",
+      "year": 2017,
+      "set": "verified",
+      "sha256": "b18817ec88cb7d1cc5b7f00bbc742dc41a7c5698fbaafc4851b8722f691444f5",
+      "bytes": 1605957,
+      "records": 2928,
+      "claims": 2130,
+      "min_date": "2017-01-01",
+      "max_date": "2017-12-31",
+      "stage_counts": {
+        "articles": 1679,
+        "candidates": 4372,
+        "retained": 2130,
+        "rejected": 2242,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2018.export.jsonl",
+      "year": 2018,
+      "set": "verified",
+      "sha256": "d102e1caf3feb7385e073c68a4f5855eb3e87e3bd7aa40e248ff931b85772d0e",
+      "bytes": 2261476,
+      "records": 3885,
+      "claims": 3028,
+      "min_date": "2018-01-01",
+      "max_date": "2018-12-31",
+      "stage_counts": {
+        "articles": 2002,
+        "candidates": 5860,
+        "retained": 3028,
+        "rejected": 2832,
+        "verification_default_kept": 5
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2019.export.jsonl",
+      "year": 2019,
+      "set": "verified",
+      "sha256": "fbf05080ce94c4bd4f26b0b2856f7d72c345539a9c0d45fa1863fc6b5c9ca685",
+      "bytes": 4227391,
+      "records": 6541,
+      "claims": 5762,
+      "min_date": "2019-01-01",
+      "max_date": "2019-12-31",
+      "stage_counts": {
+        "articles": 3045,
+        "candidates": 11324,
+        "retained": 5762,
+        "rejected": 5562,
+        "verification_default_kept": 1
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2020.export.jsonl",
+      "year": 2020,
+      "set": "verified",
+      "sha256": "cd5c3f4709cd8125b3690deabbf64921ebc753fd36386aa755e4001e05e3f0c8",
+      "bytes": 8931896,
+      "records": 13200,
+      "claims": 12235,
+      "min_date": "2020-01-01",
+      "max_date": "2020-12-31",
+      "stage_counts": {
+        "articles": 5176,
+        "candidates": 22802,
+        "retained": 12235,
+        "rejected": 10567,
+        "verification_default_kept": 5
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2021.export.jsonl",
+      "year": 2021,
+      "set": "verified",
+      "sha256": "bd2a40504056c426441ba036303ccefe6e13ab8ae17dbe04a881e83d522b9624",
+      "bytes": 4373315,
+      "records": 6797,
+      "claims": 5963,
+      "min_date": "2021-01-01",
+      "max_date": "2021-12-30",
+      "stage_counts": {
+        "articles": 2879,
+        "candidates": 10962,
+        "retained": 5963,
+        "rejected": 4999,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2022.export.jsonl",
+      "year": 2022,
+      "set": "verified",
+      "sha256": "fb92c7a46fec66196d5524ba74f89e831d12e78bf91b8bd4b386f668ee0ff592",
+      "bytes": 8116452,
+      "records": 11983,
+      "claims": 11160,
+      "min_date": "2022-01-02",
+      "max_date": "2022-12-31",
+      "stage_counts": {
+        "articles": 4636,
+        "candidates": 20583,
+        "retained": 11160,
+        "rejected": 9423,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2023.export.jsonl",
+      "year": 2023,
+      "set": "verified",
+      "sha256": "e5a06d9c2be79ee9574b3ea2100c9a238d5043aad199e040b1d10d62f6fd2ea9",
+      "bytes": 6226295,
+      "records": 9214,
+      "claims": 8577,
+      "min_date": "2023-01-01",
+      "max_date": "2023-12-31",
+      "stage_counts": {
+        "articles": 3517,
+        "candidates": 15905,
+        "retained": 8577,
+        "rejected": 7328,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2024.export.jsonl",
+      "year": 2024,
+      "set": "verified",
+      "sha256": "15cd4a36d9aeefd3dd747039a4984d35a02ef4734055e270abec2b397810c646",
+      "bytes": 2135626,
+      "records": 3445,
+      "claims": 2926,
+      "min_date": "2024-01-02",
+      "max_date": "2024-12-30",
+      "stage_counts": {
+        "articles": 1654,
+        "candidates": 5404,
+        "retained": 2926,
+        "rejected": 2478,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2025.export.jsonl",
+      "year": 2025,
+      "set": "verified",
+      "sha256": "d5bb7bbf8f86a275b0ce79096a75bc439e601a761fe357ad529d935f52a41e03",
+      "bytes": 2268725,
+      "records": 3576,
+      "claims": 3112,
+      "min_date": "2025-01-03",
+      "max_date": "2025-12-31",
+      "stage_counts": {
+        "articles": 1730,
+        "candidates": 5696,
+        "retained": 3112,
+        "rejected": 2584,
+        "verification_default_kept": 0
+      }
+    },
+    {
+      "path": "verified/pred_proquest_economy_2026.export.jsonl",
+      "year": 2026,
+      "set": "verified",
+      "sha256": "61d65c58ee8f3274589721c1b5df34519714178dc8d1ab17f292e31233b0cdb5",
+      "bytes": 692433,
+      "records": 1202,
+      "claims": 938,
+      "min_date": "2026-01-03",
+      "max_date": "2026-09-01",
+      "stage_counts": {
+        "articles": 637,
+        "candidates": 1747,
+        "retained": 938,
+        "rejected": 809,
+        "verification_default_kept": 0
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "audit_id": "verified:2014:2825",
+      "year": 2014,
+      "source_line": 2825,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2826",
+      "year": 2014,
+      "source_line": 2826,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2827",
+      "year": 2014,
+      "source_line": 2827,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2828",
+      "year": 2014,
+      "source_line": 2828,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2829",
+      "year": 2014,
+      "source_line": 2829,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2830",
+      "year": 2014,
+      "source_line": 2830,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2831",
+      "year": 2014,
+      "source_line": 2831,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2014:2832",
+      "year": 2014,
+      "source_line": 2832,
+      "page_id": "1938260230",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2018:908",
+      "year": 2018,
+      "source_line": 908,
+      "page_id": "1989835464",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2018:909",
+      "year": 2018,
+      "source_line": 909,
+      "page_id": "1989835464",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2018:910",
+      "year": 2018,
+      "source_line": 910,
+      "page_id": "1989835464",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2018:911",
+      "year": 2018,
+      "source_line": 911,
+      "page_id": "1989835464",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2018:912",
+      "year": 2018,
+      "source_line": 912,
+      "page_id": "1989835464",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2019:5433",
+      "year": 2019,
+      "source_line": 5433,
+      "page_id": "2322562469",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2020:4712",
+      "year": 2020,
+      "source_line": 4712,
+      "page_id": "2407502537",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2020:4713",
+      "year": 2020,
+      "source_line": 4713,
+      "page_id": "2407502537",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2020:4714",
+      "year": 2020,
+      "source_line": 4714,
+      "page_id": "2407502537",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2020:4715",
+      "year": 2020,
+      "source_line": 4715,
+      "page_id": "2407502537",
+      "reason": "unjudged (kept by default)"
+    },
+    {
+      "audit_id": "verified:2020:4716",
+      "year": 2020,
+      "source_line": 4716,
+      "page_id": "2407502537",
+      "reason": "unjudged (kept by default)"
+    }
+  ],
+  "source_sha256": {
+    "data/predictions/pred_proquest_economy_2011.jsonl": "a0a4d24df46ab1029c1f75cabab165b8d02da7513d06a11d6505514c81c29986",
+    "data/verified/pred_proquest_economy_2011.jsonl": "d61a789fab254c562ab90565521c3556b184f13c8fb947c90c3bf8bc53c3244b",
+    "data/verified/pred_proquest_economy_2011.jsonl.dropped.jsonl": "335eddf7bfc0e00adececfd495c0590405fab9f344048548c8538d8f4d92f76f",
+    "data/raw/proquest_economy_2011.jsonl": "4be9f9bf7ffce194879a4e6eab267097240d3b1479d962a87ecb209d3d9a47c4",
+    "data/predictions/pred_proquest_economy_2012.jsonl": "3930cea23156b91b14aca8668d45210b52bc7ec123c683a962d36ef099ceee63",
+    "data/verified/pred_proquest_economy_2012.jsonl": "8da7fabd60313f650b4b9156928c53fac1acc505c41a105ae314fb0df9686c31",
+    "data/verified/pred_proquest_economy_2012.jsonl.dropped.jsonl": "5d9388bd5c11cc7fc17a69e1ba0ed59eb66022d28aa895b7f2fb7f826ddbbde3",
+    "data/raw/proquest_economy_2012.jsonl": "b790039a131da0adb1956e76a0dc0c2a22f42a9c995a953484319bcbb9c0fd69",
+    "data/predictions/pred_proquest_economy_2013.jsonl": "610ef8f32cb55f009170e10d2fd50eeba52f1c7dc5edffbdebbdc7d8a765ec9f",
+    "data/verified/pred_proquest_economy_2013.jsonl": "1fa07ad97b96015193f60e7bfc327ec67bc563f0313a40a819e99d1203e7b902",
+    "data/verified/pred_proquest_economy_2013.jsonl.dropped.jsonl": "a5858061cc8b419f80b64cbd4eaa68538067b76f2b94a07df6a8e22c83082ce8",
+    "data/raw/proquest_economy_2013.jsonl": "60bf03b1164bdb10eaff2332f74964ddb93b8ec3f8a1df3373bd8d0beb4ab1fb",
+    "data/predictions/pred_proquest_economy_2014.jsonl": "753f4a602aa95165a5dee09f87f74aaa9483dea40c60c45c78279cb96b72a30f",
+    "data/verified/pred_proquest_economy_2014.jsonl": "87665f99217cd3868a9e75706691ecfda968338d1b473bea8541683e80939844",
+    "data/verified/pred_proquest_economy_2014.jsonl.dropped.jsonl": "5013a1480a27a73de0b0886f1864d5323b7d8af2990ef29b5231c7f954e88fb1",
+    "data/raw/proquest_economy_2014.jsonl": "8c2439cf12398a22d38d7e095182a31ca14a21242335cccf726edb4b202fc2c5",
+    "data/predictions/pred_proquest_economy_2015.jsonl": "ffbfc5b924eecef4c23ab73a52373f5417e099509fcf689e8164ff8c1d04ac05",
+    "data/verified/pred_proquest_economy_2015.jsonl": "519ee43805e07e01bd59a77577403391017ff09942fa4eb4bde0d6c5bbd6e10d",
+    "data/verified/pred_proquest_economy_2015.jsonl.dropped.jsonl": "37a479752c165d78172fe01889ec8c94836d226600485cb41a7bbe7845a2374a",
+    "data/raw/proquest_economy_2015.jsonl": "30a45ac4017e699d6da94a9f4644856517967906264abcc4cc611b09bba5138d",
+    "data/predictions/pred_proquest_economy_2016.jsonl": "786a5a0386883ad57becb6ecb2132909318225bfc28ecd3351d477a86adef836",
+    "data/verified/pred_proquest_economy_2016.jsonl": "62054de3f17cf363b8119c475815a56a040aabc5c21f591caadd398e2f0e8de4",
+    "data/verified/pred_proquest_economy_2016.jsonl.dropped.jsonl": "534a0d6bf99b31691d1e945633ef5a91a7896eea4eb20d87c482920c8bd4015e",
+    "data/raw/proquest_economy_2016.jsonl": "9dc28f1db392dd000a11f6003965bee33f528242631cab7a5698796de51100ce",
+    "data/predictions/pred_proquest_economy_2017.jsonl": "0be95eea26dca959c79d5fe9caa31b0eb2d3894393f9053f8023932e008158cc",
+    "data/verified/pred_proquest_economy_2017.jsonl": "899e85945fc1d4b959fd632e009f01f422127655bcdf573f3e5ad73c8102a639",
+    "data/verified/pred_proquest_economy_2017.jsonl.dropped.jsonl": "946ceebf5fabc9d5f5d028c9a8815828a4c3761aa2eccdb1eff11d3d7971dfe5",
+    "data/raw/proquest_economy_2017.jsonl": "aca5c6e21ffa32f0792613ebfa824c0f1949028f2913331e2a335fb5f747aa07",
+    "data/predictions/pred_proquest_economy_2018.jsonl": "6b9d2ad781f87a0868f33416d21b2ffa5952f4f4e046a3b57e3627e34059d42d",
+    "data/verified/pred_proquest_economy_2018.jsonl": "458f232c072f5dd6fb2bca06935ab065d0dfe042aca018faba80d934e6da6290",
+    "data/verified/pred_proquest_economy_2018.jsonl.dropped.jsonl": "f989a45495827e95ad89a9e023cbaca1b911a441cb7ebdffbd31457c5fb4106c",
+    "data/raw/proquest_economy_2018.jsonl": "cfe1fc1435c057157dc1acf8661eab34c0d063fffee342c40612145a6eee8667",
+    "data/predictions/pred_proquest_economy_2019.jsonl": "a3203b1964b1de40304c2e074b7874fdae812e80858c600e1bca9a73fc7c7e8c",
+    "data/verified/pred_proquest_economy_2019.jsonl": "43a39023381c4456d7550a18040adf00d8aea6d5f494dad1435c01ab25fee95f",
+    "data/verified/pred_proquest_economy_2019.jsonl.dropped.jsonl": "4e55b958bbc492a4028518120420c9aeeed0007f5cba233e9eb050d8c60e8995",
+    "data/raw/proquest_economy_2019.jsonl": "305e8caf2c0d90862b5480fd1ee115fc52a8a9527b759a37700997856290f062",
+    "data/predictions/pred_proquest_economy_2020.jsonl": "311979fa7ad8ee5a94534e6db440feaa4b6816a92d3c2adf62c81ebb68124dda",
+    "data/verified/pred_proquest_economy_2020.jsonl": "a8e5dcf5b51cfecf30396c14afdcacdb1ec98b0ee377efd547e4203cbbaa77c0",
+    "data/verified/pred_proquest_economy_2020.jsonl.dropped.jsonl": "1b84873723644ebb8c28410ae6f67d6988f458cdda7e5eaf28456ee5acbb2ea6",
+    "data/raw/proquest_economy_2020.jsonl": "afc2f8be0d02d8e7e73c86b7cbb85f4781d4d6234d406e199be3e63ddff9acb1",
+    "data/predictions/pred_proquest_economy_2021.jsonl": "8f712ee8c26fb028c4b233b07aad9087ce614d4eed592e943e1d80d3d266215b",
+    "data/verified/pred_proquest_economy_2021.jsonl": "c9c7af11d54ff9c91ad543f740799ab7f6daf40a734729caa69a0cce6c0598b6",
+    "data/verified/pred_proquest_economy_2021.jsonl.dropped.jsonl": "75a6540a7aa1240ddd6b5eb0bfd9775bc3c220d1028757a41704c13b2e1e8971",
+    "data/raw/proquest_economy_2021.jsonl": "3bc01baebf9839cc372a6d0c783c2c952a2d785be5d853f0307ff1b45b8a6a1d",
+    "data/predictions/pred_proquest_economy_2022.jsonl": "e643c117d690cc7060d5a000d130a9d6f766e3a9e6d5125d3df2d80befa58b55",
+    "data/verified/pred_proquest_economy_2022.jsonl": "05e96994fdd8e1d6883b82dab34dbfbcae929c12021073f21f8c3f10f18422e5",
+    "data/verified/pred_proquest_economy_2022.jsonl.dropped.jsonl": "3c423c391ea17d1cf1597288a17b51f38b4acd6451cb0f55b2c71bff1f351912",
+    "data/raw/proquest_economy_2022.jsonl": "9d3c4ffd60bf904c918e625b83c0ab7ee4fe70bc7104fa6462004af8a9e1c7fd",
+    "data/predictions/pred_proquest_economy_2023.jsonl": "f1fe3b0ea8b2d36642c24c4d6659e22cc8f286e40d9c3b256210a036a364df4e",
+    "data/verified/pred_proquest_economy_2023.jsonl": "00edd193e36a56708c2446e2470543289e314fe6f951cf4b5dc92b7c0d3a60c0",
+    "data/verified/pred_proquest_economy_2023.jsonl.dropped.jsonl": "9af92346eb9e61dd5b21ecb33e6c09aeb1408655d5f2702b5e9b1078076be205",
+    "data/raw/proquest_economy_2023.jsonl": "b04039b0fae196a7476b85bf5722657a8a33024d551bbe9940a5ac9a9d6a9c17",
+    "data/predictions/pred_proquest_economy_2024.jsonl": "cf00dbb027db40604bca177e6f77e96406f1812a63827552053c8167d6b26488",
+    "data/verified/pred_proquest_economy_2024.jsonl": "bfa8619b9e3db8025a93672071121fcc0eafcf55b1ac18cab0b14b56b6ca57f7",
+    "data/verified/pred_proquest_economy_2024.jsonl.dropped.jsonl": "0b5e51fc7874d902237bfc86c13c1dcd90e3fe9ccf796814cd0dc01bcf172ccf",
+    "data/raw/proquest_economy_2024.jsonl": "50f468dd107d575df850529f2075eea1eecda6f7f39d5a2cdb56cf1ac8020ed2",
+    "data/predictions/pred_proquest_economy_2025.jsonl": "e38352eca788d664c68549136e807be8ced41723f432719fad756868ecfdee21",
+    "data/verified/pred_proquest_economy_2025.jsonl": "e1d96ce4591709042d9227c7d32b1cedd80e470c80d108fcfe3d26f6d5aed293",
+    "data/verified/pred_proquest_economy_2025.jsonl.dropped.jsonl": "aaae945947ea7ee7febea93c515a34c438ed1e86283577a7a41e5ebb66ce9ca4",
+    "data/raw/proquest_economy_2025.jsonl": "7e14bcbdf999976bf213b2066a3902d10540e2f3a3008fcdc55fe9eff3b39649",
+    "data/predictions/pred_proquest_economy_2026.jsonl": "061d64561b6e4410841a47c7033f041be968572e0102bf8fb2ee484ba4eedf75",
+    "data/verified/pred_proquest_economy_2026.jsonl": "77a8c1832c43c57371290049125b4f5c4557902e81044ec00b7a3c043be712ff",
+    "data/verified/pred_proquest_economy_2026.jsonl.dropped.jsonl": "bb4a4a3e2471052112437d0a3d72d54a6886795f94d27b9e00e154b85d935ef8",
+    "data/raw/proquest_economy_2026.jsonl": "a3d9fb5b5104ff7e714436327bc14548c8e7bca562f1c7b08500e8f99b205253"
+  },
+  "code_sha256": {
+    "extract_gpt.py": "d3f4a590e722e74ccc805e84a3c3b90e68db0f3fddd425c75d729c9ea966266c",
+    "verify_gpt.py": "1ad5076f3dc8d8e5fb4c6390e338496a5751ca4b4a233de2a31ef4c6b948467b",
+    "strip_for_export.py": "a9d571b1ac2466bf278d74643187b3550fe6d3b482395705d840756b9be08c45",
+    "run_corpus_economy.sh": "70cbe4ffca6a1c0bf11eec4c60e2e51ae92bf81c987eaafc0d5165828c7b996d",
+    "modern_autorun.sh": "aa1b04ff7c6530c7e3e4335ad63babf3754d9b47c27918ff64e9214f2f774f7e"
+  },
+  "prior_outcome_exposure": "unknown; no modern scoring performed during export",
+  "notes": [
+    "Annual economy claims only. Raw means unverified extracted labels, never article text.",
+    "All source records retained in original order; no deduplication.",
+    "Default-kept verification exceptions are preserved and individually flagged.",
+    "2026 coverage is the loaded corpus through its observed maximum publication date, not a complete calendar year."
+  ],
+  "prompt_blocks_sha256": {
+    "extract_gpt.py": [
+      "e452fec97e0b6b5b099d0dda05bb4265f0da9f0034930e6375a04614868cb13b",
+      "05965e520bc3b0c779f017332efa62c466d0f81fd4fbc26640ac81d3f911cc31",
+      "475ed4d5199dfd60671cd7ca50f7b190682e74e7d23c580113c66800c6f8220c"
+    ],
+    "verify_gpt.py": [
+      "cc2fb711097a17ec1d4cbeaecd0e4bf456fbed3984ce425a48e37f533201424e",
+      "c2d542664323ccbf76d7b5ddfa89758cf2f7fbb1a83bd57d21d6038b495f9d9b",
+      "b2f0a2bd1729fd317b6158a67e505a8b6da107416661dae1a2727f6f1bf1f74e"
+    ]
+  },
+  "totals": {
+    "articles": 46248,
+    "candidates": 174684,
+    "retained": 91118,
+    "rejected": 83566,
+    "verification_default_kept": 19
+  },
+  "dataset": {
+    "name": "moderndayreal",
+    "date_from": "2011-01-01",
+    "date_to": "2026-09-01",
+    "article_count": 46248,
+    "query": "(recession OR downturn OR depression OR recovery OR slump) NEAR/10 (predict* OR expect* OR forecast* OR outlook OR likely OR coming OR ahead OR fear*)",
+    "dashboard_observed": "2026-10-20"
+  },
+  "package_sets": [
+    "verified"
+  ]
+}

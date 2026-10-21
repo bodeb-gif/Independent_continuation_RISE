@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "first_blocker": "Manifest schema must be 1",
+  "input_manifest": "data/proquest/modern/20261020/manifest.json",
+  "interpretation": "Supplied export manifest is not the frozen evaluation manifest; receipt is valid but does not authorize or establish readiness for scoring."
+}

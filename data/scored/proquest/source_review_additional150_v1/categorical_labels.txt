@@ -1,0 +1,150 @@
+1|I|g|+|n|n|v|a|j|na|n|0|n
+2|I|g|+|n|n|6|h|j|na|f|0|n
+3|E
+4|E
+5|I|m|+|n|n|v|h|e|na|f|1|n
+6|I|m|+|n|n|v|h|j|na|f|0|n
+7|E
+8|I|p|=|s|n|v|h|j|na|f|0|n
+9|E
+10|E
+11|I|g|=|n|n|6|h|e|na|i|1|n
+12|I|e|=|n|s|6|h|l|na|n|1|n
+13|E
+14|I|g|+|n|n|v|h|e|na|i|1|n
+15|E
+16|E
+17|I|p|+|n|n|v|h|e|Saulnier|n|1|n
+18|I|g|+|n|n|6|h|e|na|n|1|n
+19|I|g|+|n|n|v|h|e|Roberts|i|1|b
+20|E
+21|I|g|-|n|n|v|h|e|na|n|1|n
+22|I|p|?|u|n|6|h|e|Buss|f|1|n
+23|I|g|-|n|n|6|h|e|Christie|i|1|n
+24|I|g|-|n|n|v|h|j|na|i|0|n
+25|E
+26|E
+27|I|g|-|n|n|6|a|o|na|n|1|g
+28|I|g|+|n|n|12|h|e|na|n|1|n
+29|I|e|-|n|u|6|h|e|Sprinkel|n|1|n
+30|I|m|+|n|n|12|h|e|Ahmed Mouneimeh|f|1|n
+31|I|e|-|n|u|6|a|e|Killingsworth|n|1|b
+32|I|m|+|n|n|v|h|e|na|n|1|n
+33|I|m|-|n|n|v|a|e|Leon Gould|n|1|n
+34|I|m|-|n|n|v|a|e|na|n|1|n
+35|I|g|+|n|n|v|h|o|Reagan|n|1|n
+36|E
+37|I|g|-|n|n|v|h|e|Donald Ratajczak|n|1|n
+38|I|g|+|n|n|6|a|e|na|n|1|n
+39|E
+40|I|e|=|n|s|v|h|o|na|n|1|n
+41|E
+42|E
+43|I|g|-|n|n|v|a|e|Schulz|f|1|n
+44|E
+45|I|g|-|n|n|12|h|e|na|n|1|n
+46|I|g|+|n|n|12|h|e|na|f|1|m
+47|I|g|+|n|n|v|h|e|Mintz|n|1|n
+48|I|m|-|n|n|v|h|e|Collins|n|1|n
+49|E
+50|I|g|+|n|n|6|a|o|Robert Ortner|n|1|n
+51|I|g|+|n|n|v|a|e|Newton|i|1|n
+52|I|g|-|n|n|v|h|e|Richard B. Berner|n|1|n
+53|I|g|+|n|n|12|h|j|na|f|0|n
+54|I|g|+|n|n|v|h|e|Roger Brinner|n|1|n
+55|I|g|+|n|n|v|h|e|David Jones|n|1|n
+56|I|g|-|n|n|12|a|e|David Wyss|n|1|n
+57|I|m|+|n|n|12|a|e|Hays|n|1|n
+58|I|g|-|n|n|v|h|e|Christopher Plummer|i|1|n
+59|I|m|-|n|n|v|a|e|na|n|1|b
+60|E
+61|E
+62|E
+63|I|e|-|n|u|6|a|j|na|n|0|n
+64|I|g|+|n|n|v|h|o|na|n|1|n
+65|I|g|+|n|n|12|h|l|Averi Torres|n|1|n
+66|E
+67|I|g|-|n|n|v|h|e|na|n|1|b
+68|I|p|+|u|n|6|h|o|Robert Parry|n|1|n
+69|I|g|+|n|n|v|h|e|na|i|1|n
+70|I|m|+|n|n|v|h|e|McCabe|n|1|b
+71|E
+72|I|g|+|n|n|v|h|e|Yeri|n|1|n
+73|I|g|-|n|n|v|h|e|na|n|1|n
+74|E
+75|I|g|+|n|n|v|a|o|Yeltsin|f|1|b
+76|I|m|-|n|n|v|h|e|Hokanson|n|1|n
+77|I|p|-|u|n|12|h|e|Donald Ratajczak|n|1|n
+78|I|g|+|n|n|12|a|o|Robert Rubin|n|1|n
+79|I|m|-|n|n|v|h|j|na|n|0|n
+80|E
+81|E
+82|I|g|+|n|n|6|h|e|Edelman|i|1|n
+83|I|p|+|u|n|12|h|e|Brian Wesbury|n|1|n
+84|I|g|-|n|n|v|h|e|Lindsey|n|1|n
+85|I|g|-|n|n|12|h|e|Bollenbach|i|1|n
+86|I|m|+|n|n|v|h|e|Tom McManus|n|1|n
+87|I|g|+|n|n|v|h|o|Taichi Sakaiya|f|1|n
+88|I|g|+|n|n|6|h|o|Paul O'Neill|n|1|n
+89|I|g|-|n|n|v|a|e|na|i|1|b
+90|E
+91|I|e|-|n|u|6|h|e|na|n|1|b
+92|I|g|+|n|n|12|h|o|na|n|1|n
+93|I|g|-|n|n|12|h|o|na|i|1|n
+94|E
+95|I|g|+|n|n|12|h|e|na|n|1|g
+96|I|e|+|n|n|12|h|e|na|n|1|n
+97|I|g|+|n|n|v|a|o|na|n|1|n
+98|I|m|-|n|n|v|a|j|na|n|0|b
+99|E
+100|I|e|-|n|n|v|a|e|na|n|1|b
+101|I|m|-|n|n|6|h|e|na|f|1|n
+102|I|m|-|n|n|12|h|e|Michael Hasenstab|f|1|n
+103|I|g|+|n|n|12|h|e|Lou|f|1|n
+104|E
+105|I|p|-|u|n|v|a|j|na|i|0|n
+106|E
+107|I|e|+|n|n|v|a|e|na|n|1|n
+108|I|g|+|n|n|12|h|j|na|f|0|n
+109|E
+110|I|g|+|n|n|v|h|e|Troy Stangarone|f|1|g
+111|I|g|+|n|n|v|a|j|na|n|0|n
+112|E
+113|I|g|+|n|n|v|h|e|Tyler Cowen|n|1|n
+114|I|g|-|n|n|12|h|j|na|f|0|n
+115|I|g|+|n|n|v|h|j|na|n|0|n
+116|E
+117|E
+118|I|p|+|u|n|12|h|u|na|n|1|n
+119|I|g|-|n|n|v|h|e|Jason Schenker|n|1|n
+120|I|g|+|n|n|v|h|e|Bill Westmoreland|n|1|n
+121|E
+122|I|e|-|n|n|12|h|e|na|r|1|b
+123|I|p|-|u|n|v|h|e|na|n|1|n
+124|E
+125|I|g|-|n|n|12|h|j|na|n|1|n
+126|I|g|-|n|n|12|a|o|na|f|1|n
+127|E
+128|E
+129|I|g|+|n|n|v|h|j|na|n|0|n
+130|I|g|+|n|n|v|a|o|Donald Trump|n|1|n
+131|I|g|+|n|n|6|h|e|na|f|1|n
+132|I|g|+|n|n|v|a|e|Oren Klachkin and Gregory Daco|i|1|g
+133|I|m|-|n|n|v|h|e|na|n|1|n
+134|I|g|+|u|n|v|h|e|na|n|1|n
+135|I|p|-|u|n|v|h|e|Porfilio|i|1|n
+136|I|g|-|n|n|v|a|e|na|i|1|b
+137|E
+138|I|p|+|u|n|v|a|e|Karim Fawaz|f|1|g
+139|I|p|-|u|n|v|h|e|na|f|1|n
+140|I|g|+|n|n|v|h|j|na|n|0|n
+141|E
+142|E
+143|I|m|-|n|n|v|h|j|na|n|0|b
+144|E
+145|E
+146|I|g|-|u|n|v|h|e|na|n|1|n
+147|I|g|-|n|n|12|h|e|na|f|1|n
+148|I|m|=|n|n|12|h|e|na|n|1|n
+149|I|p|+|d|n|6|h|e|Kurt Yinger|i|1|n
+150|I|g|+|n|n|v|a|e|Helfert|i|1|n

@@ -1,0 +1,49 @@
+{
+  "version": "2026-10-19-main-ai-v1",
+  "reviewer_type": "AI",
+  "human_validation_complete": false,
+  "authorization": "Author requested selecting and validating 100 claims in Chrome.",
+  "amendment": "Proceed with the proposed main probability design before completion of the human pilot, as requested on 2026-10-19. This is a separately identified AI source audit, not the planned human validation. The human pilot and human response store remain untouched.",
+  "source_protocol": "docs/publication/REVIEW_PROTOCOL.md",
+  "first_pass": [
+    "mapping_status",
+    "is_forecast",
+    "quantity",
+    "change_type",
+    "direction",
+    "scope",
+    "horizon_support",
+    "target_start",
+    "target_end",
+    "condition",
+    "attribution",
+    "original_forecast_date",
+    "initial_note",
+    "blinding"
+  ],
+  "comparison": [
+    "topic",
+    "direction",
+    "scope",
+    "confidence",
+    "voice",
+    "horizon_months",
+    "horizon_hint",
+    "benchmark",
+    "joint_usability",
+    "error_category"
+  ],
+  "decisions": [
+    "Recover exact ordered source lineage by full reconstructed export hash.",
+    "Inspect original quote and article context; absent quotes need source inspection.",
+    "Record first interpretation before revealing machine labels.",
+    "Do not reveal realized economic outcomes.",
+    "Retain every unavailable or ambiguous sampled record without replacement.",
+    "Growth-rate forecasts do not directly imply level changes.",
+    "Conditions and unsupported horizons prevent strict unconditional scoring.",
+    "Broad GDP/business, employment/unemployment and index-specific targets may be proxies.",
+    "Save AI judgments separately; never enter them into human_review.json.",
+    "Keep source prose and free-text judgments in the authorized TDM environment."
+  ],
+  "estimation": "Claim-weighted validity among this scored-candidate frame only; report assessable denominators and all-sample unresolved bounds. Cluster any uncertainty by article. No recall, human agreement, economic error correction or corpus-wide rescaling follows from this AI audit."
+}

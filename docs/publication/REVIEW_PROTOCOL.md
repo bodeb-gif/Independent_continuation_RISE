@@ -57,3 +57,18 @@ The proposed main design is simple random sampling without replacement from scor
 Report sample size, distinct articles, mapping success, unassessable cases, genuine-forecast validity, field validity, and joint usability. Give both assessable-case estimates and all-sampled bounds treating unresolved cases as failures versus successes. Use article-aware uncertainty and the sampling design; do not report human-human agreement with one annotator. The audit estimates quality among scored extracted candidates, not missed forecasts, excluded claims, or the entire press. It cannot establish absolute recall.
 
 For the audited observations, compare original and source-supported interpretations on identical eligible records and disclose exclusions; distinguish this measured effect from any broader error scenario. Freeze the weighting and error-impact implementation after the pilot and before revealing main-sample economic outcomes. Do not rescale corpus performance by a global validity percentage.
+
+## October 19, 2026 author-requested sampling amendment
+
+The author subsequently requested selecting and validating the 100-claim sample
+in Chrome before human pilot completion. The
+[frozen main sample](../../data/scored/proquest/source_review_main_v1/README.md)
+uses the proposed design above: 100 of 175,843 scored verified records, excluding
+all twelve pilot addresses, with new seed 20261019. It contains 100 distinct
+articles. Source exports are unchanged.
+
+This proceeds ahead of the original human-pilot sequence. Any assistant source
+interpretations must be identified as AI review and stored separately from
+human judgments. The planned human validation remains incomplete. The frozen
+rubric records this amendment; local source-address checks passed, but passage
+review is pending approval to transfer the prepared notebook into TDM.

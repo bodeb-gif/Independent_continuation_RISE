@@ -1,0 +1,85 @@
+{
+  "recession_onset_12m": {
+    "selected_model": "press_both",
+    "latest_origin": "2026-09",
+    "forecast_window": [
+      "2026-09",
+      "2027-08"
+    ],
+    "latest_probability": 0.0687981263974025,
+    "all_latest_probabilities": {
+      "historical_base_rate": 0.1736,
+      "press": 0.27027328003562007,
+      "press_political": 0.11795559895239442,
+      "press_forecast": 0.18852147682834225,
+      "press_both": 0.0687981263974025
+    },
+    "latest_recent_articles": 56,
+    "latest_recent_papers": 5,
+    "latest_observed_print_months": 3,
+    "latest_press_features_observed": 4,
+    "evaluated_months": 154,
+    "positive_months": 12,
+    "distinct_recession_onsets": [
+      "2020-03"
+    ],
+    "modern_evaluation_end": "2023-10",
+    "training_label_lag_months": 24,
+    "no_october_origin_forecast": true,
+    "revised_outcome_labels": true
+  },
+  "production_decline_12m": {
+    "selected_model": "press_forecast",
+    "latest_origin": "2026-09",
+    "forecast_window": [
+      "2026-09",
+      "2027-08"
+    ],
+    "latest_probability": 0.27997122034573774,
+    "all_latest_probabilities": {
+      "historical_base_rate": 0.2800944138473643,
+      "press": 0.33983470339746236,
+      "press_political": 0.37582546087700225,
+      "press_forecast": 0.27997122034573774,
+      "press_both": 0.30915147407737387
+    },
+    "latest_recent_articles": 56,
+    "latest_recent_papers": 5,
+    "latest_observed_print_months": 3,
+    "latest_press_features_observed": 4,
+    "evaluated_months": 175,
+    "positive_months": 69,
+    "distinct_recession_onsets": null,
+    "modern_evaluation_end": "2025-07",
+    "training_label_lag_months": 3,
+    "no_october_origin_forecast": true,
+    "revised_outcome_labels": true
+  },
+  "production_decline_gt2pct_12m": {
+    "selected_model": "press_forecast",
+    "latest_origin": "2026-09",
+    "forecast_window": [
+      "2026-09",
+      "2027-08"
+    ],
+    "latest_probability": 0.22354930001803963,
+    "all_latest_probabilities": {
+      "historical_base_rate": 0.2006294256490952,
+      "press": 0.25479433908001337,
+      "press_political": 0.23759775976284755,
+      "press_forecast": 0.22354930001803963,
+      "press_both": 0.20489907648845326
+    },
+    "latest_recent_articles": 56,
+    "latest_recent_papers": 5,
+    "latest_observed_print_months": 3,
+    "latest_press_features_observed": 4,
+    "evaluated_months": 175,
+    "positive_months": 28,
+    "distinct_recession_onsets": null,
+    "modern_evaluation_end": "2025-07",
+    "training_label_lag_months": 3,
+    "no_october_origin_forecast": true,
+    "revised_outcome_labels": true
+  }
+}

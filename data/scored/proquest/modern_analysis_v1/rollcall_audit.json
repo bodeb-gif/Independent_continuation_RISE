@@ -1,0 +1,66 @@
+[
+  {
+    "congress": 112,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 154,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 113,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 155,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 114,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 132,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 115,
+    "identical_cast_repeats_excluded": 36,
+    "unmatched_or_ambiguous_member_casts": 66,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 116,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 98,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 117,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 123,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 118,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 70,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  },
+  {
+    "congress": 119,
+    "identical_cast_repeats_excluded": 0,
+    "unmatched_or_ambiguous_member_casts": 15,
+    "ambiguous_member_keys": 0,
+    "missing_vote_dates": 0,
+    "votes_without_two_eligible_parties": 0
+  }
+]

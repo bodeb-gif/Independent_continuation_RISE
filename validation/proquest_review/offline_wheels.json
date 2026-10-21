@@ -1,0 +1,8 @@
+{
+  "source": "Official PyPI wheels downloaded October 19, 2026",
+  "sha256": {
+    "ipywidgets-8.1.9-py3-none-any.whl": "f2b8cbcaae10252b809fbe4d7470db75c09b769a32cbf816d20e5ca6d3c5a79d",
+    "comm-0.2.3-py3-none-any.whl": "c615d91d75f7f04f095b30d1c1711babd43bdc6419c1be9886a85f2f4e489417",
+    "jupyterlab_widgets-3.0.17-py3-none-any.whl": "40ac1e9955acf116c4d995d9bfa082d86ad9ec6d91c4f134827cf5e0a5eb75e0"
+  }
+}

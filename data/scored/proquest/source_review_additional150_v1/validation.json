@@ -1,0 +1,17 @@
+{
+  "frozen_selection_reproduced_byte_identical": true,
+  "frozen_selection_overwrite_guard_passed": true,
+  "all_source_export_hashes_unchanged": true,
+  "source_export_files_checked": 127,
+  "vm_local_categorical_and_original_label_hashes_match": true,
+  "tests": {
+    "environment": "/tmp/bode-econ-repro-20261019/bin/python",
+    "tests/test_offline.py": "97 checks passed",
+    "tests/test_scoring.py": "33 checks passed",
+    "tests/test_forecasts.py": "33 checks passed"
+  },
+  "counts": {
+    "include": 107,
+    "exclude": 43
+  }
+}

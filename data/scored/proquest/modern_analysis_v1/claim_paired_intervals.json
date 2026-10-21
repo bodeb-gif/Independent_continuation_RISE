@@ -1,0 +1,182 @@
+[
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata__baseline",
+    "delta_brier_a_minus_b": -0.02124534309303302,
+    "low": -0.0283412595991349,
+    "high": -0.013690719873016989,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata_history__baseline",
+    "delta_brier_a_minus_b": -0.01654870915220063,
+    "low": -0.037578944883342506,
+    "high": 0.00922697168173235,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "gru_ensemble__political",
+    "delta_brier_a_minus_b": -0.0056176859070637885,
+    "low": -0.02501544037966991,
+    "high": 0.009706837120607622,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata__political",
+    "delta_brier_a_minus_b": -0.01668138087643982,
+    "low": -0.027505531367326627,
+    "high": -0.006015444045633891,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata_history__political",
+    "delta_brier_a_minus_b": -0.01320069499984545,
+    "low": -0.05207457338163908,
+    "high": 0.01984410016731089,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "gru_ensemble__forecast",
+    "delta_brier_a_minus_b": -0.004863587131155968,
+    "low": -0.015077146583444983,
+    "high": 0.003924603114640965,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata__forecast",
+    "delta_brier_a_minus_b": -0.021241469275647747,
+    "low": -0.028421757470985114,
+    "high": -0.013286449333753442,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata_history__forecast",
+    "delta_brier_a_minus_b": -0.014844363850757332,
+    "low": -0.040703780332849486,
+    "high": 0.015319930681338991,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "gru_ensemble__both",
+    "delta_brier_a_minus_b": 0.0028028822414315666,
+    "low": -0.005819381169599608,
+    "high": 0.019086592740523746,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata__both",
+    "delta_brier_a_minus_b": -0.016752302708612263,
+    "low": -0.027531018466905817,
+    "high": -0.006015006892639628,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "logistic_metadata_history__both",
+    "delta_brier_a_minus_b": -0.014433512051546023,
+    "low": -0.06005244742541491,
+    "high": 0.022787760450993105,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  },
+  {
+    "a": "gru_ensemble__baseline",
+    "b": "gru8_historical_challenger",
+    "delta_brier_a_minus_b": -0.0004654645081062266,
+    "low": -0.038952726869128415,
+    "high": 0.04212497713955974,
+    "n_blocks": 4,
+    "block_sizes": {
+      "0": 17784,
+      "1": 18017,
+      "2": 21072,
+      "3": 13
+    },
+    "draws": 2000
+  }
+]

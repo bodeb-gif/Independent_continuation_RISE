@@ -35,6 +35,7 @@ Thumbs.db
 # ---------------------------------------------------------------------------
 cache/
 validation/loc_review/generated/
+**/source_review_pilot_tdm_v1/responses/
 data/scored/proquest/*.jsonl
 **/data/raw/
 data/corpus/
@@ -76,3 +77,6 @@ data/models/no_epu_hit_predictor.joblib
 
 # JetBrains IDE config — was tracked by accident
 .idea/
+
+# Public modern Voteview cache: retained locally; URLs and hashes in run manifest.
+data/scored/proquest/modern_analysis_v1/reference/voteview/

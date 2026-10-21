@@ -1,5 +1,97 @@
 # ProQuest review pilot
 
+## In-workbench review (installed October 19, 2026)
+
+Open `election_arm/ProQuest_Review_Offline.ipynb` in the TDM Jupyter workbench,
+using `conda_python3`, and run all cells. The current session also has an
+**Output View** tab displaying just the review form. Enter the actual reviewer
+name, read each passage, answer, and save/lock before revealing machine labels.
+
+Live checks recovered **12/12** original quote-bearing records and articles,
+with each reconstructed export SHA-256 and article ID/date checked. Eight quotes
+occur once verbatim in article text; four have no exact verbatim occurrence and
+remain flagged for closer source inspection. This is retrieval evidence, not
+human validation. The in-VM synthetic save/reopen/lock check passed; real human
+event count was zero at handoff. The VM-only lineage report is
+`source_review_pilot_tdm_v1/retrieval_check.json`.
+
+Both `sample-2025.12.578` and `conda_python3` lacked the Python widget package.
+The offline notebook therefore installs official PyPI `ipywidgets` 8.1.9,
+`comm` 0.2.3 and `jupyterlab_widgets` 3.0.17 into the bundle's `widget_vendor/`.
+It adds the frontend assets under the user's Jupyter labextensions directory
+only when no existing user manager directory is present. It does not modify
+analysis environment packages. Wheel hashes are in [offline_wheels.json](offline_wheels.json).
+The original `ProQuest_Source_Review.ipynb` in the VM is the earlier version
+without these dependencies; use **ProQuest_Review_Offline.ipynb** for review.
+
+[ProQuest_Source_Review.ipynb](ProQuest_Source_Review.ipynb) is the uploadable
+TDM Jupyter version. It embeds the review code and the unchanged twelve-record
+pilot, with no article text, economic outcomes or human responses. This base
+notebook requires widgets already available in the selected kernel. The offline
+build described below is the version deployed and checked in this workbench.
+
+Upload this one notebook into the ProQuest TDM Jupyter file browser and run its
+cells with the existing Python kernel. It installs its bundled files under
+`/home/ec2-user/SageMaker/election_arm/source_review_pilot_tdm_v1/` and opens
+passages beside the questions. Existing files with different contents cause a
+stop rather than an overwrite. It uses the workbench's `ipywidgets`; no extraction,
+verification, model API call or new sample is run. If widgets are unavailable,
+resolve the kernel environment before reviewing; do not silently switch to
+model-generated judgments.
+
+The source loader reconstructs `strip_for_export.py` output (drop `quote` and
+`claim_text`, retain nonblank record order, default JSON serialization) and
+requires its entire SHA-256 to match the frozen sampled export. This links the
+export's physical row to the quote-bearing VM record's ordinal and records both
+VM file hashes and physical locations. It does not match stripped labels, merge
+duplicates, or select a sentence based on a label. The lineage assumes the
+original stripping order was preserved; a different export format or changed
+file requires investigation, not relaxed matching. Missing, conflicting, or
+changed sources remain in the sample. Human mapping judgments start blank.
+
+Enter your name, read the passage/context, answer, and **Save & lock first pass**.
+Machine labels are revealed only after a unique mapping and a saved first pass.
+Unresolved mappings require only mapping status, prior label exposure and a
+reason. Drafts, immutable first passes, comparison drafts, comparisons and
+corrections are saved in `responses/human_review.json` in the VM bundle directory.
+Corrections append to the audit trail. Concurrent stale sessions cannot overwrite
+newer saves. Elapsed time includes time away from the notebook. Blinding is a UI
+workflow, not protection against deliberately opening the comparison file.
+
+**Keep article text, responses, and the executed notebook inside TDM.** There is
+no download/export button. Do not commit response files. A future derived-label
+export must explicitly exclude source prose and free-text response fields.
+Before handoff, check recovery counts for all twelve rows, confirm widgets render,
+and test persistence with a separate synthetic fixture rather than filling real
+pilot answers. No human validation has been completed by preparing this notebook.
+
+Rebuild and test from the repository root:
+
+```bash
+python scripts/build_proquest_tdm_review.py
+# For TDM's kernels without widgets, obtain the official wheels on the local
+# machine, then package them; no Internet access is needed from the VM.
+python scripts/build_proquest_tdm_review.py --wheel-directory /path/to/wheels --output /tmp/ProQuest_Review_Offline.ipynb
+python tests/test_proquest_tdm_review.py
+```
+
+The offline builder needs one pure-Python wheel each for `ipywidgets`, `comm`,
+and `jupyterlab_widgets`; use the versions/hashes above. Upload through AppStream
+**My Files → Temporary Files**, then use Jupyter's upload button and choose
+**Temporary Files** in the remote Windows picker. AppStream is a Windows desktop
+hosting the browser; the Jupyter kernel/files are on the separate Linux SageMaker
+machine. AppStream uploads must therefore be imported into Jupyter before use.
+The Chrome extension needs file-URL access for local uploads. Transfer completion
+can lag behind the browser accepting a file; verify the remote listing.
+
+[ProQuest_Review_Checks.ipynb](ProQuest_Review_Checks.ipynb) reruns source linkage
+and synthetic persistence checks inside TDM. It prints counts/addresses, never
+quotes, and never writes synthetic answers to the real response store. Local
+tests passed: 10 review tests, 2 original interface tests, and all 163 checks in
+the three required main suites. The 30 frozen model/evaluation files were unchanged.
+
+## Original standalone browser version
+
 Open [the prepared interface](../../data/scored/proquest/source_review_pilot_v1/review.html)
 in a browser. It contains the original 12 retrieval addresses, no source passages,
 no economic outcomes and no human answers. The underlying

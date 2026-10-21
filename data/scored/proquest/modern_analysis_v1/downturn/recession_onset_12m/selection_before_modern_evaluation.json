@@ -1,0 +1,56 @@
+{
+  "selected": "press_both",
+  "historical_scores": [
+    {
+      "model": "historical_base_rate",
+      "n": 697,
+      "prevalence": 0.17216642754662842,
+      "brier": 0.14436629428595338,
+      "log_loss": 0.4649898298503534,
+      "accuracy": 0.8278335724533716,
+      "roc_auc": 0.504238879260543,
+      "average_precision": 0.18217663495013592
+    },
+    {
+      "model": "press",
+      "n": 697,
+      "prevalence": 0.17216642754662842,
+      "brier": 0.14127325412942482,
+      "log_loss": 0.4532678461504337,
+      "accuracy": 0.8278335724533716,
+      "roc_auc": 0.6089976891969959,
+      "average_precision": 0.22087765497082826
+    },
+    {
+      "model": "press_political",
+      "n": 697,
+      "prevalence": 0.17216642754662842,
+      "brier": 0.14219802727829559,
+      "log_loss": 0.45595108933451545,
+      "accuracy": 0.8278335724533716,
+      "roc_auc": 0.6016897746967071,
+      "average_precision": 0.2376275729842012
+    },
+    {
+      "model": "press_forecast",
+      "n": 697,
+      "prevalence": 0.17216642754662842,
+      "brier": 0.13835725608937408,
+      "log_loss": 0.4416352166507114,
+      "accuracy": 0.8278335724533716,
+      "roc_auc": 0.6643991912189486,
+      "average_precision": 0.24800165204245858
+    },
+    {
+      "model": "press_both",
+      "n": 697,
+      "prevalence": 0.17216642754662842,
+      "brier": 0.13829120396662584,
+      "log_loss": 0.44077795962585764,
+      "accuracy": 0.8278335724533716,
+      "roc_auc": 0.6635470826112073,
+      "average_precision": 0.24909439153047522
+    }
+  ],
+  "selection": "Mature pre-2011 rolling origins only; already-inspected historical era, exploratory development"
+}

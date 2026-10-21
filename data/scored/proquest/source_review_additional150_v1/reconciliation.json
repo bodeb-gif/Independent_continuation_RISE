@@ -1,0 +1,23 @@
+{
+  "local_reconciliation_passed": true,
+  "source_hash_recheck_passed": true,
+  "source_recovered_n": 150,
+  "verbatim_once_n": 87,
+  "categorical_projection_sha256": "378529b335980eb5d547d330829217ecd785eb6d9c023e98bcf36b66892b3b5c",
+  "original_labels_projection_sha256": "2b220703c1ba7f1a4a9e96eb0554f7d875797af53a5bb29293a825d917facb49",
+  "frozen_at": "2026-10-21T02:26:24.262234+00:00",
+  "compared_at": "2026-10-21T02:31:05.987688+00:00",
+  "prefix_exceptions": [
+    {
+      "audit_id": "verified:1995:1476",
+      "frozen_records": 5814,
+      "vm_records": 5831
+    },
+    {
+      "audit_id": "verified:1995:3168",
+      "frozen_records": 5814,
+      "vm_records": 5831
+    }
+  ],
+  "evidence": "Confirmed from completed TDM comparison terminal receipt. Full receipt and source hashes retained in election_arm/source_review_additional150_v1/receipt.json."
+}

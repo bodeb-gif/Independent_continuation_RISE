@@ -1,0 +1,37 @@
+{
+  "schema": "proquest-author-human-review-attestation-v1",
+  "date_local": "2026-10-20",
+  "timezone": "America/Chicago",
+  "user_statement": "ok can you check proquest? I human validated another 150 claims",
+  "batch": "source_review_additional150_v1",
+  "human_review_n": 150,
+  "historical_n": 100,
+  "modern_n": 50,
+  "provenance": "The author performed the human validation, using AI only for limited contextual explanations in a couple of situations. Existing Codex metadata document earlier artifact history and do not establish that AI made the human review decisions. Blinding and a second independent human reviewer were not established.",
+  "vm_directory": "/home/ec2-user/SageMaker/election_arm/source_review_additional150_v1/",
+  "vm_check": "Read-only Chrome inspection of saved files and fresh canonical categorical SHA256; all 150 categorical records match the local copy. The full reviewed-label hash matches the earlier VM receipt. No categorical changes from the saved prior comparison were observed.",
+  "categorical_projection_sha256": "378529b335980eb5d547d330829217ecd785eb6d9c023e98bcf36b66892b3b5c",
+  "local_checks": {
+    "source_export_hashes_verified": true,
+    "source_addresses_verified": 150,
+    "field_comparisons_recomputed": true,
+    "new_unique_claims": 150,
+    "overlap_with_first150": 0
+  },
+  "local_files_sha256": {
+    "data/scored/proquest/source_review_additional150_v1/reviewed_labels_categorical.json": "f38601896352ca65c6cf947b882a03575ba7da3ee70a9793d4d9339f218af039",
+    "data/scored/proquest/source_review_additional150_v1/comparison.json": "70209d940a2ff345b6bd54e65e539f417af19ee599952ef3f82ed1bd09b0f917",
+    "data/scored/proquest/source_review_additional150_v1/summary.json": "d77531032cf93b6a537751211f406eec60d43f496bd221cb01baba25ba1fc8b5",
+    "data/scored/proquest/source_review_additional150_v1/pack.json": "3cda37bdc41da3c95e304b82669eb47d52ffb98f8c6e7546216ae26f6c8b9e73",
+    "data/scored/proquest/source_review_additional150_v1/reconciliation.json": "96d7958fe1d63d700d29614dd6b7a255efbba8da5b5080f053726b1f8520fa0f"
+  },
+  "limitations": [
+    "Positive-candidate review does not estimate recall or economic forecast accuracy.",
+    "Historical and modern sampling frames differ; report them separately.",
+    "Earlier original150 current-state coding mismatch remains unresolved; do not pool that field."
+  ],
+  "source_prose": "No source prose or free-text notes transferred; existing categorical copy verified.",
+  "user_clarification": "No but AI didn't help me that much. I just needed it to explain context in a couple of situations",
+  "reviewer_type": "human_author",
+  "ai_role": "Limited contextual explanations in a couple of situations, as reported by the author."
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "proquest-human-review-status-v1",
+  "date_local": "2026-10-20",
+  "n_claims": 300,
+  "distinct_articles": 299,
+  "overlap_between_batches": 0,
+  "decisions": {
+    "include": 212,
+    "exclude": 87,
+    "unclear": 1
+  },
+  "historical": {
+    "n": 250,
+    "decisions": {
+      "include": 177,
+      "exclude": 72,
+      "unclear": 1
+    }
+  },
+  "modern": {
+    "n": 50,
+    "decisions": {
+      "include": 35,
+      "exclude": 15
+    }
+  },
+  "interpretation": "Author-performed human validation with limited AI assistance to explain context in a couple of situations. Pooled totals describe the reviewed sample, not a common population estimate. Modern forecasting performance is unchanged.",
+  "inputs_sha256": {
+    "data/scored/proquest/source_review_150_v1/human_labels_received.json": "6a3ef0a267c8f17aca1b13b032d425a61c820b1913a4bad7e3e3774b67c9eba4",
+    "data/scored/proquest/source_review_additional150_v1/reviewed_labels_categorical.json": "f38601896352ca65c6cf947b882a03575ba7da3ee70a9793d4d9339f218af039",
+    "data/scored/proquest/source_review_additional150_v1/human_review_attestation_20261020.json": "1d357db24ad3a8db6c1bbbb5470c2dd27e01982283577252fd73c1c3e1df694e"
+  }
+}

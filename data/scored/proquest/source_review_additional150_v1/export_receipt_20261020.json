@@ -1,0 +1,35 @@
+{
+  "date_local": "2026-10-20",
+  "timezone": "America/Chicago",
+  "filename": "human_validation_additional150_20261020.json",
+  "records": 150,
+  "historical": 100,
+  "modern": 50,
+  "bytes": 87510,
+  "sha256": "239d2fdb620ce1d1517860f8aba16784b1ac1e88605a87eb6722f8511d910fb5",
+  "vm_path": "/home/ec2-user/SageMaker/election_arm/human_validation_additional150_20261020.json",
+  "destination": "s3://pq-tdm-studio-results/tdm-ale-data/a5379/results/human_validation_additional150_20261020.json",
+  "submission_status": "AWS CLI upload success visibly confirmed in ProQuest workbench",
+  "email_delivery_status": "not independently checked",
+  "contents": "Source identifiers, decisions, eleven categorical review fields; no article text, quotations or free-text notes.",
+  "reviewer": "Human author; AI supplied limited contextual explanations in a couple of situations, per author clarification.",
+  "local_copy": "Reconstructed from reconciled records; byte-identical SHA256 matches prepared VM export.",
+  "evidence": "export_submission_20261020.jpg",
+  "user_return_receipt": {
+    "date_local": "2026-10-20",
+    "channel": "User-pasted text attachment",
+    "attachment_name": "Pasted text.txt",
+    "bytes": 87510,
+    "sha256": "239d2fdb620ce1d1517860f8aba16784b1ac1e88605a87eb6722f8511d910fb5",
+    "matches_export_byte_for_byte": true,
+    "records": 150,
+    "unique_claims": 150,
+    "missing_records": 0,
+    "changed_records": 0,
+    "decisions": {
+      "include": 107,
+      "exclude": 43
+    },
+    "counting": "Confirmation of existing additional150 batch; not an additional batch. Total remains 300 reviewed claims."
+  }
+}

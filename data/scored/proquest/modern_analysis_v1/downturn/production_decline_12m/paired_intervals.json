@@ -1,0 +1,58 @@
+[
+  {
+    "a": "historical_base_rate",
+    "b": "press",
+    "delta_brier_a_minus_b": 0.026486323464693432,
+    "low": -0.029847449383703692,
+    "high": 0.06743991761377086,
+    "n_blocks": 3,
+    "block_sizes": {
+      "0": 60,
+      "1": 60,
+      "2": 55
+    },
+    "draws": 2000
+  },
+  {
+    "a": "historical_base_rate",
+    "b": "press_political",
+    "delta_brier_a_minus_b": 0.019153062799658376,
+    "low": -0.05012483638299011,
+    "high": 0.0651109289508849,
+    "n_blocks": 3,
+    "block_sizes": {
+      "0": 60,
+      "1": 60,
+      "2": 55
+    },
+    "draws": 2000
+  },
+  {
+    "a": "historical_base_rate",
+    "b": "press_forecast",
+    "delta_brier_a_minus_b": 0.029766423087315717,
+    "low": -0.031194462907968384,
+    "high": 0.0692123889852193,
+    "n_blocks": 3,
+    "block_sizes": {
+      "0": 60,
+      "1": 60,
+      "2": 55
+    },
+    "draws": 2000
+  },
+  {
+    "a": "historical_base_rate",
+    "b": "press_both",
+    "delta_brier_a_minus_b": 0.022269455623256964,
+    "low": -0.051481049725477984,
+    "high": 0.06690140304327385,
+    "n_blocks": 3,
+    "block_sizes": {
+      "0": 60,
+      "1": 60,
+      "2": 55
+    },
+    "draws": 2000
+  }
+]

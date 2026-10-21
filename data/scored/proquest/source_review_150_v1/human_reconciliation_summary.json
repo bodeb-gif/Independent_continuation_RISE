@@ -1,0 +1,71 @@
+{
+  "n": 150,
+  "distinct_articles": 149,
+  "decisions": {
+    "include": 105,
+    "exclude": 44,
+    "unclear": 1
+  },
+  "field_agreement": {
+    "topic": {
+      "matches": 90,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "direction": {
+      "matches": 94,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "price_direction": {
+      "matches": 77,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "unemployment_direction": {
+      "matches": 89,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "horizon_months": {
+      "matches": 66,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "confidence": {
+      "matches": 75,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "voice": {
+      "matches": 79,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "speaker_name": {
+      "matches": 74,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "scope": {
+      "matches": 65,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "is_quoted_forecaster": {
+      "matches": 75,
+      "denominator": 105,
+      "interpretation": "literal_primary_field_agreement"
+    },
+    "current_state": {
+      "matches": 22,
+      "denominator": 105,
+      "interpretation": "coding_mismatch_not_valid_accuracy"
+    }
+  },
+  "all_fields_match": 1,
+  "all_fields_interpretation": "Not valid overall accuracy because current_state conventions differ",
+  "source_addresses_and_hashes_verified": 150,
+  "local_results_match_supplied_summary": true,
+  "modern_claims_in_sample": 0
+}

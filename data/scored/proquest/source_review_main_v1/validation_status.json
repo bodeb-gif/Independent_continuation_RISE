@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-19",
+  "sample_selected": 100,
+  "distinct_articles": 100,
+  "local_address_and_hash_validation_passed": 100,
+  "source_passage_reviews_completed": 0,
+  "human_reviews_completed_by_this_task": 0,
+  "source_review_status": "User explicitly approved transfer. Notebook uploaded and imported into TDM; source recovery running in VM. AI passage review in progress.",
+  "notebook_sha256": "ee0bd3bc9836fd11129bd4b91e45937d431d72d35476fc26cce328c1c61e60e9",
+  "checks": {
+    "sampling_tests": 3,
+    "offline": 97,
+    "scoring": 33,
+    "forecasts": 33,
+    "all_passed": true
+  }
+}

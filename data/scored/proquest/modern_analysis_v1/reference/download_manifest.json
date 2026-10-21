@@ -1,0 +1,66 @@
+[
+  {
+    "source": "https://fred.stlouisfed.org/graph/graph.csv?id=INDPRO",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://fred.stlouisfed.org/graph/graph.csv?id=USREC",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://fred.stlouisfed.org/graph/graph.csv?id=CPIAUCNS",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://fred.stlouisfed.org/graph/graph.csv?id=UNRATE",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H112_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H112_votes.csv",
+    "sha256": "f3e9f88f7d815f1474ceddc5646a60556a18f34baec233b3b698a294799a3af5",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H113_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H113_votes.csv",
+    "sha256": "2920a0d66f938da01a3a2b43c3b12034b47ffa5a113c53dfa858fa2721bbbb1d",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H114_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H114_votes.csv",
+    "sha256": "ae0d1afab80744ccc0fe6918bf8966ec45d5245d0c20c3728264d26c91dcbbec",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H115_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H115_votes.csv",
+    "sha256": "f7ffc8ef9c593abf6e0aaad9e9bb0c61f88c7544175affacc983a85ade3bac9c",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H116_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H116_votes.csv",
+    "sha256": "94d2779bcb1faa17bb51b999b8fb14ff0e2c294997079e5ae9a28de0d7eef7c7",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H117_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H117_votes.csv",
+    "sha256": "7e80438cef391dcef6a270bc2743076d1e2afdfe65118872913fd1f2f279a063",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H118_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H118_votes.csv",
+    "sha256": "8a6e648210e9b011f248d7b6f7d3d1e86a274f99e8307414e3776712636c61de",
+    "retrieved_date": "2026-10-20"
+  },
+  {
+    "source": "https://voteview.com/static/data/out/votes/H119_votes.csv",
+    "file": "data/scored/proquest/modern_analysis_v1/reference/voteview/H119_votes.csv",
+    "sha256": "48122dc9791bc4e434011dfae624eb0ec876db7a2741868a506b1dcf774500ae",
+    "retrieved_date": "2026-10-20"
+  }
+]
