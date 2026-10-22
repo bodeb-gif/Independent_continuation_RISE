@@ -1,0 +1,77 @@
+{
+  "schema": "proquest-reviewer2-local-verification-v1",
+  "verified_date_local": "2026-10-22",
+  "timezone": "America/Chicago",
+  "transfer_status": "Existing local package verified; no new transfer was needed.",
+  "vm_evidence": {
+    "interface": "ProQuest TDM Studio via Amazon WorkSpaces Applications",
+    "notebook": "election_arm/source_review_150_v1/Reviewer2_Freeze300b.ipynb",
+    "displayed_destination": "election_arm/reviewer2_300_v1",
+    "displayed_completed": 300,
+    "displayed_label_sha256": "1093bc1de43601d1873f97a9fa9c1df247a76648f3e387809e5abff881f538e1",
+    "observed_live_on": "2026-10-22",
+    "limitation": "Matched the saved notebook completion output; remote files were not independently rehashed in this verification."
+  },
+  "checks": {
+    "all_seven_manifest_checksums": "passed",
+    "json_jsonl_equivalence": "passed",
+    "csv_field_equivalence": "passed",
+    "unique_ordered_audit_ids": 300,
+    "metadata_id_order_and_frame_consistency": "passed",
+    "original_decisions_plus_seven_amendments_reconcile": "passed",
+    "source_prose_and_free_text_field_check": "passed"
+  },
+  "decisions": {
+    "include": 204,
+    "exclude": 96
+  },
+  "frames": {
+    "historical_1900_2010": {
+      "include": 171,
+      "exclude": 79
+    },
+    "modern_2011_2026": {
+      "include": 33,
+      "exclude": 17
+    }
+  },
+  "files": {
+    "annotations.jsonl": {
+      "bytes": 98408,
+      "sha256": "397d40af950fe6ee34b046fefa61cdd0c0e36ebcba5af05a683cf4f6ca68e1d6"
+    },
+    "completion.jpg": {
+      "bytes": 91863,
+      "sha256": "31ab203389e6eab9add4e885a30652d2d40d392c7acecb02b5378a4002c0c052"
+    },
+    "first_pass_amendments.jsonl": {
+      "bytes": 1316,
+      "sha256": "8ec4a0eb0f56272feaf19bc85938a8f3e2e719ead189aae6b0f819e11cab70ce"
+    },
+    "manifest.json": {
+      "bytes": 1122,
+      "sha256": "b3baff9b9d5628731ab3373ea8d5fcc715dc041a947b4059754170ff52e0a43e"
+    },
+    "protocol.json": {
+      "bytes": 1748,
+      "sha256": "19b9824e24a9181c08a0ded715e240c65c8eb8ee791e51065f2f6b3ae29fea0c"
+    },
+    "reviewer2_labels_frozen.csv": {
+      "bytes": 52245,
+      "sha256": "d845540c2e12b1a7cbe3f340875e37756fbfc9bb7739bc9ec513e01e8e3e3f78"
+    },
+    "reviewer2_labels_frozen.json": {
+      "bytes": 141887,
+      "sha256": "1093bc1de43601d1873f97a9fa9c1df247a76648f3e387809e5abff881f538e1"
+    },
+    "reviewer2_labels_frozen.jsonl": {
+      "bytes": 122360,
+      "sha256": "f3fbd1eb97630dee75191ef8780452ee52c0921385caa188ebd96650e1af525d"
+    },
+    "sample_metadata.json": {
+      "bytes": 132662,
+      "sha256": "4a2410c353b49cc37a7a91bf018f3e9896f50119a3fe778931a6d7b9ab565279"
+    }
+  },
+  "scope": "Source-extraction validation only. Historical and modern frames remain separate. No economic scoring or reviewer comparison performed."
+}

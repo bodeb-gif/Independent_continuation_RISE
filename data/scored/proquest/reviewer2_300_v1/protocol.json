@@ -1,0 +1,26 @@
+{
+  "reviewer": "Reviewer 2",
+  "date_local": "2026-10-21",
+  "n_planned": 300,
+  "input": "Original sampled quotes and surrounding article text in ProQuest; metadata only from sample manifests.",
+  "blind_to": [
+    "author claim-level labels",
+    "GPT-4o mini claim-level labels",
+    "claim-level realized outcomes"
+  ],
+  "prior_exposure": "Aggregate validation counts and manuscript summaries were visible while correcting provenance. No claim-level comparison or response files opened.",
+  "comparison": "Not performed. Claim-level author and GPT-4o-mini labels remain unopened. Join by audit_id only after this freeze; report historical and modern frames separately.",
+  "identity_disclosure": "Reserved for author completion.",
+  "source_text": "Remains in ProQuest.",
+  "status": "frozen",
+  "n_completed": 300,
+  "review_method": "Read each sampled source claim and surrounding article context in the source-only Jupyter reader inside ProQuest TDM Studio; expand context for interpretation when needed. No outcome scoring.",
+  "field_notes": {
+    "horizon_months": "Coarse 6/12/vague categorization. Short, long, unspecified, or event-relative horizons use vague.",
+    "speaker_name": "Person name or surname visible in reviewed context; na if not established. Institutional attributions do not count as person names.",
+    "current_state": "From the sampled claim, not unrelated surrounding article descriptions.",
+    "null": "Ambiguous included-claim field; retain in agreement denominator/reporting as missing or unresolved, never as an agreement.",
+    "na": "Not applicable or not established under the rubric.",
+    "direction": "Overall economic or market framing; ambiguous compound/non-increase claims may be unclear."
+  }
+}

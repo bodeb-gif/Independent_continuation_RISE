@@ -1,0 +1,7 @@
+{"n": 45, "audit_id": "verified:1986:930", "field": "direction", "old": "improve", "new": "worsen", "reason_code": "growth_rate_downgrade_not_output_level", "phase": "before_comparison"}
+{"n": 18, "audit_id": "verified:1969:318", "field": "speaker_name", "old": "Bethlehem Steel", "new": "na", "reason_code": "institution_not_person", "phase": "before_comparison"}
+{"n": 31, "audit_id": "verified:1982:2773", "field": "speaker_name", "old": "Salomon Brothers", "new": "na", "reason_code": "institution_not_person", "phase": "before_comparison"}
+{"n": 41, "audit_id": "verified:1983:6085", "field": "direction", "old": "no_change", "new": "unclear", "reason_code": "not_higher_does_not_distinguish_flat_from_decline", "phase": "before_comparison"}
+{"n": 158, "audit_id": "verified:1940:233", "field": "direction", "old": "no_change", "new": "unclear", "reason_code": "no_substantial_recovery_does_not_imply_flat", "phase": "before_comparison"}
+{"n": 158, "audit_id": "verified:1940:233", "field": "price_direction", "old": "stable", "new": null, "reason_code": "flat_or_down_not_uniquely_resolved", "phase": "before_comparison"}
+{"n": 162, "audit_id": "verified:1953:938", "field": "unemployment_direction", "old": "na", "new": null, "reason_code": "flat_or_down_not_uniquely_resolved", "phase": "before_comparison"}
