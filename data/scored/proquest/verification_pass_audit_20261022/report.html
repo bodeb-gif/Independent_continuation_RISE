@@ -1,0 +1,65 @@
+<!doctype html><meta charset="utf-8"><title>ProQuest verification-pass audit</title>
+<style>body{font:16px/1.5 system-ui;max-width:1050px;margin:40px auto;padding:0 20px;color:#203543}table{border-collapse:collapse;width:100%}td,th{padding:9px;border-bottom:1px solid #ccd5dc;text-align:left}h2{margin-top:32px}</style>
+<h1>Existing-pass audit and reviewer comparison</h1><p>October 22, 2026. No new model calls.</p>
+<p>The existing 300 source-linked ProQuest claims all explicitly passed the original verifier. Saved machine labels were joined to both human reviews by audit ID.</p>
+<h2>ProQuest accepted-candidate precision</h2><table><tr><th>Sample</th><th>Reviewer 1</th><th>Reviewer 2</th><th>Human decision agreement</th></tr>
+<tr><td>historical_1900_2010 (n=250)</td><td>177/250: 70.8%–71.2%</td><td>171/250: 68.4%</td><td>233/250</td></tr>
+<tr><td>modern_2011_2026 (n=50)</td><td>35/50: 70.0%–70.0%</td><td>33/50: 66.0%</td><td>42/50</td></tr>
+<tr><td>combined_descriptive_only (n=300)</td><td>212/300: 70.7%–71.0%</td><td>204/300: 68.0%</td><td>275/300</td></tr>
+</table><p>Reviewer 1 bounds classify the unresolved case both ways; they are not confidence intervals.</p>
+<h2>Separate LOC development benchmark</h2><p>Same 16-page, 52-claim model-adjudicated reference, verified by SHA-256. Existing VM outputs rescored; no new model calls.</p>
+<table><tr><th>Pass</th><th>TP / FP / FN</th><th>Precision</th><th>Recall</th><th>F1</th></tr>
+<tr><td>first_pass</td><td>27 / 39 / 25</td><td>40.9%</td><td>51.9%</td><td>0.458</td></tr>
+<tr><td>second_pass</td><td>21 / 9 / 31</td><td>70.0%</td><td>40.4%</td><td>0.512</td></tr>
+</table><h2>Field agreement on included candidates</h2><p>Each column uses its own eligible subset. Asterisks identify excluded current-state conventions; uncertain values receive no match credit. NA matches are included.</p>
+<h3>historical_1900_2010</h3><table><tr><th>Field</th><th>Machine vs reviewer 1</th><th>Machine vs reviewer 2</th><th>Reviewer 1 vs reviewer 2</th></tr>
+<tr><td>topic</td><td>156/177 (88.1%)</td><td>152/171 (88.9%)</td><td>159/166 (95.8%)</td></tr>
+<tr><td>direction</td><td>154/177 (87.0%)</td><td>148/171 (86.5%)</td><td>150/166 (90.4%)</td></tr>
+<tr><td>price_direction</td><td>132/177 (74.6%)</td><td>127/171 (74.3%)</td><td>163/166 (98.2%)</td></tr>
+<tr><td>unemployment_direction</td><td>150/177 (84.7%)</td><td>145/171 (84.8%)</td><td>163/166 (98.2%)</td></tr>
+<tr><td>horizon_months</td><td>115/177 (65.0%)</td><td>118/171 (69.0%)</td><td>147/166 (88.6%)</td></tr>
+<tr><td>confidence</td><td>130/177 (73.4%)</td><td>127/171 (74.3%)</td><td>152/166 (91.6%)</td></tr>
+<tr><td>voice</td><td>136/177 (76.8%)</td><td>127/171 (74.3%)</td><td>153/166 (92.2%)</td></tr>
+<tr><td>speaker_name</td><td>117/177 (66.1%)</td><td>101/171 (59.1%)</td><td>128/166 (77.1%)</td></tr>
+<tr><td>scope</td><td>114/177 (64.4%)</td><td>113/171 (66.1%)</td><td>157/166 (94.6%)</td></tr>
+<tr><td>is_quoted_forecaster</td><td>131/177 (74.0%)</td><td>129/171 (75.4%)</td><td>155/166 (93.4%)</td></tr>
+<tr><td>current_state</td><td>55/72 (76.4%)*</td><td>123/171 (71.9%)</td><td>66/68 (97.1%)*</td></tr>
+</table>
+<h3>modern_2011_2026</h3><table><tr><th>Field</th><th>Machine vs reviewer 1</th><th>Machine vs reviewer 2</th><th>Reviewer 1 vs reviewer 2</th></tr>
+<tr><td>topic</td><td>29/35 (82.9%)</td><td>29/33 (87.9%)</td><td>28/30 (93.3%)</td></tr>
+<tr><td>direction</td><td>29/35 (82.9%)</td><td>30/33 (90.9%)</td><td>27/30 (90.0%)</td></tr>
+<tr><td>price_direction</td><td>30/35 (85.7%)</td><td>28/33 (84.8%)</td><td>30/30 (100.0%)</td></tr>
+<tr><td>unemployment_direction</td><td>31/35 (88.6%)</td><td>28/33 (84.8%)</td><td>29/30 (96.7%)</td></tr>
+<tr><td>horizon_months</td><td>26/35 (74.3%)</td><td>27/33 (81.8%)</td><td>26/30 (86.7%)</td></tr>
+<tr><td>confidence</td><td>22/35 (62.9%)</td><td>23/33 (69.7%)</td><td>27/30 (90.0%)</td></tr>
+<tr><td>voice</td><td>24/35 (68.6%)</td><td>22/33 (66.7%)</td><td>27/30 (90.0%)</td></tr>
+<tr><td>speaker_name</td><td>27/35 (77.1%)</td><td>21/33 (63.6%)</td><td>20/30 (66.7%)</td></tr>
+<tr><td>scope</td><td>24/35 (68.6%)</td><td>23/33 (69.7%)</td><td>27/30 (90.0%)</td></tr>
+<tr><td>is_quoted_forecaster</td><td>23/35 (65.7%)</td><td>23/33 (69.7%)</td><td>29/30 (96.7%)</td></tr>
+<tr><td>current_state</td><td>27/35 (77.1%)</td><td>27/33 (81.8%)</td><td>24/30 (80.0%)</td></tr>
+</table>
+<h3>combined_descriptive_only</h3><table><tr><th>Field</th><th>Machine vs reviewer 1</th><th>Machine vs reviewer 2</th><th>Reviewer 1 vs reviewer 2</th></tr>
+<tr><td>topic</td><td>185/212 (87.3%)</td><td>181/204 (88.7%)</td><td>187/196 (95.4%)</td></tr>
+<tr><td>direction</td><td>183/212 (86.3%)</td><td>178/204 (87.3%)</td><td>177/196 (90.3%)</td></tr>
+<tr><td>price_direction</td><td>162/212 (76.4%)</td><td>155/204 (76.0%)</td><td>193/196 (98.5%)</td></tr>
+<tr><td>unemployment_direction</td><td>181/212 (85.4%)</td><td>173/204 (84.8%)</td><td>192/196 (98.0%)</td></tr>
+<tr><td>horizon_months</td><td>141/212 (66.5%)</td><td>145/204 (71.1%)</td><td>173/196 (88.3%)</td></tr>
+<tr><td>confidence</td><td>152/212 (71.7%)</td><td>150/204 (73.5%)</td><td>179/196 (91.3%)</td></tr>
+<tr><td>voice</td><td>160/212 (75.5%)</td><td>149/204 (73.0%)</td><td>180/196 (91.8%)</td></tr>
+<tr><td>speaker_name</td><td>144/212 (67.9%)</td><td>122/204 (59.8%)</td><td>148/196 (75.5%)</td></tr>
+<tr><td>scope</td><td>138/212 (65.1%)</td><td>136/204 (66.7%)</td><td>184/196 (93.9%)</td></tr>
+<tr><td>is_quoted_forecaster</td><td>154/212 (72.6%)</td><td>152/204 (74.5%)</td><td>184/196 (93.9%)</td></tr>
+<tr><td>current_state</td><td>82/107 (76.6%)*</td><td>150/204 (73.5%)</td><td>90/98 (91.8%)*</td></tr>
+</table>
+<h2>Interpretation</h2><ul>
+<li>All 300 ProQuest sample rows explicitly passed the saved verifier; no default-kept exceptions were found.</li>
+<li>No sampled verifier rejects are available, so original ProQuest before/after precision gain is not identifiable from these 300.</li>
+<li>A new verification call on the 300 survivors would measure an additional filter, not recover the original second-pass effect.</li>
+<li>Human judgments remain separate and unadjudicated. Precision is reported against each reviewer, not against an invented consensus.</li>
+<li>Historical and modern sampling frames differ; combined counts are descriptive only. No population weighting or confidence interval is implied.</li>
+<li>Field agreement is literal; NA matches remain included. Missing or flagged uncertain fields receive no match credit. Original-batch reviewer1 current-state comparisons are excluded for incompatible conventions.</li>
+<li>Field comparisons use each human reviewer&#x27;s included claims; human-human field comparison uses their joint-included subset. These supports differ.</li>
+<li>LOC benchmark evidence is extraction validation only and is never pooled with ProQuest. Exact production model deployments were not newly certified.</li>
+</ul>
+<p>To estimate the original ProQuest verification gain, review a probability sample of pre-verification candidates that includes both retained and dropped claims, recover claim-level lineage in TDM, and compare precision before and after on that common sampling frame.</p>
+<p><a href="summary.json">Full metrics and field comparisons</a> · <a href="paired_labels.json">All 300 paired labels</a> · <a href="vm_observation.json">VM audit evidence</a></p>

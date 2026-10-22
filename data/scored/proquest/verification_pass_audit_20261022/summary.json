@@ -1,0 +1,1155 @@
+{
+  "date_local": "2026-10-22",
+  "new_model_calls": 0,
+  "groups": {
+    "historical_1900_2010": {
+      "n": 250,
+      "verified_keep_n": 250,
+      "reviewer1": {
+        "decisions": {
+          "include": 177,
+          "exclude": 72,
+          "unclear": 1
+        },
+        "accepted_candidate_precision_bounds": [
+          0.708,
+          0.712
+        ],
+        "resolved_only_precision": 0.7108433734939759,
+        "resolved_n": 249
+      },
+      "reviewer2": {
+        "decisions": {
+          "include": 171,
+          "exclude": 79
+        },
+        "accepted_candidate_precision_bounds": [
+          0.684,
+          0.684
+        ],
+        "resolved_only_precision": 0.684,
+        "resolved_n": 250
+      },
+      "human_decision_agreement": {
+        "n": 250,
+        "matches": 233,
+        "fraction": 0.932,
+        "kappa": 0.8398945187417594
+      },
+      "human_decision_agreement_resolved": {
+        "n": 249,
+        "matches": 233,
+        "fraction": 0.9357429718875502,
+        "kappa": 0.8474615207902596
+      },
+      "human_decision_confusion": [
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "exclude",
+          "n": 67
+        },
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "include",
+          "n": 5
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "exclude",
+          "n": 11
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "include",
+          "n": 166
+        },
+        {
+          "reviewer1": "unclear",
+          "reviewer2": "exclude",
+          "n": 1
+        }
+      ],
+      "field_agreement": {
+        "machine_vs_reviewer1": {
+          "topic": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 156,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8813559322033898,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 154,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8700564971751412,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 132,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7457627118644068,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 150,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.847457627118644,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 115,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6497175141242938,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 130,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7344632768361582,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 136,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.768361581920904,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 117,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6610169491525424,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 114,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6440677966101694,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 177,
+            "denominator": 177,
+            "matches": 131,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7401129943502824,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 177,
+            "denominator": 72,
+            "matches": 55,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7638888888888888,
+            "incompatible_convention_excluded_n": 105
+          }
+        },
+        "machine_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 152,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8888888888888888,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 148,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8654970760233918,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 127,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.7426900584795322,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 145,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.847953216374269,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 118,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6900584795321637,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 127,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7426900584795322,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 127,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7426900584795322,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 101,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.5906432748538012,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 113,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6608187134502924,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 129,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7543859649122807,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 171,
+            "denominator": 171,
+            "matches": 123,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7192982456140351,
+            "incompatible_convention_excluded_n": 0
+          }
+        },
+        "reviewer1_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 159,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9578313253012049,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 150,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9036144578313253,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 163,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.9819277108433735,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 163,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.9819277108433735,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 147,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8855421686746988,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 152,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9156626506024096,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 153,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9216867469879518,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 128,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.7710843373493976,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 157,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9457831325301205,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 166,
+            "denominator": 166,
+            "matches": 155,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9337349397590361,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 166,
+            "denominator": 68,
+            "matches": 66,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9705882352941176,
+            "incompatible_convention_excluded_n": 98
+          }
+        }
+      }
+    },
+    "modern_2011_2026": {
+      "n": 50,
+      "verified_keep_n": 50,
+      "reviewer1": {
+        "decisions": {
+          "include": 35,
+          "exclude": 15
+        },
+        "accepted_candidate_precision_bounds": [
+          0.7,
+          0.7
+        ],
+        "resolved_only_precision": 0.7,
+        "resolved_n": 50
+      },
+      "reviewer2": {
+        "decisions": {
+          "include": 33,
+          "exclude": 17
+        },
+        "accepted_candidate_precision_bounds": [
+          0.66,
+          0.66
+        ],
+        "resolved_only_precision": 0.66,
+        "resolved_n": 50
+      },
+      "human_decision_agreement": {
+        "n": 50,
+        "matches": 42,
+        "fraction": 0.84,
+        "kappa": 0.6330275229357798
+      },
+      "human_decision_agreement_resolved": {
+        "n": 50,
+        "matches": 42,
+        "fraction": 0.84,
+        "kappa": 0.6330275229357798
+      },
+      "human_decision_confusion": [
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "exclude",
+          "n": 12
+        },
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "include",
+          "n": 3
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "exclude",
+          "n": 5
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "include",
+          "n": 30
+        }
+      ],
+      "field_agreement": {
+        "machine_vs_reviewer1": {
+          "topic": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 29,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8285714285714286,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 29,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8285714285714286,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 30,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8571428571428571,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 31,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8857142857142857,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 26,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7428571428571429,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 22,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6285714285714286,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 24,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6857142857142857,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7714285714285715,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 24,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6857142857142857,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 23,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6571428571428571,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 35,
+            "denominator": 35,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7714285714285715,
+            "incompatible_convention_excluded_n": 0
+          }
+        },
+        "machine_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 29,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8787878787878788,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 30,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9090909090909091,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 28,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8484848484848485,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 28,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8484848484848485,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8181818181818182,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 23,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.696969696969697,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 22,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6666666666666666,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 21,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6363636363636364,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 23,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.696969696969697,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 23,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.696969696969697,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 33,
+            "denominator": 33,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8181818181818182,
+            "incompatible_convention_excluded_n": 0
+          }
+        },
+        "reviewer1_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 28,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9333333333333333,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 30,
+            "missing_or_uncertain_n": 0,
+            "fraction": 1.0,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 29,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9666666666666667,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 26,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8666666666666667,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 20,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6666666666666666,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 27,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 29,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9666666666666667,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 30,
+            "denominator": 30,
+            "matches": 24,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8,
+            "incompatible_convention_excluded_n": 0
+          }
+        }
+      }
+    },
+    "combined_descriptive_only": {
+      "n": 300,
+      "verified_keep_n": 300,
+      "reviewer1": {
+        "decisions": {
+          "include": 212,
+          "exclude": 87,
+          "unclear": 1
+        },
+        "accepted_candidate_precision_bounds": [
+          0.7066666666666667,
+          0.71
+        ],
+        "resolved_only_precision": 0.7090301003344481,
+        "resolved_n": 299
+      },
+      "reviewer2": {
+        "decisions": {
+          "include": 204,
+          "exclude": 96
+        },
+        "accepted_candidate_precision_bounds": [
+          0.68,
+          0.68
+        ],
+        "resolved_only_precision": 0.68,
+        "resolved_n": 300
+      },
+      "human_decision_agreement": {
+        "n": 300,
+        "matches": 275,
+        "fraction": 0.9166666666666666,
+        "kappa": 0.8046874999999999
+      },
+      "human_decision_agreement_resolved": {
+        "n": 299,
+        "matches": 275,
+        "fraction": 0.919732441471572,
+        "kappa": 0.8105996621621623
+      },
+      "human_decision_confusion": [
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "exclude",
+          "n": 79
+        },
+        {
+          "reviewer1": "exclude",
+          "reviewer2": "include",
+          "n": 8
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "exclude",
+          "n": 16
+        },
+        {
+          "reviewer1": "include",
+          "reviewer2": "include",
+          "n": 196
+        },
+        {
+          "reviewer1": "unclear",
+          "reviewer2": "exclude",
+          "n": 1
+        }
+      ],
+      "field_agreement": {
+        "machine_vs_reviewer1": {
+          "topic": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 185,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8726415094339622,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 183,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8632075471698113,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 162,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7641509433962265,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 181,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8537735849056604,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 141,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6650943396226415,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 152,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7169811320754716,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 160,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7547169811320755,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 144,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6792452830188679,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 138,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6509433962264151,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 212,
+            "denominator": 212,
+            "matches": 154,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7264150943396226,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 212,
+            "denominator": 107,
+            "matches": 82,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7663551401869159,
+            "incompatible_convention_excluded_n": 105
+          }
+        },
+        "machine_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 181,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8872549019607843,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 178,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8725490196078431,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 155,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.7598039215686274,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 173,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.8480392156862745,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 145,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7107843137254902,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 150,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7352941176470589,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 149,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7303921568627451,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 122,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.5980392156862745,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 136,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.6666666666666666,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 152,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7450980392156863,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 204,
+            "denominator": 204,
+            "matches": 150,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.7352941176470589,
+            "incompatible_convention_excluded_n": 0
+          }
+        },
+        "reviewer1_vs_reviewer2": {
+          "topic": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 187,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9540816326530612,
+            "incompatible_convention_excluded_n": 0
+          },
+          "direction": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 177,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9030612244897959,
+            "incompatible_convention_excluded_n": 0
+          },
+          "price_direction": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 193,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.9846938775510204,
+            "incompatible_convention_excluded_n": 0
+          },
+          "unemployment_direction": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 192,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.9795918367346939,
+            "incompatible_convention_excluded_n": 0
+          },
+          "horizon_months": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 173,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.8826530612244898,
+            "incompatible_convention_excluded_n": 0
+          },
+          "confidence": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 179,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9132653061224489,
+            "incompatible_convention_excluded_n": 0
+          },
+          "voice": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 180,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9183673469387755,
+            "incompatible_convention_excluded_n": 0
+          },
+          "speaker_name": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 148,
+            "missing_or_uncertain_n": 1,
+            "fraction": 0.7551020408163265,
+            "incompatible_convention_excluded_n": 0
+          },
+          "scope": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 184,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9387755102040817,
+            "incompatible_convention_excluded_n": 0
+          },
+          "is_quoted_forecaster": {
+            "eligible_included_n": 196,
+            "denominator": 196,
+            "matches": 184,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9387755102040817,
+            "incompatible_convention_excluded_n": 0
+          },
+          "current_state": {
+            "eligible_included_n": 196,
+            "denominator": 98,
+            "matches": 90,
+            "missing_or_uncertain_n": 0,
+            "fraction": 0.9183673469387755,
+            "incompatible_convention_excluded_n": 98
+          }
+        }
+      }
+    }
+  },
+  "separate_loc_development_benchmark": {
+    "source": "LOC extraction validation only; not ProQuest human validation",
+    "reference_kind": "model-adjudicated reference",
+    "pages": 16,
+    "reference_claims": 52,
+    "reference_sha256": "80495aaff3f50d1e1feab0ce4953392558d63dbc6c919c49968928bde2fdedb4",
+    "local_identical_reference": "validation/gold_extraction/gold_claims.jsonl",
+    "commands_run": [
+      "python gold_extraction/eval_extraction.py --pred pred_gpt4omini_gold.jsonl | head -10",
+      "python gold_extraction/eval_extraction.py --pred verified_gold/pred_gpt4omini_gold.jsonl | head -10",
+      "sha256sum gold_extraction/gold_claims.jsonl"
+    ],
+    "first_pass": {
+      "tp": 27,
+      "fp": 39,
+      "fn": 25,
+      "false_positives_on_three_zero_claim_pages": 7,
+      "precision": 0.4090909090909091,
+      "recall": 0.5192307692307693,
+      "f1": 0.4576271186440678
+    },
+    "second_pass": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 31,
+      "false_positives_on_three_zero_claim_pages": 4,
+      "precision": 0.7,
+      "recall": 0.40384615384615385,
+      "f1": 0.5121951219512195
+    },
+    "interpretation": "Re-scored existing outputs with the existing evaluator, without extraction or verification API calls. Counts use its one-to-one fuzzy span matching; do not treat model-reference matches as human ground truth.",
+    "precision_change_pp": 29.090909090909083,
+    "recall_change_pp": -11.538461538461542
+  },
+  "input_sha256": {
+    "data/scored/proquest/source_review_150_v1/human_comparison_reconciled.json": "b94f72040353bc1b4915847969e7f1095a05fadedf1dbfdb0dbb4c157e015aea",
+    "data/scored/proquest/source_review_additional150_v1/comparison.json": "70209d940a2ff345b6bd54e65e539f417af19ee599952ef3f82ed1bd09b0f917",
+    "data/scored/proquest/reviewer2_300_v1/reviewer2_labels_frozen.json": "1093bc1de43601d1873f97a9fa9c1df247a76648f3e387809e5abff881f538e1",
+    "data/scored/proquest/reviewer2_300_v1/sample_metadata.json": "4a2410c353b49cc37a7a91bf018f3e9896f50119a3fe778931a6d7b9ab565279",
+    "data/scored/proquest/reviewer2_300_v1/manifest.json": "b3baff9b9d5628731ab3373ea8d5fcc715dc041a947b4059754170ff52e0a43e",
+    "data/proquest/verified/pred_proquest_economy_1900.export.jsonl": "d256eb407a9f084cf3825df6263375907df2e97f1dde54cb23ffa92e0cce6f1d",
+    "data/proquest/verified/pred_proquest_economy_1916.export.jsonl": "9e611f3b819bf3477e8a7e5c06aa767448606f425a0684561bb75e68fd196106",
+    "data/proquest/verified/pred_proquest_economy_1930.export.jsonl": "36a6043f064239a9f8d08b856632f0f03d64a256ab98ba00a9b8b7147a4e1a09",
+    "data/proquest/verified/pred_proquest_economy_1931.export.jsonl": "f512984b77bc7c99bfa7a60c78d554ab302378ebf5fd3f0a36378ca7ac90c286",
+    "data/proquest/verified/pred_proquest_economy_1934.export.jsonl": "1038940836df3ffaf3edea3bc655427b8fb9cfe8733562cb714a171da2c4f69e",
+    "data/proquest/verified/pred_proquest_economy_1935.export.jsonl": "35412713a10599214538306a485ad38fb222d43fca9b7be3df733a444db6dd07",
+    "data/proquest/verified/pred_proquest_economy_1936.export.jsonl": "e8d26f70701ad4ce508f96c28e2c54c4fb2db4c60f26053e81ae8ab985846eaa",
+    "data/proquest/verified/pred_proquest_economy_1943.export.jsonl": "1d6043b3df72ac978879d11c03ca0968672ad9bac68ed8f70f70af685de5990b",
+    "data/proquest/verified/pred_proquest_economy_1947.export.jsonl": "d98769a59795c7572c85dac926a32a64f133d6486230ebd0b96fc203ecd13dbc",
+    "data/proquest/verified/pred_proquest_economy_1949.export.jsonl": "344627d0669c608c20823e67230220db5f0fc9b2be5611457732c573b5122208",
+    "data/proquest/verified/pred_proquest_economy_1950.export.jsonl": "a4a71f80089d84cad7ac82c2c27c769170a7109da2078c873fa31aae8b9e6a48",
+    "data/proquest/verified/pred_proquest_economy_1951.export.jsonl": "4b5a9bf64b4563cb1106e862da88124dd018bb3683900f7006acd6788a3f4ed7",
+    "data/proquest/verified/pred_proquest_economy_1958.export.jsonl": "046f9383cb39142fa1631e31a7f7fee05a962f2e75fabecefa23a59cf29ae820",
+    "data/proquest/verified/pred_proquest_economy_1962.export.jsonl": "34a827ce7f2e807763f76747490abc38fa8cc3f10b4cadf1c40c19f7d2313d2b",
+    "data/proquest/verified/pred_proquest_economy_1969.export.jsonl": "978b817957279a90ba3777ef02e2769037f6a945a9596d8b091955d60a54f4e8",
+    "data/proquest/verified/pred_proquest_economy_1974.export.jsonl": "7305066cce182bea587eb7c8d46f92ccbd25bba4a117e6fc814756735f605999",
+    "data/proquest/verified/pred_proquest_economy_1976.export.jsonl": "543d0e71d695bdd8f33ce8e23546fc69d97fd62c2cfa44b4e1c0db88242f0b0a",
+    "data/proquest/verified/pred_proquest_economy_1979.export.jsonl": "0d45a6fec707f347d43348ae98c2e2fc758a9554851707a6baba19a42dfa8bb7",
+    "data/proquest/verified/pred_proquest_economy_1980.export.jsonl": "182c54814d90c14ea27ea98c2e273f4eadf61e4d32c04d1ca6fcfd2fdc7ff444",
+    "data/proquest/verified/pred_proquest_economy_1981.export.jsonl": "638d2fc4f9a7c11351075caf156bbaedadf7d00d90524f91c6a011d14c738e74",
+    "data/proquest/verified/pred_proquest_economy_1982.export.jsonl": "3e80aba383c74ff328302f1ab3fa6f32deb1da1062a8903e6cbf94c7ddc7f599",
+    "data/proquest/verified/pred_proquest_economy_1983.export.jsonl": "2760c2c2ca51bcf980070f6c2c9dad53c5c5b579b398e05e6b977daa50a15974",
+    "data/proquest/verified/pred_proquest_economy_1985.export.jsonl": "fb5f82517a1e328be240438b0223518871711691f2f4993b61ed62a5075d5558",
+    "data/proquest/verified/pred_proquest_economy_1986.export.jsonl": "00bd0d6a3e33f5064c542eaeb3f44076f8821941c0be128d7d49bfb1da0c272e",
+    "data/proquest/verified/pred_proquest_economy_1987.export.jsonl": "70c2fbec90ac202660aa57d5a772184b97045b676a671818d7a5ca9490e1dd7c",
+    "data/proquest/verified/pred_proquest_economy_1988.export.jsonl": "8217fb98213e9ed7f8db08fe781540aa31efa5a73c021f7eb8ca46c076f12dcd",
+    "data/proquest/verified/pred_proquest_economy_1989.export.jsonl": "bfe0e7722f2f754c9078a00bb4b70c7de28d5f6693c5e9cb1a3865541fa7b537",
+    "data/proquest/verified/pred_proquest_economy_1990.export.jsonl": "40edeaaf6ea0d3aa12817f598ddbc31c90037ec7d23b09747b0529352d4d8684",
+    "data/proquest/verified/pred_proquest_economy_1991.export.jsonl": "28c2b66c3084b2e25434352062e6444aab061dfea0d7d53a1d0107e18e844359",
+    "data/proquest/verified/pred_proquest_economy_1993.export.jsonl": "ebc252f7215167fa7ead5cab18635629b5183202aba363bbcffad439fb998d4a",
+    "data/proquest/verified/pred_proquest_economy_1994.export.jsonl": "a88226066a2b89d9dfa302c662edbc50f0a51c15520a55835adeff3466ecf75b",
+    "data/proquest/verified/pred_proquest_economy_1996.export.jsonl": "502ea9e32b1147fee263040a7607cc4e1eea4767d96fe5f75b7e7233157b394d",
+    "data/proquest/verified/pred_proquest_economy_1998.export.jsonl": "13f0339cf903690544009a8ac216ea7dcdd134f7189cc3c219d18f1b1ff30908",
+    "data/proquest/verified/pred_proquest_economy_1999.export.jsonl": "f0877b32506f4e3596341492c1b9aa2abe9018f85675efd78f0c215dbc4e1627",
+    "data/proquest/verified/pred_proquest_economy_2000.export.jsonl": "4c8879df0d887152ae7a7cfdb9f332540700bd12a5f9ddc37cc07f7c36628c28",
+    "data/proquest/verified/pred_proquest_economy_2001.export.jsonl": "931728cdd588909b67c65109ecb90501683a6f8ed763042ad8818d0aedc0e599",
+    "data/proquest/verified/pred_proquest_economy_2002.export.jsonl": "c341fa6290f075acd8857867021c6b3fd04cf3bb04697c76dcfa822b7678c92c",
+    "data/proquest/verified/pred_proquest_economy_2003.export.jsonl": "5399183be8c57a346ae58a94b988fe66081d8ca4020a8a619a7a77b11ab7b9ce",
+    "data/proquest/verified/pred_proquest_economy_2006.export.jsonl": "bb65f70f4a2fe7973cdfbec19235817a4a4fb1bf917bbca276ee2f064f385707",
+    "data/proquest/verified/pred_proquest_economy_2007.export.jsonl": "514fe83bcbba2488faf93162a2533b99787513c2ee3e98cbe86d0ef5f38eb888",
+    "data/proquest/verified/pred_proquest_economy_2008.export.jsonl": "e2932cb295141d8f459452c22129672240a0f5042ff225e99fdf0dc8ed57a5e7",
+    "data/proquest/verified/pred_proquest_economy_2009.export.jsonl": "b8dd4c5adbffad9a5aa99ecdbb39dcb6f6dec74e5a2791f9ad793b5d435f78be",
+    "data/proquest/verified/pred_proquest_economy_2010.export.jsonl": "61772a3971b89230c24468eee9db4a3da624dff6ed69fb79960d21afae19de37",
+    "data/proquest/verified/pred_proquest_economy_1932.export.jsonl": "073385402cb92b9d9ccc7ac4dc9a0a5264c9626e9a4f7a8a59fea5673ba695cf",
+    "data/proquest/verified/pred_proquest_economy_1937.export.jsonl": "d8a6f9517e0e5471690a4b5700a8aa733d175bd7b936bf575e43a9290ecc2c1f",
+    "data/proquest/verified/pred_proquest_economy_1940.export.jsonl": "63cc1b61959860942d9ae39aa28308b0a08792343cb813faacb759d5182d3767",
+    "data/proquest/verified/pred_proquest_economy_1944.export.jsonl": "ba89ccf7266d8be737d5700b1141d18f19b3fd03114977214b2f51ecbeb32c04",
+    "data/proquest/verified/pred_proquest_economy_1952.export.jsonl": "6e1da19fb3f69f38b78fffaaf719eefb29eb533e1571acf42cf853fcaea39b02",
+    "data/proquest/verified/pred_proquest_economy_1956.export.jsonl": "f3db53aff495dc7369d99b3fcc49afb70718c33b0bf5edfb46986ccecb1ae8b5",
+    "data/proquest/verified/pred_proquest_economy_1966.export.jsonl": "69622c748f4d523442b356de9a618bd8701dbeed45117ab699473e9517e94255",
+    "data/proquest/verified/pred_proquest_economy_1975.export.jsonl": "60da11fc3f925eca243955ba09054db9219b2848705200df26e566eae3a316ef",
+    "data/proquest/verified/pred_proquest_economy_1978.export.jsonl": "16378ae08aa8eff4eafe47c9879008b928b0bd34f4a86798489a59356ed502d0",
+    "data/proquest/verified/pred_proquest_economy_1992.export.jsonl": "221663a5ee4874e9f383f7c8debfe46f9548b018b3335c90e355b51738a019ea",
+    "data/proquest/verified/pred_proquest_economy_1995.export.jsonl": "32060a7b94e2968fef3769090a97de49d762faa0edd7f1d1fadae73f0d5c5603",
+    "data/proquest/verified/pred_proquest_economy_2005.export.jsonl": "beeb42912183e17d7a7b86b84303cce1737166ecbbccc879a726afd0e55e0a09",
+    "data/proquest/verified/pred_proquest_economy_1928.export.jsonl": "80d73a57df8e7c160fa4f805345aa41637c33cc9a9fcda1d3b4b42df7ab9e496",
+    "data/proquest/verified/pred_proquest_economy_1933.export.jsonl": "68de02531923b817aa678368ce814bacb2f60f179742177db952070f692d17c2",
+    "data/proquest/verified/pred_proquest_economy_1953.export.jsonl": "1b8e3cdbc8b49e6f86adf05433735d4e262008e46ce75681037ed276f8318116",
+    "data/proquest/verified/pred_proquest_economy_1959.export.jsonl": "3bf3bf873bcbd384314d3db1f8ad920bc10ec31a09585d7ca6da0ee1a478a5e0",
+    "data/proquest/verified/pred_proquest_economy_1970.export.jsonl": "766cd9a59f397dc7e889f6a3a83fc4d2aba371018b16a1ab27c8d3e540958e48",
+    "data/proquest/verified/pred_proquest_economy_1971.export.jsonl": "4e85417e51c54f1b8fa52d37ce012c82c8419fd121b60ec8b837460dfe3fb309",
+    "data/proquest/verified/pred_proquest_economy_1972.export.jsonl": "857b60c9c6b7c5e664d16ee7c199df4bba3427b3bcd56a6ac8c0bfc46a4afb71",
+    "data/proquest/verified/pred_proquest_economy_1973.export.jsonl": "21ea6c0eef1c573784d10bd63250d3240b1bdfe6102da2cc420e4417bbe619fe",
+    "data/proquest/verified/pred_proquest_economy_1977.export.jsonl": "fc9db0dce06f0bd65a28a3c996d96cc464dca66e1a99579ba033fad400824484",
+    "data/proquest/verified/pred_proquest_economy_1984.export.jsonl": "c528decbc89c023cded1f0580abf57e78de49946b7711eef86ac9b961dd2e88c",
+    "data/proquest/verified/pred_proquest_economy_1997.export.jsonl": "964e32f3ae86018323f0a51af2289934a483b3b434a2132a41afa66ef441cac7",
+    "data/proquest/verified/pred_proquest_economy_2004.export.jsonl": "3ea59ddcab85cdcd9ddddebc868374f78d9c82c72afc00cc56d359707b71acee",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2011.export.jsonl": "c70022e489052a5488e353cc40ea269c095cdb2a1870e7dbfda8fc667aa3a7da",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2012.export.jsonl": "01cacdd7162ed860c3f705205d8c28d3c8ba7bf18d6bb2c9c649b1c34b0e4669",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2013.export.jsonl": "5f18be017c4bb4d5d427b4d7e18fa60dbd86dc7677576bb438a9946f46e9f641",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2014.export.jsonl": "844958f36106fd5ed448f62176b13913cc4ca3bf60e32e7eede679caf08baac6",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2015.export.jsonl": "a805b2ff719d4e8056f38914ab09621292f460a74fbf5366827c34405d40e595",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2016.export.jsonl": "462d1286291cca19efa83e12f1214e362cca249174f58689059c7bf83921c89d",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2017.export.jsonl": "b18817ec88cb7d1cc5b7f00bbc742dc41a7c5698fbaafc4851b8722f691444f5",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2018.export.jsonl": "d102e1caf3feb7385e073c68a4f5855eb3e87e3bd7aa40e248ff931b85772d0e",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2019.export.jsonl": "fbf05080ce94c4bd4f26b0b2856f7d72c345539a9c0d45fa1863fc6b5c9ca685",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2020.export.jsonl": "cd5c3f4709cd8125b3690deabbf64921ebc753fd36386aa755e4001e05e3f0c8",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2021.export.jsonl": "bd2a40504056c426441ba036303ccefe6e13ab8ae17dbe04a881e83d522b9624",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2022.export.jsonl": "fb92c7a46fec66196d5524ba74f89e831d12e78bf91b8bd4b386f668ee0ff592",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2023.export.jsonl": "e5a06d9c2be79ee9574b3ea2100c9a238d5043aad199e040b1d10d62f6fd2ea9",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2024.export.jsonl": "15cd4a36d9aeefd3dd747039a4984d35a02ef4734055e270abec2b397810c646",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2025.export.jsonl": "d5bb7bbf8f86a275b0ce79096a75bc439e601a761fe357ad529d935f52a41e03",
+    "data/proquest/modern/20261020/verified/pred_proquest_economy_2026.export.jsonl": "61d65c58ee8f3274589721c1b5df34519714178dc8d1ab17f292e31233b0cdb5",
+    "data/scored/proquest/verification_pass_audit_20261022/vm_observation.json": "2f948b730a8042728bee5174554c703069fae7f6856b22068182fcf6275249ea"
+  },
+  "notes": [
+    "All 300 ProQuest sample rows explicitly passed the saved verifier; no default-kept exceptions were found.",
+    "No sampled verifier rejects are available, so original ProQuest before/after precision gain is not identifiable from these 300.",
+    "A new verification call on the 300 survivors would measure an additional filter, not recover the original second-pass effect.",
+    "Human judgments remain separate and unadjudicated. Precision is reported against each reviewer, not against an invented consensus.",
+    "Historical and modern sampling frames differ; combined counts are descriptive only. No population weighting or confidence interval is implied.",
+    "Field agreement is literal; NA matches remain included. Missing or flagged uncertain fields receive no match credit. Original-batch reviewer1 current-state comparisons are excluded for incompatible conventions.",
+    "Field comparisons use each human reviewer's included claims; human-human field comparison uses their joint-included subset. These supports differ.",
+    "LOC benchmark evidence is extraction validation only and is never pooled with ProQuest. Exact production model deployments were not newly certified."
+  ]
+}

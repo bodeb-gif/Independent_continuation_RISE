@@ -1,0 +1,31 @@
+{
+  "observed_date_local": "2026-10-22",
+  "timezone": "America/Chicago",
+  "method": "Read-only terminal inspection in the existing ProQuest TDM Jupyter session via Amazon WorkSpaces Applications",
+  "project": "/home/ec2-user/SageMaker/election_arm",
+  "new_model_calls": 0,
+  "existing_review_folders_checked": ["source_review_main_ai_v1", "source_review_150_v1", "source_review_additional150_v1", "reviewer2_300_v1", "pq_audit"],
+  "fresh_300_claim_gpt_run": "No separate fresh run identified in the checked project listings and saved local comparison provenance. This is not an exhaustive search of every VM file.",
+  "existing_pipeline": "extract_gpt.py and verify_gpt.py; retained and dropped verification files exist. Local source-linked rows establish explicit retained verdicts for all 300 sampled claims.",
+  "live_script_sha256": {
+    "extract_gpt.py": "d3f4a590e722e74ccc805e84a3c3b90e68db0f3fddd425c75d729c9ea96626c",
+    "verify_gpt.py": "1ad5076f3dc8d8e5fb4c6390e338496a5751ca4b4a233de2a31ef4c6b948467b"
+  },
+  "script_caveat": "Live script hashes differ from integration commit 774b68f; the checked-in historical scripts describe the pipeline but are not asserted byte-identical to the current VM scripts or every production run.",
+  "development_benchmark": {
+    "source": "LOC extraction validation only; not ProQuest human validation",
+    "reference_kind": "model-adjudicated reference",
+    "pages": 16,
+    "reference_claims": 52,
+    "reference_sha256": "80495aaff3f50d1e1feab0ce4953392558d63dbc6c919c49968928bde2fdedb4",
+    "local_identical_reference": "validation/gold_extraction/gold_claims.jsonl",
+    "commands_run": [
+      "python gold_extraction/eval_extraction.py --pred pred_gpt4omini_gold.jsonl | head -10",
+      "python gold_extraction/eval_extraction.py --pred verified_gold/pred_gpt4omini_gold.jsonl | head -10",
+      "sha256sum gold_extraction/gold_claims.jsonl"
+    ],
+    "first_pass": {"tp": 27, "fp": 39, "fn": 25, "false_positives_on_three_zero_claim_pages": 7},
+    "second_pass": {"tp": 21, "fp": 9, "fn": 31, "false_positives_on_three_zero_claim_pages": 4},
+    "interpretation": "Re-scored existing outputs with the existing evaluator, without extraction or verification API calls. Counts use its one-to-one fuzzy span matching; do not treat model-reference matches as human ground truth."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "date_local": "2026-10-22",
+  "timezone": "America/Chicago",
+  "provenance": "Author confirmation in conversation",
+  "statement": "ok and both of these are human validated by two reviewers",
+  "current_interpretation": "The first review and Reviewer 2 review of the same 300 sampled claims were performed by two human reviewers.",
+  "reviewer_count": 2,
+  "reviewer_type": "human",
+  "distinct_sampled_claims": 300,
+  "historical_claims": 250,
+  "modern_validation_supplement_claims": 50,
+  "comparison_performed": false,
+  "scope": "Source-extraction validation. This confirmation does not establish agreement, adjudication, economic-outcome correctness, or additional blinding or AI-assistance details.",
+  "preservation": "Frozen labels, protocol and manifest remain unchanged; this dated attestation supplements their provenance."
+}

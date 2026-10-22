@@ -1,0 +1,9 @@
+{
+  "status": "imported_and_hash_verified",
+  "received_attachment": "Pasted text.txt",
+  "received_sha256": "9880520b5cd805b93aae1f98b8aaa16c2ce09eb88f5356408c610102ed9604b1",
+  "restoration": "Appended exactly one missing final newline; no other byte changed. Restored bytes match the SHA-256 observed on the VM.",
+  "vm_export_sha256": "0d8e4157ffd2eacecf88ed3b9d4e664c822c73d684b0c878ea977bc7011248e6",
+  "records": 300,
+  "api_attempts": 300
+}

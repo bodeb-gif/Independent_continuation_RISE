@@ -1,0 +1,201 @@
+{
+  "status": "VM run and comparison complete; full exported decision file awaiting email download link",
+  "observation_date": "2026-10-22",
+  "provenance": "Counts transcribed from completed ProQuest_Compare300_20261022.ipynb output visible in Jupyter. Not a downloaded per-claim export.",
+  "api_attempts": 300,
+  "judgment_counts": {
+    "judged": 299,
+    "unresolved": 1
+  },
+  "keep": 256,
+  "drop": 43,
+  "retained_with_unresolved": 257,
+  "returned_model": "gpt-4o-mini-2024-07-18",
+  "returned_model_n": 300,
+  "unresolved_error_type": "ValueError",
+  "vm_export_sha256": "0d8e4157ffd2eacecf88ed3b9d4e664c822c73d684b0c878ea977bc7011248e6",
+  "export_filename": "proquest_reverify300_20261022.json",
+  "export_upload_confirmed": true,
+  "rows": [
+    {
+      "sampling_frame": "historical_1900_2010",
+      "reviewer": "reviewer1",
+      "n": 250,
+      "kept_n": 214,
+      "before": {
+        "include": 177,
+        "exclude": 72,
+        "unclear": 1
+      },
+      "after": {
+        "include": 166,
+        "exclude": 47,
+        "unclear": 1
+      },
+      "invalid_removed": 25,
+      "valid_lost": 11,
+      "precision_before": [
+        0.708,
+        0.712
+      ],
+      "precision_after": [
+        0.7757009345794392,
+        0.780373831775701
+      ],
+      "change_pp": [
+        6.7700934579439265,
+        6.8373831775701
+      ]
+    },
+    {
+      "sampling_frame": "historical_1900_2010",
+      "reviewer": "reviewer2",
+      "n": 250,
+      "kept_n": 214,
+      "before": {
+        "include": 171,
+        "exclude": 79,
+        "unclear": 0
+      },
+      "after": {
+        "include": 164,
+        "exclude": 50,
+        "unclear": 0
+      },
+      "invalid_removed": 29,
+      "valid_lost": 7,
+      "precision_before": [
+        0.684,
+        0.684
+      ],
+      "precision_after": [
+        0.7663551401869159,
+        0.7663551401869159
+      ],
+      "change_pp": [
+        8.235514018691582,
+        8.235514018691582
+      ]
+    },
+    {
+      "sampling_frame": "modern_2011_2026",
+      "reviewer": "reviewer1",
+      "n": 50,
+      "kept_n": 43,
+      "before": {
+        "include": 35,
+        "exclude": 15,
+        "unclear": 0
+      },
+      "after": {
+        "include": 32,
+        "exclude": 11,
+        "unclear": 0
+      },
+      "invalid_removed": 4,
+      "valid_lost": 3,
+      "precision_before": [
+        0.7,
+        0.7
+      ],
+      "precision_after": [
+        0.7441860465116279,
+        0.7441860465116279
+      ],
+      "change_pp": [
+        4.418604651162794,
+        4.418604651162794
+      ]
+    },
+    {
+      "sampling_frame": "modern_2011_2026",
+      "reviewer": "reviewer2",
+      "n": 50,
+      "kept_n": 43,
+      "before": {
+        "include": 33,
+        "exclude": 17,
+        "unclear": 0
+      },
+      "after": {
+        "include": 31,
+        "exclude": 12,
+        "unclear": 0
+      },
+      "invalid_removed": 5,
+      "valid_lost": 2,
+      "precision_before": [
+        0.66,
+        0.66
+      ],
+      "precision_after": [
+        0.7209302325581395,
+        0.7209302325581395
+      ],
+      "change_pp": [
+        6.093023255813945,
+        6.093023255813945
+      ]
+    },
+    {
+      "sampling_frame": "combined_descriptive_only",
+      "reviewer": "reviewer1",
+      "n": 300,
+      "kept_n": 257,
+      "before": {
+        "include": 212,
+        "exclude": 87,
+        "unclear": 1
+      },
+      "after": {
+        "include": 198,
+        "exclude": 58,
+        "unclear": 1
+      },
+      "invalid_removed": 29,
+      "valid_lost": 14,
+      "precision_before": [
+        0.7066666666666667,
+        0.71
+      ],
+      "precision_after": [
+        0.7704280155642024,
+        0.77431906614786
+      ],
+      "change_pp": [
+        6.376134889753571,
+        6.431906614785998
+      ]
+    },
+    {
+      "sampling_frame": "combined_descriptive_only",
+      "reviewer": "reviewer2",
+      "n": 300,
+      "kept_n": 257,
+      "before": {
+        "include": 204,
+        "exclude": 96,
+        "unclear": 0
+      },
+      "after": {
+        "include": 195,
+        "exclude": 62,
+        "unclear": 0
+      },
+      "invalid_removed": 34,
+      "valid_lost": 9,
+      "precision_before": [
+        0.68,
+        0.68
+      ],
+      "precision_after": [
+        0.7587548638132295,
+        0.7587548638132295
+      ],
+      "change_pp": [
+        7.875486381322949,
+        7.875486381322949
+      ]
+    }
+  ]
+}
