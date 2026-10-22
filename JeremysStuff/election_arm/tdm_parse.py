@@ -1,18 +1,18 @@
 """
 Parse a ProQuest TDM Studio dataset (a folder of one-XML-per-article) into the
-raw JSONL contract, making ProQuest full text a drop-in third source alongside
-loc and nyt. Two arms share this parser, same as the two downloaders:
+raw JSONL contract. Annual economy corpora are the active workflow; the parser
+retains legacy window/cycle modes for compatibility:
 
   --arm elections   one dataset per presidential cycle (pass --cycle)
   --arm economy     one dataset per crisis/placebo window in
                     data/windows_economy.csv (pass --window)
 
 WHERE THIS RUNS: inside the TDM Studio Jupyter workbench. Full text cannot leave
-the VM, so this and extract_predictions.py both run there; only the derived
+the VM, so parsing and extraction both run there; only the derived
 data/predictions/pred_*.jsonl (no ocr_text) is exported. See the project plan.
 
 Why bother: ProQuest's <FullText> is the whole article body, whereas the NYT
-Article Search API (download_nyt.py) returns headline+abstract+lead+snippet only.
+retired Article Search API path returns headline+abstract+lead+snippet only.
 So ocr_text here is far richer than the nyt source over the same 1963-2010 era.
 
 Two dataset shapes, and they produce different output layouts:
@@ -135,7 +135,7 @@ def parse_xml(path):
     date_raw, date_tag = _tag_text(root, DATE_TAGS)
     body, body_tag = _xpath_text(root, BODY_XPATHS)
     # Prepend the headline so the forecast in the title survives, as combine_text
-    # in download_nyt.py does.
+    # in the retired NYT downloader did.
     ocr_text = "\n".join(p for p in (title, _clean_body(body)) if p)
     return {
         "goid": goid, "newspaper_title": pub, "date": _norm_date(date_raw),
@@ -270,8 +270,8 @@ def run_dataset(arm, window_id, dataset_dir, extra_meta, limit=None):
                 print(f"  wrote {written}")
     print(f"[{window_id}] wrote {written} new records "
           f"({skipped} skipped unparseable/empty) -> {out_path}")
-    print(f"Next: python extract_predictions.py --source proquest "
-          f"--arm {arm} --window {window_id}")
+    print(f"Next: python extract_gpt.py --source proquest "
+          f"--window {window_id}")
 
 
 # A corpus shard is named for the year it holds, so it can never collide with a

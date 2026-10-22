@@ -28,9 +28,6 @@ by a parallel set of rules:
     src/score_predictions.py           reads topic, direction, price_direction,
                                        unemployment_direction, scope,
                                        horizon_months, date
-    src/adapt_proquest_claims.py       reads scope, direction, confidence and
-                                       DERIVES predicted_state_at_horizon +
-                                       hedged for analyze_economy.py
     validation/gold_extraction/        scores topic, direction, horizon_months,
       eval_extraction.py               confidence, voice against the gold pages
 
@@ -52,8 +49,8 @@ Four things v1 did that docs/SCORING.md forbids, fixed here:
    `predicted_state_at_horizon: recession | expansion` -- the LLM stating a
    business-cycle verdict. SCORING.md's one rule is that the LLM says what was
    predicted and real data says whether it happened. The model now reports only
-   a direction; adapt_proquest_claims.py maps direction -> recession/expansion
-   by a fixed table, deterministically.
+   a direction. Current economic targets and deterministic scoring are defined
+   separately on main; the old recession/expansion adapter has been retired.
 3. **Manufactured horizons.** v1's prompt said "use 6 if unstated", which turns
    every vague forecast into a falsely precise one and inflates the RIGID
    stratum (the subset whose window comes from the claim rather than a default

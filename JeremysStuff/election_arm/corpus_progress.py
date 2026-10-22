@@ -178,8 +178,8 @@ def main():
                   f"when\n  the quota stopped is already counted -- verify_gpt.py "
                   f"resumes inside it.")
         elif with_claims:
-            print("\n  phase: DONE extracting and verifying. Score it:\n"
-                  "    python analyze_economy.py --set verified")
+            print("\n  phase: DONE extracting and verifying. Prepare checked label-only exports.\n"
+                  "    Current scoring: docs/PROQUEST_ANALYSIS.md on main.")
 
     if stale:
         print(f"\n  *** {stale:,} pages sit at an older schema version and will be")

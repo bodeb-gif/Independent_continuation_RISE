@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-22",
+  "base_commit": "774b68fb202955a83ebc035fc63b01ead725cc82",
+  "reason": "Retire abandoned election/NYT pipeline, title-only inputs, superseded planning/audit tooling, and obsolete pooling patch/adapter.",
+  "removed": {
+    "JeremysStuff/election_arm/download_loc.py": {
+      "sha256": "1d07e42ea637f73bf7ab181d26cc6c3cc4050698c606d6416151f12a7f158d60",
+      "bytes": 10697
+    },
+    "JeremysStuff/election_arm/download_nyt.py": {
+      "sha256": "b3bd937c6d6f7d0a568bc8f051529d9c7ab969712b420805db1cd1877def393c",
+      "bytes": 9216
+    },
+    "JeremysStuff/election_arm/extract_predictions.py": {
+      "sha256": "dc293850dad74c4c1e2e3efa7afc8a693738fb2585590be7a8dde5b5b9afb5eb",
+      "bytes": 8449
+    },
+    "JeremysStuff/election_arm/analyze_elections.py": {
+      "sha256": "388d9f89b4229590c2789610b7cbe1389e874e69be3d325cd8eb28202fb61eed",
+      "bytes": 3360
+    },
+    "JeremysStuff/election_arm/data/ground_truth_elections.csv": {
+      "sha256": "7b85cec1a7fe547db0197a932c8c1b632aa65a8718d3769e84351af9186d91ca",
+      "bytes": 1276
+    },
+    "JeremysStuff/election_arm/VINCENT_README.md": {
+      "sha256": "c0b297a53fc5a1f754291beabda89e3cdc557c3a50ea6b93cbec9a1bfcaf21e3",
+      "bytes": 10453
+    },
+    "JeremysStuff/election_arm/main_pooling.patch": {
+      "sha256": "1449e40402f03f19b8425175bf0321ba89f5b90c33cd474a3351aaa5e7434827",
+      "bytes": 4785
+    },
+    "src/adapt_proquest_claims.py": {
+      "sha256": "bc01731aa2eaf33210840675e2bfdfece6ce666f8e48c24b2300d350073ad35e",
+      "bytes": 3991
+    },
+    "JeremysStuff/chat_plan.md": {
+      "sha256": "3d3d03499205e4b1cab8bf167f4cade1216e00c09542c92cf0272b37f5a37be7",
+      "bytes": 13026
+    },
+    "JeremysStuff/project_framework.md": {
+      "sha256": "7e4233d5925084c52c07a745141ae3da20afa72f4b7fa12e2644fb83c61d70dd",
+      "bytes": 6679
+    },
+    "JeremysStuff/project_plan_v2.md": {
+      "sha256": "2897c1b95e444ac4fb9695add13ebe7ad5d6d7659f80f62571e4f7f860b800b4",
+      "bytes": 12455
+    },
+    "JeremysStuff/project_plan_v3_merged.md": {
+      "sha256": "832b38d081ebd73a086c4096f13c5a65681a3110e395c080ed0ac93183a2189c",
+      "bytes": 7808
+    },
+    "validation/extraction_audit/README.md": {
+      "sha256": "c033a20ed782babd7e9c0b98718b758638d25f38973adaccd67c090421f70c09",
+      "bytes": 2316
+    },
+    "validation/extraction_audit/audit.py": {
+      "sha256": "c58050bff3785ebc220ffccafcbefc3326d8eae205c8a7869998405f307e5437",
+      "bytes": 19069
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_1905.jsonl": {
+      "sha256": "a32dde04e9d69df24fa071c26c0fb627db0faa5ba0ab0471ca85a1b8fe63b9b1",
+      "bytes": 1616
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_1925.jsonl": {
+      "sha256": "50bf6988ed4f563800210bc10bc719f0a019bfb3c3de17ea7e54733175d9e877",
+      "bytes": 2418
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_1955.jsonl": {
+      "sha256": "1af5031f688ddbb4fc51906b4b82d226e5d505b8e3da084d032716a732e2a17a",
+      "bytes": 1561
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_1965.jsonl": {
+      "sha256": "607d6fb3bcf241ab09022600a5aa1808dd36182d843a656d295835bc695544d0",
+      "bytes": 1829
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_1995.jsonl": {
+      "sha256": "619a8dc59db6c980758b1c906f7d9c5efcec37e7a8e6f066147f1483fedcd504",
+      "bytes": 5957
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_calm_2005.jsonl": {
+      "sha256": "59bb7c3954139f1eca2c9ef75e082586576f5905eb42543d20265bd66e621040",
+      "bytes": 3327
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_crash_1929.jsonl": {
+      "sha256": "5e09bdd0f519512b494c2a5129239c201d1af0afdc236539047b92b6ea15ae95",
+      "bytes": 10393
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_crash_1987.jsonl": {
+      "sha256": "101a3cb9a4f561a6d93f55e6cd363ca3c89464166ad1d9190712688bb0f6f63c",
+      "bytes": 6470
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_depression_1920.jsonl": {
+      "sha256": "dfaefa911ebaea4bbe1226b3c0ac0852bac16e64e914e9fa64439cbcb3205b17",
+      "bytes": 8264
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_dotcom_2001.jsonl": {
+      "sha256": "68411c996ea96eb137e3307fc9b7ae5480b27d989e8d6c921740ca0a5ef10fd2",
+      "bytes": 11302
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_gfc_2008.jsonl": {
+      "sha256": "bb9b07173effd953fc255b2bdf5b2e9f418724bf0a752e78d49e1fead9655ce8",
+      "bytes": 19752
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_gulf_1990.jsonl": {
+      "sha256": "3f60657a965ed682990818a2a9fd2f891ed23b29602ce36a980f9e0bb2d03a08",
+      "bytes": 9305
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_oil_1973.jsonl": {
+      "sha256": "129009bcfe40fd4a378d416a671d740ee4192158b26cc79a71da0cd8b9811104",
+      "bytes": 9199
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_panic_1907.jsonl": {
+      "sha256": "ab122246ecf0ebce000802c2ee2cb410ed22d152e1d751c223aabf252df53076",
+      "bytes": 6764
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_postwar_1945.jsonl": {
+      "sha256": "9520dbf6fd1663e588e6d86e30bf06fdd4119dfe3a89975307cd7b8420d9af5f",
+      "bytes": 1003
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_recession_1937.jsonl": {
+      "sha256": "473ecdc0680e9e36e15ecb642c6780ee0b9555ef5a24e337e6e62cf947b2fea1",
+      "bytes": 3417
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_recession_1948.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_recession_1957.jsonl": {
+      "sha256": "4a56544fbcce3824aa6b45ec83a571df524d59dd33d7e6f989e6283e37918882",
+      "bytes": 4936
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_economy_volcker_1980.jsonl": {
+      "sha256": "f5d1eedfa1f751920f9f3dc9774a8e84f8a98b24a310ad747e3bd5a36b37b5d9",
+      "bytes": 8055
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1900.jsonl": {
+      "sha256": "9b25ca3d49efad77ee898f922b7fe0ec9a448b0c62117dc061fd8206317d6306",
+      "bytes": 18262
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1904.jsonl": {
+      "sha256": "89d805cd61c7c8a80afff548645c1c0498a03ebecccb70578e6771aa9e260fdb",
+      "bytes": 14734
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1908.jsonl": {
+      "sha256": "139becfe57961dd0afdf54f91087d5102fa96b095b119391a22483fbc74fcb3f",
+      "bytes": 16672
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1912.jsonl": {
+      "sha256": "17262fa399433803da4057909b40f083266a0936139c837ff8f55cb283ae9bd3",
+      "bytes": 15927
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1916.jsonl": {
+      "sha256": "7131cb84ea8e5f11e94d10ccf6c5842abba8609ca6fe443cfe38d848e85019ae",
+      "bytes": 21497
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1920.jsonl": {
+      "sha256": "274ebb4f45f22f9ffa77f80115ee150f3b08e4b994ff0fb20a1c80582eeeed41",
+      "bytes": 19756
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1924.jsonl": {
+      "sha256": "6925ddda92f579ace8420247d226a41c2aab3cde899277c9b6778dc0dcb0bedb",
+      "bytes": 25895
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1928.jsonl": {
+      "sha256": "b88e079bc1eab45169c84d1974e3b2aea8975f4bcca8e4b3c607c901befd7726",
+      "bytes": 32361
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1932.jsonl": {
+      "sha256": "ba06af316b60ec60938e4c85e07f2968c930e84dd3992f72721e5203e0155313",
+      "bytes": 31232
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1936.jsonl": {
+      "sha256": "cf67791d4a847414aea5f9459108b655459380748f41d559af9aeca4e716d391",
+      "bytes": 22467
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1940.jsonl": {
+      "sha256": "d4c0d0d0f5df183b0468fc4c778498c1b3f43322806f2f9f8b5baf64cd2e68e3",
+      "bytes": 21789
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1944.jsonl": {
+      "sha256": "af2104a95870877695cc191adb44c2f13d1584909620e928b47fa3d63c82002e",
+      "bytes": 22639
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1948.jsonl": {
+      "sha256": "b5653b96474b40b3c5eeeae29e7328af586464d102dc05268ea89741f6517027",
+      "bytes": 26366
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1952.jsonl": {
+      "sha256": "69c7f60ba9c51fda7a7b0c0ec0c3622087fb01a3c98632fe094b84b68f365bfc",
+      "bytes": 25053
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1956.jsonl": {
+      "sha256": "2f6242d8903cd090437983317f9625aab35a4c35c326b1b720dc571a643032b3",
+      "bytes": 26413
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1960.jsonl": {
+      "sha256": "ede9c646470174811680b3e6502ebb1a6140e3b1c1451a22fd91c3e480eca2a2",
+      "bytes": 28268
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1964.jsonl": {
+      "sha256": "b0d98d64d81a5b6707008657c8bc6babd1ac912302dd1dcb8c89300de1d67bd4",
+      "bytes": 28495
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1968.jsonl": {
+      "sha256": "23828a2026694a50c102b859d0ae71015c8b31ae5901be9065c004954af37c8d",
+      "bytes": 27889
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1972.jsonl": {
+      "sha256": "0d12f9e23e295f3909256cd052351d1d9913b631d29247301772e0af985e1de7",
+      "bytes": 37348
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1976.jsonl": {
+      "sha256": "92244c33053fbbb47c6525fe68b35fa425c01c1e7eb602391806743e8348aa4e",
+      "bytes": 28185
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1980.jsonl": {
+      "sha256": "d993cf829e4a817bab5311ff0753b4730477c545860799c74a861dcb65645931",
+      "bytes": 18594
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1984.jsonl": {
+      "sha256": "ade0163c4da73ea11b61fc19f99fdac6a2be23e8042051020c82b8514772797d",
+      "bytes": 20782
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1988.jsonl": {
+      "sha256": "5837d293f50d59b5dbfbfcad750e150c9109890d1c1d9276d0a0e8a41a2a86e9",
+      "bytes": 20356
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1992.jsonl": {
+      "sha256": "b48cbe284edb4616f2318507f44494ca2a2c3499907405c97cff7d389f055ca7",
+      "bytes": 28865
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_1996.jsonl": {
+      "sha256": "b37a96dddf35ba9e328fe033eb7959ad22f9c78aa84d1878b2544848279e2505",
+      "bytes": 30415
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_2000.jsonl": {
+      "sha256": "e908d4816c1fdb62d25f83a3f8cd659551c956800142cf4b9a973e411703d23b",
+      "bytes": 39341
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_2004.jsonl": {
+      "sha256": "60078820f06bf4d6abca00b6b526a32d8ade0d1b3b415fdd382ebcab611f9790",
+      "bytes": 30686
+    },
+    "JeremysStuff/election_arm/data/raw/nyt_elections_2008.jsonl": {
+      "sha256": "6e91255c5b542ef3d22b53952b0fa011c6e31d53b6f4c79f1a88b065935d73f2",
+      "bytes": 25171
+    }
+  },
+  "preserved": "All ProQuest exports, review records, reference data, extraction/verification tools, and remaining offline tests.",
+  "verification": {
+    "protected_files_unchanged": 241,
+    "annual_export_shards_unchanged": 222,
+    "export_and_review_hash_check": "matches pre-cleanup Git blob IDs",
+    "offline_checks_passed": 81,
+    "offline_test_command": "/opt/anaconda3/bin/python JeremysStuff/election_arm/test_offline.py",
+    "shell_syntax": "passed"
+  }
+}

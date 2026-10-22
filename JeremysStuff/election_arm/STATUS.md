@@ -1,43 +1,12 @@
-# Election arm — FAILED / abandoned
+# Integration status — October 22, 2026
 
-**Nothing in the election arm reached the 2026 RISE poster. Do not treat any
-number in here as a project result.**
+The annual 1900–2010 export handoff is preserved: 111 raw-candidate and 111
+machine-verified shards. The current human validation, additional-pass results,
+modern extension, paper, and economic analysis are on `main`.
 
-Kept for the record, not for reuse. The economy side of this folder is the live
-work; see [PROQUEST_TDM_GUIDE.md](PROQUEST_TDM_GUIDE.md).
+The abandoned election/NYT tools and title-only files were removed during the
+branch cleanup. No evidence from that failed pipeline supports the current
+paper. See the [branch README](../../README.md) and restoration manifest.
 
-## Why it failed
-
-**The NYT API returns article titles only.** Headlines do not carry the forecast
-text, so there is nothing for an extractor to read — the whole election arm was
-built on a source that cannot supply the evidence it needs. This is the same
-limitation listed on the poster. `download_nyt.py`, the 28
-`data/raw/nyt_elections_*.jsonl` files, and `analyze_elections.py` all inherit
-it.
-
-Secondary blockers, never cleared: the full NYT pull needs an `NYT_API_KEY` and
-runs multi-day at 500 requests/day, and the κ validation needed two human graders
-that were never assigned to this arm.
-
-## What is dead here
-
-| file | status |
-|---|---|
-| `analyze_elections.py` | dead — election scoring, no usable corpus |
-| `download_nyt.py`, `download_loc.py` | dead — the NYT path above |
-| `data/raw/nyt_elections_*.jsonl` (28 files) | titles only, unusable |
-| `data/ground_truth_elections.csv` | dead — nothing left to score against |
-| `data/raw/nyt_economy_*.jsonl` (19 files) | titles only, superseded by `data/proquest/` |
-| `README.md`, `VINCENT_README.md` | describe the two-arm plan that was dropped |
-
-## What is still live
-
-`extract_gpt.py`, `verify_gpt.py`, `qa_extraction.py`, `tdm_parse.py`,
-`run_corpus_economy.sh`, `vm_doctor.py`, `strip_for_export.py` — the ProQuest
-economy pipeline, which is what this branch exists for. Its output is committed
-at `data/proquest/`.
-
-The one election-arm result worth remembering is not an election result at all:
-the Livingston benchmark in `data/scored_livingston.csv` — economists 83.9%
-overall but 38.5% within six months of a business-cycle peak (n=13). That
-finding survived into the main analysis.
+This status describes committed artifacts, not live VM process state. Consult
+`corpus_progress.py` inside the VM before drawing conclusions about a local run.

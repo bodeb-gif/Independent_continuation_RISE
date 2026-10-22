@@ -36,7 +36,7 @@ a forecast but its direction cannot be read.
 
 NOTE the economy vocabulary changed with schema v2. It used to be
 recession/expansion -- the OUTCOME vocabulary. Under v2 that is derived from
-`direction` by a fixed table in adapt_proquest_claims.py, so grading it would
+`direction` by a fixed table in the retired legacy adapter, so grading it would
 have been grading a lookup table rather than the model's actual judgement.
 Grade `direction`, which is what the LLM decides.
 """
@@ -53,7 +53,7 @@ SAMPLE_FRAC = 0.20
 SAMPLE_CAP = 200
 # The label humans double-code. For the economy arm this is `direction` -- the
 # thing the LLM actually decides. (v1 validated `predicted_state_at_horizon`,
-# but under schema v2 that is DERIVED from direction by adapt_proquest_claims.py,
+# but under schema v2 that is DERIVED from direction by the retired legacy adapter,
 # so grading it would be grading a lookup table, not the model.) v1 files that
 # still carry the old column are handled in load_claims.
 LABEL_COL = {"economy": "direction", "elections": "predicted_winner"}

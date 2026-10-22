@@ -1,6 +1,5 @@
-"""Offline verification for the merged project. Runs the ACTUAL pipeline
-functions against mock responses shaped like the real loc.gov and NYT
-outputs, plus the NBER scoring logic. No network or API keys needed.
+"""Offline verification for ProQuest extraction, parsing, export and progress,
+plus retained legacy NBER scorer compatibility. No network or API keys needed.
 
 Run before spending any API budget:  python test_offline.py
 """
@@ -23,10 +22,7 @@ os.chdir(Path(__file__).resolve().parent)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import corpus_progress
-import download_loc
-import download_nyt
 import extract_gpt
-import extract_predictions
 import extraction_status
 import strip_for_export
 import tdm_parse
@@ -44,10 +40,8 @@ SEARCH_LOG_BEFORE = SEARCH_LOG.read_text() if SEARCH_LOG.exists() else None
 def sandbox_cwd():
     """Run a block in a throwaway working directory.
 
-    The downloaders append to data/search_log.csv, which is a COMMITTED
-    provenance artifact ("we sampled, we didn't cherry-pick"). A test run must
-    not write fake 1948/2008 searches into it. The read-only CSVs the scripts
-    look up are copied in so they still resolve."""
+    Parser and progress fixtures must not modify committed source records.
+    Read-only configuration CSVs are copied in so legacy paths still resolve."""
     with TemporaryDirectory() as d:
         (Path(d) / "data").mkdir()
         for name in ("windows_economy.csv", "nber_recessions.csv"):
@@ -68,124 +62,7 @@ def check(name, cond):
         FAIL.append(name)
 
 # ---------------------------------------------------------------------------
-print("\n[1] download_loc.py")
-SEARCH_RESP = {
-    "results": [
-        {"id": "http://www.loc.gov/resource/sn92070146/1948-10-20/ed-1/?sp=6",
-         "original_format": ["newspaper"]},
-        {"id": "http://www.loc.gov/resource/sn83045462/1948-10-25/ed-1/?sp=3",
-         "original_format": ["newspaper"]},
-    ],
-    "pagination": {"next": None, "of": 2},
-}
-RESOURCE_RESP = {
-    "item": {"number_lccn": ["sn92070146"],
-             "newspaper_title": ["imperial valley press (el centro, calif.) 1907-current"],
-             "date": ["1948-10-20"], "location_state": ["california"],
-             "location_city": ["el centro"]},
-    "pagination": {"current": 6},
-    "resource": {"full_text": "TRUMAN WILL BE ELECTED say local Democrats ..."},
-}
-
-def fake_get_json(url, params=None):
-    return SEARCH_RESP if "collections/chronicling-america" in url else RESOURCE_RESP
-
-with sandbox_cwd():
-    with patch.object(download_loc, "get_json", side_effect=fake_get_json):
-        results = list(download_loc.search_pages("elections", "1948",
-                                                 "will be elected",
-                                                 "1948-09-01", "1948-11-02"))
-        check("search_pages returns 2 results", len(results) == 2)
-        rec = download_loc.fetch_page_detail(results[0])
-        check("lccn unwrapped from list", rec["lccn"] == "sn92070146")
-        check("full_text found via recursion",
-              "TRUMAN WILL BE ELECTED" in rec["ocr_text"])
-        check("rejects non-loc id",
-              download_loc.fetch_page_detail({"id": "http://example.com/x"}) is None)
-    log = Path("data/search_log.csv")
-    check("search_log.csv written with hits",
-          log.exists() and "will be elected" in log.read_text())
-
-
-econ_windows = download_loc.load_economy_windows()
-check("economy windows load, pre-1963 only",
-      "crash_1929" in econ_windows and "gfc_2008" not in econ_windows)
-
-# ---------------------------------------------------------------------------
-print("\n[2] download_nyt.py")
-NYT_PAGE0 = {"response": {"meta": {"hits": 2}, "docs": [
-    {"web_url": "https://nyt.com/2008/a",
-     "headline": {"main": "Economists See Deep Recession Ahead"},
-     "abstract": "Forecasters expect the downturn to worsen.",
-     "lead_paragraph": "Forecasters expect the downturn to worsen into 2009.",
-     "snippet": "Forecasters expect the downturn to worsen.",
-     "pub_date": "2008-10-15T00:00:00Z", "type_of_material": "News",
-     "section_name": "Business"},
-    {"web_url": "https://nyt.com/2008/b", "headline": {"main": ""},
-     "abstract": "", "lead_paragraph": "", "snippet": "",
-     "pub_date": "2008-10-16T00:00:00Z"},
-]}}
-NYT_EMPTY = {"response": {"meta": {"hits": 2}, "docs": []}}
-_calls = {"n": 0}
-def fake_nyt_get(params):
-    _calls["n"] += 1
-    return NYT_PAGE0 if _calls["n"] == 1 else NYT_EMPTY
-
-with sandbox_cwd(), \
-     patch.object(download_nyt, "get_json", side_effect=fake_nyt_get), \
-     patch.object(download_nyt.time, "sleep", lambda s: None):
-    docs = list(download_nyt.search_phrase("KEY", "economy", "gfc_2008",
-                                           '"recession likely"',
-                                           "20080901", "20090331"))
-    check("NYT search yields 2 docs", len(docs) == 2)
-    text = download_nyt.combine_text(docs[0])
-    check("combine_text merges headline+lead",
-          "Deep Recession Ahead" in text and "into 2009" in text)
-    check("combine_text dedupes abstract/snippet",
-          text.count("Forecasters expect the downturn to worsen.") == 1)
-    check("combine_text empty for empty doc", download_nyt.combine_text(docs[1]) == "")
-    check("NYT economy windows include post-1963",
-          "gfc_2008" in download_nyt.load_economy_windows())
-
-# ---------------------------------------------------------------------------
-print("\n[3] extract_predictions.py, both arms")
-class FakeBlock:
-    def __init__(self, t): self.text = t
-class FakeMsg:
-    def __init__(self, t): self.content = [FakeBlock(t)]
-class FakeClient:
-    def __init__(self, t): self._t = t; self.messages = self
-    def create(self, **kw): return FakeMsg(self._t)
-
-erec = {"page_id": "p1", "source": "loc", "window": "1948", "cycle": 1948,
-        "newspaper_title": "Test Gazette", "date": "1948-10-20",
-        "state": "california", "ocr_text": "Truman will be elected."}
-ereply = ('[{"claim_text":"Truman will be elected","predicted_winner":"Truman",'
-          '"scope":"national","state":null,"source_type":"editorial_opinion",'
-          '"hedged":false,"attributed_to":null}]')
-eclaims = extract_predictions.extract_from_page(FakeClient(ereply), erec, "elections")
-check("elections claim parsed + metadata merged",
-      len(eclaims) == 1 and eclaims[0]["arm"] == "elections"
-      and eclaims[0]["source"] == "loc")
-
-crec = {"page_id": "p2", "source": "nyt", "window": "gfc_2008",
-        "window_kind": "crisis", "newspaper_title": "The New York Times",
-        "date": "2008-10-15", "state": None,
-        "ocr_text": "Economists see deep recession ahead."}
-creply = ("```json\n"
-          '[{"claim_text":"Deep recession ahead","predicted_direction":"worsen",'
-          '"predicted_state_at_horizon":"recession","horizon_months":6,'
-          '"voice":"quoted_banker_or_economist","hedged":false,'
-          '"attributed_to":"economists"}]\n```')
-cclaims = extract_predictions.extract_from_page(FakeClient(creply), crec, "economy")
-check("economy claim parsed from fenced JSON",
-      len(cclaims) == 1 and cclaims[0]["predicted_state_at_horizon"] == "recession"
-      and cclaims[0]["window_kind"] == "crisis")
-check("malformed reply yields []",
-      extract_predictions.extract_from_page(FakeClient("not json"), crec, "economy") == [])
-
-# ---------------------------------------------------------------------------
-print("\n[4] NBER scoring (analyze_economy.py)")
+print("\n[1] NBER scoring (analyze_economy.py)")
 rec = load_recessions()
 check("Oct 1929 claim +6m lands in recession",
       state_at(pd.Period("1930-04", freq="M"), rec) == "recession")
@@ -207,7 +84,7 @@ check("1987 crash +12m: no recession (the negative case)",
 # gold-standard eval can read its output. These checks pin the properties that
 # docs/SCORING.md makes non-negotiable -- they are the difference between a
 # measurement and a laundered opinion, and none of them fail loudly on their own.
-print("\n[5] extract_gpt.py (ProQuest arm, schema v2)")
+print("\n[2] extract_gpt.py (ProQuest arm, schema v2)")
 
 PAGE = {"page_id": "pq1", "source": "proquest", "window": "crash_1929",
         "window_kind": "crisis", "newspaper_title": "The New York Times",
@@ -366,7 +243,7 @@ check("refuses to append v2 records to a file holding v1", mixed_refused)
 # ---------------------------------------------------------------------------
 # ProQuest forbids exporting article text. A leak here is a licence breach, not
 # a crash, so it has to be caught by a test rather than by noticing.
-print("\n[6] strip_for_export.py (nothing text-bearing leaves the VM)")
+print("\n[3] strip_for_export.py (nothing text-bearing leaves the VM)")
 
 check("the verbatim quote is dropped", "quote" in strip_for_export.DROP_FIELDS)
 check("v1's claim_text is still dropped too",
@@ -397,7 +274,7 @@ check("an unlisted prose field trips the tripwire", caught)
 # ---------------------------------------------------------------------------
 # The batch-status tally. Its whole value is that the numbers are right after a
 # quota stop, i.e. on half-finished, mixed-schema files.
-print("\n[7] extraction_status.py (per-window claims / empties / drops)")
+print("\n[4] extraction_status.py (per-window claims / empties / drops)")
 
 with sandbox_cwd() as d:
     for sub in ("data/raw", "data/predictions", "data/verified"):
@@ -469,7 +346,7 @@ check("window ids survive every filename variant",
 # Corpus mode: ONE ProQuest dataset spanning many years (the 1900-2010 query)
 # instead of one dataset per window. The window now comes from each article's
 # date, and output is sharded by year so a weeks-long run can resume per shard.
-print("\n[8] tdm_parse.py --corpus (year shards, window derived from date)")
+print("\n[5] tdm_parse.py --corpus (year shards, window derived from date)")
 
 
 def _proquest_xml(goid, date, paper, title, body):
@@ -562,7 +439,7 @@ check("a corpus shard is recognised by year, a window file is not",
 # ---------------------------------------------------------------------------
 # The rollup that replaces the 9-row window table at 110 shards. Its one job is
 # an honest "pages left", so it must count done pages the way extract_gpt does.
-print("\n[9] corpus_progress.py (rollup over ~110 year shards)")
+print("\n[6] corpus_progress.py (rollup over ~110 year shards)")
 
 check("corpus_progress tracks extract_gpt's schema version",
       corpus_progress.SCHEMA_VERSION == extract_gpt.SCHEMA_VERSION)
@@ -621,7 +498,7 @@ check("export and dropped side-files are not counted as shards",
 # corpus_progress.py --left prints, and the gate in run_corpus_economy.sh that
 # reads it. The script itself needs the VM interpreter, so its gate is checked as
 # text; the counter is checked by running it.
-print("\n[10] the extract-then-verify phase gate")
+print("\n[7] the extract-then-verify phase gate")
 
 import subprocess
 
@@ -681,7 +558,7 @@ check("run order no longer prioritises window years over the rest",
 # matched the stripped .export copies, the verifier's .dropped rejects, and the
 # scrapped periods files at schema v1 -- each of which either double-counts
 # claims or re-admits what the filter threw out.
-print("\n[11] analyze_economy.py loads the right set")
+print("\n[8] analyze_economy.py loads the right set")
 
 with sandbox_cwd() as d:
     (d / "data/verified").mkdir(parents=True, exist_ok=True)

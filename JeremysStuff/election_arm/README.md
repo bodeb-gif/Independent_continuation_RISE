@@ -1,50 +1,34 @@
-# Vincent's pipeline — integration status (2026-07-09)
+# ProQuest economy extraction tools
 
-> **FAILED / ABANDONED — see [STATUS.md](STATUS.md).** Nothing in the election
-> arm reached the poster; the NYT API returns titles only. The ProQuest economy
-> pipeline in this folder is the part that is still live.
+Run source-text operations inside the authorized TDM Studio VM. See the
+[workflow guide](PROQUEST_TDM_GUIDE.md). The current paper and economic scoring
+are on `main`; this branch preserves extraction code and source exports.
 
-Vincent's full two-arm pipeline lives here (his docs: [VINCENT_README.md](VINCENT_README.md)).
-Integrated and verified against the economy arm in the parent folder.
+| Files | Role |
+| --- | --- |
+| `tdm_parse.py` | Parse authorized article XML into annual JSONL shards |
+| `extract_gpt.py`, `verify_gpt.py` | Candidate extraction and inclusion filtering |
+| `run_corpus_economy.sh` | Resume annual extraction, then verification |
+| `corpus_progress.py`, `extraction_status.py` | Progress and completion diagnostics |
+| `strip_for_export.py` | Remove text-bearing fields and check export records |
+| `qa_extraction.py`, `sample_claims.py`, `era_audit.py`, `validate_kappa.py` | Source QA and review utilities |
+| `vm_doctor.py`, `pyrun.sh`, `migrate_v2.py` | VM interpreter and schema maintenance |
+| `test_offline.py` | Retained offline pipeline and compatibility checks |
 
-## Done here already
+`analyze_economy.py`, `livingston_benchmark.py`, `model.py`, and their reference
+files are legacy compatibility tools. Their NBER-state scoring and text-feature
+model are not the deterministic directional scoring used in the current paper.
+Use `docs/PROQUEST_ANALYSIS.md` on `main` for that analysis.
 
-- **All 21 of his offline tests pass** on this machine (`python test_offline.py`)
-- **Livingston benchmark bridged and RUN** — his Stage 5 wanted a manual Fed download;
-  `data/livingston_medians.csv` was generated from the parent folder's `medians.xlsx`
-  (161 surveys, 1946–2026). Result, his NBER state-at-horizon metric:
-  economists **83.9% overall** but **38.5% within 6 months of a business-cycle peak**
-  (n=13) — experts excel in normal times, fail at turning points. Output:
-  `data/scored_livingston.csv`.
-- **EPU wired in** — `data/epu_monthly.csv` (historical policy uncertainty, 1900–2014,
-  exported from `../tier2_analysis.py`). `analyze_economy.py` now merges it and prints
-  an accuracy-by-EPU-tercile table; `model.py` picks it up as a feature automatically.
-  On the parent arm, EPU was the #2 predictor of claim correctness.
+The failed election/NYT path and its title-only inputs have been removed. All
+ProQuest exports and human-review records remain intact. Old keyword-window
+exports are provenance only, not additional annual observations.
 
-## Blocked on keys / people
+Run checks from any directory with a working Python environment:
 
-- `download_loc.py` / `download_nyt.py` full runs → need `NYT_API_KEY`; NYT is
-  multi-day (500 req/day)
-- `extract_predictions.py` → needs `ANTHROPIC_API_KEY` (test with `--limit 20` first)
-- κ validation → two human graders after extraction
+```sh
+python JeremysStuff/election_arm/test_offline.py
+```
 
-## Metric reconciliation (IMPORTANT for the writeup)
-
-The two economy scorings are different metrics — never mix them in one chart unlabeled:
-
-| | parent folder (`score_claims.py`) | here (`analyze_economy.py`) |
-|---|---|---|
-| question | direction of *change* over horizon | *state* (recession/expansion) at horizon |
-| ground truth | FRED CPI/INDPRO/UNRATE magnitudes + NBER | NBER chronology only |
-| typical hit rate | ~50% (3-way, banded) | ~80%+ (2-way, expansion-dominated) |
-| Livingston result | 54.4% directional (1946–63) | 83.9% state / 38.5% near peaks |
-
-Both are valid; the state metric is more readable for the poster headline, the
-direction metric is stricter. Report both, labeled.
-
-## Division of coverage (agreed)
-
-- Parent economy arm: pre-1963 LOC full-text depth, FRED-magnitude scoring, EPU /
-  geography / Michigan benchmarks, calibration
-- This pipeline: elections 1896–2008, post-1963 economy windows via NYT (incl. the
-  1987 negative case), NBER-state scoring, κ protocol, per-window models
+The suite uses synthetic fixtures and no model API calls. Install the supplied
+requirements into a working environment; do not use the broken root `.venv`.
