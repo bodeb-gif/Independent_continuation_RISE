@@ -1,5 +1,7 @@
 # 150-claim source review
 
+**Author correction — October 21, 2026:** The author states that the first human validation was completed without AI assistance. This supersedes earlier contextual-assistance descriptions; historical artifact metadata do not establish assistance in those decisions.
+
 Completed 2026-10-20 (America/Chicago) inside the ProQuest TDM VM. All 150 sampled passages were recovered and reviewed in article context. The source corpus was not edited. Labels were frozen before generating this comparison.
 
 VM directory: `/home/ec2-user/SageMaker/election_arm/source_review_150_v1/`

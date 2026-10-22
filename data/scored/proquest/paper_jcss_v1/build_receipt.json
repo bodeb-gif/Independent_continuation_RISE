@@ -1,0 +1,58 @@
+{
+  "prepared_on": "2026-10-22",
+  "journal": "Journal of Computational Social Science",
+  "status": "author-review draft; not submitted",
+  "pages": 18,
+  "pdf": "output/pdf/jcss_submission.pdf",
+  "pdf_sha256": "5057a5d273899b0cce68ae3569b89df440215bebcb6dc814edb6b30540d48cdf",
+  "source": "paper/manuscript/low_cost_extraction.tex",
+  "source_sha256": "7aaefea5276c3312ecbd1ea23469f2183d3064eeec61019aaedb950200a4b031",
+  "source_zip": "output/overleaf/jcss_submission.zip",
+  "source_zip_sha256": "fd0f88008807e6e6be81ab93e12dde1a0d021bd394c986719c90935b024a4038",
+  "compiler": "/Library/TeX/texbin/pdflatex",
+  "final_compilation_warnings": [],
+  "checks": {
+    "archive_integrity": "passed",
+    "all_package_hashes": "matched",
+    "all_float_references": "present",
+    "bibliography_entries": 29,
+    "bibliography_in_first_citation_order": true,
+    "abstract_words_whitespace": 184,
+    "keywords": 6,
+    "rendered_page_visual_inspection": "All 18 pages; enlarged revised abstract; no clipping or overlap",
+    "test_offline.py": {
+      "passed": 97,
+      "failed": 0
+    },
+    "test_scoring.py": {
+      "passed": 33,
+      "failed": 0
+    },
+    "test_forecasts.py": {
+      "passed": 33,
+      "failed": 0
+    },
+    "removed_material_search": "No LOC, Library of Congress, or Chronicling America mentions in manuscript/PDF; retired figures absent from package",
+    "appendix_source_word_reduction": {
+      "before": 4319,
+      "after": 815,
+      "percent": 81.1
+    },
+    "abstract_combined_counts": {
+      "candidates": 365188,
+      "scored": 232741,
+      "reviewed": 300,
+      "human_agreement": 275,
+      "pooled_audit": "unweighted descriptive only"
+    }
+  },
+  "author_supplied": {
+    "name": "Bode Bosell",
+    "corresponding_email": "bodeb@bu.edu"
+  },
+  "pending_author_details": "paper/submission/jcss/READINESS.md",
+  "source_exports_modified": false,
+  "new_model_calls_for_revision": 0,
+  "revision": "Abstract combines 1900\u20132026 corpus counts and descriptive audit results",
+  "previous_pages": 26
+}

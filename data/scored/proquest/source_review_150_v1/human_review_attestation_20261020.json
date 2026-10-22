@@ -8,7 +8,7 @@
     "reviewed_labels.json",
     "comparison.json"
   ],
-  "provenance": "Author-confirmed human review/editing of existing artifacts with earlier AI review history; independent blinded first-pass human labels are not established.",
+  "provenance": "Author-confirmed first human validation without AI assistance (corrected October 21, 2026). Earlier metadata describe artifact history, not assistance in the author's validation. Blinding is not independently established.",
   "observed_vm_summary": {
     "include": 105,
     "exclude": 44,
@@ -39,5 +39,12 @@
   "subsequent_author_clarification": {
     "statement": "No but AI didn't help me that much. I just needed it to explain context in a couple of situations",
     "interpretation": "The author describes their AI use during human validation as limited contextual explanation. Earlier artifact history is not evidence that AI made their review decisions."
+  },
+  "author_correction_20261021": {
+    "date_local": "2026-10-21",
+    "timezone": "America/Chicago",
+    "statement": "First, update the fact that I used AI on my first human validation. I didn't.",
+    "current_interpretation": "The author performed the first human validation without AI assistance. This correction supersedes earlier descriptions of contextual AI assistance; it does not independently establish label blinding.",
+    "reviewer_type": "human_author"
   }
 }

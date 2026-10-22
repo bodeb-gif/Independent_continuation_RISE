@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-21",
+  "status": "Exploratory measurement correction requested by the author. Written after field-level disagreement counts were inspected in session, before any human-label correctness was computed. No model fitting, source text, threshold search or change to frozen artifacts.",
+  "frames": {
+    "historical": "175,843 machine-scored verified 1900-2010 claims (175,855 scored minus the 12 pilot records). The 250 reviewed claims are three sequential simple random samples without replacement from this frame, hence one SRS of 250 (inclusion probability 250/175,843).",
+    "modern": "91,118 retained 2011-2026 verified candidates, including 19 default-kept exceptions, stratified by publication year with the recorded inclusion probabilities. Machine scores are the saved modern_analysis_v1 outcomes; exceptions and unsupported or immature claims have no machine score.",
+    "pooling": "None. Frames have different designs, eligibility and outcome maturity."
+  },
+  "human_outcome": "Exclude means not a forecast. Include means the same deterministic rules are applied to the human topic, direction, price direction, unemployment direction, scope and horizon. Historical claims use the descriptive scorer; modern claims add the modern maturity and reference-coverage rules as of 2026-10-20.",
+  "horizon_rules": {
+    "compatible": "Primary. Keep the machine horizon actually used when the human code is compatible with the machine label under the review convention (6: machine 4-8 months; 12: 9-15; vague: machine vague or numeric outside 4-15). Otherwise score the human code, with vague receiving the inherited 12-month default.",
+    "human_codes": "Sensitivity. Human codes only: 6, 12, and vague scored at 12 months.",
+    "strict": "Sensitivity. As compatible, but human-vague horizons are not scorable."
+  },
+  "unclear": "Primary counts the one unclear historical case as not a confirmed forecast; sensitivity scores it with machine labels.",
+  "estimands": {
+    "share_scorable": "Share of frame claims that are genuine forecasts scorable under the human reading.",
+    "accuracy": "Correctness among those claims.",
+    "baseline_accuracy": "Target-specific always-improve comparator on the same claims and outcomes.",
+    "gap_vs_fixed_baseline": "Accuracy minus baseline accuracy, in proportion units."
+  },
+  "estimators": {
+    "machine_only": "Census of saved machine scores over the frame; no interval because label error is unmodelled.",
+    "machine_on_reviewed_sample": "Machine scores restricted to the reviewed claims; shows sample luck.",
+    "human_sample_only": "Hajek ratio of inverse-probability weighted human scores on reviewed claims.",
+    "dsl": "Design-based correction: machine frame total plus inverse-probability weighted mean of (human minus machine) on reviewed claims, per total, then ratios."
+  },
+  "uncertainty": "Stratified linearization variance with finite-population correction; normal 95% intervals. They describe sampling of reviewed claims from a fixed frame with human labels taken as true. They omit reviewer error, business-cycle generalization and outcome-definition uncertainty.",
+  "weighting": "Claim weights primary. Article sensitivity weights each claim by 1/(frame claims in its article).",
+  "subsets": "Label-concealed sensitivity drops the 100 historical claims reviewed after machine-label exposure and treats the remaining 150 as an SRS of the same frame.",
+  "decision": "Report all variants and estimators. Do not relabel the frame, refit models or select a variant by results."
+}

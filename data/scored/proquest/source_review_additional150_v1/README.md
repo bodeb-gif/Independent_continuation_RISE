@@ -1,12 +1,14 @@
 # Additional 150-claim labeling comparison
 
+**Author correction — October 21, 2026:** The author states that the first human validation was completed without AI assistance. This supersedes earlier contextual-assistance descriptions; historical artifact metadata do not establish assistance in those decisions.
+
 ## Human-review confirmation, October 20, 2026
 
 The author now confirms human validation of this additional 150-claim batch.
 Read-only Chrome checks of the saved ProQuest files verify that all categorical
 labels match this local copy. The author clarified that they performed the human
-validation and used AI only to explain context in a couple of situations.
-Describe this as human validation with limited contextual assistance. Earlier
+validation. The October 21 correction establishes that the first human validation
+was completed without AI assistance. Earlier
 Codex metadata remain as artifact history, not evidence that AI made the human
 review decisions. Blinding and a second independent human reviewer were not
 established. See `human_review_attestation_20261020.json` and

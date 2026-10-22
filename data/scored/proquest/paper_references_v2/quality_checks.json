@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-21",
+  "pdf": "output/pdf/low_cost_extraction_references.pdf",
+  "sha256": "fa6045310732b2aa5caddf06d0139ff6dccb7e56d9a1f8662124246cd1f9d7e0",
+  "pdf_version": "1.4",
+  "pages": 25,
+  "words": 11796,
+  "references": 33,
+  "all_references_cited": true,
+  "all_supplied_sources_present": true,
+  "encrypted": false,
+  "parsers": [
+    "pypdf strict",
+    "PyMuPDF"
+  ],
+  "all_pages_rendered_and_visually_reviewed": true,
+  "empirical_tables_and_equations_unchanged": true,
+  "unchanged_evidence_and_export_hashes": 290,
+  "undefined_citations": false,
+  "overfull_boxes": false,
+  "nonblocking_latex_messages": [
+    "h float placement adjusted to ht",
+    "one underfull bibliography line"
+  ],
+  "code_tests": "Not rerun: manuscript and bibliography changes only; no analysis code changed."
+}

@@ -1,0 +1,38 @@
+\section{Evidence map and reproduction}\label{app:evidence}
+The following identifiers locate evidence within the repository. References to older summaries marked ``validation pending'' are superseded for review status by the human-review attestations and corrections through October 22; their numerical economic results remain historical saved outputs. No completion of strict economic source validation is inferred from that update.
+
+\begingroup\raggedright
+\begin{description}[style=nextline,font=\bfseries,leftmargin=0pt,labelwidth=0pt,labelsep=0pt]
+\item[H1 --- Historical inventory and scope.]
+\pathcode{data/scored/proquest/inventory.json}; \pathcode{docs/PROQUEST_ANALYSIS.md}; \pathcode{src/analyze_proquest.py}. Counts, 111 annual shards per set, repeated-label policy, and exported article coverage.
+\item[H2 --- Legacy scoring and raw sensitivity.]
+\pathcode{data/scored/proquest/descriptive/summary.json}; \pathcode{data/scored/proquest/descriptive/exclusions.csv}; \pathcode{data/scored/proquest/publication/evidence.json}; \pathcode{src/proquest_descriptive.py}; \pathcode{src/score_predictions.py}. The last file supplies direction normalization; the ProQuest entry point supplies the stricter scope and horizon gates.
+\item[X1 --- LOC extraction development.]
+\pathcode{validation/gold_extraction/RESULTS.md}; \pathcode{validation/gold_extraction/PROTOCOL.md}; \pathcode{validation/gold_extraction/cost_table.py}; matching \texttt{result\_*.json} and \texttt{hard\_*.json} files; \pathcode{validation/gold_extraction/eval_extraction.py}. No LOC economic scores enter this paper.
+\item[V1 --- Original historical human review.]
+\pathcode{data/scored/proquest/source_review_150_v1/human_reconciliation_summary.json}; the same directory's \texttt{README.md}, \texttt{manifest.json}, and categorical reconciliation files. Inclusion, field agreement, prior exposure, and current-state mismatch.
+\item[V2 --- Additional review and human attestation.]
+\pathcode{data/scored/proquest/source_review_additional150_v1/summary.json}; \texttt{README.md}, \pathcode{human_review_attestation_20261020.json}, and \pathcode{human_review_status.html} in that directory. Sampling frames, 100 historical/50 modern records, source checks, and author-confirmed reviewer provenance.
+\item[V3 --- Second human review and author confirmation.]
+\pathcode{data/scored/proquest/reviewer2_300_v1/manifest.json}; \texttt{reviewer2\_labels\_frozen.json}, \texttt{protocol.json}, and \pathcode{human_review_attestation_20261022.json} in the same directory. The same 300 audit IDs, separate historical and modern decision counts, recorded exposure, and author confirmation of two human reviewers. Inter-reviewer agreement remains uncalculated.
+\item[M1 --- Matched scoring bands.]
+\pathcode{data/scored/proquest/benchmark_interpretation_v2/primary_comparisons.csv}; \texttt{specification.json} in the same directory. Select verified, machine-stated non-NBER, employment, all horizons, five-year blocks, and the indicated comparator.
+\item[M2 --- Alternative employment benchmark.]
+\pathcode{data/scored/proquest/alternative_targets_v1/primary_comparisons.csv}; \pathcode{label_disagreement.csv} and \texttt{specification.json} in that directory. Select the verified machine-stated non-NBER employment cohort; compare \texttt{frozen\_sign} and \texttt{alternative\_sign}, using \texttt{always\_improve}.
+\item[P1 --- Historical aggregate benchmark.]
+\pathcode{data/scored/proquest/macro_benchmark/evaluation_spec.json}; \pathcode{data/scored/proquest/macro_benchmark/core/metrics.csv}; \pathcode{data/scored/proquest/publication/evidence.json}. Core 408-month comparison, seven-block Brier interval, and 372-month scoring exclusion.
+\item[P2 --- Historical claim-correctness model.]
+\pathcode{data/scored/proquest/rnn/summary.json}; \texttt{metrics.csv} and \texttt{report.md} in that directory; \pathcode{data/scored/proquest/rnn_permutation/paired_tests.csv}. Frozen architecture, splits, features, metrics, and block tests.
+\item[P3 --- Polarization definitions.]
+\pathcode{docs/publication/POLARIZATION.md}; \pathcode{data/scored/proquest/polarization/evaluation_spec.json}. Separate constructs, source timing, coverage rules, and historical development status.
+\item[N1 --- Saved modern claim evaluation.]
+\pathcode{docs/publication/MODERN_ANALYSIS_AMENDMENT_20261020.md}; \pathcode{data/scored/proquest/modern_analysis_v1/claim_summary.json}; \texttt{claim\_metrics.csv}, \texttt{claim\_breakdowns.csv}, \texttt{claim\_calibration.csv}, and \pathcode{claim_paired_intervals.json} in the modern directory. All are separately saved results, not newly pooled observations.
+\item[N2 --- Saved modern downturn study.]
+\pathcode{data/scored/proquest/modern_analysis_v1/downturn/summary.json}; \texttt{all\_metrics.csv} and target-specific \texttt{paired\_intervals.json} files. Candidate selection, maturity, latest forecasts, event counts, and comparison intervals.
+\end{description}
+\endgroup
+
+The paper-specific directory \pathcode{data/scored/proquest/paper_low_cost_v1/} contains figure-generation code, vector figures, and a SHA-256 evidence manifest. It presents saved results without changing scoring, source labels, model fits, or selection rules. The editable manuscript is \pathcode{paper/manuscript/low_cost_extraction.tex}, and the rendered deliverable is \pathcode{output/pdf/low_cost_extraction.pdf}. Build from the repository root with the recorded working Python environment and a LaTeX installation; the broken root \texttt{.venv} is not used.
+
+The minimal rendering sequence is to run \texttt{build\_figures.py}, then compile the manuscript twice with \texttt{pdflatex}, using a temporary build directory and copying the final PDF to the output directory. The bibliography is embedded in the editable source. Rebuilding the paper does not rerun the historical economic pipeline. Computational reproduction of the broader analysis is documented separately in \pathcode{docs/PROQUEST_REPRODUCIBILITY.md}; reproducing outputs does not resolve the semantic or design limitations described above.
+

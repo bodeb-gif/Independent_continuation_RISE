@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "pages": 22,
+  "extracted_word_count": 9914,
+  "verified_evidence_source_hashes": 68,
+  "unchanged_historical_annual_export_hashes": 222,
+  "historical_exclusion_flow": "passed",
+  "human_inclusion_exclusion_totals": "passed",
+  "modern_saved_intake_flow": "passed",
+  "latex_warnings": 0,
+  "unresolved_references": 0,
+  "text_outside_page_safe_area": 0,
+  "tests": {
+    "test_offline": {
+      "returncode": 0,
+      "summary": "ALL 97 CHECKS PASSED"
+    },
+    "test_scoring": {
+      "returncode": 0,
+      "summary": "33 passed, 0 failed"
+    },
+    "test_forecasts": {
+      "returncode": 0,
+      "summary": "33 passed, 0 failed"
+    }
+  },
+  "pdf_sha256": "16543aa2100044b15ce4a25dc0965563bdf66cbaf9cdcfb82bb5ac97e2ee8892",
+  "editable_source_sha256": "618e689a6632a60d5f536d8568e998a802a827b3d01bcd50d3e42a62d17cef35",
+  "visual_review": "All pages inspected as rendered contact sheets, with detailed title, figure, table, appendix and reference checks."
+}

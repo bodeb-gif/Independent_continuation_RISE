@@ -7,7 +7,7 @@
   "human_review_n": 150,
   "historical_n": 100,
   "modern_n": 50,
-  "provenance": "The author performed the human validation, using AI only for limited contextual explanations in a couple of situations. Existing Codex metadata document earlier artifact history and do not establish that AI made the human review decisions. Blinding and a second independent human reviewer were not established.",
+  "provenance": "Author-confirmed first human validation without AI assistance (corrected October 21, 2026). Earlier metadata describe artifact history, not assistance in the author's validation. Blinding is not independently established.",
   "vm_directory": "/home/ec2-user/SageMaker/election_arm/source_review_additional150_v1/",
   "vm_check": "Read-only Chrome inspection of saved files and fresh canonical categorical SHA256; all 150 categorical records match the local copy. The full reviewed-label hash matches the earlier VM receipt. No categorical changes from the saved prior comparison were observed.",
   "categorical_projection_sha256": "378529b335980eb5d547d330829217ecd785eb6d9c023e98bcf36b66892b3b5c",
@@ -33,5 +33,12 @@
   "source_prose": "No source prose or free-text notes transferred; existing categorical copy verified.",
   "user_clarification": "No but AI didn't help me that much. I just needed it to explain context in a couple of situations",
   "reviewer_type": "human_author",
-  "ai_role": "Limited contextual explanations in a couple of situations, as reported by the author."
+  "ai_role": "None in the first human validation, per the author's October 21 correction.",
+  "author_correction_20261021": {
+    "date_local": "2026-10-21",
+    "timezone": "America/Chicago",
+    "statement": "First, update the fact that I used AI on my first human validation. I didn't.",
+    "current_interpretation": "The author performed the first human validation without AI assistance. This correction supersedes earlier descriptions of contextual AI assistance; it does not independently establish label blinding.",
+    "reviewer_type": "human_author"
+  }
 }

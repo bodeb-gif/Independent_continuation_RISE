@@ -1,0 +1,42 @@
+\section{Predictive applications: historical and modern evidence}
+\subsection{Predicting correctness of an extracted claim}
+The first predictive task estimates $P(z_i^{(s)}=1\mid\mathcal I_i)$, where $z_i^{(s)}$ is the deterministic correctness label and $\mathcal I_i$ contains permitted information at publication. This is a forecast of claim correctness under the scoring contract. It is neither the probability that extraction is valid nor the probability of a recession.
+
+The frozen recurrent model uses the previous twelve complete calendar months of national forecast distributions across four topics. Each topic contributes five normalized direction shares, log claim count, and an observed-coverage indicator. Current-claim inputs are topic, paper family, voice, hedging category, direction, horizon basis, and numeric horizon. The current publication month is excluded from the sequence. No quotation text, speaker identity, realized outcomes, prior hit rates, crisis annotations, verifier prose, NBER state, or macro reference value enters as a feature. Log counts describe export volume, not a normalized attention measure.\evidence{P2}
+
+A one-layer, 24-unit gated recurrent unit (GRU) feeds a 32-unit head with 15\% dropout. Predictions average three preset seeds. Training publications precede 1985; validation spans 1985--1994; final historical evaluation spans 1995--2010. Outcomes are purged from earlier splits unless their endpoint plus a three-month allowance precedes the next split. After 7,743 purged claims, the split counts are 70,722 training, 39,536 validation, and 56,807 evaluation claims. Preprocessing is fitted on training data only; validation log loss selects epochs.
+
+\begin{table}[t]
+\caption{Historical claim-correctness prediction, 1995--2010}\label{tab:rnn}
+\centering\small
+\begin{tabularx}{\linewidth}{Xrrrr}
+\toprule
+Model & AUC & Average precision & Brier & Log loss\\
+\midrule
+Training-prevalence constant & .500 & .409 & .244 & .681\\
+Metadata logistic & .678 & .579 & .218 & .629\\
+Metadata + history logistic & .634 & .596 & .236 & .692\\
+Frozen GRU ensemble & .761 & .683 & .193 & .565\\
+\bottomrule
+\end{tabularx}
+\note{Equal article weights; 56,807 claims. Correctness prevalence is .409. Binary Brier has range 0--1 and lower is better; AUC and average precision measure discrimination. These saved development comparisons do not establish a universally superior model. Source: P2.}
+\end{table}
+
+The ensemble's average-precision advantage over the metadata-plus-history logistic control is 0.0876, with a saved five-year block interval of $[-0.1912,0.2102]$ based on four blocks and 400 draws. Separate saved block-swap tests of Brier differences also fail to establish superiority after the reported adjustment. The small number of time blocks sharply limits inferential resolution. Moreover, the logistic comparison does not isolate recurrence from nonlinear function approximation; a matched feed-forward neural control has not been supplied.
+
+Although features respect publication ordering, outcome labels use frozen revised historical series. A three-month release allowance alone cannot prove that every revised value was known then. Modern language models used for historical extraction can also contain later knowledge in their pretrained parameters. Restricting the prompt to source text reduces overt hindsight use but does not certify its absence. This exercise is chronological prediction from reconstructed historical features, not a claim that the entire modern extraction system could have operated in 1900.
+
+\subsection{Modern transfer of frozen claim models, 2011--2026}
+On 56,886 mature, supported modern claims, the frozen baseline GRU achieves article-weighted AUC 0.738 and Brier loss 0.1770, compared with AUC 0.654 and Brier loss 0.1936 for the metadata-plus-history logistic control. The Brier improvement is 0.0165, with a paired five-year block interval of $[-0.0092,0.0376]$. Thus the point estimates favor the recurrent model, while the interval does not establish a stable improvement. The GRU with both political separation and forecast disagreement attains AUC 0.749, also without an established incremental Brier gain. No models are selected or recalibrated on these modern results.\evidence{N1}
+
+Transfer is strongly topic-dependent: baseline-GRU AUC is 0.906 for prices, 0.788 for markets, 0.767 for general business, and 0.306 for employment. These outcomes concern correctness under the existing scoring contract, not the validity of extracted passages. Undocumented prior modern outcome exposure, calibration weaknesses, and the employment failure limit the generalization claim. Appendix~\ref{app:modern} supplies all model metrics, calibration results, and the separate monthly downturn exercise. None of these modern claims is pooled into the historical measurement-sensitivity estimates.
+
+\subsection{Incremental information for aggregate production}
+The second task predicts a six-month industrial-production direction from month $t-1$ to $t+5$, with an inclusive $\pm2\%$ flat band. Its unit is a monthly forecast origin. It compares a selected macro-only model with the same model augmented by four newspaper signals: recent net direction, common-paper change, disagreement, and cross-paper dispersion. A recent class-frequency comparator is retained.\evidence{P1}
+
+The core evaluation covers 408 months from January 1977 through December 2010. Each January, training-only forward validation chooses among twelve combinations of macro feature set, regularization strength, and expanding versus recent-120-month estimation windows. Macro features are production growth alone or production growth plus unemployment change. Historical label vintages are used at inner and outer refits. The press-augmented regression inherits the macro-selected settings and training months; it is not retuned to maximize its evaluation gain. The procedure was nevertheless designed after inspection of an earlier historical comparator, so the reported period is not untouched.
+
+Multiclass Brier loss is the sum of squared errors over fall, flat, and rise and ranges from zero to two. Macro-only Brier is 0.6327, compared with 0.6228 for macro plus press and 0.6443 for recent class frequencies. The primary improvement, macro-only minus macro-plus-press loss, is 0.0099. Its paired five-year block interval is $[-0.0637,0.0808]$, with seven calendar blocks. Log loss falls from 0.9989 to 0.9606, and accuracy rises from 35.8\% to 44.1\%; these descriptive gains do not remove uncertainty in the primary comparison.
+
+When the already-inspected 2007--2009 scoring months are omitted, 372 months remain. Macro-only Brier is 0.6164 and macro-plus-press Brier is 0.6214, an improvement of $-0.0050$. This is a scoring exclusion using the saved forecasts, not a new fit and not evidence from excluded crisis-window exports. It shows that the average gain is sensitive to a particular evaluation episode. The manuscript therefore does not claim a stable incremental forecasting advantage across eras.
+

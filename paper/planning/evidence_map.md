@@ -4,8 +4,8 @@ October 20 update: this October 19 evidence map remains the historical analysis
 inventory. Its pending source-validation and modern-data entries are superseded
 by the [current evidence status](../../docs/publication/STATUS.md): 300 author-reviewed
 claims (250 historical and 50 modern) and a separate exploratory modern model
-evaluation are now available. The author performed human validation with limited
-AI contextual explanations. See the [human review receipt](../../data/scored/proquest/source_review_additional150_v1/human_review_status.html)
+evaluation are now available. The author confirmed on October 21 that the first human validation was completed
+without AI assistance. See the [human review receipt](../../data/scored/proquest/source_review_additional150_v1/human_review_status.html)
 and [modern results](../../data/scored/proquest/modern_analysis_v1/report.html).
 Neither the new sample nor the modern model results resolves all source-measurement
 uncertainty or establishes RNN superiority. No manuscript prose is added here.

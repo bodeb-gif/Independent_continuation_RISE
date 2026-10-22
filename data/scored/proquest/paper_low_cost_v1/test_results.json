@@ -1,0 +1,14 @@
+{
+  "test_offline": {
+    "returncode": 0,
+    "summary": "ALL 97 CHECKS PASSED"
+  },
+  "test_scoring": {
+    "returncode": 0,
+    "summary": "33 passed, 0 failed"
+  },
+  "test_forecasts": {
+    "returncode": 0,
+    "summary": "33 passed, 0 failed"
+  }
+}

@@ -1,0 +1,29 @@
+% Overleaf entry point: compile with pdfLaTeX (TeX Live 2025 or newer).
+\input{preamble}
+\begin{document}
+\input{frontmatter}
+
+% Main paper
+\input{sections/01_introduction}
+\input{sections/02_related_research}
+\input{sections/03_data_and_workflow}
+\input{sections/04_extraction_cost}
+\input{sections/05_human_validation}
+\input{sections/06_measurement_and_evaluation}
+\input{sections/07_predictive_applications}
+\input{sections/08_discussion}
+\input{sections/09_conclusion}
+\input{sections/10_disclosure}
+
+\FloatBarrier
+\appendix
+\input{appendices/a_modern_extension}
+\input{appendices/b_cost_details}
+\input{appendices/c_interpretation_examples}
+\input{appendices/d_evidence_map}
+\input{appendices/e_external_data_references}
+
+\FloatBarrier
+\clearpage
+\input{references}
+\end{document}

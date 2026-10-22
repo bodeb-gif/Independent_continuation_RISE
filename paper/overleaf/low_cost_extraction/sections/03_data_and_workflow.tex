@@ -1,0 +1,64 @@
+\section{Data, lineage, and the extraction workflow}
+\subsection{Historical corpus and analysis population}
+The historical newspaper source is ProQuest \citep{proquesthistorical}, with source access and text analysis organized through its TDM Studio environment \citep{proquesttdm}. The received exports, rather than a provider product description, define the actual analysis population. The source consists of 111 annual raw shards and 111 annual machine-verified shards spanning 1900--2010. The archived exports were copied unchanged from the integration repository at commit \texttt{774b68f}. The raw files contain 488,660 candidate claims; the verified files contain 274,070. The latter represent 146,720 article identifiers, including 105,604 articles with at least one retained claim and 41,116 articles represented only by a no-prediction record. These article counts describe the received exports, not the universe of newspaper articles searched or processed.\evidence{H1}
+
+The newspaper families include the New York Times, Wall Street Journal, Los Angeles Times, Chicago Tribune, Washington Post, Boston Globe, Barron's, and Christian Science Monitor, with a small USA Today component. Historical edition labels are consolidated for descriptive paper-family comparisons. Coverage is uneven: verified Wall Street Journal claims begin in 1984, and scored Chicago Tribune coverage ends in 2001. Consequently, differences over time or across publishers can reflect changes in source composition. The corpus should be described as forecasts reported in selected newspapers, not a probability sample of the American press.
+
+\begin{table}[t]
+\caption{Historical corpus and deterministic-scoring flow}\label{tab:flow}
+\centering\small
+\begin{tabularx}{\linewidth}{Xr}
+\toprule
+Stage or mutually exclusive exclusion & Claims / records\\
+\midrule
+Raw annual candidate claims & 488,660\\
+Machine-verified candidate claims & 274,070\\
+\quad Not explicitly US-national & 80,183\\
+\quad Topic without a defensible benchmark & 7,894\\
+\quad No scorable direction & 3,176\\
+\quad Numeric horizon outside 1--24 months & 2,490\\
+\quad Outside benchmark coverage & 2,297\\
+\quad Unusable horizon label & 2,175\\
+\midrule
+Scored under the inherited historical rules & 175,855\\
+\quad Of which: pre-1919 business claims using an NBER proxy & 1,047\\
+Eligible for the claim-correctness model before split purging & 174,808\\
+\bottomrule
+\end{tabularx}
+\note{The six exclusion rows sum to 98,215; 274,070 minus 98,215 equals 175,855. The NBER-proxy row is a subset of scored claims, not another descriptive exclusion. The 41,116 no-prediction export records are not candidate claims. Raw and verified exports are not a fully reconciled processing ledger; their difference is not labeled a measured rejection count. Sources: H1--H2 and P2, Appendix~\ref{app:evidence}.}
+\end{table}
+
+Machine verification is an inclusion filter. It is not independent human validation. The inventory contains 696 verified rows with identical exported labels; all are retained. Because the local exports omit quotations and lack a unique claim identifier, distinct passages can share the same categorical labels. Deduplication on those fields alone would impose an unsupported assumption about identity. We instead preserve file, line, publication date, and article linkage.\evidence{H1}
+
+\subsection{Modern extension and evaluation population}
+The separate 2011--2026 export contains 91,118 retained candidates. Excluding 19 default-kept verification exceptions leaves 91,099 primary inputs; 33,071 no-prediction records are kept outside the candidate count. Eligibility and maturity rules remove 32,604 unsupported claims, 1,138 claims with unmatured outcomes, and 471 with reference gaps, leaving 56,886 evaluated claims from 23,775 articles. These are saved October 20, 2026 results, with no interpolation of unavailable outcomes. The historical and modern populations are reported separately throughout.\evidence{N1}
+
+Human source review includes 50 modern candidates sampled across all sixteen publication years. That sample assesses extraction and annotation, including candidates without mature economic outcomes; it is not a random subsample of only the 56,886 evaluated claims. The modern predictive exercise applies frozen historical claim models, but undocumented prior outcome exposure prevents describing it as an untouched confirmatory holdout. Appendix~\ref{app:modern} records the dated reference coverage, exclusions, and model comparisons.
+
+\subsection{From article text to an evaluable claim}
+The workflow has five steps. Article text is retrieved within the authorized source environment. An extractor proposes forecast spans and structured labels. A verifier evaluates candidates. Permitted categorical information is exported with source-linked addresses, while the original exports are preserved. Finally, explicit eligibility and outcome-availability rules determine which claims enter each analysis. The historical human comparisons identify the original ProQuest labels as GPT-4o mini outputs \citep{openai4omini}; the LOC experiment uses separately named model configurations. Their costs and quality estimates are not interchangeable.\evidence{V1--V2,X1}
+
+\begin{figure}[t]
+\centering
+\setlength{\fboxsep}{7pt}
+\fbox{\begin{minipage}{.92\linewidth}\small
+\textbf{Authorized article text}\hfill Source access and publication date\\[4pt]
+$\downarrow$\quad Candidate extraction: passage, topic, direction, horizon, scope, attribution\\[4pt]
+$\downarrow$\quad Machine verification: retain or reject proposed candidates\\[4pt]
+$\downarrow$\quad Frozen categorical export: preserve article and source-row lineage\\[4pt]
+$\downarrow$\quad Source review and explicit analysis-eligibility rules\\[4pt]
+\textbf{Two distinct outputs:} textual validity and field agreement; economic outcomes under a stated scoring rule
+\end{minipage}}
+\caption{A workflow with separate textual and economic checks. Human review evaluates sampled candidates; it does not certify every exported row. LOC development evidence attaches to extraction and verification only.}
+\label{fig:pipeline}
+\end{figure}
+
+The main fields are topic, economic direction, horizon, geographic scope, confidence language, voice, speaker, and current conditions. They serve different purposes. Topic selects a potential outcome series. Scope prevents a regional or foreign forecast from being judged against a national US aggregate. Horizon determines the endpoint. Attribution separates a newspaper's own assessment from a forecast it reports. Confidence describes language and is not a calibrated probability. Present conditions must be distinguished from a prediction even when both appear in the same paragraph.
+
+The inclusion rubric requires a falsifiable claim about future economic conditions. It excludes current or retrospective descriptions, advertisements, generic rules, non-economic promises, and hypothetical scenarios without a committed forecast. Reporting a forecast skeptically does not necessarily erase the forecast, but republishing one after its outcome is known creates a timing problem. These boundaries matter because a hindsight description scored as a forecast can manufacture apparent predictive skill. Source context, rather than categorical labels alone, resolves such cases.
+
+\subsection{What the received data cannot establish}
+The local exports do not supply complete article-processing denominators. A rise in claim counts therefore cannot be interpreted directly as greater attention to the economy. It may reflect retrieval coverage, article availability, extraction yield, or verification behavior. Likewise, fewer verified than raw claims do not identify the number of genuine forecasts removed. The raw set is a sensitivity sample under the same scoring rules, not a second human reference standard.
+
+The pipeline preserves retrospective window annotations and verifier prose outside model inputs. Neither is available as an admissible print-time predictor. All reported historical economic estimates exclude old crisis-window exports and LOC claims. The LOC pages used below are retained solely for extraction development, where their crisis-focused selection is itself a limitation.
+

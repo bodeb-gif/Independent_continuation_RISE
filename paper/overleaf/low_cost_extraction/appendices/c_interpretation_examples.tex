@@ -1,0 +1,24 @@
+\section{Interpretation examples and validation logic}\label{app:examples}
+Table~\ref{tab:examples} uses constructed examples, not quotations from ProQuest. Their purpose is to explain the scoring distinctions; they supply no empirical frequency or evidence that a particular published study makes these mistakes.
+
+\begin{table}[h]
+\caption{Hypothetical statements and the economic proposition requiring validation}\label{tab:examples}
+\small
+\begin{tabularx}{\linewidth}{p{.30\linewidth}X}
+\toprule
+Constructed statement & Interpretation needed before scoring\\
+\midrule
+``Job growth will strengthen next year.'' & This concerns employment growth, potentially its rate of change. Falling unemployment is not a logically equivalent endpoint.\\[5pt]
+``Inflation should ease.'' & A lower inflation rate permits continued increases in the price level; a CPI decline is a different event.\\[5pt]
+``Output growth will slow.'' & Positive but slower growth differs from a fall in output. The quantity and comparator must be recorded.\\[5pt]
+``Business is recovering.'' & The sentence may describe current conditions. A forecast requires a supported future implication.\\[5pt]
+``Orders will rise if the measure passes.'' & The proposition is conditional. Scoring an unconditional rise can misrepresent it if the condition is unresolved.\\[5pt]
+``The outlook is better over the coming year.'' & A broad path assessment may not commit to the level at a single endpoint. Horizon and target support must be established.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A further distinction concerns computational validation. Reproducing a saved sample statistic verifies that an implementation returns the intended quantity. Evaluating an estimator against a population parameter over repeated simulated samples tests a different property. For example, if independent observations have mean $\mu$ and variance $\sigma^2$, the sample mean satisfies $E(\bar X)=\mu$ and $E[(\bar X-\mu)^2]=\sigma^2/n$. An implementation that returns the sample mean exactly can therefore be meaningfully evaluated against the known generating mean across simulations.
+
+There is no general circularity in that procedure. An uninformative check would instead compare an output only with an algebraically identical expression on the same sample and then claim that this establishes recovery of an unknown substantive construct. In this project, deterministic scoring reproducibility establishes agreement with the specified scoring function. Human source review evaluates whether the function's inputs and interpretation match the passage. Chronological evaluation addresses predictive transfer. These complementary checks should not be conflated, and the manuscript presents no new simulation study or general claim that simulation-based validation is defective.
+

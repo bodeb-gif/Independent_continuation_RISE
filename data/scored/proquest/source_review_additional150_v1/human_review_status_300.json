@@ -24,7 +24,7 @@
       "exclude": 15
     }
   },
-  "interpretation": "Author-performed human validation with limited AI assistance to explain context in a couple of situations. Pooled totals describe the reviewed sample, not a common population estimate. Modern forecasting performance is unchanged.",
+  "interpretation": "Author-performed first human validation without AI assistance, as corrected by the author on October 21, 2026. Pooled totals describe the reviewed sample, not a common population estimate. Modern forecasting performance is unchanged.",
   "inputs_sha256": {
     "data/scored/proquest/source_review_150_v1/human_labels_received.json": "6a3ef0a267c8f17aca1b13b032d425a61c820b1913a4bad7e3e3774b67c9eba4",
     "data/scored/proquest/source_review_additional150_v1/reviewed_labels_categorical.json": "f38601896352ca65c6cf947b882a03575ba7da3ee70a9793d4d9339f218af039",

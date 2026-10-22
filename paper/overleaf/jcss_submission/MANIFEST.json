@@ -1,0 +1,17 @@
+{
+  "target_journal": "Journal of Computational Social Science",
+  "article_type": "full research article",
+  "status": "revised author-review draft; declarations and archive details pending",
+  "source_manuscript_sha256": "7aaefea5276c3312ecbd1ea23469f2183d3064eeec61019aaedb950200a4b031",
+  "validation_input_sha256": "b402a6591b4248f6057ba185e8279360f7c9dac0843e3c319e5ca594cbbbc93c",
+  "abstract_words_whitespace": 184,
+  "keywords_n": 6,
+  "template_url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
+  "sha256": {
+    "main.tex": "27279e4fe2f96ef526e4d1a94d406bc99783e10e16bd758a813cb64c19a74e1a",
+    "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+    "README.txt": "f90c94be7c66291544d0c117121cb2a49f35f9fe4bfdb8130e21801982a4c82e",
+    "Fig2.pdf": "0a4769b6bf20f9681777dda5a6739ffeb74fe7adcbdc954dde73a79da99f9362",
+    "Fig3.pdf": "b042fa536659d2d2ac3d4cce62fe45c0ef172e99adcbdf24a635df8f6a69d25d"
+  }
+}

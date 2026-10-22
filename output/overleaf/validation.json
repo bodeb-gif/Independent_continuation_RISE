@@ -1,0 +1,17 @@
+{
+  "revision_date": "2026-10-22",
+  "pages": 26,
+  "references": 33,
+  "standalone_zip_build": true,
+  "compiler": "pdfTeX (TeX Live 2025)",
+  "text_identical_to_revised_paper_all_pages": true,
+  "visual_review": "All 26 manuscript pages rendered with Ghostscript and visually inspected; abstract also inspected at full page resolution.",
+  "encrypted": false,
+  "undefined_citations": false,
+  "missing_assets": false,
+  "overfull_boxes": false,
+  "archive_sha256": "63763013cb659d947559b3b8e4251ed3457f3adf5b73ae50e137fab700605967",
+  "pdf_sha256": "b0717c4bf119dd6368564aa671472351e45949f99f1a94c94266146d6c3496b5",
+  "analysis_rerun": false,
+  "source_exports_changed": false
+}

@@ -1,17 +1,35 @@
 # Validation and provenance status
 
-## Current update — October 20, 2026
+## Current update — October 22, 2026
+
+- **Journal revision:** the author-review manuscript now targets the Journal of
+  Computational Social Science, leading with paired human validation and
+  measurement sensitivity. Its abstract includes the separate modern extension;
+  new tables report the exact-300 additional pass and all eleven label fields.
+  The [submission checklist](../../paper/submission/jcss/READINESS.md) links the
+  canonical source, PDF, and self-contained journal package. Name and email are
+  supplied; affiliation and declarations remain pending. No submission was made.
+  A subsequent author-requested edit removes all LOC material and condenses the
+  appendices to modern results, label validation, and reproduction; the rebuilt
+  manuscript is 18 pages, down from 26.
 
 This update supersedes the pending human-review and modern-export status in
 the dated historical entries below. Historical source files and all 30 frozen
 model/protocol artifacts remain unchanged.
 
 - **Human validation:** 300 distinct claims across 299 articles: 250 historical
-  and 50 modern. Decisions are 212 include, 87 exclude and one unclear. The author
-  performed the validation, using AI for contextual explanations in a couple
-  of situations. Earlier artifact metadata are retained without attributing the
-  author's decisions to AI. Blinding and a second human reviewer are not
-  established. See the [review status](../../data/scored/proquest/source_review_additional150_v1/human_review_status.html).
+  and 50 modern. First-review decisions are 212 include, 87 exclude and one unclear. The author
+  confirmed on October 21 that the first human validation was performed
+  without AI assistance. Earlier artifact metadata are retained without attributing the
+  author's decisions to AI. On October 22, the author confirmed that two human
+  reviewers reviewed these same 300 claims. Reviewer 2's frozen decisions are
+  204 include and 96 exclude. The October 22 source-free comparison finds exact
+  inclusion-decision agreement on 233/250 historical and 42/50 modern claims
+  (275/300 combined, descriptive only). These are unadjudicated judgments;
+  the first review's blinding remains unestablished. See the
+  [paired comparison and pass audit](../../data/scored/proquest/verification_pass_audit_20261022/report.html),
+  [author attestation](../../data/scored/proquest/reviewer2_300_v1/human_review_attestation_20261022.json)
+  and [first-review status](../../data/scored/proquest/source_review_additional150_v1/human_review_status.html).
 - **Modern extraction evidence:** all years 2011–2026 appear in the 50-claim
   modern sample; 35 are included, with direction agreement of 29/35 among
   included claims. The design-weighted inclusion estimate is 73.4%; unweighted
@@ -94,3 +112,11 @@ When modern verification finishes, preserve the run logs and recover the years, 
 | Fitted models and macro snapshots | Existing local artifacts | Confirm applicable provider permissions and reconstruction options |
 
 This is a work inventory, not a legal determination or a public data license. The author/library contact must establish the applicable access and sharing basis. No new source material has been uploaded as part of this package.
+
+- **Independent source review (October 21, 2026):** Reviewer 2 completed and froze
+  all 300 sampled decisions in `data/scored/proquest/reviewer2_300_v1/`. The review
+  used source claims and article context without opening the author’s or
+  GPT-4o-mini’s claim-level labels. Aggregate study summaries had been visible
+  during the provenance correction. Comparison was subsequently performed on
+  October 22 using the saved machine labels and both frozen human label sets;
+  no new model calls or adjudication were performed.

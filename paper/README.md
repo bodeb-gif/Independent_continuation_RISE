@@ -1,9 +1,19 @@
 # ProQuest paper workspace
 
 This folder holds the paper on economic forecasts reported in selected US
-newspapers, 1900–2010. It brings the existing writing together with links to
-the evidence. The manuscript remains an unfinished outline; source validation,
-modern evaluation and substantive drafting are still deferred.
+newspapers, 1900–2026. The current Journal of Computational Social Science
+author-review draft includes the two-reviewer, 300-claim audit, additional
+verification-pass comparisons, and separate historical and modern analyses.
+
+- [Current PDF](../output/pdf/jcss_submission.pdf)
+- [Editable manuscript](manuscript/low_cost_extraction.tex)
+- [Self-contained Overleaf ZIP](../output/overleaf/jcss_submission.zip)
+- [Submission details still needed](submission/jcss/READINESS.md)
+
+The abstract combines corpus and descriptive audit totals. The paper excludes
+LOC material and has shortened appendices. Earlier outlines and the old split
+Overleaf package are retained as superseded drafts, not the submission version.
+Build the current package with `scripts/build_jcss_package.py`.
 
 Prepared October 19: [source-review interface](../data/scored/proquest/source_review_pilot_v1/review.html)
 and [review guide](../validation/proquest_review/README.md),
@@ -14,7 +24,7 @@ links proposed exhibits to exact saved result rows and their limitations.
 
 | Folder | Contents |
 | --- | --- |
-| [manuscript](manuscript/outline.md) | Existing outline and historical evidence tables |
+| [manuscript](manuscript/low_cost_extraction.tex) | Current manuscript and earlier outlines |
 | [planning](planning/concept.md) | Paper question, scope and proposed contribution |
 | [references](references/literature.md) | Expanded comparison with inspection levels and primary sources |
 | [figures](figures/README.md) | Figure index with canonical generated files |

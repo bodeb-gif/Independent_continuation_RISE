@@ -1,0 +1,116 @@
+{
+  "revision_date": "2026-10-21",
+  "previous_reference_count": 8,
+  "reference_count": 33,
+  "new_references": [
+    {
+      "key": "baker2016",
+      "url": "https://doi.org/10.1093/qje/qjw024"
+    },
+    {
+      "key": "bakerhistorical",
+      "url": "https://www.policyuncertainty.com/us_historical.html"
+    },
+    {
+      "key": "campbell2024",
+      "url": "https://doi.org/10.1525/collabra.92953"
+    },
+    {
+      "key": "cawley2010",
+      "url": "https://www.jmlr.org/papers/v11/cawley10a.html"
+    },
+    {
+      "key": "philagreenbook",
+      "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/greenbook"
+    },
+    {
+      "key": "philalivingston",
+      "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/livingston-survey"
+    },
+    {
+      "key": "philaspf",
+      "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters"
+    },
+    {
+      "key": "fredpayems",
+      "url": "https://fred.stlouisfed.org/series/PAYEMS"
+    },
+    {
+      "key": "fredcpi",
+      "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+    },
+    {
+      "key": "fredstock",
+      "url": "https://fred.stlouisfed.org/series/M1109BUSM293NNBR"
+    },
+    {
+      "key": "fredindpro",
+      "url": "https://fred.stlouisfed.org/series/INDPRO"
+    },
+    {
+      "key": "fredgs10",
+      "url": "https://fred.stlouisfed.org/series/GS10"
+    },
+    {
+      "key": "fredusrec",
+      "url": "https://fred.stlouisfed.org/series/USREC"
+    },
+    {
+      "key": "fredtb3ms",
+      "url": "https://fred.stlouisfed.org/series/TB3MS"
+    },
+    {
+      "key": "fredunrate",
+      "url": "https://fred.stlouisfed.org/series/UNRATE"
+    },
+    {
+      "key": "garcia2013",
+      "url": "https://doi.org/10.1111/jofi.12027"
+    },
+    {
+      "key": "gneiting2007",
+      "url": "https://doi.org/10.1198/016214506000001437"
+    },
+    {
+      "key": "loc",
+      "url": "https://chroniclingamerica.loc.gov/"
+    },
+    {
+      "key": "loughran2011",
+      "url": "https://doi.org/10.1111/j.1540-6261.2010.01625.x"
+    },
+    {
+      "key": "nber",
+      "url": "https://www.nber.org/research/business-cycle-dating"
+    },
+    {
+      "key": "openai4omini",
+      "url": "https://developers.openai.com/api/docs/models/gpt-4o-mini"
+    },
+    {
+      "key": "proquesthistorical",
+      "url": "https://about.proquest.com/en/products-services/pq-hist-news/"
+    },
+    {
+      "key": "proquesttdm",
+      "url": "https://about.proquest.com/en/products-services/TDM-Studio/"
+    },
+    {
+      "key": "shiller",
+      "url": "https://shillerdata.com/"
+    },
+    {
+      "key": "tetlock2007",
+      "url": "https://doi.org/10.1111/j.1540-6261.2007.01232.x"
+    }
+  ],
+  "empirical_results_refitted": false,
+  "source_exports_modified": false,
+  "notes": [
+    "Supplied August 3 retrieval dates retained as user-reported bibliographic history, not frozen-snapshot dates.",
+    "FRED stock-series title corrected to Dow-Jones; Shiller remains actual market benchmark.",
+    "Greenbook link corrected to current Tealbook/Greenbook landing page.",
+    "OpenAI citation is GPT-4o mini; actual archived LOC configuration names retained.",
+    "Scholarly claims based on primary papers, publisher abstracts, or author manuscripts; no common-data replication claimed."
+  ]
+}

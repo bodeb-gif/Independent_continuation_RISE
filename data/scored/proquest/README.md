@@ -30,6 +30,7 @@ the [paper workspace](../../../paper/README.md) indexes writing and exhibits.
 | [alternative_targets_v1](alternative_targets_v1/report.html) | Payroll and GDP outcome sensitivity |
 | [alternative_target_inputs_v1](alternative_target_inputs_v1/manifest.json) | Frozen outcome-only downloads; not historical predictors |
 | [benchmark_input_review_v1](benchmark_input_review_v1/report.html) | Combined benchmark/input findings and independent checks |
+| [human_rescore_v1](human_rescore_v1/README.md) | 300 human-reviewed claims rescored; design-based accuracy correction, frames not pooled |
 | [reverify300_20261022](reverify300_20261022/README.md) | Hash-verified 300-claim additional GPT-4o mini pass; inclusion and individual-label comparisons against both humans, before/after filtering |
 
 `benchmark_interpretation_v1` retains the specification and failure record from
