@@ -80,3 +80,9 @@ data/models/no_epu_hit_predictor.joblib
 
 # Public modern Voteview cache: retained locally; URLs and hashes in run manifest.
 data/scored/proquest/modern_analysis_v1/reference/voteview/
+
+# Full research checkpoints are preserved in research_bundle_20261024.
+/data/scored/proquest/discovery_session_20261022/
+/data/scored/proquest/discovery_session_20261023_extended/
+/data/scored/proquest/economic_findings_audit_20261022/
+/data/scored/proquest/block_length_followup_20261024/

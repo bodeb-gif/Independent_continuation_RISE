@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-24T16:32:16.546796+00:00",
+  "archive": "proquest_research_20261024.tar.xz",
+  "archive_bytes": 51903860,
+  "archive_sha256": "05d2b7eea0ee5e5b7a3db6238ce01cb131ca97adbe155abb37154fe20cca7597",
+  "files_in_archive": 15055,
+  "all_archive_file_hashes_match_sources": true,
+  "directories": [
+    "discovery_session_20261022",
+    "discovery_session_20261023_extended",
+    "economic_findings_audit_20261022",
+    "block_length_followup_20261024"
+  ],
+  "reports": [
+    {
+      "file": "discovery_report.html",
+      "sha256": "bc5bee8c7c056e6b89ed259f1f56161ed11cbdffebce0b6a903195d61e470e1b",
+      "canonical_report": "data/scored/proquest/discovery_session_20261023_extended/report.html",
+      "canonical_sha256": "7c1248b04a69b7a71a829b1776852e7948eb1707379886ac436f7c829b01c923",
+      "note": "Browsing copy: local artifact links adjusted for bundle location and extraction notice added. Canonical report is unchanged in archive."
+    },
+    {
+      "file": "block_length_report.html",
+      "sha256": "a5cbfa9b546f0b604147591d0c6e65b94ac5ac855934a6461815761063db8eb5",
+      "canonical_report": "data/scored/proquest/block_length_followup_20261024/report.html",
+      "canonical_sha256": "6e610ac7bd77a964702ccec56df3201cef9e37dd308e76185019d4725651641e",
+      "note": "Browsing copy: local artifact links adjusted for bundle location and extraction notice added. Canonical report is unchanged in archive."
+    }
+  ],
+  "source_exports_modified": false,
+  "source_exports_duplicated": false,
+  "canonical_manifests": {
+    "discovery_session_20261023_extended": "bd929a4c15d9b4397b5624df474f3b4115afe5bd86ea90180363b2f813d402f8",
+    "block_length_followup_20261024": "d201e57545bcd50091eab6a253a2794bee381c83670f6034d5701dc5670d0f31"
+  },
+  "parent_commit": "609f68f298585d2a740db00ca30b0f284afb559f"
+}
