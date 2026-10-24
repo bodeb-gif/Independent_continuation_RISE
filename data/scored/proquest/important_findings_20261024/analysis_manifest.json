@@ -1,0 +1,20 @@
+{
+  "inputs_sha256": {
+    "data/scored/proquest/reverify300_20261022/paired_comparison.json": "ca5fe8e60f7abda44c30c4dbd1bd047343f2e00e5e70bd8c22d9386ffb86b2a6",
+    "data/scored/proquest/robustness/scored_claims.csv.gz": "0f1bdf84e8bec1b91e86d0a9187e081e75c24dc474d0c8e85f50c220e7840a03",
+    "data/scored/proquest/important_findings_20261024/specification.json": "ce299a74378c23e27d1ef964469e2a1242f205a41396d25b7a3e2b7f11edf6a4"
+  },
+  "code_sha256": "83db66545b4f76a13bf33ced9e32e0669ea15d6b5088398042bfdbb15b1d25ee",
+  "versions": {
+    "python": "3.13.9 | packaged by conda-forge | (main, Oct 22 2025, 23:38:18) [Clang 19.1.7 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3"
+  },
+  "checks": {
+    "historical_n": 250,
+    "unique_articles": 249,
+    "verified_scores": 175855,
+    "source_inputs_unchanged": true,
+    "old_point_estimates_reproduced": true
+  }
+}

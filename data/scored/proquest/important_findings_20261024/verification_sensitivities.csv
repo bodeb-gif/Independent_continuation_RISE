@@ -1,0 +1,16 @@
+scenario,kind,block_years,n_blocks,low,high,omitted_id,fisher_p
+reviewer1_unclear_false,calendar_block,2.0,40.0,0.03589772849750516,0.10443167398286608,,
+reviewer1_unclear_false,calendar_block,5.0,20.0,0.03621246015809158,0.1116431819985328,,
+reviewer1_unclear_false,calendar_block,10.0,12.0,0.03412547953353374,0.13226427803071958,,
+reviewer1_unclear_false,omit_one_shared_article_claim,,,,,verified:1987:984,6.993746464301404e-08
+reviewer1_unclear_false,omit_one_shared_article_claim,,,,,verified:1987:983,4.885918831858826e-08
+reviewer1_unclear_true,calendar_block,2.0,40.0,0.03589559569193696,0.1045949723605164,,
+reviewer1_unclear_true,calendar_block,5.0,20.0,0.03620530631067157,0.11323001905587665,,
+reviewer1_unclear_true,calendar_block,10.0,12.0,0.03482409996281864,0.136812356979405,,
+reviewer1_unclear_true,omit_one_shared_article_claim,,,,,verified:1987:984,4.885918831858826e-08
+reviewer1_unclear_true,omit_one_shared_article_claim,,,,,verified:1987:983,3.387583526869524e-08
+reviewer2,calendar_block,2.0,40.0,0.046649265766912876,0.12176351536038373,,
+reviewer2,calendar_block,5.0,20.0,0.04396217066851754,0.13567452903832408,,
+reviewer2,calendar_block,10.0,12.0,0.04124310038833636,0.16101010101010105,,
+reviewer2,omit_one_shared_article_claim,,,,,verified:1987:984,7.45482547408606e-11
+reviewer2,omit_one_shared_article_claim,,,,,verified:1987:983,4.910158407841114e-11

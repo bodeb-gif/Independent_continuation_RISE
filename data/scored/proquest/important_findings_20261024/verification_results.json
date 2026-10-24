@@ -1,0 +1,260 @@
+{
+  "results": [
+    {
+      "scenario": "reviewer1_unclear_false",
+      "n": 250,
+      "articles": 249,
+      "kept": 214,
+      "valid_before": 177,
+      "valid_after": 166,
+      "invalid_removed": 25,
+      "valid_lost": 11,
+      "precision_before": 0.708,
+      "precision_after": 0.7757009345794392,
+      "precision_gain": 0.06770093457943926,
+      "precision_gain_low": 0.03815214127538193,
+      "precision_gain_high": 0.1000750475871937,
+      "valid_retention": 0.9378531073446328,
+      "retention_low": 0.9005847953216374,
+      "retention_high": 0.9712643678160919,
+      "before_low": 0.6507936507936508,
+      "before_high": 0.764,
+      "after_low": 0.7183098591549296,
+      "after_high": 0.8302752293577982,
+      "fisher_p": 6.378260795628171e-08,
+      "mcnemar_p": 0.028816719655878845,
+      "table": [
+        [
+          166,
+          48
+        ],
+        [
+          11,
+          25
+        ]
+      ]
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "n": 250,
+      "articles": 249,
+      "kept": 214,
+      "valid_before": 178,
+      "valid_after": 167,
+      "invalid_removed": 25,
+      "valid_lost": 11,
+      "precision_before": 0.712,
+      "precision_after": 0.780373831775701,
+      "precision_gain": 0.068373831775701,
+      "precision_gain_low": 0.03869767441860461,
+      "precision_gain_high": 0.10110595714332107,
+      "valid_retention": 0.9382022471910112,
+      "retention_low": 0.9010989010989011,
+      "retention_high": 0.9712643678160919,
+      "before_low": 0.6547619047619048,
+      "before_high": 0.7670682730923695,
+      "after_low": 0.7239775910364146,
+      "after_high": 0.8341019284949878,
+      "fisher_p": 4.4543982640219086e-08,
+      "mcnemar_p": 0.028816719655878845,
+      "table": [
+        [
+          167,
+          47
+        ],
+        [
+          11,
+          25
+        ]
+      ]
+    },
+    {
+      "scenario": "reviewer2",
+      "n": 250,
+      "articles": 249,
+      "kept": 214,
+      "valid_before": 171,
+      "valid_after": 164,
+      "invalid_removed": 29,
+      "valid_lost": 7,
+      "precision_before": 0.684,
+      "precision_after": 0.7663551401869159,
+      "precision_gain": 0.08235514018691581,
+      "precision_gain_low": 0.05175677380973842,
+      "precision_gain_high": 0.11581230642440057,
+      "valid_retention": 0.9590643274853801,
+      "retention_low": 0.9265536723163842,
+      "retention_high": 0.9876543209876543,
+      "before_low": 0.6265060240963856,
+      "before_high": 0.74,
+      "after_low": 0.7089201877934272,
+      "after_high": 0.8214285714285714,
+      "fisher_p": 6.650710681152659e-11,
+      "mcnemar_p": 0.00031255115754902363,
+      "table": [
+        [
+          164,
+          50
+        ],
+        [
+          7,
+          29
+        ]
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "scenario": "reviewer1_unclear_false",
+      "test": "precision_enrichment_fisher",
+      "p_value": 6.378260795628171e-08,
+      "holm_6": 2.5513043182512683e-07,
+      "bonferroni_420_stress": 2.6788695341638318e-05
+    },
+    {
+      "scenario": "reviewer1_unclear_false",
+      "test": "net_classification_error_mcnemar",
+      "p_value": 0.028816719655878845,
+      "holm_6": 0.05763343931175769,
+      "bonferroni_420_stress": 1
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "test": "precision_enrichment_fisher",
+      "p_value": 4.4543982640219086e-08,
+      "holm_6": 2.2271991320109544e-07,
+      "bonferroni_420_stress": 1.8708472708892017e-05
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "test": "net_classification_error_mcnemar",
+      "p_value": 0.028816719655878845,
+      "holm_6": 0.05763343931175769,
+      "bonferroni_420_stress": 1
+    },
+    {
+      "scenario": "reviewer2",
+      "test": "precision_enrichment_fisher",
+      "p_value": 6.650710681152659e-11,
+      "holm_6": 3.9904264086915954e-10,
+      "bonferroni_420_stress": 2.7932984860841167e-08
+    },
+    {
+      "scenario": "reviewer2",
+      "test": "net_classification_error_mcnemar",
+      "p_value": 0.00031255115754902363,
+      "holm_6": 0.0009376534726470709,
+      "bonferroni_420_stress": 0.13127148617058992
+    }
+  ],
+  "sensitivities": [
+    {
+      "scenario": "reviewer1_unclear_false",
+      "kind": "calendar_block",
+      "block_years": 2,
+      "n_blocks": 40,
+      "low": 0.03589772849750516,
+      "high": 0.10443167398286608
+    },
+    {
+      "scenario": "reviewer1_unclear_false",
+      "kind": "calendar_block",
+      "block_years": 5,
+      "n_blocks": 20,
+      "low": 0.03621246015809158,
+      "high": 0.1116431819985328
+    },
+    {
+      "scenario": "reviewer1_unclear_false",
+      "kind": "calendar_block",
+      "block_years": 10,
+      "n_blocks": 12,
+      "low": 0.03412547953353374,
+      "high": 0.13226427803071958
+    },
+    {
+      "scenario": "reviewer1_unclear_false",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:984",
+      "fisher_p": 6.993746464301404e-08
+    },
+    {
+      "scenario": "reviewer1_unclear_false",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:983",
+      "fisher_p": 4.885918831858826e-08
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "kind": "calendar_block",
+      "block_years": 2,
+      "n_blocks": 40,
+      "low": 0.03589559569193696,
+      "high": 0.1045949723605164
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "kind": "calendar_block",
+      "block_years": 5,
+      "n_blocks": 20,
+      "low": 0.03620530631067157,
+      "high": 0.11323001905587665
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "kind": "calendar_block",
+      "block_years": 10,
+      "n_blocks": 12,
+      "low": 0.03482409996281864,
+      "high": 0.136812356979405
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:984",
+      "fisher_p": 4.885918831858826e-08
+    },
+    {
+      "scenario": "reviewer1_unclear_true",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:983",
+      "fisher_p": 3.387583526869524e-08
+    },
+    {
+      "scenario": "reviewer2",
+      "kind": "calendar_block",
+      "block_years": 2,
+      "n_blocks": 40,
+      "low": 0.046649265766912876,
+      "high": 0.12176351536038373
+    },
+    {
+      "scenario": "reviewer2",
+      "kind": "calendar_block",
+      "block_years": 5,
+      "n_blocks": 20,
+      "low": 0.04396217066851754,
+      "high": 0.13567452903832408
+    },
+    {
+      "scenario": "reviewer2",
+      "kind": "calendar_block",
+      "block_years": 10,
+      "n_blocks": 12,
+      "low": 0.04124310038833636,
+      "high": 0.16101010101010105
+    },
+    {
+      "scenario": "reviewer2",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:984",
+      "fisher_p": 7.45482547408606e-11
+    },
+    {
+      "scenario": "reviewer2",
+      "kind": "omit_one_shared_article_claim",
+      "omitted_id": "verified:1987:983",
+      "fisher_p": 4.910158407841114e-11
+    }
+  ]
+}

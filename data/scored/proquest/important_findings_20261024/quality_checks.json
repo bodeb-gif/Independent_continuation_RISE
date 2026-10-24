@@ -1,0 +1,60 @@
+{
+  "paired_source_join_n": 250,
+  "independent_hypergeometric_tail_checks": 3,
+  "saved_counts_reconciled": true,
+  "all_15_refined_interval_classifications_agree": true,
+  "all_222_original_exports_unchanged": true,
+  "required_checks_passed": 163,
+  "pdf_pages": [
+    {
+      "page": 1,
+      "characters": 2570,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 2,
+      "characters": 2358,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 3,
+      "characters": 2090,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 4,
+      "characters": 3170,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 5,
+      "characters": 2799,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 6,
+      "characters": 2714,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 7,
+      "characters": 3252,
+      "text_blocks_within_page": true
+    },
+    {
+      "page": 8,
+      "characters": 2840,
+      "text_blocks_within_page": true
+    }
+  ],
+  "rendering": "PyMuPDF, Poppler unavailable; all eight pages visually inspected; final corrected chart checked separately",
+  "python": "3.13.9 | packaged by conda-forge | (main, Oct 22 2025, 23:38:18) [Clang 19.1.7 ]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8",
+    "PyMuPDF": "1.28.0"
+  }
+}

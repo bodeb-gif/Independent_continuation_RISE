@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-24",
+  "status": "Post-hoc evidence synthesis; specification saved before new calculations, after existing point results were inspected. Not preregistered or a fresh holdout.",
+  "scope": "Annual 1900-2010 verified ProQuest; raw sensitivity only. Historical 250 human-reviewed candidates only. LOC development metrics are separately labeled extraction validation. Modern data and old crisis-window economic analyses excluded.",
+  "new_accuracy_check": "Recompute fixed saved correctness gaps with equal article weights within each of four topics and all-topic population. 100000 paired occupied calendar-block resamples, lengths 2, 5, 10 anchored 1900. Report marginal 95% and Bonferroni 99.6666667% percentile intervals for 15 contrasts. No p-value inferred from bootstrap tail counts. Conditional on labels and outcomes; dependence/stationarity assumptions remain.",
+  "new_verification_check": "Three human-reference scenarios: reviewer 1 unclear invalid, reviewer 1 unclear valid, reviewer 2. Two-sided Fisher exact test for human inclusion versus new keep/drop, and exact McNemar for classification-error improvement on same candidates. Six-test Holm family, plus 420-test Bonferroni stress bound (204 prior questions + 210 later diagnostics + these 6 tests). This bound is not a project-wide error guarantee.",
+  "verification_uncertainty": "50000 paired article-cluster bootstrap draws stratified by review batch for precision-after minus precision-before, and valid retention. Claims remain paired, one duplicated article kept together. All 2/5/10-year block bootstrap sensitivities anchored 1900 with 20000 draws. Unclear model decision retained. Human reviewers are separate references, not adjudicated gold.",
+  "verification_sensitivity": "For Fisher test, remove each of the two claims sharing one article in turn as a diagnostic; source claims not deduplicated. Report both. Original 250 sample counts remain primary.",
+  "seed": 20261024,
+  "model_fits": 0,
+  "model_api_calls": 0,
+  "costs": "Dated archived LOC cost projections, not current vendor quotes, not ProQuest production costs. No quality equivalence test can be supported by saved aggregate metrics alone."
+}

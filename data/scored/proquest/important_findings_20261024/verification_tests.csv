@@ -1,0 +1,7 @@
+scenario,test,p_value,holm_6,bonferroni_420_stress
+reviewer1_unclear_false,precision_enrichment_fisher,6.378260795628171e-08,2.5513043182512683e-07,2.6788695341638318e-05
+reviewer1_unclear_false,net_classification_error_mcnemar,0.028816719655878845,0.05763343931175769,1.0
+reviewer1_unclear_true,precision_enrichment_fisher,4.4543982640219086e-08,2.2271991320109544e-07,1.8708472708892017e-05
+reviewer1_unclear_true,net_classification_error_mcnemar,0.028816719655878845,0.05763343931175769,1.0
+reviewer2,precision_enrichment_fisher,6.650710681152659e-11,3.9904264086915954e-10,2.7932984860841167e-08
+reviewer2,net_classification_error_mcnemar,0.00031255115754902363,0.0009376534726470709,0.13127148617058992

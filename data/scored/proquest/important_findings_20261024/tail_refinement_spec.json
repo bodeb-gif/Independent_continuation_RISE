@@ -1,0 +1,7 @@
+{
+  "reason": "Market five-year simultaneous upper limit lies close to zero; refine every one of the same 15 intervals, retaining original results.",
+  "draws": 1000000,
+  "seed": 20261025,
+  "alpha_each": 0.0033333333333333335,
+  "new_tests": 0
+}
