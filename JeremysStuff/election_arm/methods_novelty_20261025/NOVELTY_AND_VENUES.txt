@@ -1,0 +1,324 @@
+METHODS PAPER: NOVELTY AND REALISTIC JOURNAL TARGETS
+Assessment date: 25 October 2026
+
+VERDICT
+
+A publishable applied measurement paper is plausible after targeted revision.
+The present evidence does not establish a new extraction architecture, a new
+statistical estimator, or a generally superior low-cost model. The current
+manuscript is borderline as a methods contribution because its broad lessons
+are already well established. The defensible contribution is a particular
+empirical audit of how explicit historical economic forecasts become scored
+measurements, with a reusable procedure and source-linked error evidence.
+
+Recommended first target: Journal of Computational Social Science (JCSS),
+given its subject fit, the existing submission package, and a no-APC route.
+PLOS ONE is a plausible alternative if funding is available and the paper is
+framed as rigorous original empirical research. Quality & Quantity is a
+credible methods-focused alternative after making the generalizable procedure
+and measurement logic more explicit. These are fit judgments, not estimated
+acceptance probabilities. None guarantees referees' reports within 60 days.
+
+JOURNAL COMPARISON
+
+Journal                                | 2025 JIF       | Median first decision | Standard publication route | Recommendation
+---------------------------------------|----------------|-----------------------|----------------------------|-------------------------------
+Journal of Computational Social Science | 2.6 [publisher]| 57 days               | No APC, subscription       | First choice after revisions
+PLOS ONE                               | 2.8 [secondary]| 32 days [2025 metric] | USD 2,477 APC              | Alternative if funded
+Quality & Quantity                     | Not verified   | 7 days                | No APC, subscription       | Methods-focused alternative
+
+JIF means Journal Impact Factor, not CiteScore or SJR. The year is the metric's
+data year, not the year this report was written. PLOS ONE's JIF is corroborated
+by secondary sources; the publisher supplies it on request. Quality & Quantity
+does not display a current JIF on its publisher page. Missing verification is
+not evidence that a journal has a zero impact factor or is not indexed.
+Sources, optional open-access fees, and journal-specific qualifications appear
+in the detailed venue section below. Fees may be affected by taxes, institutional
+agreements and assistance. First decision includes editorial rejection and does
+not establish the time to external referee reports or acceptance.
+
+If a current verified impact factor and no publication fee are priorities,
+JCSS is the clearest match among these three. The stronger general novelty
+claim would require a demonstrated improvement and independent validation;
+the shortest submission route is the narrower empirical measurement paper.
+
+WHAT WAS CHECKED
+
+Canonical manuscript, submission readiness, literature comparison, and saved
+human-rescore specification from main commit
+a047eb4f940ed93c823fa9e29682bfe043208af8; the preceding local research assessment;
+primary literature/publisher records and official journal policies/metrics.
+The canonical project sources at that fixed commit are:
+
+- paper/manuscript/low_cost_extraction.tex
+- paper/submission/jcss/READINESS.md
+- paper/references/literature.md
+- data/scored/proquest/human_rescore_v1/specification.json
+- data/scored/proquest/human_rescore_v1/ (saved estimates and reviewed scores)
+
+Fixed source tree:
+https://github.com/bodeb-gif/datascience-rise-practicum-private/tree/a047eb4f940ed93c823fa9e29682bfe043208af8
+
+The inclusion-versus-eligibility comparison also uses the exploratory exact-ID
+join performed during the preceding local assessment. It is distinguished
+below from the manuscript's existing paired-verifier results. The report
+contains aggregate findings and does not reproduce restricted article text.
+
+This is a targeted novelty search, not a systematic review or proof of being
+first. Some comparisons use publisher abstracts and bibliographic records;
+those do not establish every implementation detail. No competing paper's
+results were replicated. Literature dates below distinguish publication from
+working-paper status where verified. No extraction/API run, source-text
+export, manuscript overwrite, or journal submission was performed.
+
+CLOSEST WORK AND CONSEQUENCES
+
+1. Pangakis, Wolken and Fasching (2023), Automated Annotation with Generative
+   AI Requires Validation. The arXiv paper tests 27 tasks across 11 datasets
+   and argues for task-specific human validation. Therefore inexpensive LLM
+   annotation plus a human audit is not a sufficient novelty claim.
+   https://arxiv.org/abs/2306.00176
+
+2. Egami, Hinck, Stewart and Wei (NeurIPS 2023), Using Imperfect Surrogates
+   for Downstream Inference: Design-based Supervised Learning for Social
+   Science Applications of Large Language Models. High label accuracy can
+   coexist with biased inference; the paper supplies a correction estimator
+   using a probability-sampled human reference. Our saved correction belongs
+   in this established literature; do not present it as an invented estimator
+   or claim all their guarantees automatically apply to our ratio estimands.
+   https://proceedings.neurips.cc/paper_files/paper/2023/hash/d862f7f5445255090de13b825b880d59-Abstract-Conference.html
+
+3. Ashwin, Chhabra and Rao, Using Large Language Models for Qualitative
+   Analysis can Introduce Serious Bias. Sociological Methods & Research,
+   online 2025, volume 55(3), 795-839 (2026). Their interview application
+   demonstrates nonrandom annotation errors and misleading inference.
+   Thus finding errors or downstream sensitivity alone is not conceptually new.
+   https://doi.org/10.1177/00491241251338246
+   Author-institution publication record:
+   https://cris.maastrichtuniversity.nl/en/publications/using-large-language-models-for-qualitative-analysis-can-introduc-2/
+
+4. Ludwig, Mullainathan and Rambachan (2026), Large Language Models: An
+   Applied Econometric Framework, Annual Review of Economics 18:283-316.
+   Distinguishes prediction from measurement for estimation; explains
+   validation-based correction and training leakage. Our paper needs to
+   distinguish retrospective source interpretation from historically feasible
+   forecasting. A human-corrected historical application can contribute
+   evidence, but the correction rationale is established.
+   https://www.annualreviews.org/content/journals/10.1146/annurev-economics-120925-105620
+
+5. Bao (30 July 2026), Beyond the Conventional Pipeline: Large Language
+   Models for Social Science Measurement, Chinese Political Science Review.
+   Explicitly separates constructing a measure from downstream inference and
+   discusses validation, sensitivity and error propagation. This is a close
+   conceptual predecessor to an 'extraction is not measurement' framing.
+   Our contribution must be an operational audit and empirical results.
+   https://link.springer.com/article/10.1007/s41111-026-00351-4
+
+6. Hansen (March 2026), Validating Large Language Model Annotations, FEDS
+   2026-020, WORKING PAPER. Proposes reconstruction-based validation and
+   applies it to economic news. A general validation framework for LLM-coded
+   news is already occupied territory. Our human-reviewed, claim-level
+   target/horizon and scoring analysis remains a different application.
+   https://www.federalreserve.gov/econres/feds/validating-large-language-model-annotations.htm
+
+7. Mathy and Stekler (2017), Expectations and Forecasting during the Great
+   Depression, and the related Mathy-Roatta 1937-1938 project are direct
+   predecessors for evaluating historical press forecasts. The repository's
+   existing literature review inspected their working-paper methods. Neither
+   historical newspapers nor retrospective qualitative forecast evaluation is
+   new. Source-specific target, scope and horizon auditing at claim level is
+   the relevant distinction, subject to better source validation.
+   https://www.sciencedirect.com/science/article/pii/S0164070416301446
+   Detailed existing comparison: paper/references/literature.md at the fixed
+   source commit above.
+
+Additional recent caution: Nagel, Tseng and Xiu (2026), Completions, Not
+Convictions: Can LLM Probabilities Proxy for Human Beliefs? WORKING PAPER,
+SSRN 7265538. Its abstract reports altered economic conclusions when LLM
+probabilities substitute for human beliefs. This studies elicited probabilities,
+not our extraction of attributed statements, but further rules out claiming
+that model-derived quantities changing conclusions is itself a new discovery.
+Screened from primary SSRN indexed abstract; full text not inspected here.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7265538
+
+WHAT THE PROJECT CAN ACTUALLY ADD
+
+Suggested title:
+From extracted forecasts to valid economic measurements:
+A human audit of historical newspaper predictions
+
+Suggested contribution statement:
+We evaluate the separate stages required to turn an extracted forecast into
+an economically interpretable scored observation: forecast inclusion, target
+and scope eligibility, direction and horizon interpretation, and outcome
+matching. A paired human audit measures what an additional verification pass
+improves, which valid observations it removes, and which measurement problems
+remain. We trace the consequences for benchmark comparisons using existing
+human labels and explicitly stated correction assumptions.
+
+Evidence already available:
+
+- In the 250-claim historical audit, the extra verifier retained 214 claims.
+  Forecast-inclusion precision improved from 70.8% to 77.6% against reviewer 1
+  and 68.4% to 76.6% against reviewer 2. It removed 25/29 reviewer-invalid
+  candidates but also 11/7 reviewer-valid forecasts. These are paired
+  candidate-level results, not source-document extraction recall.
+- Exact-row linkage to the saved reviewer-1 human rescore gives 104 eligible
+  claims among the 214 retained (48.6%), compared with 110 among all 250
+  before the additional pass. Six eligible claims were removed. The 77.6%
+  inclusion result and the 48.6% benchmark-eligibility result measure different
+  properties. Eligibility is not full joint field accuracy or source recall.
+- For the same 9,260 employment claims, scoring against unemployment versus
+  payrolls changes the baseline-relative point estimate from positive to
+  negative. This demonstrates target sensitivity, not a proven statistical
+  reversal or proof that either target is the source-correct interpretation.
+- The saved reviewer-1 correction changes a claim-weighted machine-only gap
+  of -12.81 percentage points to -1.84 points, with a 95% interval of
+  [-16.56, 12.88]. Report alongside the human-only estimator (-10.91 points,
+  interval [-20.79, -1.03]), not instead of it. The disagreement makes the
+  small audit's uncertainty important; it does not establish that forecasts
+  outperform the baseline or that the true gap is zero.
+
+The manuscript itself acknowledges that filtering leaves unchanged labels
+unchanged on identical survivors. That is true by construction and cannot be
+the principal empirical discovery. The measured changes in population,
+eligibility, errors, and resulting estimates are the informative content.
+
+PRIORITY REVISIONS
+
+1. Complete the chain from audit to estimand with BOTH existing reviewers.
+   The saved main correction specification currently supplies reviewer-1
+   results; the earlier local work adds only a small reviewer-2 labor subset,
+   not a full reviewer-2 correction. Join exact audit IDs, show before/after
+   inclusion and eligibility, and report all prespecified weighting/horizon
+   variants. Retain human disagreement and the partial machine-label exposure
+   of reviewer 1. Do not relabel that review as fully blind or a gold standard.
+   Sampling intervals condition on a fixed frame and human labels; they omit
+   reviewer error, macroeconomic generalization and target ambiguity.
+
+2. Make the audit a reusable procedure, with a codebook, deterministic target
+   and scope rules, an abstention category for unresolvable claims, scoring
+   rules, inclusion probabilities and exact lineage. Show which decisions a
+   researcher can make using it. Existing compatible human horizon groups
+   sometimes preserve machine numeric horizons and otherwise default vague
+   horizons; these are not exact independently source-confirmed endpoints.
+
+3. For a stronger methods claim, evaluate a concrete improvement against the
+   existing extra-filter baseline: for example targeted correction of scope,
+   quantity and horizon with abstention. Freeze the procedure before testing
+   on an untouched audit sample. Evaluate joint scoreability, valid-claim loss,
+   reviewer agreement, downstream error and cost. Report failures too. The
+   current 300 reviewed cases can develop this procedure but cannot also be
+   presented as its untouched test set. A useful case study need not claim a
+   new improvement; a claimed new method needs evidence of utility.
+
+4. Strengthen transfer evidence economically. A separate source, newspaper,
+   topic or era can help, but any previously inspected slice is exploratory.
+   The 50 modern reviews alone do not establish broad generalization. Choose
+   new audit size using precision/power and clustering, not an arbitrary
+   threshold. No new paid API or VM extraction is authorized by this report.
+
+5. Update the related-work section with 2023-2026 predecessors, finish author
+   and declaration fields, and provide an accessible reproducibility package
+   that respects ProQuest permissions. Keep restricted text in the authorized
+   VM; do not promise unrestricted raw text. Public-domain worked examples can
+   demonstrate the procedure without serving as a substitute validation set.
+
+Steps 1, 2 and 5 are the shortest credible submission route with existing
+assets. Steps 3 and 4 offer the larger improvement in methodological novelty,
+but require new validation work. None guarantees acceptance.
+
+REALISTIC VENUES -- OFFICIAL PAGES CHECKED 25 OCTOBER 2026
+
+Journal of Computational Social Science
+  Journal Impact Factor: 2.6 (2025), verified on the Springer journal page.
+  Assessment: sensible first submission after the targeted revisions. The
+  combination of computational text measurement and an economic application
+  fits. Existing JCSS packaging is convenient, not editorial endorsement.
+  Main risk: reviewers see an ordinary application plus expected sensitivity
+  rather than a transferable methodological contribution.
+  Advertised median submission-to-first-decision: 57 days. Barely inside the
+  requested two-month window; no basis to promise external review by then.
+  Subscription route: no APC. Optional OA currently USD 3,390 before taxes.
+  https://link.springer.com/journal/42001
+  https://link.springer.com/journal/42001/how-to-publish-with-us
+  Scope precedent: Gelling et al., Auditing the bias of conversational AI
+  systems in occupational recommendations. It demonstrates audit-paper fit,
+  not equivalent quality, methods or acceptance odds.
+  https://link.springer.com/article/10.1007/s42001-025-00433-4
+
+PLOS ONE
+  Journal Impact Factor: 2.8 (2025), reported by Bioxbio and corroborated by
+  OOIR. Secondary-source verification: PLOS does not display its JIF on its
+  journal information page and says it provides it on request.
+  https://www.bioxbio.com/journal/PLOS-ONE
+  https://ooir.org/j.php?j=1932-6203
+  https://journals.plos.org/plosone/s/journal-information
+  Assessment: plausible route for a rigorous original empirical validation
+  study whose conceptual novelty is incremental. It still requires sufficient
+  validation, justified sample sizes, supported conclusions and data access.
+  Main risk: the current small audit, reference uncertainty and incomplete
+  connection to corrected outcomes leave the headline claims unsupported.
+  Official 2025 median first decision: 32 days; median publication: 209 days.
+  Standard research-article fee currently USD 2,477, subject to applicable
+  institutional coverage/assistance. Do not confuse first decision with
+  peer-review completion or publication.
+  https://plos.org/metrics/
+  https://plos.org/fees/
+  https://journals.plos.org/plosone/s/criteria-for-publication
+  Relevant published precedent: GPT-4 as an X data annotator: Unraveling its
+  performance on a stance classification task (2024). A task-specific
+  annotation study can fit; this is not evidence our paper will be accepted.
+  https://doi.org/10.1371/journal.pone.0307741
+
+Quality & Quantity
+  Current Journal Impact Factor: not verified. The Springer journal page
+  does not display one; Bioxbio has no 2025 value (its last populated value
+  is 1.072 for 2017). Do not present that historical number or a CiteScore
+  as a current JIF. If a current JIF is required, prefer a verified target.
+  https://www.bioxbio.com/journal/QUAL-QUANT
+  Assessment: credible alternative for the explicitly methodological version,
+  focused on validity, operationalization and the audit procedure. Not clearly
+  easier than JCSS; would require a more general methods-oriented rewrite.
+  Advertised median submission-to-first-decision: 7 days. That does not
+  establish a 7-day external review or a referee response within 60 days.
+  Subscription route: no APC. Optional OA currently USD 3,190 before taxes.
+  https://link.springer.com/journal/11135
+  https://link.springer.com/journal/11135/how-to-publish-with-us
+  Relevant precedent: De Paoli and Mathis, Reflections on inductive thematic
+  saturation as a potential metric for measuring the validity of an inductive
+  thematic analysis with LLMs (online 2024; volume 2025). This confirms interest
+  in operational LLM-validity methods, though the task differs substantially.
+  https://link.springer.com/article/10.1007/s11135-024-01950-6
+
+MethodsX
+  Conditional alternative if rewritten as a detailed, demonstrated reusable
+  protocol. Elsevier explicitly welcomes incremental methodological advances;
+  the present findings-led manuscript is not yet that article form. The
+  official detailed insights/fees pages returned 403, so current APC and
+  decision-after-review timing are NOT verified here. Do not select it to meet
+  the deadline on the strength of third-party journal-metric sites.
+  https://www-prod.elsevier.com/researcher/author/tools-and-resources/research-elements-journals
+
+I would not spend the first submission cycle on a highly selective general
+methods/ML venue with the current design. That judgment follows from the
+established conceptual contribution and lack of a demonstrated new algorithm
+or broad independent validation, not from a calculated rejection probability.
+
+DEADLINE AND TWO-PAPER STRATEGY
+
+If 'response in under two months' includes editorial rejection, the advertised
+medians make several targets plausible. If it means substantive external
+referee reports, the verified data do not establish that any target reliably
+meets the requirement. If it means acceptance, there is no defensible promise.
+Timings start at submission, not at the beginning of manuscript revision.
+Use sequential submissions; a fast rejection can consume less time but is
+not evidence of a better publication route. No editor was contacted.
+
+Keep methods-paper claims centered on measurement reliability and economic
+consequences of operationalization. Reserve the proposed labor-warning and
+cross-topic findings for the substantive paper, with independent validation
+and full search/uncertainty disclosure. Shared data are compatible with two
+papers when the primary questions and contributions differ and related work
+is disclosed. A renamed set of the same main results would not justify a
+second publication.
